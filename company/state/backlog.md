@@ -36,7 +36,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-001 | P0 | todo | developer | 1d | Initialize monorepo structure with TypeScript + Node.js 18+ |
+| TASK-001 | P0 | review | developer | 1d | Initialize monorepo structure with TypeScript + Node.js 18+ |
 | TASK-002 | P0 | todo | developer | 0.5d | Configure tsconfig.json (strict mode, ES2022, type definitions) |
 | TASK-003 | P0 | todo | developer | 0.5d | Set up ESLint + Prettier with TypeScript rules |
 | TASK-004 | P0 | todo | developer | 0.5d | Configure Vitest for unit and integration testing |
