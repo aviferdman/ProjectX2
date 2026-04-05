@@ -86,6 +86,33 @@ export async function hardReset(companyRoot?: string): Promise<void> {
 function resetStateFiles(companyRoot: string): void {
   const statePath = path.join(companyRoot, 'company', 'state');
 
+  // Core state files that should be preserved (but reset)
+  const coreFiles = new Set([
+    'project-status.md',
+    'backlog.md',
+    'decisions.md',
+    'company-config.json',
+  ]);
+
+  // Remove all stale files (progress reviews, roster, etc.)
+  const staleFiles: string[] = [];
+  const entries = fs.readdirSync(statePath);
+  for (const entry of entries) {
+    const fullPath = path.join(statePath, entry);
+    const stat = fs.statSync(fullPath);
+    
+    // Skip directories and core files
+    if (stat.isDirectory() || coreFiles.has(entry)) continue;
+    
+    // Delete stale files
+    fs.unlinkSync(fullPath);
+    staleFiles.push(entry);
+  }
+
+  if (staleFiles.length > 0) {
+    console.log(`  → Removed ${staleFiles.length} stale file(s): ${staleFiles.join(', ')}`);
+  }
+
   // Reset project-status.md
   fs.writeFileSync(path.join(statePath, 'project-status.md'), INITIAL_PROJECT_STATUS, 'utf-8');
 
@@ -111,7 +138,7 @@ function resetStateFiles(companyRoot: string): void {
     fs.writeFileSync(configPath, JSON.stringify(existing, null, 2) + '\n', 'utf-8');
   }
 
-  console.log('  → project-status.md, backlog.md, decisions.md, company-config.json');
+  console.log('  → Reset core state files: project-status.md, backlog.md, decisions.md, company-config.json');
 }
 
 function clearDirectory(dirPath: string): void {
