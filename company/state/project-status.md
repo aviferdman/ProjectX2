@@ -1,29 +1,30 @@
 # Project Status
 
 ## Current Phase
-`ideation`
+`planning`
 
 ## Active Project
-Crewspace — Agent orchestration and collaboration platform (SaaS)
+Crewspace — TypeScript-native agent orchestration framework with visual platform (OSS core + commercial cloud)
 
 ## Blockers
 None
 
 ## Current Cycle
-5
+6
 
 ## Last Updated
 2026-04-05
 
 ## Phase Notes
-- **Owner direction**: Democratize agent orchestration (Lovable/v0 UX quality for multi-agent systems)
-- **Budget**: $0 — free/open-source only
-- **Time horizon**: 4 months
-- **Risk tolerance**: Moderate
-- **Key constraint**: Must deliver value in first 5 minutes, beautiful UX (Linear/Figma quality)
-- **Research complete**: Market analysis (13 sources, 5 opportunities) and user-needs analysis (4 segments, 5 gaps) both reviewed and approved [DEC-002]
-- **Ideation process**: Multi-agent deliberation begins — Researcher, PM, GM each propose 3 product concepts → challenge rounds → convergence vote → final decision
-- **Top signals from research**: "Lovable for agents" positioning unoccupied; 700K-1.5M non-dev users blocked; $20-100/user/month validated; visual-first UX is the differentiator
+- **Product decided [DEC-003]**: Crewspace — TypeScript-native agent orchestration framework + visual canvas, OSS-first (MIT) → commercial freemium SaaS
+- **Unanimous consensus**: All 3 agents (Researcher, PM, GM) voted YES after rigorous multi-agent deliberation (9 proposals, 3 challenge rounds, 3 verdicts)
+- **Revenue target**: $100-200K ARR Year 1 (conservative, data-anchored)
+- **Monetization**: Free → Pro $25/user/mo → Team $49/user/mo → Enterprise custom
+- **Phasing**: OSS framework (M1-2) → Visual canvas + debugging (M3-4) → Templates + team (M5-8) → Growth (M9-12)
+- **Primary moat**: OSS community + TypeScript-native DX (30% of effort on community)
+- **Key directives**: Ruthless scope gates, decision gate at Month 2 (300+ stars = proceed, <100 = reassess), no real-time collab in v1, developer-first GTM, $0 budget
+- **UX expectations**: "Clean and professional" at launch (not Lovable-quality); hire designer at Month 6-8 with revenue
+- **Next step**: PM defines product backlog, ProjM decomposes into tasks, architecture decisions during planning
 
 ## Timeline
 | Date | Event | Agent | Details |
@@ -33,3 +34,5 @@ None
 | 2026-04-05 | Market analysis complete | researcher | 28KB analysis, 13 sources, 5 product opportunities, 9+ competitors |
 | 2026-04-05 | User-needs analysis complete | pm | 53KB analysis, 4 user segments, 5 competitive gaps, pricing validation |
 | 2026-04-05 | Phase → ideation | gm | Research reviewed and approved; advanced to ideation phase [DEC-002] |
+| 2026-04-05 | Ideation deliberation complete | researcher, pm, gm | 9 proposals, 3 challenge rounds, 3 unanimous YES verdicts, final synthesis |
+| 2026-04-05 | Phase → planning | gm | Final product decision: Crewspace [DEC-003]. Advancing to planning phase. |
