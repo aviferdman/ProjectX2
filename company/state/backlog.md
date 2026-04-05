@@ -25,6 +25,383 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Success Metrics:** 300-500 GitHub stars, 50-100 npm downloads/week, 20-50 Discord members  
 **Decision Gate:** <100 stars + <50 npm/week after 4 weeks → reassess before Phase 2
 
+---
+
+## Task Breakdown — Phase 1 (Detailed Development Tasks)
+
+### Epic 1: Project Foundation & Infrastructure
+**Stories:** STORY-001, STORY-014, STORY-009  
+**Effort:** 8-12 days  
+**Dependencies:** None (start immediately)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-001 | P0 | todo | developer | 1d | Initialize monorepo structure with TypeScript + Node.js 18+ |
+| TASK-002 | P0 | todo | developer | 0.5d | Configure tsconfig.json (strict mode, ES2022, type definitions) |
+| TASK-003 | P0 | todo | developer | 0.5d | Set up ESLint + Prettier with TypeScript rules |
+| TASK-004 | P0 | todo | developer | 0.5d | Configure Vitest for unit and integration testing |
+| TASK-005 | P0 | todo | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
+| TASK-006 | P0 | todo | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
+| TASK-007 | P0 | todo | developer | 0.5d | Add MIT LICENSE file and initial README.md |
+| TASK-008 | P1 | todo | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
+| TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
+| TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
+
+**Dependencies:** TASK-001 must complete before TASK-002 through TASK-010
+
+---
+
+### Epic 2: Core Agent Framework API
+**Stories:** STORY-001  
+**Effort:** 10-14 days  
+**Dependencies:** TASK-006 (package structure)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-011 | P0 | todo | developer | 2d | Design and implement Agent class with TypeScript types |
+| TASK-012 | P0 | todo | developer | 2d | Design and implement Crew class for multi-agent orchestration |
+| TASK-013 | P0 | todo | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) |
+| TASK-014 | P0 | todo | developer | 2d | Implement event-driven execution engine (EventEmitter-based) |
+| TASK-015 | P0 | todo | developer | 1d | Add input validation with Zod schemas for all configs |
+| TASK-016 | P0 | todo | developer | 2d | Write unit tests for Agent class (>80% coverage) |
+| TASK-017 | P0 | todo | developer | 2d | Write unit tests for Crew class (>80% coverage) |
+| TASK-018 | P1 | todo | developer | 1d | Add JSDoc comments to all public APIs |
+| TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
+
+**Dependencies:** 
+- TASK-011, TASK-012, TASK-013 can run in parallel after TASK-006
+- TASK-014 depends on TASK-011, TASK-012
+- TASK-016, TASK-017 depend on TASK-011, TASK-012, TASK-014
+- TASK-018, TASK-019 are final validation tasks
+
+---
+
+### Epic 3: LLM Provider Abstraction
+**Stories:** STORY-002  
+**Effort:** 8-10 days  
+**Dependencies:** TASK-011 (Agent class)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-020 | P0 | todo | developer | 2d | Design LLMProvider interface with streaming support |
+| TASK-021 | P0 | todo | developer | 2d | Implement OpenAI provider (GPT-4o, GPT-4o-mini) |
+| TASK-022 | P0 | todo | developer | 2d | Implement Anthropic provider (Claude 3.5 Sonnet/Haiku) |
+| TASK-023 | P1 | todo | developer | 1d | Implement Ollama provider for local models |
+| TASK-024 | P0 | todo | developer | 1d | Add exponential backoff retry logic for rate limits |
+| TASK-025 | P0 | todo | developer | 1d | Implement token usage tracking and cost calculation |
+| TASK-026 | P1 | todo | developer | 1d | Add provider fallback mechanism (primary → secondary) |
+| TASK-027 | P0 | todo | developer | 2d | Write tests for all LLM providers with mocked responses |
+
+**Dependencies:**
+- TASK-021, TASK-022, TASK-023 depend on TASK-020
+- TASK-024, TASK-025, TASK-026 can run in parallel after TASK-020
+- TASK-027 is final validation
+
+---
+
+### Epic 4: Built-in Tool System
+**Stories:** STORY-003, STORY-004  
+**Effort:** 12-16 days  
+**Dependencies:** TASK-014 (execution engine)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-028 | P0 | todo | developer | 1d | Design Tool interface and permission system |
+| TASK-029 | P0 | todo | developer | 2d | Implement @crewspace/tools-file (read, write, list) |
+| TASK-030 | P0 | todo | developer | 2d | Implement @crewspace/tools-web (fetch, parse, DuckDuckGo) |
+| TASK-031 | P0 | todo | developer | 2d | Implement @crewspace/tools-shell (exec with timeout/sandbox) |
+| TASK-032 | P1 | todo | developer | 2d | Create @tool decorator for custom tool creation |
+| TASK-033 | P1 | todo | developer | 1d | Add Zod-based schema validation for tool inputs |
+| TASK-034 | P1 | todo | developer | 1d | Implement tool composition (tools calling tools) |
+| TASK-035 | P0 | todo | developer | 2d | Write tests for file, web, shell tools (>80% coverage) |
+| TASK-036 | P1 | todo | developer | 1d | Write tests for custom tool decorator API |
+| TASK-037 | P2 | todo | developer | 1d | Add rate limiting to web tool to prevent abuse |
+
+**Dependencies:**
+- TASK-029, TASK-030, TASK-031 depend on TASK-028
+- TASK-032, TASK-033, TASK-034 depend on TASK-028
+- TASK-035, TASK-036 are validation tasks
+
+---
+
+### Epic 5: Task Planning & Orchestration
+**Stories:** STORY-005  
+**Effort:** 8-10 days  
+**Dependencies:** TASK-012 (Crew class), TASK-014 (execution engine)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-038 | P0 | todo | developer | 2d | Design Task class with dependency DAG support |
+| TASK-039 | P0 | todo | developer | 2d | Implement topological sort for task dependency resolution |
+| TASK-040 | P0 | todo | developer | 2d | Add parallel execution support for independent tasks |
+| TASK-041 | P0 | todo | developer | 1d | Implement task context passing (previous outputs → next task) |
+| TASK-042 | P1 | todo | developer | 1d | Add task timeout and retry configuration |
+| TASK-043 | P1 | todo | developer | 1d | Detect and error on circular dependencies |
+| TASK-044 | P1 | todo | developer | 1d | Generate text-based task plan tree for CLI output |
+| TASK-045 | P0 | todo | developer | 2d | Write tests for task orchestration and dependency handling |
+
+**Dependencies:**
+- TASK-038 is foundation
+- TASK-039, TASK-040, TASK-041 depend on TASK-038
+- TASK-042, TASK-043, TASK-044 can run after TASK-039
+- TASK-045 is final validation
+
+---
+
+### Epic 6: Memory & Context Management
+**Stories:** STORY-006  
+**Effort:** 8-10 days  
+**Dependencies:** TASK-011 (Agent class)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-046 | P1 | todo | developer | 2d | Design memory architecture (short-term + long-term) |
+| TASK-047 | P1 | todo | developer | 2d | Implement short-term memory (conversation history in-memory) |
+| TASK-048 | P1 | todo | developer | 3d | Implement long-term memory with SQLite persistence |
+| TASK-049 | P1 | todo | developer | 1d | Add memory search and query API |
+| TASK-050 | P2 | todo | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
+| TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
+| TASK-052 | P2 | todo | developer | 1d | Implement memory export/import for debugging |
+| TASK-053 | P1 | todo | developer | 2d | Write tests for memory system (>80% coverage) |
+
+**Dependencies:**
+- TASK-046 is foundation
+- TASK-047, TASK-048 can run in parallel after TASK-046
+- TASK-049, TASK-050, TASK-051, TASK-052 depend on TASK-047 and TASK-048
+- TASK-053 is final validation
+
+---
+
+### Epic 7: CLI Tool Development
+**Stories:** STORY-007  
+**Effort:** 6-8 days  
+**Dependencies:** TASK-012 (Crew class), TASK-014 (execution engine)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-054 | P1 | todo | developer | 2d | Set up CLI with Commander.js and proper argument parsing |
+| TASK-055 | P1 | todo | developer | 2d | Implement `npx crewspace init` scaffolding command |
+| TASK-056 | P1 | todo | developer | 1d | Implement `npx crewspace run <file>` execution command |
+| TASK-057 | P1 | todo | developer | 1d | Implement `npx crewspace validate <file>` syntax checker |
+| TASK-058 | P2 | todo | developer | 1d | Add progress indicators with Ora and color output with Chalk |
+| TASK-059 | P2 | todo | developer | 1d | Add --verbose flag for debugging output |
+| TASK-060 | P1 | todo | developer | 1d | Test CLI cross-platform (Windows, macOS, Linux in CI) |
+
+**Dependencies:**
+- TASK-054 is foundation
+- TASK-055, TASK-056, TASK-057 depend on TASK-054
+- TASK-058, TASK-059 are enhancements
+- TASK-060 is validation
+
+---
+
+### Epic 8: Logging & Observability
+**Stories:** STORY-010  
+**Effort:** 6-8 days  
+**Dependencies:** TASK-014 (execution engine)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-061 | P2 | todo | developer | 2d | Design structured logging architecture with Winston/Pino |
+| TASK-062 | P2 | todo | developer | 2d | Implement log levels (DEBUG, INFO, WARN, ERROR) |
+| TASK-063 | P2 | todo | developer | 1d | Add timestamped logs with agent/task/action metadata |
+| TASK-064 | P2 | todo | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
+| TASK-065 | P2 | todo | developer | 1d | Add log export to file and stdout |
+| TASK-066 | P2 | todo | developer | 1d | Implement sensitive data masking (API keys, PII) |
+| TASK-067 | P2 | todo | developer | 1d | Write tests for logging system |
+
+**Dependencies:**
+- TASK-061 is foundation
+- TASK-062, TASK-063, TASK-064, TASK-065, TASK-066 depend on TASK-061
+- TASK-067 is validation
+
+---
+
+### Epic 9: Error Handling & Resilience
+**Stories:** STORY-011  
+**Effort:** 6-8 days  
+**Dependencies:** TASK-014 (execution engine), TASK-024 (retry logic)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-068 | P2 | todo | developer | 2d | Design error handling strategy and custom error classes |
+| TASK-069 | P2 | todo | developer | 2d | Implement checkpoint/resume system with SQLite |
+| TASK-070 | P2 | todo | developer | 1d | Add configurable retry policies per task |
+| TASK-071 | P2 | todo | developer | 1d | Implement graceful degradation for non-critical failures |
+| TASK-072 | P2 | todo | developer | 1d | Add timeout protection for runaway tasks |
+| TASK-073 | P2 | todo | developer | 1d | Create dead letter queue for failed tasks |
+| TASK-074 | P2 | todo | developer | 1d | Write tests for error handling scenarios |
+
+**Dependencies:**
+- TASK-068 is foundation
+- TASK-069, TASK-070, TASK-071, TASK-072, TASK-073 depend on TASK-068
+- TASK-074 is validation
+
+---
+
+### Epic 10: TypeScript Ecosystem Integration
+**Stories:** STORY-012  
+**Effort:** 4-6 days  
+**Dependencies:** TASK-006 (package structure)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-075 | P3 | todo | developer | 1d | Create ESLint config for Crewspace best practices |
+| TASK-076 | P3 | todo | developer | 1d | Create Prettier config for consistent formatting |
+| TASK-077 | P3 | todo | developer | 1d | Create Vitest helpers for testing agent workflows |
+| TASK-078 | P3 | todo | developer | 1d | Implement mock LLM response system for tests |
+| TASK-079 | P3 | todo | developer | 1d | Ensure ES modules + CommonJS support |
+| TASK-080 | P3 | todo | developer | 1d | Test bundler compatibility (Vite, esbuild, webpack) |
+
+**Dependencies:**
+- All tasks can run in parallel after TASK-006
+
+---
+
+### Epic 11: Documentation & Examples
+**Stories:** STORY-008  
+**Effort:** 10-14 days  
+**Dependencies:** All core features complete (TASK-001 through TASK-060)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-081 | P0 | todo | developer | 2d | Write comprehensive README.md with quick start guide |
+| TASK-082 | P0 | todo | developer | 1d | Create Getting Started tutorial (10 lines of code) |
+| TASK-083 | P0 | todo | developer | 2d | Write API reference documentation for all classes/interfaces |
+| TASK-084 | P0 | todo | developer | 1d | Create example: Simple chat agent |
+| TASK-085 | P0 | todo | developer | 1d | Create example: Research crew (web + file tools) |
+| TASK-086 | P1 | todo | developer | 1d | Create example: Code review crew |
+| TASK-087 | P1 | todo | developer | 1d | Create example: Data analysis pipeline |
+| TASK-088 | P1 | todo | developer | 1d | Create example: Customer support bot |
+| TASK-089 | P1 | todo | developer | 1d | Create example: Content generation workflow |
+| TASK-090 | P1 | todo | developer | 1d | Create example: Multi-step reasoning (chain-of-thought) |
+| TASK-091 | P1 | todo | developer | 1d | Create example: Autonomous task completion |
+| TASK-092 | P1 | todo | developer | 1d | Create example: Custom tool integration |
+| TASK-093 | P1 | todo | developer | 1d | Create example: Memory and learning |
+| TASK-094 | P1 | todo | developer | 2d | Write architecture deep-dive documentation |
+| TASK-095 | P2 | todo | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
+| TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
+| TASK-097 | P0 | todo | developer | 2d | Set up docs site with VitePress or Docusaurus |
+
+**Dependencies:**
+- TASK-081, TASK-082, TASK-083 are foundational
+- TASK-084 through TASK-093 (examples) can run in parallel
+- TASK-094, TASK-095, TASK-096 depend on TASK-083
+- TASK-097 hosts all documentation
+
+---
+
+### Epic 12: Community & Repository Setup
+**Stories:** STORY-009  
+**Effort:** 4-6 days  
+**Dependencies:** TASK-007 (README), TASK-081 (comprehensive docs)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-098 | P1 | todo | developer | 1d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
+| TASK-099 | P1 | todo | developer | 1d | Set up issue templates (bug, feature, question) |
+| TASK-100 | P1 | todo | developer | 0.5d | Set up PR template with checklist |
+| TASK-101 | P1 | todo | developer | 1d | Set up Discord server with channels |
+| TASK-102 | P1 | todo | developer | 0.5d | Create Twitter/X account for announcements |
+| TASK-103 | P2 | todo | developer | 1d | Configure automated welcome messages for Discord |
+| TASK-104 | P2 | todo | developer | 1d | Enable GitHub Discussions for Q&A |
+
+**Dependencies:**
+- TASK-098, TASK-099, TASK-100 are repo setup
+- TASK-101, TASK-102, TASK-103, TASK-104 are community platforms
+
+---
+
+### Epic 13: Performance & Benchmarking
+**Stories:** STORY-013  
+**Effort:** 6-8 days  
+**Dependencies:** All core features complete
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-105 | P1 | todo | developer | 2d | Design benchmark suite methodology |
+| TASK-106 | P1 | todo | developer | 2d | Implement same workflow in Crewspace, LangChain.js, CrewAI |
+| TASK-107 | P1 | todo | developer | 1d | Measure execution time, memory, token efficiency, code complexity |
+| TASK-108 | P1 | todo | developer | 1d | Set up automated benchmark CI with GitHub Actions |
+| TASK-109 | P1 | todo | developer | 1d | Publish benchmark results in docs with methodology |
+| TASK-110 | P2 | todo | developer | 1d | Add bundle size comparison analysis |
+
+**Dependencies:**
+- TASK-105 is foundation
+- TASK-106, TASK-107 depend on TASK-105
+- TASK-108, TASK-109, TASK-110 are publication tasks
+
+---
+
+### Epic 14: Release & Publishing
+**Stories:** STORY-014  
+**Effort:** 4-6 days  
+**Dependencies:** All features complete, tests passing
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-111 | P0 | todo | developer | 1d | Configure semantic versioning and CHANGELOG.md |
+| TASK-112 | P0 | todo | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
+| TASK-113 | P0 | todo | developer | 1d | Publish v0.1.0 to npm registry |
+| TASK-114 | P1 | todo | developer | 1d | Create GitHub release with release notes |
+| TASK-115 | P1 | todo | developer | 0.5d | Add npm badges to README (version, downloads, license) |
+| TASK-116 | P2 | todo | developer | 1d | Document deprecation policy for breaking changes |
+
+**Dependencies:**
+- TASK-111, TASK-112 are setup
+- TASK-113 is the actual release
+- TASK-114, TASK-115, TASK-116 are post-release tasks
+
+---
+
+### Epic 15: User Validation (Concurrent with Development)
+**Stories:** STORY-015  
+**Effort:** Ongoing (weeks 2-8)  
+**Dependencies:** TASK-113 (MVP release)
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-117 | P1 | todo | pm | 3d | Recruit and interview 10-15 TypeScript developers |
+| TASK-118 | P1 | todo | pm | 2d | Demo MVP to Show HN, /r/typescript, /r/LangChain |
+| TASK-119 | P1 | todo | pm | 1d | Collect and analyze "would you use this?" feedback |
+| TASK-120 | P1 | todo | pm | 1d | Document top 3 feature requests from early users |
+| TASK-121 | P1 | todo | pm | 1d | Write findings to company/state/research/user-validation.md |
+| TASK-122 | P0 | todo | gm | 1d | Review validation data and make go/pivot/stash decision |
+
+**Dependencies:**
+- TASK-117 can start in week 2
+- TASK-118 depends on TASK-113
+- TASK-119, TASK-120, TASK-121 depend on TASK-118
+- TASK-122 is the decision gate
+
+---
+
+## Summary: Phase 1 Task Breakdown
+
+**Total Tasks:** 122  
+**Total Effort:** 120-160 developer-days (4-5 months at 1 FTE, 2-2.5 months at 2 FTE)  
+**Critical Path:** Foundation → Core API → Tools → Orchestration → Docs → Release → Validation
+
+**Parallel Work Opportunities:**
+- Foundation (TASK-001 to TASK-010) → Single-threaded
+- Core development (TASK-011 to TASK-074) → 3-4 parallel streams possible:
+  - Stream 1: Core API + Orchestration (TASK-011 to TASK-045)
+  - Stream 2: LLM Providers (TASK-020 to TASK-027)
+  - Stream 3: Tools (TASK-028 to TASK-037)
+  - Stream 4: Memory + CLI + Logging (TASK-046 to TASK-067)
+- Documentation (TASK-081 to TASK-097) → Starts when features are 80% complete
+- Community setup (TASK-098 to TASK-104) → Parallel with docs
+- Performance testing (TASK-105 to TASK-110) → After core features complete
+- Release (TASK-111 to TASK-116) → Final phase
+- User validation (TASK-117 to TASK-122) → Concurrent with development
+
+**Risk Mitigation:**
+- Front-load P0 tasks (blocking/critical)
+- Decision gate at TASK-122 (<60% positive feedback → reassess)
+- Keep P3 tasks as stretch goals (can defer to Phase 2)
+
+---
+
 ### [STORY-001] [P0] [todo] [unassigned] — Core TypeScript Agent Framework
 **As a** TypeScript developer  
 **I want to** define and run multi-agent workflows in pure TypeScript  
