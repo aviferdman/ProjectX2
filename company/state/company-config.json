@@ -1,30 +1,66 @@
 {
-  "company_name": "ProjectX2 AI Corp",
+  "company_name": "Crewspace",
   "product_repo": "https://github.com/aviferdman/ProjectX2-Product.git",
   "product_repo_local_path": "C:\\Users\\aferdman\\OneDrive - Microsoft\\Desktop\\Meirson\\ProjectX2-Product",
   "budget_usd": 0,
   "budget_spent_usd": 0,
-  "domain": "",
-  "product_type": "",
-  "target_audience": "",
+  "domain": "agent orchestration and collaboration platform",
+  "product_type": "SaaS platform",
+  "target_audience": "developers, entrepreneurs, and business owners who want to leverage multi-agent AI systems",
   "monetization": "",
   "tech_stack": [],
-  "avoid_domains": [],
+  "avoid_domains": [
+    "cryptocurrency",
+    "gambling",
+    "weapons"
+  ],
   "max_agents": 20,
   "risk_tolerance": "moderate",
-  "time_horizon": "3 months",
-  "owner_notes": "Owner directive: prioritize products in the vibe coding domain.",
+  "time_horizon": "4 months",
+  "owner_notes": "VISION: Make agent orchestration accessible to a broader audience — just like Lovable/v0 democratized coding, do the same for multi-agent systems. Users should feel empowered to configure their own 'AI company' of specialized agents working together. INSPIRATION: Think Lovable's UX quality meets Figma's visual design meets Linear's polish. The company metaphor (hire agents, set directives, watch collaboration) should make complex orchestration intuitive. RESEARCH FIRST: Study competitors (Lovable, Base44, v0, Bolt, Replit Agent, CrewAI, AutoGen, LangGraph, Multi-On) and identify what makes orchestration hard today. Find the real pain points through user research before committing to specific features or tech choices. CREATIVE FREEDOM: The specific feature set, tech stack, and approach are for you to research and propose. The above is directional — not prescriptive.",
+  "strategic_questions_to_research": [
+    "What makes existing agent frameworks inaccessible? Is it complexity, UX, debugging, or something else?",
+    "Should this be visual-first (no-code) or code-optional (low-code with escape hatches)?",
+    "What's the right business model? Usage-based, seat-based, or hybrid?",
+    "How do we achieve Lovable-level UX quality for a more complex domain?",
+    "What's the MVP that provides immediate value while being technically achievable?",
+    "Which segment should we target first: non-developers, developers, or enterprises?",
+    "How do competitors monetize and what can we learn from their pricing?"
+  ],
+  "core_constraints": {
+    "must_haves": [
+      "Accessible to non-technical users (the 'Lovable test')",
+      "Beautiful, modern UX (Linear/Figma quality)",
+      "Real value within first 5 minutes of use",
+      "Clear differentiation from existing tools"
+    ],
+    "open_questions": [
+      "Tech stack (research best options for real-time, visual canvas, agent runtime)",
+      "Specific features (research and validate with potential users)",
+      "Pricing model (research competitor pricing and willingness to pay)",
+      "Company name and brand identity (research naming conventions in the space)"
+    ]
+  },
   "relevance_and_freshness": {
-    "research_max_source_age_days": 90,
-    "research_min_sources": 5,
-    "research_refresh_cadence_days": 7,
+    "research_max_source_age_days": 30,
+    "research_min_sources": 10,
+    "research_refresh_cadence_days": 3,
     "idea_requires_problem_evidence": true,
-    "idea_requires_competitor_check_within_days": 30,
+    "idea_requires_competitor_check_within_days": 14,
     "product_required_fields": [
       "domain",
       "product_type",
       "target_audience",
       "monetization"
+    ],
+    "must_research_topics": [
+      "Complete competitive landscape analysis (existing agent platforms and no-code tools)",
+      "User pain points with current agent orchestration tools",
+      "Lovable/v0/Bolt UX patterns and what makes them successful",
+      "Multi-agent framework adoption rates and developer sentiment",
+      "Pricing models in the no-code/low-code and AI tools space",
+      "Technical architecture patterns for real-time collaborative platforms",
+      "Market size and growth trends for agent orchestration tools"
     ]
   }
 }
