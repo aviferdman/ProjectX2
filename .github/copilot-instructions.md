@@ -4,6 +4,7 @@ This is an autonomous AI company. All agents operate within this workspace.
 
 ## Directory Structure
 
+### This Repository (Orchestration & Management Only)
 - `company/state/` — Shared state files. ALL agents read from here. Only authorized agents write.
 - `company/state/company-config.json` — Company configuration, constraints, budget
 - `company/state/project-status.md` — Current phase and project status
@@ -18,18 +19,45 @@ This is an autonomous AI company. All agents operate within this workspace.
 - `.github/instructions/` — Coding conventions and rules (modifiable by HR/GM)
 - `orchestrator/` — Orchestrator application (TypeScript/Node.js)
 
+### Product Repository (Code & Artifacts Only)
+**Location**: Configured in `company/state/company-config.json` as `product_repo` and `product_repo_local_path`
+
+**Critical Rule**: ALL product code, tests, documentation, and build artifacts MUST be created in the product repository. This orchestration repository is ONLY for company management, state, and agent definitions.
+
+Agents that create product artifacts:
+- `developer` / `backend-dev` / `frontend-dev` / specialized developers
+- `qa` (writes tests)
+- `security-eng` (writes security rules/code)
+- Any specialized engineering agents
+
+These agents MUST:
+1. Use the product repo already cloned at the local path specified in `company-config.json → product_repo_local_path`
+2. Create their branch in the product repo: `agent/<agent-id>/<task-id>`
+3. Work exclusively in the product repo
+4. NEVER create code files in this orchestration repository
+
 ## Git Workflow
 
 Every agent works on its own branch and merges via pull request:
 
+**For orchestration repository (management/state changes):**
 1. Create branch from `main`: `agent/<agent-id>/<task-id>`
 2. Do work, commit with meaningful messages
 3. Push branch and open a pull request
 4. Orchestrator auto-merges if no conflicts
 5. If conflict: the author resolves. Cross-role conflicts escalate to GM.
 
+**For product repository (code/artifacts):**
+1. Use the product repo already cloned at the path in `company-config.json → product_repo_local_path`
+2. Create branch from `main`: `agent/<agent-id>/<task-id>`
+3. Do work in product repo only, commit with meaningful messages
+4. Push branch to product repo and open a pull request
+5. Orchestrator auto-merges if no conflicts
+6. If conflict: the author resolves. Cross-role conflicts escalate to GM.
+
 ## Agent Authority Matrix
 
+### Orchestration Repository (This Repo)
 | Action | Authorized Agents |
 |--------|-------------------|
 | Modify company-config.json | gm |
@@ -38,13 +66,23 @@ Every agent works on its own branch and merges via pull request:
 | Modify backlog.md (tasks/assignments) | projm |
 | Modify decisions.md | gm (append only) |
 | Modify roster.md | hr |
-| Create/modify .agent.md files | hr |
+| Create/modify/delete .agent.md files | hr (with gm approval for firing) |
 | Create/modify .instructions.md files | hr, gm |
-| Write code in product repo | developer |
-| Write/run tests in product repo | qa, developer |
 | Write research findings | researcher, pm, gm |
 | Write to company/logs/ | all agents |
 | Write completion signals | all agents |
+
+### Product Repository (Separate Repo)
+| Action | Authorized Agents |
+|--------|-------------------|
+| Write product code | developer, backend-dev, frontend-dev, specialized devs |
+| Write/run tests | qa, developer agents |
+| Write security rules/detections | security-eng |
+| Write documentation | developer agents, technical writers |
+| Modify build config | backend-dev, devops agents |
+| Create product artifacts | any specialized engineering agent |
+
+**Golden Rule**: NO product code, tests, or build artifacts in this orchestration repository. If you're writing `.ts`, `.js`, `.py`, `.java`, etc. files for the product, you're in the WRONG repository.
 
 ## Communication Protocol
 
