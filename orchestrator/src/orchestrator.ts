@@ -1,0 +1,260 @@
+import { loadOrchestratorConfig } from './config.js';
+import { StateManager } from './state-manager.js';
+import { buildTaskGraph, getReadyTasks, isGraphComplete, hasRunningTasks } from './task-graph.js';
+import { AgentRunner } from './agent-runner.js';
+import { GitManager } from './git-manager.js';
+import { SignalWatcher } from './signal-watcher.js';
+import { Logger } from './logger.js';
+import type { TaskGraphNode, CompletionSignal, OrchestratorConfig, DeliberationState } from './types.js';
+
+const MAX_DELIBERATION_ROUNDS = 3;
+
+export class Orchestrator {
+  private config: OrchestratorConfig;
+  private logger: Logger;
+  private stateManager: StateManager;
+  private agentRunner: AgentRunner;
+  private gitManager: GitManager;
+  private signalWatcher: SignalWatcher;
+  private running = false;
+
+  constructor(companyRoot?: string) {
+    this.config = loadOrchestratorConfig(companyRoot);
+    this.logger = new Logger('info', this.config);
+    this.stateManager = new StateManager(this.config);
+    this.agentRunner = new AgentRunner({
+      config: this.config,
+      stateManager: this.stateManager,
+      logger: this.logger,
+    });
+    this.gitManager = new GitManager(this.config, this.logger);
+    this.signalWatcher = new SignalWatcher(this.config, this.logger);
+  }
+
+  async start(): Promise<void> {
+    this.running = true;
+    this.stateManager.ensureDirectories();
+    this.signalWatcher.start();
+    await this.agentRunner.start();
+
+    this.logger.info('=== ProjectX2 AI Corp — Orchestrator Starting ===');
+
+    // Load company config and validate
+    const companyConfig = this.stateManager.readCompanyConfig();
+    this.logger.info(`Company: ${companyConfig.company_name}`);
+    this.logger.info(`Budget: $${companyConfig.budget_usd} (spent: $${companyConfig.budget_spent_usd})`);
+    this.logger.info(`Domain: ${companyConfig.domain || '(agents will decide)'}`);
+
+    try {
+      while (this.running) {
+        await this.runCycle();
+      }
+    } finally {
+      await this.agentRunner.stop();
+      await this.signalWatcher.stop();
+      this.logger.info('=== Orchestrator Stopped ===');
+    }
+  }
+
+  async stop(): Promise<void> {
+    this.running = false;
+  }
+
+  async runCycle(): Promise<void> {
+    // 1. Read current state
+    const status = this.stateManager.readProjectStatus();
+    this.logger.info(`--- Cycle ${status.currentCycle + 1} | Phase: ${status.phase} ---`);
+
+    // 2. Clear signals from previous cycle
+    this.stateManager.clearSignals();
+
+    // 3. Handle deliberation state for ideation phase
+    let deliberationState: DeliberationState | undefined;
+    if (status.phase === 'ideation') {
+      deliberationState = this.stateManager.readDeliberationState() ?? undefined;
+      if (!deliberationState) {
+        deliberationState = { stage: 'proposals', round: 0 };
+        this.stateManager.writeDeliberationState(deliberationState);
+      }
+      this.logger.info(`  Deliberation: stage=${deliberationState.stage}, round=${deliberationState.round}`);
+    }
+
+    // 4. Build task graph for this phase
+    const graph = buildTaskGraph(status.phase, status.currentCycle, deliberationState);
+
+    if (graph.length === 0) {
+      this.logger.warn(`No tasks defined for phase: ${status.phase}`);
+      this.running = false;
+      return;
+    }
+
+    this.logger.info(`Task graph: ${graph.map(n => `${n.task.agentId}(${n.task.id})`).join(' → ')}`);
+
+    // 5. Execute the task graph
+    await this.executeGraph(graph);
+
+    // 6. Merge completed work
+    await this.mergeCompletedWork(graph);
+
+    // 7. Advance deliberation state if in ideation
+    if (status.phase === 'ideation' && deliberationState) {
+      this.advanceDeliberationState(deliberationState);
+    }
+
+    // 8. Increment cycle counter
+    this.stateManager.updateProjectStatus({ currentCycle: status.currentCycle + 1 });
+
+    // 9. Log cycle completion
+    const stageInfo = deliberationState ? ` (${deliberationState.stage} r${deliberationState.round})` : '';
+    this.stateManager.writeLog(
+      'orchestrator',
+      `Cycle ${status.currentCycle + 1} Complete`,
+      `Phase: ${status.phase}${stageInfo}. Tasks: ${graph.filter(n => n.status === 'completed').length}/${graph.length} completed.`
+    );
+
+    // 10. Brief pause between cycles
+    if (this.running) {
+      await this.delay(2000);
+    }
+  }
+
+  private async executeGraph(graph: TaskGraphNode[]): Promise<void> {
+    while (!isGraphComplete(graph) && this.running) {
+      const readyTasks = getReadyTasks(graph);
+
+      if (readyTasks.length === 0 && !hasRunningTasks(graph)) {
+        // Deadlock or all remaining tasks have failed dependencies
+        this.logger.error('No tasks ready and none running — possible deadlock');
+        break;
+      }
+
+      if (readyTasks.length === 0) {
+        // Wait for running tasks to complete
+        await this.delay(1000);
+        continue;
+      }
+
+      // Execute ready tasks one at a time so each task's output is
+      // visible to subsequent tasks via local merge to main.
+      for (const node of readyTasks) {
+        if (!this.running) break;
+
+        node.status = 'running';
+        this.logger.info(`Dispatching: ${node.task.agentId} (${node.task.id})`);
+
+        try {
+          // Create branch for this agent's work
+          try {
+            this.gitManager.createBranch(node.task.branchName);
+          } catch {
+            this.logger.warn(`Branch ${node.task.branchName} may already exist, attempting checkout`);
+            try {
+              this.gitManager.checkoutBranch(node.task.branchName);
+            } catch {
+              node.status = 'failed';
+              continue;
+            }
+          }
+
+          // Run the agent (it works in the current working directory)
+          const signal = await this.agentRunner.runAgent(node.task);
+
+          // Commit any changes the agent made on its branch
+          try {
+            this.gitManager.commitAll(`[${node.task.id}] ${node.task.agentId} work`);
+          } catch {
+            this.logger.warn(`No changes to commit for ${node.task.id}`);
+          }
+
+          // Merge the branch locally into main so the next task can see the output
+          try {
+            this.gitManager.mergeLocallyToMain(node.task.branchName);
+            this.gitManager.deleteBranch(node.task.branchName);
+          } catch {
+            this.logger.warn(`Local merge failed for ${node.task.branchName}, falling back to checkout main`);
+            this.gitManager.checkoutMain();
+          }
+
+          // Handle the result
+          if (signal.status === 'success') {
+            node.status = 'completed';
+          } else {
+            this.logger.error(`Task ${node.task.id} failed: ${signal.summary}`);
+            node.status = 'failed';
+          }
+        } catch (err: unknown) {
+          const msg = err instanceof Error ? err.message : String(err);
+          this.logger.error(`Task ${node.task.id} threw: ${msg}`);
+          node.status = 'failed';
+          // Try to get back to main even on failure
+          try { this.gitManager.checkoutMain(); } catch { /* best effort */ }
+        }
+      }
+    }
+  }
+
+  private async mergeCompletedWork(graph: TaskGraphNode[]): Promise<void> {
+    this.gitManager.checkoutMain();
+
+    const completedCount = graph.filter(n => n.status === 'completed').length;
+    if (completedCount === 0) return;
+
+    // All work was already merged locally during executeGraph.
+    // Push main to sync with remote.
+    try {
+      this.gitManager.pushBranch('main');
+      this.logger.info(`Pushed main with ${completedCount} merged task(s)`);
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      this.logger.warn(`Failed to push main to remote: ${msg}`);
+    }
+  }
+
+  /**
+   * Advance the deliberation state machine after an ideation cycle completes.
+   * proposals → challenges(1) → convergence(1) → challenges(2)/final-decision → ...
+   */
+  private advanceDeliberationState(current: DeliberationState): void {
+    let next: DeliberationState;
+
+    switch (current.stage) {
+      case 'proposals':
+        next = { stage: 'challenges', round: 1 };
+        this.logger.info('Deliberation: proposals complete → starting challenge round 1');
+        break;
+
+      case 'challenges':
+        next = { stage: 'convergence', round: current.round };
+        this.logger.info(`Deliberation: challenge round ${current.round} complete → convergence vote`);
+        break;
+
+      case 'convergence': {
+        const converged = this.stateManager.checkConvergence(current.round);
+        const maxReached = current.round >= MAX_DELIBERATION_ROUNDS;
+
+        if (converged) {
+          next = { stage: 'final-decision', round: current.round };
+          this.logger.info(`Deliberation: all agents satisfied at round ${current.round} → final decision`);
+        } else if (maxReached) {
+          next = { stage: 'final-decision', round: current.round };
+          this.logger.warn(`Deliberation: max rounds (${MAX_DELIBERATION_ROUNDS}) reached without full consensus → forcing final decision`);
+        } else {
+          next = { stage: 'challenges', round: current.round + 1 };
+          this.logger.info(`Deliberation: no consensus at round ${current.round} → challenge round ${current.round + 1}`);
+        }
+        break;
+      }
+
+      case 'final-decision':
+        // Phase transition is handled by GM agent updating project-status.md
+        this.logger.info('Deliberation: final decision complete — GM should advance phase to planning');
+        return;
+    }
+
+    this.stateManager.writeDeliberationState(next);
+  }
+
+  private delay(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+}

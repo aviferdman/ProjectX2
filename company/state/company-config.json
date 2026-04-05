@@ -1,0 +1,30 @@
+{
+  "company_name": "ProjectX2 AI Corp",
+  "product_repo": "https://github.com/aviferdman/ProjectX2-Product.git",
+  "product_repo_local_path": "",
+  "budget_usd": 0,
+  "budget_spent_usd": 0,
+  "domain": "",
+  "product_type": "",
+  "target_audience": "",
+  "monetization": "",
+  "tech_stack": [],
+  "avoid_domains": [],
+  "max_agents": 20,
+  "risk_tolerance": "moderate",
+  "time_horizon": "3 months",
+  "owner_notes": "Owner directive: prioritize products in the vibe coding domain.",
+  "relevance_and_freshness": {
+    "research_max_source_age_days": 90,
+    "research_min_sources": 5,
+    "research_refresh_cadence_days": 7,
+    "idea_requires_problem_evidence": true,
+    "idea_requires_competitor_check_within_days": 30,
+    "product_required_fields": [
+      "domain",
+      "product_type",
+      "target_audience",
+      "monetization"
+    ]
+  }
+}

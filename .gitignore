@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+orchestrator/dist/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+
+# Logs (tracked via company/logs/, but ignore temp files)
+*.log
+
+# Environment
+.env
+.env.*
+
+# Runtime signals (ephemeral, cleared each cycle)
+company/state/signals/*.json
