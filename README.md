@@ -55,7 +55,10 @@ The orchestrator uses `@github/copilot-sdk` to programmatically create sessions 
 | PM | Product vision, feature prioritization, stories | Claude Sonnet 4.5 |
 | ProjM | Sprint planning, task decomposition, assignments | Claude Sonnet 4.5 |
 | Researcher | Market research, competitive analysis | Claude Sonnet 4.5 |
-| Developer | Code implementation | Claude Opus 4.6 |
+| Designer | Visual design, branding, UI design system | Claude Sonnet 4.5 |
+| UX/UI | User experience, wireframes, interaction design | Claude Sonnet 4.5 |
+| Frontend Dev | UI implementation, client-side code | Claude Opus 4.6 |
+| Developer | Backend/general code implementation | Claude Opus 4.6 |
 | QA | Testing, code review | Claude Sonnet 4.5 |
 | HR | Agent/convention management | Claude Sonnet 4.5 |
 | Liaison | Owner communication | Claude Sonnet 4.5 |
