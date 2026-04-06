@@ -43,7 +43,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-005 | P0 | done | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
 | TASK-006 | P0 | done | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
 | TASK-007 | P0 | done | developer | 0.5d | Add MIT LICENSE file and initial README.md | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-008 | P1 | review | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
+| TASK-008 | P1 | review | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) | ⚠️ Conditional approval — re-test after file locking resolved (cycle 24) |
 | TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
 
@@ -58,13 +58,13 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-011 | P0 | review | developer | 2d | Design and implement Agent class with TypeScript types | ✅ Code quality fixes applied (cycle 22) — READY FOR RE-QA |
-| TASK-012 | P0 | review | developer | 2d | Design and implement Crew class for multi-agent orchestration | ✅ Non-null assertions replaced with type guards, formatting fixed (cycle 22) — READY FOR RE-QA |
+| TASK-011 | P0 | done | developer | 2d | Design and implement Agent class with TypeScript types | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
+| TASK-012 | P0 | done | developer | 2d | Design and implement Crew class for multi-agent orchestration | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
 | TASK-013 | P0 | done | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-014 | P0 | review | developer | 2d | Implement event-driven execution engine (EventEmitter-based) | ✅ TypeScript errors fixed: Node types added to tsconfig (cycle 22) — READY FOR RE-QA |
+| TASK-014 | P0 | done | developer | 2d | Implement event-driven execution engine (EventEmitter-based) | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
 | TASK-015 | P0 | done | developer | 1d | Add input validation with Zod schemas for all configs | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-016 | P0 | review | developer | 2d | Write unit tests for Agent class (>80% coverage) | ✅ ESLint test overrides applied, unused imports removed (cycle 22) — READY FOR RE-QA |
-| TASK-017 | P0 | review | developer | 2d | Write unit tests for Crew class (>80% coverage) | ✅ 76 tests, 97.5% stmts / 84.9% branches / 100% funcs (cycle 23) — READY FOR QA |
+| TASK-016 | P0 | done | developer | 2d | Write unit tests for Agent class (>80% coverage) | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
+| TASK-017 | P0 | done | developer | 2d | Write unit tests for Crew class (>80% coverage) | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
 | TASK-018 | P1 | todo | developer | 1d | Add JSDoc comments to all public APIs |
 | TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
 
