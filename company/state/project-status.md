@@ -79,11 +79,11 @@ None — Development pipeline is empty. Awaiting task assignments.
 
 ### Recommendations & Next Steps (Priority Order)
 
-**IMMEDIATE ACTIONS REQUIRED (Cycle 77):**
+**IMMEDIATE ACTIONS REQUIRED (Cycle 78):**
 
 1. **🚨 Project Manager (PRIORITY 1 — ASSIGN P0 CRITICAL PATH TASKS):**
    - **TASK-112 (P0)** — Set up automated npm publish pipeline [developer] — 2d
-     - **Status:** READY TO START (dependency TASK-111 completed ✅)
+     - **Status:** READY TO START (no dependencies in active task tables)
      - **Impact:** Blocks TASK-113 (publish v0.1.0)
      - **Action:** Assign to developer IMMEDIATELY
    - **TASK-122 (P0)** — Review validation data and make go/pivot/stash decision [gm] — 1d
@@ -94,7 +94,7 @@ None — Development pipeline is empty. Awaiting task assignments.
 
 2. **🚨 Developer (PRIORITY 2 — START TASK-112 IMMEDIATELY):**
    - **Task:** TASK-112 — Set up automated npm publish pipeline with GitHub Actions
-   - **Status:** Unblocked (TASK-111 semver complete)
+   - **Status:** Ready to start
    - **Process:** Mark `in-progress`, commit frequently, signal on completion
    - **Target:** Start within 2 hours of assignment, complete within 2 days
 
@@ -103,9 +103,9 @@ None — Development pipeline is empty. Awaiting task assignments.
    - **Process:** Review metrics, user feedback, market position, make strategic decision
    - **Target:** Decision documented in decisions.md within 1 day
 
-4. **QA (PRIORITY 4 — REVIEW P2 TASK):**
-   - **Review TASK-064 (P2)** — Implement performance metrics tracking
-   - **Impact:** Low priority (P2), does not block critical path
+4. **QA (PRIORITY 4 — REVIEW P1 TASK):**
+   - **Review TASK-087 (P1)** — Create example: Data analysis pipeline
+   - **Impact:** Medium priority (P1), provides example for users
    - **Target:** Review when bandwidth available
 
 ### Phase Gate Status
