@@ -63,7 +63,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-013 | P0 | review | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) |
 | TASK-014 | P0 | review | developer | 2d | Implement event-driven execution engine (EventEmitter-based) |
 | TASK-015 | P0 | review | developer | 1d | Add input validation with Zod schemas for all configs |
-| TASK-016 | P0 | todo | developer | 2d | Write unit tests for Agent class (>80% coverage) |
+| TASK-016 | P0 | review | developer | 2d | Write unit tests for Agent class (>80% coverage) |
 | TASK-017 | P0 | todo | developer | 2d | Write unit tests for Crew class (>80% coverage) |
 | TASK-018 | P1 | todo | developer | 1d | Add JSDoc comments to all public APIs |
 | TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
