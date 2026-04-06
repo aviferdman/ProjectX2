@@ -53,3 +53,15 @@
 | TASK-036 | P1 | done | developer | 1d | Write tests for custom tool decorator API |
 | TASK-046 | P1 | done | developer | 2d | Design memory architecture (short-term + long-term) |
 | TASK-084 | P0 | done | developer | 1d | Create example: Simple chat agent |
+| TASK-037 | P2 | done | developer | 1d | Add rate limiting to web tool to prevent abuse |
+| TASK-047 | P1 | done | developer | 2d | Implement short-term memory (conversation history in-memory) |
+| TASK-048 | P1 | done | developer | 3d | Implement long-term memory with SQLite persistence |
+| TASK-049 | P1 | done | developer | 1d | Add memory search and query API |
+| TASK-052 | P2 | done | developer | 1d | Implement memory export/import for debugging |
+| TASK-061 | P2 | done | developer | 2d | Design structured logging architecture with Winston/Pino |
+| TASK-062 | P2 | done | developer | 2d | Implement log levels (DEBUG, INFO, WARN, ERROR) |
+| TASK-063 | P2 | done | developer | 1d | Add timestamped logs with agent/task/action metadata |
+| TASK-066 | P2 | done | developer | 1d | Implement sensitive data masking (API keys, PII) |
+| TASK-067 | P2 | done | developer | 1d | Write tests for logging system |
+| TASK-084 | P0 | done | developer | 1d | Create example: Simple chat agent |
+| TASK-085 | P0 | done | developer | 1d | Create example: Research crew (web + file tools) |

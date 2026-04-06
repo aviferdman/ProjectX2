@@ -132,7 +132,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-037 | P2 | done | developer | 1d | Add rate limiting to web tool to prevent abuse |
 
 **Dependencies:**
 - TASK-029, TASK-030, TASK-031 depend on TASK-028
@@ -164,12 +163,8 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-047 | P1 | done | developer | 2d | Implement short-term memory (conversation history in-memory) |
-| TASK-048 | P1 | done | developer | 3d | Implement long-term memory with SQLite persistence |
-| TASK-049 | P1 | done | developer | 1d | Add memory search and query API |
 | TASK-050 | P2 | todo | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
 | TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
-| TASK-052 | P2 | done | developer | 1d | Implement memory export/import for debugging |
 | TASK-053 | P1 | todo | developer | 2d | Write tests for memory system (>80% coverage) |
 
 **Dependencies:**
@@ -210,13 +205,8 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-061 | P2 | done | developer | 2d | Design structured logging architecture with Winston/Pino |
-| TASK-062 | P2 | done | developer | 2d | Implement log levels (DEBUG, INFO, WARN, ERROR) |
-| TASK-063 | P2 | done | developer | 1d | Add timestamped logs with agent/task/action metadata |
 | TASK-064 | P2 | todo | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
 | TASK-065 | P2 | todo | developer | 1d | Add log export to file and stdout |
-| TASK-066 | P2 | done | developer | 1d | Implement sensitive data masking (API keys, PII) |
-| TASK-067 | P2 | done | developer | 1d | Write tests for logging system |
 
 **Dependencies:**
 - TASK-061 is foundation
@@ -273,8 +263,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-084 | P0 | done | developer | 1d | Create example: Simple chat agent |
-| TASK-085 | P0 | done | developer | 1d | Create example: Research crew (web + file tools) |
 | TASK-086 | P1 | todo | developer | 1d | Create example: Code review crew |
 | TASK-087 | P1 | todo | developer | 1d | Create example: Data analysis pipeline |
 | TASK-088 | P1 | todo | developer | 1d | Create example: Customer support bot |
