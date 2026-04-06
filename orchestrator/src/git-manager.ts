@@ -175,6 +175,96 @@ export class GitManager {
     return result.trim().length > 0;
   }
 
+  /**
+   * Fetch latest refs from remote.
+   */
+  fetch(cwd?: string): void {
+    const workDir = cwd ?? this.config.companyRoot;
+    this.git(['fetch', 'origin', '--prune'], workDir);
+  }
+
+  /**
+   * Pull latest changes for the current branch from origin.
+   */
+  pull(cwd?: string): void {
+    const workDir = cwd ?? this.config.companyRoot;
+    this.git(['pull', 'origin', this.getCurrentBranch(workDir)], workDir);
+  }
+
+  /**
+   * List remote branches matching a substring pattern.
+   * Returns branch names without the `origin/` prefix.
+   */
+  listRemoteBranches(pattern?: string, cwd?: string): string[] {
+    const workDir = cwd ?? this.config.companyRoot;
+    try {
+      const result = execSync('git branch -r', { cwd: workDir, encoding: 'utf-8', stdio: 'pipe' });
+      const branches = result
+        .split('\n')
+        .map(line => line.trim())
+        .filter(line => line && !line.includes('HEAD'))
+        .map(line => line.replace(/^origin\//, ''));
+
+      if (pattern) {
+        return branches.filter(branch => branch.includes(pattern));
+      }
+      return branches;
+    } catch {
+      return [];
+    }
+  }
+
+  /**
+   * Check if a remote branch has commits that are NOT in main.
+   * Returns false if the branch is already fully merged or doesn't exist.
+   */
+  branchHasNewCommits(branchName: string, cwd?: string): boolean {
+    const workDir = cwd ?? this.config.companyRoot;
+    try {
+      const count = execSync(
+        `git rev-list --count origin/main..origin/${branchName}`,
+        { cwd: workDir, encoding: 'utf-8', stdio: 'pipe' }
+      ).trim();
+      return parseInt(count, 10) > 0;
+    } catch {
+      return false;
+    }
+  }
+
+  /**
+   * Get the open PR number for a branch, if one exists.
+   * Returns null if no open PR exists.
+   */
+  getPRForBranch(branchName: string, cwd?: string): number | null {
+    const workDir = cwd ?? this.config.companyRoot;
+    try {
+      const result = execSync(
+        `${this.config.ghCliPath} pr list --head ${branchName} --state open --json number --jq ".[0].number"`,
+        { cwd: workDir, encoding: 'utf-8', stdio: 'pipe' }
+      ).trim();
+      if (result && result !== 'null' && result !== '') {
+        const num = parseInt(result, 10);
+        return isNaN(num) ? null : num;
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  }
+
+  /**
+   * Delete a remote branch.
+   */
+  deleteRemoteBranch(branchName: string, cwd?: string): void {
+    const workDir = cwd ?? this.config.companyRoot;
+    try {
+      this.git(['push', 'origin', '--delete', branchName], workDir);
+      this.logger.debug(`Deleted remote branch: ${branchName}`);
+    } catch {
+      this.logger.debug(`Could not delete remote branch ${branchName}`);
+    }
+  }
+
   private git(args: string[], cwd: string): string {
     const cmd = `git ${args.map(a => a.includes(' ') || a.includes('[') ? `"${a}"` : a).join(' ')}`;
     

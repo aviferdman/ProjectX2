@@ -45,6 +45,15 @@ export class Orchestrator {
     this.logger.info(`Budget: $${companyConfig.budget_usd} (spent: $${companyConfig.budget_spent_usd})`);
     this.logger.info(`Domain: ${companyConfig.domain || '(agents will decide)'}`);
 
+    // Load product repo path from company config
+    if (companyConfig.product_repo_local_path) {
+      this.config.productRepoPath = companyConfig.product_repo_local_path;
+      this.logger.info(`Product repo: ${this.config.productRepoPath}`);
+    }
+
+    // Clean up stale agent branches in both repos before starting cycles
+    await this.cleanupStaleBranches();
+
     try {
       while (this.running) {
         await this.runCycle();
@@ -208,6 +217,102 @@ export class Orchestrator {
       const msg = err instanceof Error ? err.message : String(err);
       this.logger.warn(`Failed to push main to remote: ${msg}`);
     }
+  }
+
+  /**
+   * On startup, scan both repos for stale agent branches that are already
+   * merged into main (0 commits ahead) and clean them up.  For branches
+   * that DO have unmerged commits and an open PR, attempt auto-merge.
+   */
+  private async cleanupStaleBranches(): Promise<void> {
+    // Process orchestration repo
+    this.logger.info('=== Cleaning up orchestration repo branches ===');
+    await this.processRepoBranches(this.config.companyRoot);
+
+    // Process product repo if configured
+    if (this.config.productRepoPath) {
+      this.logger.info('=== Cleaning up product repo branches ===');
+      await this.processRepoBranches(this.config.productRepoPath);
+    }
+  }
+
+  /**
+   * For a single repo, fetch, list agent branches, and handle each one:
+   *  - Already merged (0 commits ahead) → delete remote branch
+   *  - Has unmerged commits + existing PR  → try auto-merge
+   *  - Has unmerged commits + no PR        → create PR then try auto-merge
+   *  - Errors → log and skip
+   */
+  private async processRepoBranches(repoPath: string): Promise<void> {
+    try {
+      this.gitManager.checkoutMain(repoPath);
+      this.gitManager.fetch(repoPath);
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      this.logger.warn(`Could not fetch repo at ${repoPath}: ${msg}`);
+      return;
+    }
+
+    const branches = this.gitManager.listRemoteBranches('agent/', repoPath);
+    if (branches.length === 0) {
+      this.logger.info('No agent branches found');
+      return;
+    }
+
+    this.logger.info(`Found ${branches.length} agent branch(es)`);
+
+    let cleaned = 0;
+    let merged = 0;
+    let skipped = 0;
+
+    for (const branch of branches) {
+      // 1) Does the branch have commits not yet in main?
+      if (!this.gitManager.branchHasNewCommits(branch, repoPath)) {
+        // Already fully merged — clean up the stale remote branch
+        this.gitManager.deleteRemoteBranch(branch, repoPath);
+        cleaned++;
+        continue;
+      }
+
+      // 2) Branch has unmerged work — check for existing open PR
+      let prNumber = this.gitManager.getPRForBranch(branch, repoPath);
+
+      if (!prNumber) {
+        // Create a new PR
+        const title = `[Agent Work] ${branch}`;
+        const body = `Automated PR for agent branch: ${branch}`;
+        prNumber = this.gitManager.createPR(branch, title, body, repoPath);
+        if (!prNumber) {
+          this.logger.warn(`Skipping ${branch} — could not create PR`);
+          skipped++;
+          continue;
+        }
+      }
+
+      // 3) Try to auto-merge (conflicts will cause a skip)
+      if (this.gitManager.hasConflicts(branch, repoPath)) {
+        this.logger.warn(`PR #${prNumber} (${branch}) has conflicts — skipping`);
+        this.gitManager.checkoutMain(repoPath);
+        skipped++;
+        continue;
+      }
+
+      if (this.gitManager.mergePR(prNumber, repoPath)) {
+        merged++;
+      } else {
+        skipped++;
+      }
+    }
+
+    // Sync local main after merges
+    if (merged > 0) {
+      try {
+        this.gitManager.checkoutMain(repoPath);
+        this.gitManager.pull(repoPath);
+      } catch { /* best effort */ }
+    }
+
+    this.logger.info(`Done — cleaned: ${cleaned}, merged: ${merged}, skipped: ${skipped}`);
   }
 
   /**
