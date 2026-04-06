@@ -302,8 +302,11 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | TASK-087 | P1 | review | developer | 1d | Create example: Data analysis pipeline |
 =======
+=======
+>>>>>>> agent/developer/development-developer-c78
 | TASK-087 | P1 | todo | developer | 1d | Create example: Data analysis pipeline |
 >>>>>>> agent/developer/development-developer-c8
 | TASK-088 | P1 | todo | developer | 1d | Create example: Customer support bot |
