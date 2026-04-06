@@ -149,10 +149,12 @@ export class Orchestrator {
         if (!this.running) break;
 
         node.status = 'running';
+        const isDeveloper = node.task.agentId === 'developer';
+        const productRepo = this.config.productRepoPath;
         this.logger.info(`Dispatching: ${node.task.agentId} (${node.task.id})`);
 
         try {
-          // Create branch for this agent's work
+          // Create branch for this agent's work (company repo)
           try {
             this.gitManager.createBranch(node.task.branchName);
           } catch {
@@ -165,10 +167,26 @@ export class Orchestrator {
             }
           }
 
-          // Run the agent (it works in the current working directory)
+          // For developer tasks, also create branch in product repo
+          if (isDeveloper && productRepo) {
+            try {
+              this.gitManager.createBranch(node.task.branchName, productRepo);
+            } catch {
+              this.logger.warn(`Product repo branch ${node.task.branchName} may already exist`);
+              try {
+                this.gitManager.checkoutBranch(node.task.branchName, productRepo);
+              } catch {
+                this.logger.error(`Cannot set up product repo branch for ${node.task.id}`);
+                node.status = 'failed';
+                continue;
+              }
+            }
+          }
+
+          // Run the agent (developer works in product repo, others in company repo)
           const signal = await this.agentRunner.runAgent(node.task);
 
-          // Commit any changes the agent made on its branch
+          // Commit any changes the agent made on its branch (company repo)
           try {
             this.gitManager.commitAll(`[${node.task.id}] ${node.task.agentId} work`);
           } catch {
@@ -184,6 +202,23 @@ export class Orchestrator {
             this.gitManager.checkoutMain();
           }
 
+          // For developer tasks, also commit and merge product repo changes
+          if (isDeveloper && productRepo) {
+            try {
+              this.gitManager.commitAll(`[${node.task.id}] ${node.task.agentId} work`, productRepo);
+            } catch {
+              this.logger.warn(`No product repo changes to commit for ${node.task.id}`);
+            }
+            try {
+              this.gitManager.mergeLocallyToMain(node.task.branchName, productRepo);
+              this.gitManager.deleteBranch(node.task.branchName, productRepo);
+              this.logger.info(`Merged developer work into product repo main`);
+            } catch {
+              this.logger.warn(`Product repo merge failed for ${node.task.branchName}`);
+              try { this.gitManager.checkoutMain(productRepo); } catch { /* best effort */ }
+            }
+          }
+
           // Handle the result
           if (signal.status === 'success') {
             node.status = 'completed';
@@ -197,6 +232,9 @@ export class Orchestrator {
           node.status = 'failed';
           // Try to get back to main even on failure
           try { this.gitManager.checkoutMain(); } catch { /* best effort */ }
+          if (isDeveloper && productRepo) {
+            try { this.gitManager.checkoutMain(productRepo); } catch { /* best effort */ }
+          }
         }
       }
     }
@@ -216,6 +254,19 @@ export class Orchestrator {
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       this.logger.warn(`Failed to push main to remote: ${msg}`);
+    }
+
+    // Also push product repo main if developer work was completed
+    const hasDeveloperWork = graph.some(n => n.task.agentId === 'developer' && n.status === 'completed');
+    if (hasDeveloperWork && this.config.productRepoPath) {
+      try {
+        this.gitManager.checkoutMain(this.config.productRepoPath);
+        this.gitManager.pushBranch('main', this.config.productRepoPath);
+        this.logger.info('Pushed product repo main');
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        this.logger.warn(`Failed to push product repo main: ${msg}`);
+      }
     }
   }
 

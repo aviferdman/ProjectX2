@@ -129,6 +129,7 @@ export class AgentRunner {
       lines.push('## Developer-Specific Instructions');
       lines.push(`Your working directory is the PRODUCT REPO: ${this.config.productRepoPath}`);
       lines.push(`The company state files (backlog, project-status, decisions) are in: ${this.config.companyRoot}/company/state/`);
+      lines.push('IMPORTANT: Do NOT create or manage git branches. The orchestrator handles branching, committing, and merging for you. You are already on the correct branch.');
       lines.push('IMPORTANT: Do NOT spend time fixing formatting or linting issues unless that is your assigned task.');
       lines.push('IMPORTANT: Pick ONE task from the backlog, implement it, write tests, and commit. Do not try to do multiple tasks.');
       lines.push('IMPORTANT: Focus on writing CODE in the product repo. Minimize time reading state files — just find your next task and start coding.');

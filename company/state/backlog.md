@@ -86,10 +86,10 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-020 | P0 | done | developer | 2d | Design LLMProvider interface with streaming support | ✅ QA APPROVED (cycle 26) — READY TO MERGE |
 | TASK-021 | P0 | done | developer | 2d | Implement OpenAI provider (GPT-4o, GPT-4o-mini) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
 | TASK-022 | P0 | done | developer | 2d | Implement Anthropic provider (Claude 3.5 Sonnet/Haiku) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
-| TASK-023 | P1 | done | developer | 1d | Implement Ollama provider for local models | ✅ QA APPROVED (cycle 53) — READY TO MERGE |
+| TASK-023 | P1 | done | developer | 1d | Implement Ollama provider for local models | ✅ QA APPROVED (cycle 53) — MERGED TO MAIN |
 | TASK-024 | P0 | done | developer | 1d | Add exponential backoff retry logic for rate limits | ✅ QA APPROVED (cycle 31) — MERGED TO MAIN |
 | TASK-025 | P0 | done | developer | 1d | Implement token usage tracking and cost calculation | ✅ QA APPROVED (cycle 43) — MERGED TO MAIN |
-| TASK-026 | P1 | todo | developer | 1d | Add provider fallback mechanism (primary → secondary) |
+| TASK-026 | P1 | done | developer | 1d | Add provider fallback mechanism (primary → secondary) | ✅ IMPLEMENTED (cycle 57) — MERGED TO MAIN |
 | TASK-027 | P0 | done | developer | 2d | Write tests for all LLM providers with mocked responses | ✅ QA APPROVED (cycle 43) — MERGED TO MAIN |
 
 **Dependencies:**
@@ -132,13 +132,13 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-038 | P0 | review | developer | 2d | Design Task class with dependency DAG support |
-| TASK-039 | P0 | review | developer | 2d | Implement topological sort for task dependency resolution | 🔵 DEVELOPER COMPLETE — Awaiting QA (blocked by formatting issues) |
-| TASK-040 | P0 | done | developer | 2d | Add parallel execution support for independent tasks | ✅ QA APPROVED — 63 tests passing, zero defects, ready for merge |
-| TASK-041 | P0 | done | developer | 1d | Implement task context passing (previous outputs → next task) | ✅ QA APPROVED — 43 tests passing, zero defects, ready for merge |
+| TASK-039 | P0 | done | developer | 2d | Implement topological sort for task dependency resolution | ✅ QA APPROVED — MERGED TO MAIN |
+| TASK-040 | P0 | done | developer | 2d | Add parallel execution support for independent tasks | ✅ QA APPROVED — MERGED TO MAIN |
+| TASK-041 | P0 | done | developer | 1d | Implement task context passing (previous outputs → next task) | ✅ QA APPROVED — MERGED TO MAIN |
 | TASK-042 | P1 | todo | developer | 1d | Add task timeout and retry configuration |
 | TASK-043 | P1 | todo | developer | 1d | Detect and error on circular dependencies |
 | TASK-044 | P1 | todo | developer | 1d | Generate text-based task plan tree for CLI output |
-| TASK-045 | P0 | todo | developer | 2d | Write tests for task orchestration and dependency handling |
+| TASK-045 | P0 | done | developer | 2d | Write tests for task orchestration and dependency handling | ✅ IMPLEMENTED (cycle 54) — MERGED TO MAIN |
 
 **Dependencies:**
 - TASK-038 is foundation
