@@ -301,7 +301,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-086 | P1 | done | developer | 1d | Create example: Code review crew |
 | TASK-087 | P1 | todo | developer | 1d | Create example: Data analysis pipeline |
 | TASK-088 | P1 | todo | developer | 1d | Create example: Customer support bot |
 | TASK-089 | P1 | todo | developer | 1d | Create example: Content generation workflow |
@@ -312,7 +311,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-094 | P1 | todo | developer | 2d | Write architecture deep-dive documentation |
 | TASK-095 | P2 | todo | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
 | TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
-| TASK-097 | P0 | done | developer | 2d | Set up docs site with VitePress or Docusaurus |
 
 **Dependencies:**
 - TASK-081, TASK-082, TASK-083 are foundational
@@ -371,7 +369,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-111 | P0 | done | developer | 1d | Configure semantic versioning and CHANGELOG.md |
 | TASK-112 | P0 | todo | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
 | TASK-113 | P0 | todo | developer | 1d | Publish v0.1.0 to npm registry |
 | TASK-114 | P1 | todo | developer | 1d | Create GitHub release with release notes |
