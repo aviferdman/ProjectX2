@@ -83,8 +83,8 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-033 | P1 | review | developer | 1d | Add Zod-based schema validation for tool inputs |
-| TASK-034 | P1 | todo | developer | 1d | Implement tool composition (tools calling tools) |
+| TASK-033 | P1 | blocked | developer | 1d | Add Zod-based schema validation for tool inputs |
+| TASK-034 | P1 | review | developer | 1d | Implement tool composition (tools calling tools) |
 | TASK-036 | P1 | todo | developer | 1d | Write tests for custom tool decorator API |
 | TASK-037 | P2 | todo | developer | 1d | Add rate limiting to web tool to prevent abuse |
 
@@ -102,7 +102,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-043 | P1 | review | developer | 1d | Detect and error on circular dependencies |
+| TASK-043 | P1 | blocked | developer | 1d | Detect and error on circular dependencies |
 
 **Dependencies:**
 - TASK-038 is foundation
@@ -229,8 +229,13 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
+<<<<<<< HEAD
 | TASK-081 | P0 | review | developer | 2d | Write comprehensive README.md with quick start guide |
 | TASK-082 | P0 | review | developer | 1d | Create Getting Started tutorial (10 lines of code) |
+=======
+| TASK-081 | P0 | done | developer | 2d | Write comprehensive README.md with quick start guide |
+| TASK-082 | P0 | todo | developer | 1d | Create Getting Started tutorial (10 lines of code) |
+>>>>>>> agent/developer/development-developer-c65
 | TASK-083 | P0 | todo | developer | 2d | Write API reference documentation for all classes/interfaces |
 | TASK-084 | P0 | todo | developer | 1d | Create example: Simple chat agent |
 | TASK-085 | P0 | todo | developer | 1d | Create example: Research crew (web + file tools) |
