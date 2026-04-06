@@ -239,7 +239,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-081 | P0 | todo | developer | 2d | Write comprehensive README.md with quick start guide |
+| TASK-081 | P0 | review | developer | 2d | Write comprehensive README.md with quick start guide |
 | TASK-082 | P0 | todo | developer | 1d | Create Getting Started tutorial (10 lines of code) |
 | TASK-083 | P0 | todo | developer | 2d | Write API reference documentation for all classes/interfaces |
 | TASK-084 | P0 | todo | developer | 1d | Create example: Simple chat agent |
