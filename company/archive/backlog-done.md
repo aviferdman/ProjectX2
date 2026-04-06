@@ -68,3 +68,9 @@
 | TASK-086 | P1 | done | developer | 1d | Create example: Code review crew |
 | TASK-097 | P0 | done | developer | 2d | Set up docs site with VitePress or Docusaurus |
 | TASK-111 | P0 | done | developer | 1d | Configure semantic versioning and CHANGELOG.md |
+| TASK-009 | P1 | done | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
+| TASK-018 | P1 | done | developer | 1d | Add JSDoc comments to all public APIs |
+| TASK-019 | P1 | done | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
+| TASK-054 | P1 | done | developer | 2d | Set up CLI with Commander.js and proper argument parsing |
+| TASK-055 | P1 | done | developer | 2d | Implement `npx crewspace init` scaffolding command |
+| TASK-112 | P0 | done | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |

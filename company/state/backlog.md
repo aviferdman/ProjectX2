@@ -123,7 +123,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-009 | P1 | done | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
 
 **Dependencies:** TASK-001 must complete before TASK-002 through TASK-010
@@ -137,8 +136,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-018 | P1 | done | developer | 1d | Add JSDoc comments to all public APIs |
-| TASK-019 | P1 | done | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
 
 **Dependencies:** 
 - TASK-011, TASK-012, TASK-013 can run in parallel after TASK-006
@@ -220,8 +217,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-054 | P1 | done | developer | 2d | Set up CLI with Commander.js and proper argument parsing |
-| TASK-055 | P1 | done | developer | 2d | Implement `npx crewspace init` scaffolding command |
 | TASK-056 | P1 | todo | developer | 1d | Implement `npx crewspace run <file>` execution command |
 | TASK-057 | P1 | todo | developer | 1d | Implement `npx crewspace validate <file>` syntax checker |
 | TASK-058 | P2 | todo | developer | 1d | Add progress indicators with Ora and color output with Chalk |
@@ -369,7 +364,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-112 | P0 | done | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
 | TASK-113 | P0 | review | developer | 1d | Publish v0.1.0 to npm registry |
 | TASK-114 | P1 | todo | developer | 1d | Create GitHub release with release notes |
 | TASK-115 | P1 | todo | developer | 0.5d | Add npm badges to README (version, downloads, license) |
