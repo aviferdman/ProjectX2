@@ -18,51 +18,51 @@ None
 **Quality Score:** Strong - 41 tasks validated and merged to main  
 **All done tasks merged to main.** Archive at company/archive/backlog-done.md (41 tasks)
 
-### Sprint Dashboard (Cycle 70)
+### Sprint Dashboard (Cycle 70 - Updated)
 | Status | Count |
 |--------|-------|
 | Done (archived) | 41 |
-| Review | 1 |
+| Review | 2 |
 | In Progress | 1 |
-| Todo | 78 |
+| Todo | 77 |
 | Blocked | 0 |
-| **Total Active** | **80** |
+| **Total Active** | **81** |
 | **Total Complete** | **41** |
-| **Grand Total** | **121** |
-| **Completion** | **33.9%** |
+| **Grand Total** | **122** |
+| **Completion** | **33.6%** |
 
 ### Active Work — 🎯 EARLY DEVELOPMENT PHASE
-- **1 P0 task in `review` status** (TASK-084 — Create example: Simple chat agent)
+- **2 P0 tasks in `review` status** (TASK-084, TASK-085 — Examples complete and awaiting QA validation)
 - **1 P0 story in `in-progress` status** (STORY-015 — API stability contract, 50% complete)
-- **6 P0 tasks + 1 P0 decision in `todo` status**
+- **5 P0 tasks + 1 P0 decision in `todo` status**
 - **~35 P1 tasks in `todo` status**
 - **0 tasks blocked**
 
 ### Tasks In Review Queue
 1. **TASK-084 (P0)** — Create example: Simple chat agent [developer] — ⚠️ NEEDS QA REVIEW
+2. **TASK-085 (P0)** — Create example: Research crew (web + file tools) [developer] — ⚠️ NEEDS QA REVIEW
 
 ### Tasks In Progress
 1. **STORY-015 (P0)** — Define API stability contract (50% complete: deprecation utility ✅, CONTRIBUTING.md ✅, CI enforcement ❌, examples ❌) [developer]
 
 ### Priority P0 Tasks In Todo (CRITICAL PATH)
-1. **TASK-085 (P0)** — Create example: Research crew (web + file tools) [developer] — 1d
-2. **TASK-097 (P0)** — Set up docs site with VitePress or Docusaurus [developer] — 2d
-3. **TASK-111 (P0)** — Configure semantic versioning and CHANGELOG.md [developer] — 1d
-4. **TASK-112 (P0)** — Set up automated npm publish pipeline with GitHub Actions [developer] — 2d
-5. **TASK-113 (P0)** — Publish v0.1.0 to npm registry [developer] — 1d
-6. **TASK-122 (P0)** — Review validation data and make go/pivot/stash decision [gm] — 1d
+1. **TASK-097 (P0)** — Set up docs site with VitePress or Docusaurus [developer] — 2d
+2. **TASK-111 (P0)** — Configure semantic versioning and CHANGELOG.md [developer] — 1d
+3. **TASK-112 (P0)** — Set up automated npm publish pipeline with GitHub Actions [developer] — 2d
+4. **TASK-113 (P0)** — Publish v0.1.0 to npm registry [developer] — 1d
+5. **TASK-122 (P0)** — Review validation data and make go/pivot/stash decision [gm] — 1d
 
-### Sprint Analysis — Cycle 70 Update
+### Sprint Analysis — Cycle 70 Update (Latest)
 📊 **Progress Update:**
-- **Overall completion:** 33.9% (41/121 tasks complete)
+- **Overall completion:** 33.6% (41/122 items complete)
 - **41 tasks successfully merged** and archived to company/archive/backlog-done.md
-- **Review queue:** 1 P0 task awaiting QA validation (TASK-084)
-- **Active development:** STORY-015 at 50% completion
-- **P0 status:** 3 done+merged, 1 in review, 1 in-progress (50%), 7 in todo
+- **Review queue:** 2 P0 tasks awaiting QA validation (TASK-084, TASK-085) ⚠️ **URGENT**
+- **Active development:** STORY-015 at 50% completion (stalled, needs developer to complete)
+- **P0 status:** 3 done+merged, 2 in review, 1 in-progress (50%), 6 in todo
   - **Total P0 items:** 12 (3 stories/decisions + 9 tasks)
   - **P0 completion:** 25% (3/12 items fully done)
-  - **P0 in-flight:** +8.3% (1/12 in review)
-  - **Effective P0 progress:** ~33% when counting review item
+  - **P0 in-flight:** +16.7% (2/12 in review)
+  - **Effective P0 progress:** ~42% when counting review items
 - **P1 status:** ~6 done+merged, 0 in review, ~35 in todo
 - **Blocked tasks:** 0
 
@@ -75,19 +75,21 @@ None
 ⚠️ **Critical Concerns:**
 - **Low P0 completion:** Only 25% of P0 items done (3/12), need 80% to advance phase
 - **STORY-015 stalled at 50%:** Developer needs to complete remaining 2 criteria (CI semver + API examples)
-- **TASK-084 in review limbo:** QA needs to validate chat example
-- **Developer appears idle:** Should be actively working on P0 backlog
-- **Phase gate far away:** Need 7 more P0 items complete (current: 3/12, target: 10/12 = 83%)
-- **Slow P0 velocity:** At current pace, would take 7+ cycles to reach phase gate
+- **Review queue backup:** 2 P0 tasks waiting for QA (TASK-084, TASK-085) — QA action required
+- **Developer velocity:** TASK-085 completed and in review (good progress!), but STORY-015 remains at 50%
+- **Phase gate distance:** Need 7 more P0 items complete (current: 3/12, target: 10/12 = 83%)
+- **QA bottleneck:** Review queue growing, needs immediate attention
 
 ### Recommendations & Next Steps (Priority Order)
 
 **IMMEDIATE ACTIONS REQUIRED (Cycle 70):**
 
-1. **🚨 QA (URGENT):**
-   - **Validate TASK-084** (Simple chat agent example) — Clear review queue
-   - **Process:** Test example, verify acceptance criteria, merge or request changes
-   - **Target:** Complete review TODAY
+1. **🚨 QA (URGENT — TOP PRIORITY):**
+   - **Validate TASK-084 AND TASK-085** — Review queue has 2 P0 items
+   - **TASK-084:** Simple chat agent example
+   - **TASK-085:** Research crew example (web + file tools)
+   - **Process:** Test examples, verify acceptance criteria, merge or request changes
+   - **Target:** Complete both reviews by end of Cycle 70 to unblock pipeline
 
 2. **🚨 Developer (URGENT — PRIORITY 1):**
    - **Complete STORY-015** (API stability contract) — Currently stuck at 50%
@@ -95,11 +97,7 @@ None
      - Add CI semver enforcement tool
      - Document safe API evolution patterns in CONTRIBUTING.md
    - **Target:** Move to review by end of Cycle 70
-   
-3. **🚨 Developer (URGENT — PRIORITY 2):**
-   - **Immediately start TASK-085** (P0 research crew example) after STORY-015 → review
-   - **Mark as `in-progress` BEFORE starting**
-   - **Target:** Complete and submit for review within 1 day
+   - **Status:** TASK-085 already done ✅ Now focus on STORY-015
    
 4. **Developer (Cycle 70-71):**
    - **Accelerate P0 velocity to 2-3 tasks per cycle**
@@ -122,21 +120,21 @@ None
 
 ### Phase Gate Status
 - 🔴 **NOT READY for testing phase**
-- **Current P0 completion:** 25% (3/12 items done), +8.3% in review = ~33% effective
+- **Current P0 completion:** 25% (3/12 items done), +16.7% in review = ~42% effective
 - **Target for testing phase:** ≥80% P0 completion (need ≥10/12 items = 7 more P0 items)
 - **Estimated timeline:** 4-5 cycles at 2 P0 items/cycle (optimistic)
 - **Recommendation:** DO NOT advance to testing until P0 completion ≥80%
-  - Complete TASK-084 review (QA — Cycle 70)
+  - Complete TASK-084 + TASK-085 reviews (QA — Cycle 70) ⚠️ **URGENT**
   - Complete STORY-015 remaining work (Developer — Cycle 70)
-  - Complete TASK-085, 097, 111, 112, 113 (Developer — Cycles 70-72)
+  - Complete TASK-097, 111, 112, 113 (Developer — Cycles 70-72)
   - Complete TASK-122 go/no-go (GM — Cycle 72-73)
-  - **Target phase gate:** Cycle 74-75 (if velocity improves)
+  - **Target phase gate:** Cycle 73-74 (if QA clears review queue and developer accelerates)
 
 ## Current Cycle
 70
 
 ## Last Updated
-2026-04-06 (Cycle 70 - ProjM Sprint Review: 1 P0 in review (TASK-084), 1 P0 in-progress (STORY-015 at 50%), 78 tasks in todo, P0 completion 25%, phase gate target 80%)
+2026-04-06 (Cycle 70 - ProjM Sprint Review: 2 P0 in review (TASK-084, TASK-085), 1 P0 in-progress (STORY-015 at 50%), 77 tasks in todo, P0 completion 25%, effective 42% with review items, phase gate target 80%)
 
 ## Phase Notes
 - **Development approved [DEC-004]**: Planning artifacts reviewed and approved. 5 binding directives issued.
