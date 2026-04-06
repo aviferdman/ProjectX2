@@ -75,3 +75,4 @@
 | TASK-055 | P1 | done | developer | 2d | Implement `npx crewspace init` scaffolding command |
 | TASK-112 | P0 | done | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
 | TASK-060 | P1 | done | developer | 1d | Test CLI cross-platform (Windows, macOS, Linux in CI) |
+| TASK-088 | P1 | done | developer | 1d | Create example: Customer support bot |
