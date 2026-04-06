@@ -115,7 +115,7 @@ Once TASK-006 (package dependencies) is merged, we can enable parallel developme
 5. **Backend-dev:** Standby for Epic 3 (LLM Providers) assignment after TASK-006 completion
 
 ## Current Cycle
-15
+17
 
 ## Last Updated
 2026-04-06

@@ -59,7 +59,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-011 | P0 | review | developer | 2d | Design and implement Agent class with TypeScript types |
-| TASK-012 | P0 | todo | developer | 2d | Design and implement Crew class for multi-agent orchestration |
+| TASK-012 | P0 | review | developer | 2d | Design and implement Crew class for multi-agent orchestration |
 | TASK-013 | P0 | todo | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) |
 | TASK-014 | P0 | todo | developer | 2d | Implement event-driven execution engine (EventEmitter-based) |
 | TASK-015 | P0 | todo | developer | 1d | Add input validation with Zod schemas for all configs |
