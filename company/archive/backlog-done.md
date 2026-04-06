@@ -46,3 +46,6 @@
 | TASK-043 | P1 | done | developer | 1d | Detect and error on circular dependencies |
 | TASK-081 | P0 | done | developer | 2d | Write comprehensive README.md with quick start guide |
 | TASK-082 | P0 | done | developer | 1d | Create Getting Started tutorial (10 lines of code) |
+| TASK-081 | P0 | done | developer | 2d | Write comprehensive README.md with quick start guide |
+| TASK-082 | P0 | done | developer | 1d | Create Getting Started tutorial (10 lines of code) |
+| TASK-083 | P0 | done | developer | 2d | Write API reference documentation for all classes/interfaces |
