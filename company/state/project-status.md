@@ -122,13 +122,14 @@ None
 - 🔴 **NOT READY for testing phase**
 - **Current P0 completion:** 25% (3/12 items done), +16.7% in review = ~42% effective
 - **Target for testing phase:** ≥80% P0 completion (need ≥10/12 items = 7 more P0 items)
-- **Estimated timeline:** 4-5 cycles at 2 P0 items/cycle (optimistic)
+- **Estimated timeline:** 5-6 cycles at current velocity (1-2 P0 items/cycle)
+- **Critical blocker:** QA review queue backup (5 items, growing)
 - **Recommendation:** DO NOT advance to testing until P0 completion ≥80%
-  - Complete TASK-084 + TASK-085 reviews (QA — Cycle 70) ⚠️ **URGENT**
-  - Complete STORY-015 remaining work (Developer — Cycle 70)
-  - Complete TASK-097, 111, 112, 113 (Developer — Cycles 70-72)
-  - Complete TASK-122 go/no-go (GM — Cycle 72-73)
-  - **Target phase gate:** Cycle 73-74 (if QA clears review queue and developer accelerates)
+  - Clear review queue (QA — Cycle 72) ⚠️ **CRITICAL**
+  - Complete STORY-015 remaining work (Developer — Cycle 72)
+  - Complete TASK-097, 111, 112, 113 (Developer — Cycles 73-75)
+  - Complete TASK-122 go/no-go (GM — Cycle 75-76)
+  - **Target phase gate:** Cycle 76-77 (if QA bandwidth increases and developer maintains velocity)
 
 ## Current Cycle
 <<<<<<< HEAD
