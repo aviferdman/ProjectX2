@@ -85,7 +85,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-033 | P1 | blocked | developer | 1d | Add Zod-based schema validation for tool inputs |
 | TASK-034 | P1 | review | developer | 1d | Implement tool composition (tools calling tools) |
-| TASK-036 | P1 | todo | developer | 1d | Write tests for custom tool decorator API |
+| TASK-036 | P1 | review | developer | 1d | Write tests for custom tool decorator API |
 | TASK-037 | P2 | todo | developer | 1d | Add rate limiting to web tool to prevent abuse |
 
 **Dependencies:**
