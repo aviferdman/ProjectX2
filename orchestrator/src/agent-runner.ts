@@ -80,8 +80,13 @@ export class AgentRunner {
       });
 
       // Developer needs more time (20min) since it reads backlog + writes code in product repo
-      // Large tasks get 20min, developer always gets 20min, others get 10min
-      const timeout = (task.agentId === 'developer' || task.effort === 'L' || task.effort === 'XL') ? 1_200_000 : 600_000;
+      // QA needs 15min to read backlog, run 2000+ tests, and write reports
+      // Large tasks get 20min, others get 10min
+      const timeouts: Record<string, number> = {
+        developer: 1_200_000,  // 20 min
+        qa: 900_000,           // 15 min
+      };
+      const timeout = timeouts[task.agentId] ?? (task.effort === 'L' || task.effort === 'XL' ? 1_200_000 : 600_000);
       const response = await session.sendAndWait({ prompt }, timeout);
       await session.disconnect();
 
@@ -133,6 +138,17 @@ export class AgentRunner {
       lines.push('IMPORTANT: Do NOT spend time fixing formatting or linting issues unless that is your assigned task.');
       lines.push('IMPORTANT: Pick ONE task from the backlog, implement it, write tests, and commit. Do not try to do multiple tasks.');
       lines.push('IMPORTANT: Focus on writing CODE in the product repo. Minimize time reading state files — just find your next task and start coding.');
+    }
+
+    // QA-specific guidance
+    if (task.agentId === 'qa') {
+      lines.push('');
+      lines.push('## QA-Specific Instructions');
+      lines.push(`The product repo is at: ${this.config.productRepoPath}`);
+      lines.push(`Run tests there with: cd "${this.config.productRepoPath}" && npx vitest run`);
+      lines.push('IMPORTANT: Do NOT create or manage git branches. The orchestrator handles branching, committing, and merging for you.');
+      lines.push('IMPORTANT: Focus on validating recently completed tasks. Check the backlog for tasks in `review` status.');
+      lines.push('IMPORTANT: Keep QA reports concise. Write a brief summary, not a 10KB document.');
     }
 
     // Add deliberation context for research/ideation phases
