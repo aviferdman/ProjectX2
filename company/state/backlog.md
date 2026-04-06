@@ -43,7 +43,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-005 | P0 | done | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
 | TASK-006 | P0 | done | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
 | TASK-007 | P0 | done | developer | 0.5d | Add MIT LICENSE file and initial README.md | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-008 | P1 | todo | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
+| TASK-008 | P1 | review | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
 | TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
 
