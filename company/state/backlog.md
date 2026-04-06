@@ -135,7 +135,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-039 | P0 | done | developer | 2d | Implement topological sort for task dependency resolution | ✅ QA APPROVED — MERGED TO MAIN |
 | TASK-040 | P0 | done | developer | 2d | Add parallel execution support for independent tasks | ✅ QA APPROVED — MERGED TO MAIN |
 | TASK-041 | P0 | done | developer | 1d | Implement task context passing (previous outputs → next task) | ✅ QA APPROVED — MERGED TO MAIN |
-| TASK-042 | P1 | todo | developer | 1d | Add task timeout and retry configuration |
+| TASK-042 | P1 | review | developer | 1d | Add task timeout and retry configuration |
 | TASK-043 | P1 | todo | developer | 1d | Detect and error on circular dependencies |
 | TASK-044 | P1 | todo | developer | 1d | Generate text-based task plan tree for CLI output |
 | TASK-045 | P0 | done | developer | 2d | Write tests for task orchestration and dependency handling | ✅ IMPLEMENTED (cycle 54) — MERGED TO MAIN |
