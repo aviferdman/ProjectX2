@@ -36,7 +36,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-008 | P1 | done | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
 | TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
 
@@ -84,14 +83,8 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-028 | P0 | done | developer | 1d | Design Tool interface and permission system |
-| TASK-029 | P0 | done | developer | 2d | Implement @crewspace/tools-file (read, write, list) |
-| TASK-030 | P0 | done | developer | 2d | Implement @crewspace/tools-web (fetch, parse, DuckDuckGo) |
-| TASK-031 | P0 | done | developer | 2d | Implement @crewspace/tools-shell (exec with timeout/sandbox) |
-| TASK-032 | P1 | done | developer | 2d | Create @tool decorator for custom tool creation |
 | TASK-033 | P1 | review | developer | 1d | Add Zod-based schema validation for tool inputs |
 | TASK-034 | P1 | todo | developer | 1d | Implement tool composition (tools calling tools) |
-| TASK-035 | P0 | done | developer | 2d | Write tests for file, web, shell tools (>80% coverage) |
 | TASK-036 | P1 | todo | developer | 1d | Write tests for custom tool decorator API |
 | TASK-037 | P2 | todo | developer | 1d | Add rate limiting to web tool to prevent abuse |
 
@@ -109,10 +102,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-038 | P0 | done | developer | 2d | Design Task class with dependency DAG support |
-| TASK-042 | P1 | done | developer | 1d | Add task timeout and retry configuration |
 | TASK-043 | P1 | review | developer | 1d | Detect and error on circular dependencies |
-| TASK-044 | P1 | done | developer | 1d | Generate text-based task plan tree for CLI output |
 
 **Dependencies:**
 - TASK-038 is foundation
