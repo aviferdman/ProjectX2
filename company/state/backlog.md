@@ -34,7 +34,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Dependencies:** Core framework complete  
 **Rationale:** Need API stability guarantees to prevent breaking changes for early adopters
 
-- [STORY-015] [P0] [todo] [developer] — Define API stability contract and deprecation policy
+- [STORY-015] [P0] [review] [developer] — Define API stability contract and deprecation policy
   - **Description:** Establish clear versioning strategy for public API changes. Define what constitutes breaking vs non-breaking changes. Create deprecation policy (warning → removal timeline). Implement semver automation in CI/CD.
   - **Acceptance Criteria:** 
     - API stability policy documented in CONTRIBUTING.md
