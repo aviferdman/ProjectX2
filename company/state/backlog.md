@@ -113,7 +113,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-032 | P1 | todo | developer | 2d | Create @tool decorator for custom tool creation |
 | TASK-033 | P1 | todo | developer | 1d | Add Zod-based schema validation for tool inputs |
 | TASK-034 | P1 | todo | developer | 1d | Implement tool composition (tools calling tools) |
-| TASK-035 | P0 | todo | developer | 2d | Write tests for file, web, shell tools (>80% coverage) |
+| TASK-035 | P0 | review | developer | 2d | Write tests for file, web, shell tools (>80% coverage) |
 | TASK-036 | P1 | todo | developer | 1d | Write tests for custom tool decorator API |
 | TASK-037 | P2 | todo | developer | 1d | Add rate limiting to web tool to prevent abuse |
 
