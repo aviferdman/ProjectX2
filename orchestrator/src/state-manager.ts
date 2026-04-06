@@ -173,7 +173,7 @@ export class StateManager {
     const backlogPath = getStatePath(this.config, 'backlog.md');
     if (!fs.existsSync(backlogPath)) return 0;
 
-    const content = fs.readFileSync(backlogPath, 'utf-8');
+    const content = fs.readFileSync(backlogPath, 'utf-8').replace(/\r\n/g, '\n');
     const lines = content.split('\n');
     const donePattern = /^\|\s*TASK-\d+\s*\|\s*P\d\s*\|\s*done\b/i;
 
@@ -207,7 +207,7 @@ export class StateManager {
   parseBacklogTasks(): BacklogTask[] {
     const filePath = getStatePath(this.config, 'backlog.md');
     if (!fs.existsSync(filePath)) return [];
-    const content = fs.readFileSync(filePath, 'utf-8');
+    const content = fs.readFileSync(filePath, 'utf-8').replace(/\r\n/g, '\n');
     const tasks: BacklogTask[] = [];
 
     for (const line of content.split('\n')) {
