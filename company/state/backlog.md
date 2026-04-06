@@ -132,8 +132,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-034 | P1 | done | developer | 1d | Implement tool composition (tools calling tools) |
-| TASK-036 | P1 | done | developer | 1d | Write tests for custom tool decorator API |
 | TASK-037 | P2 | todo | developer | 1d | Add rate limiting to web tool to prevent abuse |
 
 **Dependencies:**
@@ -166,7 +164,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-046 | P1 | done | developer | 2d | Design memory architecture (short-term + long-term) |
 | TASK-047 | P1 | todo | developer | 2d | Implement short-term memory (conversation history in-memory) |
 | TASK-048 | P1 | todo | developer | 3d | Implement long-term memory with SQLite persistence |
 | TASK-049 | P1 | todo | developer | 1d | Add memory search and query API |

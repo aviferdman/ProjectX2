@@ -49,3 +49,6 @@
 | TASK-081 | P0 | done | developer | 2d | Write comprehensive README.md with quick start guide |
 | TASK-082 | P0 | done | developer | 1d | Create Getting Started tutorial (10 lines of code) |
 | TASK-083 | P0 | done | developer | 2d | Write API reference documentation for all classes/interfaces |
+| TASK-034 | P1 | done | developer | 1d | Implement tool composition (tools calling tools) |
+| TASK-036 | P1 | done | developer | 1d | Write tests for custom tool decorator API |
+| TASK-046 | P1 | done | developer | 2d | Design memory architecture (short-term + long-term) |
