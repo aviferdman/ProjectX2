@@ -59,10 +59,9 @@ None
 None — Development pipeline is empty. Awaiting task assignments.
 
 ### Priority P0 Items In Todo (CRITICAL PATH)
-1. **TASK-111 (P0)** — Configure semantic versioning and CHANGELOG.md [developer] — 1d
-2. **TASK-112 (P0)** — Set up automated npm publish pipeline with GitHub Actions [developer] — 2d (depends on TASK-111)
-3. **TASK-113 (P0)** — Publish v0.1.0 to npm registry [developer] — 1d (depends on TASK-112)
-4. **TASK-122 (P0)** — Review validation data and make go/pivot/stash decision [gm] — 1d
+1. **TASK-112 (P0)** — Set up automated npm publish pipeline with GitHub Actions [developer] — 2d (depends on TASK-111)
+2. **TASK-113 (P0)** — Publish v0.1.0 to npm registry [developer] — 1d (depends on TASK-112)
+3. **TASK-122 (P0)** — Review validation data and make go/pivot/stash decision [gm] — 1d
 
 ### Sprint Analysis — Cycle 77 Update (Current)
 📊 **Progress Update:**
