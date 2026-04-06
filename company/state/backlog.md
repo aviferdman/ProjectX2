@@ -38,7 +38,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-001 | P0 | done | developer | 1d | Initialize monorepo structure with TypeScript + Node.js 18+ |
 | TASK-002 | P0 | done | developer | 0.5d | Configure tsconfig.json (strict mode, ES2022, type definitions) |
-| TASK-003 | P0 | review | developer | 0.5d | Set up ESLint + Prettier with TypeScript rules |
+| TASK-003 | P0 | done | developer | 0.5d | Set up ESLint + Prettier with TypeScript rules |
 | TASK-004 | P0 | todo | developer | 0.5d | Configure Vitest for unit and integration testing |
 | TASK-005 | P0 | todo | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
 | TASK-006 | P0 | todo | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
