@@ -51,7 +51,7 @@ export class AgentRunner {
    * Creates a session with the agent's model, sends the task prompt,
    * and waits for the agent to complete.
    */
-  async runAgent(task: AgentTask): Promise<CompletionSignal> {
+  async runAgent(task: AgentTask, briefing?: string): Promise<CompletionSignal> {
     if (!this.client) {
       throw new Error('AgentRunner not started — call start() first');
     }
@@ -59,8 +59,8 @@ export class AgentRunner {
     this.logger.info(`[${task.agentId}] Starting task: ${task.id}`);
 
     const model = AGENT_MODELS[task.agentId] ?? 'claude-sonnet-4.5';
-    const prompt = this.buildPrompt(task);
-    const systemContent = this.buildSystemContent(task);
+    const prompt = this.buildPrompt(task, briefing);
+    const systemContent = this.buildSystemContent(task, !!briefing);
 
     try {
       // Developer works in product repo; all other agents work in company repo
@@ -119,11 +119,13 @@ export class AgentRunner {
     }
   }
 
-  private buildSystemContent(task: AgentTask): string {
+  private buildSystemContent(task: AgentTask, hasBriefing: boolean): string {
     const lines = [
       `You are the @${task.agentId} agent in ProjectX2 AI Corp, an autonomous AI company.`,
       `You must follow all workspace rules in .github/copilot-instructions.md.`,
-      `Always read the current state files before acting.`,
+      hasBriefing
+        ? `Your task context is pre-computed and included in the prompt. Focus on execution — only read additional state files if you need details not in the briefing.`
+        : `Always read the current state files before acting.`,
       `Commit changes with message format: [${task.id}] <brief description>`,
       `Write a completion signal JSON to company/state/signals/ when done.`,
     ];
@@ -170,18 +172,27 @@ export class AgentRunner {
     return lines.join('\n');
   }
 
-  private buildPrompt(task: AgentTask): string {
-    return [
+  private buildPrompt(task: AgentTask, briefing?: string): string {
+    const sections = [
       `## Your Task`,
       task.description,
       ``,
+    ];
+
+    if (briefing) {
+      sections.push(briefing, '');
+    }
+
+    sections.push(
       `## Context`,
       `- Working branch: ${task.branchName}`,
       `- Task ID: ${task.id}`,
       `- Company root: ${this.config.companyRoot}`,
       ``,
       `## Instructions`,
-      `1. Read the current state files before doing anything.`,
+      briefing
+        ? `1. Your task details are in the briefing above — start working immediately.`
+        : `1. Read the current state files before doing anything.`,
       `2. Perform your task as described above.`,
       `3. Commit your changes with message: [${task.id}] <brief description>`,
       `4. Write a completion signal to company/state/signals/${task.agentId}-${task.id}-${Date.now()}.json`,
@@ -195,6 +206,8 @@ export class AgentRunner {
       `  "summary": "<what you did>",`,
       `  "branchName": "${task.branchName}"`,
       `}`,
-    ].join('\n');
+    );
+
+    return sections.join('\n');
   }
 }

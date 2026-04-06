@@ -77,6 +77,12 @@ export class Orchestrator {
     // 2. Clear signals from previous cycle
     this.stateManager.clearSignals();
 
+    // 2b. Archive done tasks to keep backlog lean
+    const archived = this.stateManager.archiveDoneTasks();
+    if (archived > 0) {
+      this.logger.info(`Archived ${archived} done task(s) from backlog`);
+    }
+
     // 3. Handle deliberation state for ideation phase
     let deliberationState: DeliberationState | undefined;
     if (status.phase === 'ideation') {
@@ -183,8 +189,15 @@ export class Orchestrator {
             }
           }
 
+          // Pre-compute a compact briefing so the agent doesn't have to read
+          // the entire 1,300-line backlog and other state files from scratch.
+          const briefing = this.stateManager.buildAgentBriefing(node.task.agentId);
+          if (briefing) {
+            this.logger.info(`  Injecting ${briefing.length}-char briefing for ${node.task.agentId}`);
+          }
+
           // Run the agent (developer works in product repo, others in company repo)
-          const signal = await this.agentRunner.runAgent(node.task);
+          const signal = await this.agentRunner.runAgent(node.task, briefing || undefined);
 
           // Commit any changes the agent made on its branch (company repo)
           try {
