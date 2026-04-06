@@ -20,6 +20,27 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 ---
 
+## PM Review Notes
+
+### Cycle 77 Review (2026-04-06) — Status Audit
+**Findings:** Status tracking breakdown identified. Multiple P0/P1 tasks completed and merged but not reflected in backlog status.
+
+**Corrected Status Updates:**
+- ✅ TASK-097 (P0) — Docs site: `review` → `done` (merged commit d1eeb6b)
+- ✅ TASK-111 (P0) — Semantic versioning: `review` → `done` (merged commit 7ed3754)
+- ✅ TASK-086 (P1) — Code review example: `review` → `done` (merged commit b2829ef)
+
+**P0 Completion:** Corrected from 0% to 40% (2/5 complete)
+
+**Scope Gaps Identified:**
+1. **Process Gap:** No automated sync between product repo merges and backlog status → Recommend orchestrator enhancement
+2. **STORY-015 Gap:** Deprecation utilities created but CI enforcement + API evolution docs missing → Need follow-up tasks
+3. **Clarification Needed:** TASK-064 (performance metrics) overlap with existing performance work → QA verification required
+
+**Full review:** See `company/state/research/pm-cycle-77-progress-review.md`
+
+---
+
 ## Phase 1: OSS TypeScript Framework (M1-2)
 **Goal:** Build open-source MIT-licensed framework, establish community moat  
 **Success Metrics:** 300-500 GitHub stars, 50-100 npm downloads/week, 20-50 Discord members  
@@ -263,7 +284,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-086 | P1 | review | developer | 1d | Create example: Code review crew |
+| TASK-086 | P1 | done | developer | 1d | Create example: Code review crew |
 | TASK-087 | P1 | todo | developer | 1d | Create example: Data analysis pipeline |
 | TASK-088 | P1 | todo | developer | 1d | Create example: Customer support bot |
 | TASK-089 | P1 | todo | developer | 1d | Create example: Content generation workflow |
@@ -274,7 +295,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-094 | P1 | todo | developer | 2d | Write architecture deep-dive documentation |
 | TASK-095 | P2 | todo | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
 | TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
-| TASK-097 | P0 | review | developer | 2d | Set up docs site with VitePress or Docusaurus |
+| TASK-097 | P0 | done | developer | 2d | Set up docs site with VitePress or Docusaurus |
 
 **Dependencies:**
 - TASK-081, TASK-082, TASK-083 are foundational
@@ -333,7 +354,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-111 | P0 | review | developer | 1d | Configure semantic versioning and CHANGELOG.md |
+| TASK-111 | P0 | done | developer | 1d | Configure semantic versioning and CHANGELOG.md |
 | TASK-112 | P0 | todo | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
 | TASK-113 | P0 | todo | developer | 1d | Publish v0.1.0 to npm registry |
 | TASK-114 | P1 | todo | developer | 1d | Create GitHub release with release notes |
