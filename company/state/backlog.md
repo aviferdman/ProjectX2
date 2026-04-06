@@ -166,7 +166,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-047 | P1 | review | developer | 2d | Implement short-term memory (conversation history in-memory) |
 | TASK-048 | P1 | review | developer | 3d | Implement long-term memory with SQLite persistence |
-| TASK-049 | P1 | todo | developer | 1d | Add memory search and query API |
+| TASK-049 | P1 | review | developer | 1d | Add memory search and query API |
 | TASK-050 | P2 | todo | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
 | TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
 | TASK-052 | P2 | review | developer | 1d | Implement memory export/import for debugging |
