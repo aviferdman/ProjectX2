@@ -77,3 +77,4 @@
 | TASK-060 | P1 | done | developer | 1d | Test CLI cross-platform (Windows, macOS, Linux in CI) |
 | TASK-088 | P1 | done | developer | 1d | Create example: Customer support bot |
 | TASK-089 | P1 | done | developer | 1d | Create example: Content generation workflow |
+| TASK-090 | P1 | done | developer | 1d | Create example: Multi-step reasoning (chain-of-thought) |
