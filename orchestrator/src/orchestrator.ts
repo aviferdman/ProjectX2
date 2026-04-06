@@ -218,8 +218,11 @@ export class Orchestrator {
             this.gitManager.mergeLocallyToMain(node.task.branchName);
             this.gitManager.deleteBranch(node.task.branchName);
           } catch {
-            this.logger.warn(`Local merge failed for ${node.task.branchName}, falling back to checkout main`);
+            this.logger.warn(`Local merge failed for ${node.task.branchName}, aborting merge and falling back to checkout main`);
+            // Abort the failed merge, commit any leftovers, and return to main
             this.gitManager.checkoutMain();
+            // Delete the stale branch so it doesn't block future cycles
+            this.gitManager.deleteBranch(node.task.branchName);
           }
 
           // For developer tasks, also commit and merge product repo changes
@@ -236,6 +239,7 @@ export class Orchestrator {
             } catch {
               this.logger.warn(`Product repo merge failed for ${node.task.branchName}`);
               try { this.gitManager.checkoutMain(productRepo); } catch { /* best effort */ }
+              this.gitManager.deleteBranch(node.task.branchName, productRepo);
             }
           }
 
