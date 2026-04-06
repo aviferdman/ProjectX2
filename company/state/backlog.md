@@ -34,14 +34,15 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Dependencies:** Core framework complete  
 **Rationale:** Need API stability guarantees to prevent breaking changes for early adopters
 
-- [STORY-015] [P0] [review] [developer] — Define API stability contract and deprecation policy
+- [STORY-015] [P0] [in-progress] [developer] — Define API stability contract and deprecation policy
   - **Description:** Establish clear versioning strategy for public API changes. Define what constitutes breaking vs non-breaking changes. Create deprecation policy (warning → removal timeline). Implement semver automation in CI/CD.
   - **Acceptance Criteria:** 
-    - API stability policy documented in CONTRIBUTING.md
-    - Semver enforcement in CI (detect breaking changes)
-    - Deprecation decorator/utility created
-    - Examples of safe API evolution patterns
+    - ✅ API stability policy documented in CONTRIBUTING.md (basic semver section added)
+    - ❌ Semver enforcement in CI (detect breaking changes) — NOT IMPLEMENTED
+    - ✅ Deprecation decorator/utility created (DeprecationRegistry, decorators, 27 tests — commit 45aade8)
+    - ❌ Examples of safe API evolution patterns — NOT DOCUMENTED
   - **Success Metrics:** API changes follow semver, no unannounced breaking changes
+  - **Status:** 50% complete (2 of 4 criteria met) — Needs: CI semver check + API evolution examples
 
 ### Epic 12: Developer Experience Validation
 **Stories:** STORY-016 (NEW — Identified in PM Cycle 65 Review)  
@@ -64,14 +65,15 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Dependencies:** Core framework complete  
 **Rationale:** Establish baseline performance metrics to track regressions and optimize bottlenecks
 
-- [STORY-017] [P2] [todo] [developer] — Create performance benchmark suite
+- [STORY-017] [P2] [done] [developer] — Create performance benchmark suite
   - **Description:** Build automated benchmarks for critical operations: agent initialization, task execution, memory read/write, tool invocation. Run in CI, track over time. Set performance budgets.
   - **Acceptance Criteria:**
-    - Benchmarks for agent init (<100ms), task exec (<5s), memory ops (<50ms)
-    - CI integration with performance regression detection
-    - Performance dashboard (historical trends)
-    - Performance budgets documented in CONTRIBUTING.md
+    - ✅ Benchmarks for agent init (<100ms), task exec (<5s), memory ops (<50ms)
+    - ✅ CI integration with performance regression detection
+    - ✅ Performance dashboard (historical trends) — via CI artifacts
+    - ✅ Performance budgets documented in CONTRIBUTING.md
   - **Success Metrics:** <5% performance regression between releases
+  - **Completed:** Cycle 68 — 34 benchmarks implemented, CI workflow configured (commit b22cf63)
 
 
 ## Task Breakdown — Phase 1 (Detailed Development Tasks)
