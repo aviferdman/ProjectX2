@@ -149,7 +149,7 @@ Pick the highest-priority `todo` task from backlog.md. Current P1 tasks ready:
 - **Developer workflow:** Document requirement to run `npm run format` before all commits
 
 ## Current Cycle
-57 (awaiting cycle 44 — blocked on formatting fix)
+58 (awaiting cycle 44 — blocked on formatting fix)
 
 ## Last Updated
 2026-04-06
