@@ -1,4 +1,4 @@
-# Product Backlog — Crewspace
+﻿# Product Backlog — Crewspace
 
 **Product:** TypeScript-native agent orchestration framework with visual canvas  
 **Strategy:** OSS-first (MIT) → Commercial freemium SaaS  
@@ -167,7 +167,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-047 | P1 | done | developer | 2d | Implement short-term memory (conversation history in-memory) |
 | TASK-048 | P1 | done | developer | 3d | Implement long-term memory with SQLite persistence |
 | TASK-049 | P1 | done | developer | 1d | Add memory search and query API |
-| TASK-050 | P2 | todo | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
+| TASK-050 | P2 | review | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
 | TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
 | TASK-052 | P2 | done | developer | 1d | Implement memory export/import for debugging |
 | TASK-053 | P1 | todo | developer | 2d | Write tests for memory system (>80% coverage) |
