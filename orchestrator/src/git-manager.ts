@@ -22,7 +22,7 @@ export class GitManager {
     this.git(['pull', 'origin', 'main'], workDir);
     // Delete stale local branch if it exists from a previous cycle
     try {
-      this.git(['branch', '-D', branchName], workDir);
+      execSync(`git branch -D ${branchName}`, { cwd: workDir, encoding: 'utf-8', stdio: 'pipe' });
       this.logger.debug(`Deleted stale local branch: ${branchName}`);
     } catch { /* branch doesn't exist — expected */ }
     this.git(['checkout', '-b', branchName], workDir);
