@@ -138,7 +138,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-018 | P1 | review | developer | 1d | Add JSDoc comments to all public APIs |
-| TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
+| TASK-019 | P1 | review | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
 
 **Dependencies:** 
 - TASK-011, TASK-012, TASK-013 can run in parallel after TASK-006
