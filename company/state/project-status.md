@@ -43,15 +43,17 @@ None
 - TASK-086 (P1) — Create example: Code review crew [developer]
 
 ### Active Work — 🎯 DEVELOPMENT PHASE (Cycle 77)
-- **2 tasks in `review` status** (TASK-097 P0, TASK-064 P2) — AWAITING QA
+- **4 tasks in `review` status** (2 P0: TASK-097, TASK-111; 2 other: TASK-064 P2, TASK-086 P1) — AWAITING QA
 - **0 tasks in `in-progress` status** — ⚠️ NO ACTIVE DEVELOPMENT
-- **64 tasks in `todo` status** — READY FOR ASSIGNMENT (includes 4 P0)
+- **62 tasks in `todo` status** — READY FOR ASSIGNMENT (includes 3 P0)
 - **0 tasks blocked**
 - **0 tasks completed this cycle**
 
-### Tasks In Review Queue (2 items — QA ACTION REQUIRED)
+### Tasks In Review Queue (4 items — QA ACTION REQUIRED)
 1. **TASK-097 (P0)** — Set up docs site with VitePress or Docusaurus [developer] — CRITICAL: BLOCKS NPM PIPELINE
-2. **TASK-064 (P2)** — Implement performance metrics tracking [developer]
+2. **TASK-111 (P0)** — Configure semantic versioning and CHANGELOG.md [developer] — CRITICAL: BLOCKS NPM PIPELINE  
+3. **TASK-064 (P2)** — Implement performance metrics tracking [developer]
+4. **TASK-086 (P1)** — Create example: Code review crew [developer]
 
 ### Tasks In Progress
 None — Development pipeline is empty. Awaiting task assignments.
