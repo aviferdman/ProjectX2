@@ -90,7 +90,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-024 | P0 | done | developer | 1d | Add exponential backoff retry logic for rate limits | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
 | TASK-025 | P0 | review | developer | 1d | Implement token usage tracking and cost calculation |
 | TASK-026 | P1 | todo | developer | 1d | Add provider fallback mechanism (primary → secondary) |
-| TASK-027 | P0 | todo | developer | 2d | Write tests for all LLM providers with mocked responses |
+| TASK-027 | P0 | review | developer | 2d | Write tests for all LLM providers with mocked responses |
 
 **Dependencies:**
 - TASK-021, TASK-022, TASK-023 depend on TASK-020
