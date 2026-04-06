@@ -263,7 +263,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-086 | P1 | todo | developer | 1d | Create example: Code review crew |
+| TASK-086 | P1 | review | developer | 1d | Create example: Code review crew |
 | TASK-087 | P1 | todo | developer | 1d | Create example: Data analysis pipeline |
 | TASK-088 | P1 | todo | developer | 1d | Create example: Customer support bot |
 | TASK-089 | P1 | todo | developer | 1d | Create example: Content generation workflow |
