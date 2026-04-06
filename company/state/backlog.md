@@ -111,7 +111,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-038 | P0 | done | developer | 2d | Design Task class with dependency DAG support |
 | TASK-042 | P1 | done | developer | 1d | Add task timeout and retry configuration |
-| TASK-043 | P1 | todo | developer | 1d | Detect and error on circular dependencies |
+| TASK-043 | P1 | review | developer | 1d | Detect and error on circular dependencies |
 | TASK-044 | P1 | done | developer | 1d | Generate text-based task plan tree for CLI output |
 
 **Dependencies:**
