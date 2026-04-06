@@ -27,6 +27,53 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 ---
 
+
+### Epic 11: API Stability & Versioning
+**Stories:** STORY-015 (NEW — Identified in PM Cycle 65 Review)  
+**Effort:** 3-5 days  
+**Dependencies:** Core framework complete  
+**Rationale:** Need API stability guarantees to prevent breaking changes for early adopters
+
+- [STORY-015] [P0] [todo] [developer] — Define API stability contract and deprecation policy
+  - **Description:** Establish clear versioning strategy for public API changes. Define what constitutes breaking vs non-breaking changes. Create deprecation policy (warning → removal timeline). Implement semver automation in CI/CD.
+  - **Acceptance Criteria:** 
+    - API stability policy documented in CONTRIBUTING.md
+    - Semver enforcement in CI (detect breaking changes)
+    - Deprecation decorator/utility created
+    - Examples of safe API evolution patterns
+  - **Success Metrics:** API changes follow semver, no unannounced breaking changes
+
+### Epic 12: Developer Experience Validation
+**Stories:** STORY-016 (NEW — Identified in PM Cycle 65 Review)  
+**Effort:** 5-7 days  
+**Dependencies:** README, Getting Started complete  
+**Rationale:** Validate "10 lines of code" marketing claim with real developers
+
+- [STORY-016] [P1] [todo] [pm/researcher] — User testing with external developers (validate usability claims)
+  - **Description:** Recruit 5 developers (mix of TypeScript experience levels). Record setup time from npm install to working agent. Identify friction points. Iterate on docs/API based on feedback.
+  - **Acceptance Criteria:**
+    - 5 developers complete setup successfully
+    - Average setup time <10 minutes
+    - Friction points documented and addressed
+    - Testimonials/quotes captured for marketing
+  - **Success Metrics:** 4/5 developers rate setup as "easy" or "very easy"
+
+### Epic 13: Performance Benchmarking
+**Stories:** STORY-017 (NEW — Identified in PM Cycle 65 Review)  
+**Effort:** 3-4 days  
+**Dependencies:** Core framework complete  
+**Rationale:** Establish baseline performance metrics to track regressions and optimize bottlenecks
+
+- [STORY-017] [P2] [todo] [developer] — Create performance benchmark suite
+  - **Description:** Build automated benchmarks for critical operations: agent initialization, task execution, memory read/write, tool invocation. Run in CI, track over time. Set performance budgets.
+  - **Acceptance Criteria:**
+    - Benchmarks for agent init (<100ms), task exec (<5s), memory ops (<50ms)
+    - CI integration with performance regression detection
+    - Performance dashboard (historical trends)
+    - Performance budgets documented in CONTRIBUTING.md
+  - **Success Metrics:** <5% performance regression between releases
+
+
 ## Task Breakdown — Phase 1 (Detailed Development Tasks)
 
 ### Epic 1: Project Foundation & Infrastructure
@@ -1270,3 +1317,4 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 4. Create sprint plan for Phase 1 (2-week iterations)
 5. Identify technical dependencies and risks
 6. Define "Definition of Done" for each story
+
