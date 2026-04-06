@@ -87,10 +87,10 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-021 | P0 | done | developer | 2d | Implement OpenAI provider (GPT-4o, GPT-4o-mini) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
 | TASK-022 | P0 | done | developer | 2d | Implement Anthropic provider (Claude 3.5 Sonnet/Haiku) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
 | TASK-023 | P1 | todo | developer | 1d | Implement Ollama provider for local models |
-| TASK-024 | P0 | done | developer | 1d | Add exponential backoff retry logic for rate limits | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
-| TASK-025 | P0 | review | developer | 1d | Implement token usage tracking and cost calculation |
+| TASK-024 | P0 | done | developer | 1d | Add exponential backoff retry logic for rate limits | ✅ QA APPROVED (cycle 31) — MERGED TO MAIN |
+| TASK-025 | P0 | done | developer | 1d | Implement token usage tracking and cost calculation | ✅ QA APPROVED (cycle 43) — MERGED TO MAIN |
 | TASK-026 | P1 | todo | developer | 1d | Add provider fallback mechanism (primary → secondary) |
-| TASK-027 | P0 | review | developer | 2d | Write tests for all LLM providers with mocked responses |
+| TASK-027 | P0 | done | developer | 2d | Write tests for all LLM providers with mocked responses | ✅ QA APPROVED (cycle 43) — MERGED TO MAIN |
 
 **Dependencies:**
 - TASK-021, TASK-022, TASK-023 depend on TASK-020
