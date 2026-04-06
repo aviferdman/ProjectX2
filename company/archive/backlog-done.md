@@ -65,3 +65,6 @@
 | TASK-067 | P2 | done | developer | 1d | Write tests for logging system |
 | TASK-084 | P0 | done | developer | 1d | Create example: Simple chat agent |
 | TASK-085 | P0 | done | developer | 1d | Create example: Research crew (web + file tools) |
+| TASK-086 | P1 | done | developer | 1d | Create example: Code review crew |
+| TASK-097 | P0 | done | developer | 2d | Set up docs site with VitePress or Docusaurus |
+| TASK-111 | P0 | done | developer | 1d | Configure semantic versioning and CHANGELOG.md |
