@@ -376,7 +376,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-112 | P0 | todo | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
+| TASK-112 | P0 | review | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
 | TASK-113 | P0 | todo | developer | 1d | Publish v0.1.0 to npm registry |
 | TASK-114 | P1 | todo | developer | 1d | Create GitHub release with release notes |
 | TASK-115 | P1 | todo | developer | 0.5d | Add npm badges to README (version, downloads, license) |
