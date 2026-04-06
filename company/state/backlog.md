@@ -210,13 +210,13 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-061 | P2 | todo | developer | 2d | Design structured logging architecture with Winston/Pino |
-| TASK-062 | P2 | todo | developer | 2d | Implement log levels (DEBUG, INFO, WARN, ERROR) |
-| TASK-063 | P2 | todo | developer | 1d | Add timestamped logs with agent/task/action metadata |
+| TASK-061 | P2 | review | developer | 2d | Design structured logging architecture with Winston/Pino |
+| TASK-062 | P2 | review | developer | 2d | Implement log levels (DEBUG, INFO, WARN, ERROR) |
+| TASK-063 | P2 | review | developer | 1d | Add timestamped logs with agent/task/action metadata |
 | TASK-064 | P2 | todo | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
 | TASK-065 | P2 | todo | developer | 1d | Add log export to file and stdout |
-| TASK-066 | P2 | todo | developer | 1d | Implement sensitive data masking (API keys, PII) |
-| TASK-067 | P2 | todo | developer | 1d | Write tests for logging system |
+| TASK-066 | P2 | review | developer | 1d | Implement sensitive data masking (API keys, PII) |
+| TASK-067 | P2 | review | developer | 1d | Write tests for logging system |
 
 **Dependencies:**
 - TASK-061 is foundation
