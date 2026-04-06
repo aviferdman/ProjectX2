@@ -38,3 +38,4 @@
 | TASK-038 | P0 | done | developer | 2d | Design Task class with dependency DAG support |
 | TASK-042 | P1 | done | developer | 1d | Add task timeout and retry configuration |
 | TASK-044 | P1 | done | developer | 1d | Generate text-based task plan tree for CLI output |
+| TASK-081 | P0 | done | developer | 2d | Write comprehensive README.md with quick start guide |
