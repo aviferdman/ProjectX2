@@ -221,7 +221,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-054 | P1 | review | developer | 2d | Set up CLI with Commander.js and proper argument parsing |
-| TASK-055 | P1 | todo | developer | 2d | Implement `npx crewspace init` scaffolding command |
+| TASK-055 | P1 | review | developer | 2d | Implement `npx crewspace init` scaffolding command |
 | TASK-056 | P1 | todo | developer | 1d | Implement `npx crewspace run <file>` execution command |
 | TASK-057 | P1 | todo | developer | 1d | Implement `npx crewspace validate <file>` syntax checker |
 | TASK-058 | P2 | todo | developer | 1d | Add progress indicators with Ora and color output with Chalk |
