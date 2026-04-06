@@ -133,8 +133,8 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-038 | P0 | review | developer | 2d | Design Task class with dependency DAG support |
 | TASK-039 | P0 | review | developer | 2d | Implement topological sort for task dependency resolution | 🔵 DEVELOPER COMPLETE — Awaiting QA (blocked by formatting issues) |
-| TASK-040 | P0 | review | developer | 2d | Add parallel execution support for independent tasks | 🔵 DEVELOPER COMPLETE — PR #34, 63 tests passing |
-| TASK-041 | P0 | review | developer | 1d | Implement task context passing (previous outputs → next task) |
+| TASK-040 | P0 | done | developer | 2d | Add parallel execution support for independent tasks | ✅ QA APPROVED — 63 tests passing, zero defects, ready for merge |
+| TASK-041 | P0 | done | developer | 1d | Implement task context passing (previous outputs → next task) | ✅ QA APPROVED — 43 tests passing, zero defects, ready for merge |
 | TASK-042 | P1 | todo | developer | 1d | Add task timeout and retry configuration |
 | TASK-043 | P1 | todo | developer | 1d | Detect and error on circular dependencies |
 | TASK-044 | P1 | todo | developer | 1d | Generate text-based task plan tree for CLI output |
