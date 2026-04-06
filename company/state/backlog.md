@@ -89,7 +89,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-030 | P0 | done | developer | 2d | Implement @crewspace/tools-web (fetch, parse, DuckDuckGo) |
 | TASK-031 | P0 | done | developer | 2d | Implement @crewspace/tools-shell (exec with timeout/sandbox) |
 | TASK-032 | P1 | done | developer | 2d | Create @tool decorator for custom tool creation |
-| TASK-033 | P1 | todo | developer | 1d | Add Zod-based schema validation for tool inputs |
+| TASK-033 | P1 | review | developer | 1d | Add Zod-based schema validation for tool inputs |
 | TASK-034 | P1 | todo | developer | 1d | Implement tool composition (tools calling tools) |
 | TASK-035 | P0 | done | developer | 2d | Write tests for file, web, shell tools (>80% coverage) |
 | TASK-036 | P1 | todo | developer | 1d | Write tests for custom tool decorator API |
