@@ -39,3 +39,6 @@
 | TASK-042 | P1 | done | developer | 1d | Add task timeout and retry configuration |
 | TASK-044 | P1 | done | developer | 1d | Generate text-based task plan tree for CLI output |
 | TASK-081 | P0 | done | developer | 2d | Write comprehensive README.md with quick start guide |
+| TASK-082 | P0 | done | developer | 1d | Create Getting Started tutorial (10 lines of code) |
+| TASK-033 | P1 | done | developer | 1d | Add Zod-based schema validation for tool inputs |
+| TASK-043 | P1 | done | developer | 1d | Detect and error on circular dependencies |
