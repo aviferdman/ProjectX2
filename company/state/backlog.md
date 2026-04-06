@@ -203,7 +203,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-050 | P2 | todo | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
 | TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
-| TASK-053 | P1 | todo | developer | 2d | Write tests for memory system (>80% coverage) |
+| TASK-053 | P1 | review | developer | 2d | Write tests for memory system (>80% coverage) |
 
 **Dependencies:**
 - TASK-046 is foundation
