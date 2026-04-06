@@ -42,7 +42,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-004 | P0 | done | developer | 0.5d | Configure Vitest for unit and integration testing |
 | TASK-005 | P0 | done | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
 | TASK-006 | P0 | done | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
-| TASK-007 | P0 | review | developer | 0.5d | Add MIT LICENSE file and initial README.md |
+| TASK-007 | P0 | done | developer | 0.5d | Add MIT LICENSE file and initial README.md | ✅ QA APPROVED (cycle 21) |
 | TASK-008 | P1 | todo | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
 | TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
@@ -58,12 +58,12 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-011 | P0 | review | developer | 2d | Design and implement Agent class with TypeScript types |
-| TASK-012 | P0 | review | developer | 2d | Design and implement Crew class for multi-agent orchestration |
-| TASK-013 | P0 | review | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) |
-| TASK-014 | P0 | review | developer | 2d | Implement event-driven execution engine (EventEmitter-based) |
-| TASK-015 | P0 | review | developer | 1d | Add input validation with Zod schemas for all configs |
-| TASK-016 | P0 | review | developer | 2d | Write unit tests for Agent class (>80% coverage) |
+| TASK-011 | P0 | blocked | developer | 2d | Design and implement Agent class with TypeScript types | ⚠️ QA: ESLint violations in tests (cycle 21) |
+| TASK-012 | P0 | blocked | developer | 2d | Design and implement Crew class for multi-agent orchestration | ⚠️ QA: ESLint + TypeScript errors (cycle 21) |
+| TASK-013 | P0 | done | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) | ✅ QA APPROVED (cycle 21) |
+| TASK-014 | P0 | blocked | developer | 2d | Implement event-driven execution engine (EventEmitter-based) | 🔴 QA CRITICAL: TypeScript config missing Node types (cycle 21) |
+| TASK-015 | P0 | done | developer | 1d | Add input validation with Zod schemas for all configs | ✅ QA APPROVED (cycle 21) |
+| TASK-016 | P0 | blocked | developer | 2d | Write unit tests for Agent class (>80% coverage) | ⚠️ QA: ESLint violations (same as TASK-011, cycle 21) |
 | TASK-017 | P0 | todo | developer | 2d | Write unit tests for Crew class (>80% coverage) |
 | TASK-018 | P1 | todo | developer | 1d | Add JSDoc comments to all public APIs |
 | TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
