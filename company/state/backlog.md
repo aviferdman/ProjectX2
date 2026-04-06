@@ -84,11 +84,11 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-020 | P0 | done | developer | 2d | Design LLMProvider interface with streaming support | ✅ QA APPROVED (cycle 26) — READY TO MERGE |
-| TASK-021 | P0 | review | developer | 2d | Implement OpenAI provider (GPT-4o, GPT-4o-mini) |
-| TASK-022 | P0 | review | developer | 2d | Implement Anthropic provider (Claude 3.5 Sonnet/Haiku) |
+| TASK-021 | P0 | done | developer | 2d | Implement OpenAI provider (GPT-4o, GPT-4o-mini) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
+| TASK-022 | P0 | done | developer | 2d | Implement Anthropic provider (Claude 3.5 Sonnet/Haiku) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
 | TASK-023 | P1 | todo | developer | 1d | Implement Ollama provider for local models |
-| TASK-024 | P0 | review | developer | 1d | Add exponential backoff retry logic for rate limits |
-| TASK-025 | P0 | todo | developer | 1d | Implement token usage tracking and cost calculation |
+| TASK-024 | P0 | done | developer | 1d | Add exponential backoff retry logic for rate limits | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
+| TASK-025 | P0 | review | developer | 1d | Implement token usage tracking and cost calculation |
 | TASK-026 | P1 | todo | developer | 1d | Add provider fallback mechanism (primary → secondary) |
 | TASK-027 | P0 | todo | developer | 2d | Write tests for all LLM providers with mocked responses |
 
