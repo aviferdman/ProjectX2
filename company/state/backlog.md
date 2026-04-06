@@ -200,7 +200,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-050 | P2 | todo | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
 | TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
-| TASK-053 | P1 | review | developer | 2d | Write tests for memory system (>80% coverage) |
+| TASK-053 | P1 | blocked | developer | 2d | Write tests for memory system (>80% coverage) — BLOCKED: merge conflicts |
 
 **Dependencies:**
 - TASK-046 is foundation
@@ -217,7 +217,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-056 | P1 | review | developer | 1d | Implement `npx crewspace run <file>` execution command |
+| TASK-056 | P1 | blocked | developer | 1d | Implement `npx crewspace run <file>` execution command — BLOCKED: build fails |
 | TASK-057 | P1 | todo | developer | 1d | Implement `npx crewspace validate <file>` syntax checker |
 | TASK-058 | P2 | todo | developer | 1d | Add progress indicators with Ora and color output with Chalk |
 | TASK-059 | P2 | todo | developer | 1d | Add --verbose flag for debugging output |
@@ -296,7 +296,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-087 | P1 | review | developer | 1d | Create example: Data analysis pipeline |
+| TASK-087 | P1 | blocked | developer | 1d | Create example: Data analysis pipeline — BLOCKED: merge conflicts |
 | TASK-088 | P1 | todo | developer | 1d | Create example: Customer support bot |
 | TASK-089 | P1 | todo | developer | 1d | Create example: Content generation workflow |
 | TASK-090 | P1 | todo | developer | 1d | Create example: Multi-step reasoning (chain-of-thought) |
@@ -364,7 +364,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-113 | P0 | review | developer | 1d | Publish v0.1.0 to npm registry |
+| TASK-113 | P0 | blocked | developer | 1d | Publish v0.1.0 to npm registry — BLOCKED: build fails, conflicts |
 | TASK-114 | P1 | todo | developer | 1d | Create GitHub release with release notes |
 | TASK-115 | P1 | todo | developer | 0.5d | Add npm badges to README (version, downloads, license) |
 | TASK-116 | P2 | todo | developer | 1d | Document deprecation policy for breaking changes |
