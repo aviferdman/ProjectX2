@@ -64,7 +64,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-014 | P0 | review | developer | 2d | Implement event-driven execution engine (EventEmitter-based) | ✅ TypeScript errors fixed: Node types added to tsconfig (cycle 22) — READY FOR RE-QA |
 | TASK-015 | P0 | done | developer | 1d | Add input validation with Zod schemas for all configs | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
 | TASK-016 | P0 | review | developer | 2d | Write unit tests for Agent class (>80% coverage) | ✅ ESLint test overrides applied, unused imports removed (cycle 22) — READY FOR RE-QA |
-| TASK-017 | P0 | todo | developer | 2d | Write unit tests for Crew class (>80% coverage) |
+| TASK-017 | P0 | review | developer | 2d | Write unit tests for Crew class (>80% coverage) | ✅ 76 tests, 97.5% stmts / 84.9% branches / 100% funcs (cycle 23) — READY FOR QA |
 | TASK-018 | P1 | todo | developer | 1d | Add JSDoc comments to all public APIs |
 | TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
 
