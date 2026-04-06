@@ -52,3 +52,4 @@
 | TASK-034 | P1 | done | developer | 1d | Implement tool composition (tools calling tools) |
 | TASK-036 | P1 | done | developer | 1d | Write tests for custom tool decorator API |
 | TASK-046 | P1 | done | developer | 2d | Design memory architecture (short-term + long-term) |
+| TASK-084 | P0 | done | developer | 1d | Create example: Simple chat agent |

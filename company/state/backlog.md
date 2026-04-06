@@ -278,7 +278,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-085 | P0 | review | developer | 1d | Create example: Research crew (web + file tools) |
 <<<<<<< HEAD
 =======
-| TASK-084 | P0 | done | developer | 1d | Create example: Simple chat agent |
 | TASK-085 | P0 | todo | developer | 1d | Create example: Research crew (web + file tools) |
 >>>>>>> agent/developer/development-developer-c0
 =======
