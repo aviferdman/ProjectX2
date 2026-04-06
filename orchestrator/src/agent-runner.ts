@@ -63,10 +63,15 @@ export class AgentRunner {
     const systemContent = this.buildSystemContent(task);
 
     try {
+      // Developer works in product repo; all other agents work in company repo
+      const workingDir = task.agentId === 'developer'
+        ? this.config.productRepoPath
+        : this.config.companyRoot;
+
       const session = await this.client.createSession({
         model,
         agent: task.agentId,
-        workingDirectory: this.config.companyRoot,
+        workingDirectory: workingDir,
         systemMessage: {
           mode: 'customize' as const,
           content: systemContent,
@@ -74,8 +79,9 @@ export class AgentRunner {
         onPermissionRequest: approveAll,
       });
 
-      // Increase timeout for large tasks (L/XL effort)
-      const timeout = (task.effort === 'L' || task.effort === 'XL') ? 1_200_000 : 600_000;
+      // Developer needs more time (20min) since it reads backlog + writes code in product repo
+      // Large tasks get 20min, developer always gets 20min, others get 10min
+      const timeout = (task.agentId === 'developer' || task.effort === 'L' || task.effort === 'XL') ? 1_200_000 : 600_000;
       const response = await session.sendAndWait({ prompt }, timeout);
       await session.disconnect();
 
@@ -116,6 +122,17 @@ export class AgentRunner {
       `Commit changes with message format: [${task.id}] <brief description>`,
       `Write a completion signal JSON to company/state/signals/ when done.`,
     ];
+
+    // Developer-specific guidance to reduce wasted time
+    if (task.agentId === 'developer') {
+      lines.push('');
+      lines.push('## Developer-Specific Instructions');
+      lines.push(`Your working directory is the PRODUCT REPO: ${this.config.productRepoPath}`);
+      lines.push(`The company state files (backlog, project-status, decisions) are in: ${this.config.companyRoot}/company/state/`);
+      lines.push('IMPORTANT: Do NOT spend time fixing formatting or linting issues unless that is your assigned task.');
+      lines.push('IMPORTANT: Pick ONE task from the backlog, implement it, write tests, and commit. Do not try to do multiple tasks.');
+      lines.push('IMPORTANT: Focus on writing CODE in the product repo. Minimize time reading state files — just find your next task and start coding.');
+    }
 
     // Add deliberation context for research/ideation phases
     if (task.id.startsWith('research-') || task.id.startsWith('ideation-')) {
