@@ -205,7 +205,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-064 | P2 | todo | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
+| TASK-064 | P2 | review | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
 | TASK-065 | P2 | todo | developer | 1d | Add log export to file and stdout |
 
 **Dependencies:**
