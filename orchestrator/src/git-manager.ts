@@ -13,11 +13,18 @@ export class GitManager {
 
   /**
    * Create a new branch from main and check it out.
+   * Ensures clean state first and deletes any stale local branch with the same name.
    */
   createBranch(branchName: string, cwd?: string): void {
     const workDir = cwd ?? this.config.companyRoot;
+    this.ensureCleanState(workDir);
     this.git(['checkout', 'main'], workDir);
     this.git(['pull', 'origin', 'main'], workDir);
+    // Delete stale local branch if it exists from a previous cycle
+    try {
+      this.git(['branch', '-D', branchName], workDir);
+      this.logger.debug(`Deleted stale local branch: ${branchName}`);
+    } catch { /* branch doesn't exist — expected */ }
     this.git(['checkout', '-b', branchName], workDir);
     this.logger.info(`Created branch: ${branchName}`);
   }
@@ -122,16 +129,31 @@ export class GitManager {
   }
 
   /**
-   * Return to main branch. Commits any uncommitted changes first to avoid
-   * checkout failures.
+   * Return to main branch. Aborts any in-progress merge and commits any
+   * uncommitted changes first to avoid checkout failures.
    */
   checkoutMain(cwd?: string): void {
     const workDir = cwd ?? this.config.companyRoot;
+    this.ensureCleanState(workDir);
+    this.git(['checkout', 'main'], workDir);
+  }
+
+  /**
+   * Abort any in-progress merge and commit any uncommitted changes so the
+   * working tree is clean for the next git operation.
+   */
+  ensureCleanState(cwd?: string): void {
+    const workDir = cwd ?? this.config.companyRoot;
+    // Abort any in-progress merge/rebase
+    try {
+      execSync('git merge --abort', { cwd: workDir, encoding: 'utf-8', stdio: 'pipe' });
+      this.logger.debug('Aborted in-progress merge');
+    } catch { /* no merge in progress — expected */ }
+    // Commit any uncommitted changes
     if (this.hasUncommittedChanges(workDir)) {
       this.logger.info('Committing uncommitted changes before checkout main');
       this.commitAll('auto-commit before checkout main', workDir);
     }
-    this.git(['checkout', 'main'], workDir);
   }
 
   /**

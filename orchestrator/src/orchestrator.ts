@@ -163,12 +163,16 @@ export class Orchestrator {
           // Create branch for this agent's work (company repo)
           try {
             this.gitManager.createBranch(node.task.branchName);
-          } catch {
-            this.logger.warn(`Branch ${node.task.branchName} may already exist, attempting checkout`);
+          } catch (branchErr) {
+            this.logger.warn(`Branch creation failed for ${node.task.branchName}, recovering`);
             try {
-              this.gitManager.checkoutBranch(node.task.branchName);
+              this.gitManager.ensureCleanState();
+              this.gitManager.deleteBranch(node.task.branchName);
+              this.gitManager.createBranch(node.task.branchName);
             } catch {
+              this.logger.error(`Cannot set up branch for ${node.task.id}`);
               node.status = 'failed';
+              try { this.gitManager.checkoutMain(); } catch { /* best effort */ }
               continue;
             }
           }
@@ -178,12 +182,15 @@ export class Orchestrator {
             try {
               this.gitManager.createBranch(node.task.branchName, productRepo);
             } catch {
-              this.logger.warn(`Product repo branch ${node.task.branchName} may already exist`);
+              this.logger.warn(`Product repo branch creation failed for ${node.task.branchName}, recovering`);
               try {
-                this.gitManager.checkoutBranch(node.task.branchName, productRepo);
+                this.gitManager.ensureCleanState(productRepo);
+                this.gitManager.deleteBranch(node.task.branchName, productRepo);
+                this.gitManager.createBranch(node.task.branchName, productRepo);
               } catch {
                 this.logger.error(`Cannot set up product repo branch for ${node.task.id}`);
                 node.status = 'failed';
+                try { this.gitManager.checkoutMain(); } catch { /* best effort */ }
                 continue;
               }
             }

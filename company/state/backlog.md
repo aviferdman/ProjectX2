@@ -65,7 +65,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Dependencies:** Core framework complete  
 **Rationale:** Establish baseline performance metrics to track regressions and optimize bottlenecks
 
-- [STORY-017] [P2] [done] [developer] — Create performance benchmark suite
+- [STORY-017] [P2] [review] [developer] — Create performance benchmark suite
   - **Description:** Build automated benchmarks for critical operations: agent initialization, task execution, memory read/write, tool invocation. Run in CI, track over time. Set performance budgets.
   - **Acceptance Criteria:**
     - ✅ Benchmarks for agent init (<100ms), task exec (<5s), memory ops (<50ms)
@@ -132,7 +132,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-037 | P2 | todo | developer | 1d | Add rate limiting to web tool to prevent abuse |
+| TASK-037 | P2 | review | developer | 1d | Add rate limiting to web tool to prevent abuse |
 
 **Dependencies:**
 - TASK-029, TASK-030, TASK-031 depend on TASK-028
@@ -169,7 +169,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-049 | P1 | todo | developer | 1d | Add memory search and query API |
 | TASK-050 | P2 | todo | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
 | TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
-| TASK-052 | P2 | todo | developer | 1d | Implement memory export/import for debugging |
+| TASK-052 | P2 | review | developer | 1d | Implement memory export/import for debugging |
 | TASK-053 | P1 | todo | developer | 2d | Write tests for memory system (>80% coverage) |
 
 **Dependencies:**
