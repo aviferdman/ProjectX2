@@ -22,28 +22,47 @@ None
 | Status | Count |
 |--------|-------|
 | Done (archived) | 41 |
+<<<<<<< HEAD
 | Review | 5 |
 | In Progress | 1 |
 | Todo | 75 |
+=======
+| Review | 6 |
+| In Progress | 1 |
+| Todo | 34 |
+>>>>>>> agent/projm/development-projm-c1
 | Blocked | 0 |
-| **Total Active** | **81** |
+| **Total Active** | **41** |
 | **Total Complete** | **41** |
-| **Grand Total** | **122** |
-| **Completion** | **33.6%** |
+| **Grand Total** | **82** |
+| **Completion** | **50.0%** |
 
 ### Active Work — 🎯 EARLY DEVELOPMENT PHASE
+<<<<<<< HEAD
 - **3 P0 tasks in `review` status** (TASK-084, TASK-085 — Examples) + 2 P1 tasks (TASK-048 Memory, STORY-017 Benchmarks)
 - **1 P0 story in `in-progress` status** (STORY-015 — API stability contract, 50% complete)
 - **5 P0 tasks + 1 P0 decision in `todo` status**
 - **~70 P1/P2/P3 tasks in `todo` status**
 - **0 tasks blocked**
+=======
+- **6 items in `review` status** (2 P0: TASK-084, TASK-085 | 2 P1: TASK-048, TASK-052 | 2 P2: TASK-037, STORY-017)
+- **1 P0 story in `in-progress` status** (STORY-015 — API stability contract, 50% complete)
+- **34 items in `todo` status** (mix of P0, P1, P2, P3)
+- **0 items blocked**
+>>>>>>> agent/projm/development-projm-c1
 
 ### Tasks In Review Queue
 1. **TASK-084 (P0)** — Create example: Simple chat agent [developer] — ⚠️ NEEDS QA REVIEW
 2. **TASK-085 (P0)** — Create example: Research crew (web + file tools) [developer] — ⚠️ NEEDS QA REVIEW
 3. **TASK-048 (P1)** — Implement long-term memory with SQLite persistence [developer] — NEEDS QA REVIEW
+<<<<<<< HEAD
 4. **TASK-037 (P2)** — Add rate limiting to web tool to prevent abuse [developer] — NEEDS QA REVIEW
 5. **STORY-017 (P2)** — Create performance benchmark suite [developer] — NEEDS QA REVIEW
+=======
+4. **TASK-052 (P2)** — Implement memory export/import for debugging [developer] — NEEDS QA REVIEW
+5. **TASK-037 (P2)** — Add rate limiting to web tool to prevent abuse [developer] — NEEDS QA REVIEW
+6. **STORY-017 (P2)** — Create performance benchmark suite [developer] — NEEDS QA REVIEW
+>>>>>>> agent/projm/development-projm-c1
 
 ### Tasks In Progress
 1. **STORY-015 (P0)** — Define API stability contract (50% complete: deprecation utility ✅, CONTRIBUTING.md ✅, CI enforcement ❌, examples ❌) [developer]
