@@ -42,7 +42,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-004 | P0 | done | developer | 0.5d | Configure Vitest for unit and integration testing |
 | TASK-005 | P0 | done | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
 | TASK-006 | P0 | done | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
-| TASK-007 | P0 | todo | developer | 0.5d | Add MIT LICENSE file and initial README.md |
+| TASK-007 | P0 | review | developer | 0.5d | Add MIT LICENSE file and initial README.md |
 | TASK-008 | P1 | todo | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
 | TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
@@ -58,7 +58,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-011 | P0 | todo | developer | 2d | Design and implement Agent class with TypeScript types |
+| TASK-011 | P0 | review | developer | 2d | Design and implement Agent class with TypeScript types |
 | TASK-012 | P0 | todo | developer | 2d | Design and implement Crew class for multi-agent orchestration |
 | TASK-013 | P0 | todo | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) |
 | TASK-014 | P0 | todo | developer | 2d | Implement event-driven execution engine (EventEmitter-based) |
