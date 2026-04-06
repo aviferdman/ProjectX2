@@ -41,7 +41,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-003 | P0 | done | developer | 0.5d | Set up ESLint + Prettier with TypeScript rules |
 | TASK-004 | P0 | done | developer | 0.5d | Configure Vitest for unit and integration testing |
 | TASK-005 | P0 | done | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
-| TASK-006 | P0 | review | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
+| TASK-006 | P0 | done | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
 | TASK-007 | P0 | todo | developer | 0.5d | Add MIT LICENSE file and initial README.md |
 | TASK-008 | P1 | todo | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) |
 | TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
