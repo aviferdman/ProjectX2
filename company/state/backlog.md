@@ -58,12 +58,12 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-011 | P0 | blocked | developer | 2d | Design and implement Agent class with TypeScript types | ⚠️ QA CONDITIONAL: Fix ESLint violations (cycle 21) — REASSIGNED |
-| TASK-012 | P0 | blocked | developer | 2d | Design and implement Crew class for multi-agent orchestration | ⚠️ QA CONDITIONAL: Fix ESLint + remove non-null assertions (cycle 21) — REASSIGNED |
+| TASK-011 | P0 | review | developer | 2d | Design and implement Agent class with TypeScript types | ✅ Code quality fixes applied (cycle 22) — READY FOR RE-QA |
+| TASK-012 | P0 | review | developer | 2d | Design and implement Crew class for multi-agent orchestration | ✅ Non-null assertions replaced with type guards, formatting fixed (cycle 22) — READY FOR RE-QA |
 | TASK-013 | P0 | done | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-014 | P0 | blocked | developer | 2d | Implement event-driven execution engine (EventEmitter-based) | 🔴 QA CRITICAL: Fix 26 TypeScript errors (add Node types) (cycle 21) — REASSIGNED |
+| TASK-014 | P0 | review | developer | 2d | Implement event-driven execution engine (EventEmitter-based) | ✅ TypeScript errors fixed: Node types added to tsconfig (cycle 22) — READY FOR RE-QA |
 | TASK-015 | P0 | done | developer | 1d | Add input validation with Zod schemas for all configs | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-016 | P0 | blocked | developer | 2d | Write unit tests for Agent class (>80% coverage) | ⚠️ QA CONDITIONAL: Same fixes as TASK-011 (cycle 21) — REASSIGNED |
+| TASK-016 | P0 | review | developer | 2d | Write unit tests for Agent class (>80% coverage) | ✅ ESLint test overrides applied, unused imports removed (cycle 22) — READY FOR RE-QA |
 | TASK-017 | P0 | todo | developer | 2d | Write unit tests for Crew class (>80% coverage) |
 | TASK-018 | P1 | todo | developer | 1d | Add JSDoc comments to all public APIs |
 | TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
