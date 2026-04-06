@@ -132,7 +132,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-038 | P0 | review | developer | 2d | Design Task class with dependency DAG support |
-| TASK-039 | P0 | todo | developer | 2d | Implement topological sort for task dependency resolution |
+| TASK-039 | P0 | review | developer | 2d | Implement topological sort for task dependency resolution |
 | TASK-040 | P0 | todo | developer | 2d | Add parallel execution support for independent tasks |
 | TASK-041 | P0 | todo | developer | 1d | Implement task context passing (previous outputs → next task) |
 | TASK-042 | P1 | todo | developer | 1d | Add task timeout and retry configuration |
