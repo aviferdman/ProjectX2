@@ -286,7 +286,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-094 | P1 | todo | developer | 2d | Write architecture deep-dive documentation |
 | TASK-095 | P2 | todo | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
 | TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
-| TASK-097 | P0 | todo | developer | 2d | Set up docs site with VitePress or Docusaurus |
+| TASK-097 | P0 | review | developer | 2d | Set up docs site with VitePress or Docusaurus |
 
 **Dependencies:**
 - TASK-081, TASK-082, TASK-083 are foundational
