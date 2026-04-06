@@ -36,13 +36,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-001 | P0 | done | developer | 1d | Initialize monorepo structure with TypeScript + Node.js 18+ |
-| TASK-002 | P0 | done | developer | 0.5d | Configure tsconfig.json (strict mode, ES2022, type definitions) |
-| TASK-003 | P0 | done | developer | 0.5d | Set up ESLint + Prettier with TypeScript rules |
-| TASK-004 | P0 | done | developer | 0.5d | Configure Vitest for unit and integration testing |
-| TASK-005 | P0 | done | developer | 0.5d | Set up GitHub Actions CI/CD (lint, test, build on PR) |
-| TASK-006 | P0 | done | developer | 1d | Create package.json for `@crewspace/core` with dependencies |
-| TASK-007 | P0 | done | developer | 0.5d | Add MIT LICENSE file and initial README.md | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
 | TASK-008 | P1 | review | developer | 1d | Set up GitHub repo templates (issue, PR, bug, feature) | ⚠️ Conditional approval — re-test after file locking resolved (cycle 24) |
 | TASK-009 | P1 | todo | developer | 0.5d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-010 | P2 | todo | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
@@ -58,13 +51,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-011 | P0 | done | developer | 2d | Design and implement Agent class with TypeScript types | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
-| TASK-012 | P0 | done | developer | 2d | Design and implement Crew class for multi-agent orchestration | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
-| TASK-013 | P0 | done | developer | 1d | Create core interfaces (AgentConfig, CrewConfig, TaskConfig) | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-014 | P0 | done | developer | 2d | Implement event-driven execution engine (EventEmitter-based) | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
-| TASK-015 | P0 | done | developer | 1d | Add input validation with Zod schemas for all configs | ✅ QA APPROVED (cycle 21) — READY TO MERGE |
-| TASK-016 | P0 | done | developer | 2d | Write unit tests for Agent class (>80% coverage) | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
-| TASK-017 | P0 | done | developer | 2d | Write unit tests for Crew class (>80% coverage) | ✅ QA APPROVED (cycle 24) — READY TO MERGE |
 | TASK-018 | P1 | todo | developer | 1d | Add JSDoc comments to all public APIs |
 | TASK-019 | P1 | todo | developer | 1d | Test compatibility with Node.js 18+ and Bun runtime |
 
@@ -83,14 +69,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-020 | P0 | done | developer | 2d | Design LLMProvider interface with streaming support | ✅ QA APPROVED (cycle 26) — READY TO MERGE |
-| TASK-021 | P0 | done | developer | 2d | Implement OpenAI provider (GPT-4o, GPT-4o-mini) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
-| TASK-022 | P0 | done | developer | 2d | Implement Anthropic provider (Claude 3.5 Sonnet/Haiku) | ✅ QA APPROVED (cycle 31) — READY TO MERGE |
-| TASK-023 | P1 | done | developer | 1d | Implement Ollama provider for local models | ✅ QA APPROVED (cycle 53) — MERGED TO MAIN |
-| TASK-024 | P0 | done | developer | 1d | Add exponential backoff retry logic for rate limits | ✅ QA APPROVED (cycle 31) — MERGED TO MAIN |
-| TASK-025 | P0 | done | developer | 1d | Implement token usage tracking and cost calculation | ✅ QA APPROVED (cycle 43) — MERGED TO MAIN |
-| TASK-026 | P1 | done | developer | 1d | Add provider fallback mechanism (primary → secondary) | ✅ IMPLEMENTED (cycle 57) — MERGED TO MAIN |
-| TASK-027 | P0 | done | developer | 2d | Write tests for all LLM providers with mocked responses | ✅ QA APPROVED (cycle 43) — MERGED TO MAIN |
 
 **Dependencies:**
 - TASK-021, TASK-022, TASK-023 depend on TASK-020
@@ -132,13 +110,9 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-038 | P0 | review | developer | 2d | Design Task class with dependency DAG support |
-| TASK-039 | P0 | done | developer | 2d | Implement topological sort for task dependency resolution | ✅ QA APPROVED — MERGED TO MAIN |
-| TASK-040 | P0 | done | developer | 2d | Add parallel execution support for independent tasks | ✅ QA APPROVED — MERGED TO MAIN |
-| TASK-041 | P0 | done | developer | 1d | Implement task context passing (previous outputs → next task) | ✅ QA APPROVED — MERGED TO MAIN |
 | TASK-042 | P1 | review | developer | 1d | Add task timeout and retry configuration |
 | TASK-043 | P1 | todo | developer | 1d | Detect and error on circular dependencies |
 | TASK-044 | P1 | review | developer | 1d | Generate text-based task plan tree for CLI output |
-| TASK-045 | P0 | done | developer | 2d | Write tests for task orchestration and dependency handling | ✅ IMPLEMENTED (cycle 54) — MERGED TO MAIN |
 
 **Dependencies:**
 - TASK-038 is foundation
