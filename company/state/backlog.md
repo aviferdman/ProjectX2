@@ -221,7 +221,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-057 | P1 | blocked | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — BLOCKED: TypeScript compilation errors (5 type safety issues in validator.ts) |
 | TASK-058 | P2 | todo | developer | 1d | Add progress indicators with Ora and color output with Chalk |
 | TASK-059 | P2 | todo | developer | 1d | Add --verbose flag for debugging output |
-| TASK-060 | P1 | done | developer | 1d | Test CLI cross-platform (Windows, macOS, Linux in CI) |
 
 **Dependencies:**
 - TASK-054 is foundation

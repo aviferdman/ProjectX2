@@ -74,3 +74,4 @@
 | TASK-054 | P1 | done | developer | 2d | Set up CLI with Commander.js and proper argument parsing |
 | TASK-055 | P1 | done | developer | 2d | Implement `npx crewspace init` scaffolding command |
 | TASK-112 | P0 | done | developer | 2d | Set up automated npm publish pipeline with GitHub Actions |
+| TASK-060 | P1 | done | developer | 1d | Test CLI cross-platform (Windows, macOS, Linux in CI) |
