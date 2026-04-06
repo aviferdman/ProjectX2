@@ -296,7 +296,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-087 | P1 | blocked | developer | 1d | Create example: Data analysis pipeline — BLOCKED: merge conflicts |
-| TASK-091 | P1 | review | developer | 1d | Create example: Autonomous task completion |
+| TASK-091 | P1 | blocked | developer | 1d | Create example: Autonomous task completion — BLOCKED: top-level await error |
 | TASK-092 | P1 | todo | developer | 1d | Create example: Custom tool integration |
 | TASK-093 | P1 | todo | developer | 1d | Create example: Memory and learning |
 | TASK-094 | P1 | todo | developer | 2d | Write architecture deep-dive documentation |
