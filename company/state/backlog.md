@@ -217,7 +217,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-056 | P1 | todo | developer | 1d | Implement `npx crewspace run <file>` execution command |
+| TASK-056 | P1 | review | developer | 1d | Implement `npx crewspace run <file>` execution command |
 | TASK-057 | P1 | todo | developer | 1d | Implement `npx crewspace validate <file>` syntax checker |
 | TASK-058 | P2 | todo | developer | 1d | Add progress indicators with Ora and color output with Chalk |
 | TASK-059 | P2 | todo | developer | 1d | Add --verbose flag for debugging output |
