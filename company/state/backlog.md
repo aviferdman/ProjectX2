@@ -336,9 +336,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-087 | P1 | blocked | developer | 1d | Create example: Data analysis pipeline — BLOCKED: merge conflicts |
-| TASK-091 | P1 | done | developer | 1d | Create example: Autonomous task completion — ✅ COMPLETE (Cycle 11, commit 48e3e14) |
-| TASK-092 | P1 | done | developer | 1d | Create example: Custom tool integration — ✅ COMPLETE (Cycle 12, commit 4e8427e) |
-| TASK-093 | P1 | done | developer | 1d | Create example: Memory and learning — ✅ COMPLETE (Cycle 13, commit a8f7c4e) |
 | TASK-095 | P2 | todo | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
 | TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
 
@@ -357,7 +354,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-102 | P1 | done | developer | 0.5d | Create Twitter/X account for announcements — ✅ COMPLETE (Cycle 20, commit 16ff9b7) — Note: Delivered code infrastructure (account-config module, setup scripts, tests), not actual social media account |
 | TASK-103.1 | P2 | todo | developer | 0.5d | Implement Discord bot scaffold (discord.js, auth, welcome message handler) |
 | TASK-103 | P2 | todo | developer | 1d | Configure automated welcome messages for Discord |
 | TASK-104 | P2 | todo | developer | 1d | Enable GitHub Discussions for Q&A |
