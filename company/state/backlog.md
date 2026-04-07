@@ -743,7 +743,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-075 | P3 | review | developer | 1d | Create ESLint config for Crewspace best practices (UNBLOCKED: *.mts in ignores, 2 lint errors fixed in check-semver-compliance.ts — lint passes with 0 errors) |
+| TASK-075 | P3 | done | developer | 1d | Create ESLint config for Crewspace best practices (QA PASSED: 0 errors, 428 warnings, all tests pass) |
 | TASK-076 | P3 | blocked | developer | 1d | Create Prettier config for consistent formatting (BLOCKED: Merge conflicts in 4 files must be resolved) |
 
 **Dependencies:**
