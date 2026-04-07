@@ -404,7 +404,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-075 | P3 | blocked | developer | 1d | Create ESLint config for Crewspace best practices (BLOCKED: Add **/*.mts to ignores - lint fails on docs/.vitepress/config.mts) |
-| TASK-076 | P3 | review | developer | 1d | Create Prettier config for consistent formatting |
+| TASK-076 | P3 | blocked | developer | 1d | Create Prettier config for consistent formatting (BLOCKED: Merge conflicts in 4 files must be resolved) |
 | TASK-077 | P3 | todo | developer | 1d | Create Vitest helpers for testing agent workflows |
 | TASK-078 | P3 | todo | developer | 1d | Implement mock LLM response system for tests |
 | TASK-079 | P3 | todo | developer | 1d | Ensure ES modules + CommonJS support |
