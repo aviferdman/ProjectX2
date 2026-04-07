@@ -390,7 +390,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-113 | P0 | blocked | developer | 1d | Publish v0.1.0 to npm registry — BLOCKED: build fails, conflicts |
-| TASK-114 | P1 | todo | developer | 1d | Create GitHub release with release notes |
+| TASK-114 | P1 | review | developer | 1d | Create GitHub release with release notes |
 | TASK-115 | P1 | todo | developer | 0.5d | Add npm badges to README (version, downloads, license) |
 | TASK-116 | P2 | todo | developer | 1d | Document deprecation policy for breaking changes |
 
