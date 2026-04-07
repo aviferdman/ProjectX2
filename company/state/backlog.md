@@ -435,7 +435,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-056 | P1 | blocked | developer | 1d | Implement `npx crewspace run <file>` execution command — BLOCKED: build fails |
-| TASK-057 | P1 | blocked | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — BLOCKED: TypeScript compilation errors (5 type safety issues in validator.ts) |
+| TASK-057 | P1 | review | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — Fixed all 5 TypeScript type safety issues in validator.ts |
 
 **Dependencies:**
 - TASK-054 is foundation
