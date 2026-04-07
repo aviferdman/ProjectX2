@@ -95,3 +95,4 @@
 | TASK-114 | P1 | done | developer | 1d | Create GitHub release with release notes |
 | TASK-115 | P1 | done | developer | 0.5d | Add npm badges to README (version, downloads, license) |
 | TASK-010 | P2 | done | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
+| TASK-050 | P2 | done | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
