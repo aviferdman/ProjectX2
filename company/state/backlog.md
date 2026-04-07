@@ -70,8 +70,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 - ✅ TASK-111 (P0) — Semantic versioning configured with CHANGELOG.md. **MEETS ALL ACCEPTANCE CRITERIA.**
 - ✅ TASK-086 (P1) — Code review crew example with 245 lines of functional code + 547 lines of tests (32 test cases). **MEETS ALL ACCEPTANCE CRITERIA.**
 
-**Pending QA Review:**
-- ⏳ TASK-064 (P2) — Performance metrics tracking. Requires QA verification to confirm overlap with existing performance work.
 
 **Product Vision Alignment:** ✅ All completed work aligns with Phase 1 OSS framework goal. No scope drift detected.
 
@@ -92,7 +90,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Scope Gaps Identified:**
 1. **Process Gap:** No automated sync between product repo merges and backlog status → Recommend orchestrator enhancement
 2. **STORY-015 Gap:** Deprecation utilities created but CI enforcement + API evolution docs missing → Need follow-up tasks
-3. **Clarification Needed:** TASK-064 (performance metrics) overlap with existing performance work → QA verification required
 
 **Full review:** See `company/state/research/pm-cycle-77-progress-review.md`
 
@@ -272,7 +269,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-064 | P2 | review | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
+| TASK-064 | P2 | done | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
 | TASK-065 | P2 | todo | developer | 1d | Add log export to file and stdout |
 
 **Dependencies:**
