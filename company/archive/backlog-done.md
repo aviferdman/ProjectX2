@@ -79,3 +79,4 @@
 | TASK-089 | P1 | done | developer | 1d | Create example: Content generation workflow |
 | TASK-090 | P1 | done | developer | 1d | Create example: Multi-step reasoning (chain-of-thought) |
 | TASK-094 | P1 | done | developer | 2d | Write architecture deep-dive documentation |
+| TASK-098 | P1 | done | developer | 1d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
