@@ -120,3 +120,5 @@
 | TASK-079 | P3 | done | developer | 1d | Ensure ES modules + CommonJS support |
 | TASK-080 | P3 | done | developer | 1d | Test bundler compatibility (Vite, esbuild, webpack) |
 | TASK-096 | P3 | done | developer | 1d | Create migration guide from LangChain (if feasible) |
+| TASK-056 | P1 | done | developer | 1d | Implement `npx crewspace run <file>` execution command — build now passes, implementation verified |
+| TASK-057 | P1 | done | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — validator.ts fixed, all TS errors resolved, build+typecheck+tests pass |
