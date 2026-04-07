@@ -256,7 +256,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-056 | P1 | blocked | developer | 1d | Implement `npx crewspace run <file>` execution command — BLOCKED: build fails |
 | TASK-057 | P1 | blocked | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — BLOCKED: TypeScript compilation errors (5 type safety issues in validator.ts) |
-| TASK-059 | P2 | done | developer | 1d | Add --verbose flag for debugging output |
 
 **Dependencies:**
 - TASK-054 is foundation
