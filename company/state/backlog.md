@@ -442,7 +442,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-103.1 | P2 | todo | developer | 0.5d | Implement Discord bot scaffold (discord.js, auth, welcome message handler) |
-| TASK-104 | P2 | todo | developer | 1d | Enable GitHub Discussions for Q&A |
+| TASK-104 | P2 | review | developer | 1d | Enable GitHub Discussions for Q&A |
 
 **Dependencies:**
 - TASK-098, TASK-099, TASK-100 are repo setup
