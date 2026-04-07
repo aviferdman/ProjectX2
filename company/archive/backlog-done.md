@@ -87,3 +87,4 @@
 | TASK-092 | P1 | done | developer | 1d | Create example: Custom tool integration — ✅ COMPLETE (Cycle 12, commit 4e8427e) |
 | TASK-093 | P1 | done | developer | 1d | Create example: Memory and learning — ✅ COMPLETE (Cycle 13, commit a8f7c4e) |
 | TASK-102 | P1 | done | developer | 0.5d | Create Twitter/X account for announcements — ✅ COMPLETE (Cycle 20, commit 16ff9b7) — Note: Delivered code infrastructure (account-config module, setup scripts, tests), not actual social media account |
+| TASK-105 | P1 | done | developer | 2d | Design benchmark suite methodology |
