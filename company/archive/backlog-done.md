@@ -117,3 +117,5 @@
 | TASK-124 | P2 | done | developer | 0.5d | Document PerformanceMetricsTracker in VitePress (API reference, usage guide) |
 | TASK-077 | P3 | done | developer | 1d | Create Vitest helpers for testing agent workflows |
 | TASK-078 | P3 | done | developer | 1d | Implement mock LLM response system for tests |
+| TASK-079 | P3 | done | developer | 1d | Ensure ES modules + CommonJS support |
+| TASK-080 | P3 | done | developer | 1d | Test bundler compatibility (Vite, esbuild, webpack) |
