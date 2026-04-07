@@ -94,3 +94,4 @@
 | TASK-109 | P1 | done | developer | 1d | Publish benchmark results in docs with methodology |
 | TASK-114 | P1 | done | developer | 1d | Create GitHub release with release notes |
 | TASK-115 | P1 | done | developer | 0.5d | Add npm badges to README (version, downloads, license) |
+| TASK-010 | P2 | done | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
