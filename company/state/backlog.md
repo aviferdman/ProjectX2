@@ -317,7 +317,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-101 | P1 | todo | developer | 1d | Set up Discord server with channels |
+| TASK-101 | P1 | review | developer | 1d | Set up Discord server with channels |
 | TASK-102 | P1 | todo | developer | 0.5d | Create Twitter/X account for announcements |
 | TASK-103 | P2 | todo | developer | 1d | Configure automated welcome messages for Discord |
 | TASK-104 | P2 | todo | developer | 1d | Enable GitHub Discussions for Q&A |
