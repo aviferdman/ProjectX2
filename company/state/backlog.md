@@ -458,7 +458,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-110 | P2 | review | developer | 1d | Add bundle size comparison analysis |
+| TASK-110 | P2 | done | developer | 1d | Add bundle size comparison analysis |
 
 **Dependencies:**
 - TASK-105 is foundation
