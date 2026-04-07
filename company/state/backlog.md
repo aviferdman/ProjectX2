@@ -163,7 +163,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-010 | P2 | review | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
+| TASK-010 | P2 | done | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
 
 **Dependencies:** TASK-001 must complete before TASK-002 through TASK-010
 
