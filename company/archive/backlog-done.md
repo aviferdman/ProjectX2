@@ -114,3 +114,4 @@
 | TASK-104 | P2 | done | developer | 1d | Enable GitHub Discussions for Q&A |
 | TASK-110 | P2 | done | developer | 1d | Add bundle size comparison analysis |
 | TASK-116 | P2 | done | developer | 1d | Document deprecation policy for breaking changes |
+| TASK-124 | P2 | done | developer | 0.5d | Document PerformanceMetricsTracker in VitePress (API reference, usage guide) |

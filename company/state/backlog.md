@@ -372,7 +372,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-123 | P2 | blocked | developer | 1d | Add performance metrics integration examples (attach to Agent, Crew, export/visualize) — QA: 4 issues found (see qa-report-development-qa-c48.md) |
-| TASK-124 | P2 | done | developer | 0.5d | Document PerformanceMetricsTracker in VitePress (API reference, usage guide) |
 
 **Dependencies:**
 - TASK-061 is foundation
