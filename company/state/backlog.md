@@ -317,7 +317,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-102 | P1 | review | developer | 0.5d | Create Twitter/X account for announcements |
+| TASK-102 | P1 | todo | marketing-growth | 0.5d | Create Twitter/X account for announcements |
 | TASK-103.1 | P2 | todo | developer | 0.5d | Implement Discord bot scaffold (discord.js, auth, welcome message handler) |
 | TASK-103 | P2 | todo | developer | 1d | Configure automated welcome messages for Discord |
 | TASK-104 | P2 | todo | developer | 1d | Enable GitHub Discussions for Q&A |
