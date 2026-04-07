@@ -113,3 +113,4 @@
 | TASK-103 | P2 | done | developer | 1d | Configure automated welcome messages for Discord |
 | TASK-104 | P2 | done | developer | 1d | Enable GitHub Discussions for Q&A |
 | TASK-110 | P2 | done | developer | 1d | Add bundle size comparison analysis |
+| TASK-116 | P2 | done | developer | 1d | Document deprecation policy for breaking changes |
