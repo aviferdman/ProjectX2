@@ -373,7 +373,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-105 | P1 | todo | developer | 2d | Design benchmark suite methodology |
+| TASK-105 | P1 | review | developer | 2d | Design benchmark suite methodology |
 | TASK-106 | P1 | todo | developer | 2d | Implement same workflow in Crewspace, LangChain.js, CrewAI |
 | TASK-107 | P1 | todo | developer | 1d | Measure execution time, memory, token efficiency, code complexity |
 | TASK-108 | P1 | todo | developer | 1d | Set up automated benchmark CI with GitHub Actions |
