@@ -497,15 +497,15 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Dependencies:** Core framework complete  
 **Rationale:** Need API stability guarantees to prevent breaking changes for early adopters
 
-- [STORY-015] [P0] [in-progress] [developer] — Define API stability contract and deprecation policy
+- [STORY-015] [P0] [review] [developer] — Define API stability contract and deprecation policy
   - **Description:** Establish clear versioning strategy for public API changes. Define what constitutes breaking vs non-breaking changes. Create deprecation policy (warning → removal timeline). Implement semver automation in CI/CD.
   - **Acceptance Criteria:** 
     - ✅ API stability policy documented in CONTRIBUTING.md (basic semver section added)
-    - ❌ Semver enforcement in CI (detect breaking changes) — NOT IMPLEMENTED
+    - ✅ Semver enforcement in CI (detect breaking changes) — scripts/check-semver-compliance.ts + CI job
     - ✅ Deprecation decorator/utility created (DeprecationRegistry, decorators, 27 tests — commit 45aade8)
-    - ❌ Examples of safe API evolution patterns — NOT DOCUMENTED
+    - ✅ Examples of safe API evolution patterns — docs/guide/api-evolution-patterns.md (8 patterns)
   - **Success Metrics:** API changes follow semver, no unannounced breaking changes
-  - **Status:** 50% complete (2 of 4 criteria met) — Needs: CI semver check + API evolution examples
+  - **Status:** 100% complete (4 of 4 criteria met) — All criteria implemented, 26 tests passing
 
 ### Epic 12: Developer Experience Validation
 **Stories:** STORY-016 (NEW — Identified in PM Cycle 65 Review)  
