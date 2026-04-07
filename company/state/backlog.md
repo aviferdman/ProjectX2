@@ -389,7 +389,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-074 | P2 | done | developer | 1d | Write tests for error handling scenarios |
 
 **Dependencies:**
 - TASK-068 is foundation
