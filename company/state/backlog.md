@@ -759,7 +759,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-087 | P1 | done | developer | 1d | Create example: Data analysis pipeline — Fixed: rewrote test file with proper TASK-087 coverage (41 tests) |
 
 **Dependencies:**
 - TASK-081, TASK-082, TASK-083 are foundational
