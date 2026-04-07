@@ -321,7 +321,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-069 | P2 | review | developer | 2d | Implement checkpoint/resume system with SQLite |
+| TASK-069 | P2 | done | developer | 2d | Implement checkpoint/resume system with SQLite |
 | TASK-070 | P2 | todo | developer | 1d | Add configurable retry policies per task |
 | TASK-071 | P2 | todo | developer | 1d | Implement graceful degradation for non-critical failures |
 | TASK-072 | P2 | todo | developer | 1d | Add timeout protection for runaway tasks |
