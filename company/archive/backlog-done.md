@@ -111,3 +111,4 @@
 | TASK-074 | P2 | done | developer | 1d | Write tests for error handling scenarios |
 | TASK-095 | P2 | done | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
 | TASK-103 | P2 | done | developer | 1d | Configure automated welcome messages for Discord |
+| TASK-104 | P2 | done | developer | 1d | Enable GitHub Discussions for Q&A |
