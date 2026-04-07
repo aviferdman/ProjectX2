@@ -122,3 +122,5 @@
 | TASK-096 | P3 | done | developer | 1d | Create migration guide from LangChain (if feasible) |
 | TASK-056 | P1 | done | developer | 1d | Implement `npx crewspace run <file>` execution command — build now passes, implementation verified |
 | TASK-057 | P1 | done | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — validator.ts fixed, all TS errors resolved, build+typecheck+tests pass |
+| TASK-053 | P1 | done | developer | 2d | Write tests for memory system (>80% coverage) — memory module at 97.82% stmt coverage, memory-errors at 100%, 11 test files |
+| TASK-113 | P0 | done | developer | 1d | Publish v0.1.0 to npm registry — Fixed: script path resolution, CLI package files, release dry-run verified |

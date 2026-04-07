@@ -507,7 +507,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-053 | P1 | done | developer | 2d | Write tests for memory system (>80% coverage) — memory module at 97.82% stmt coverage, memory-errors at 100%, 11 test files |
 
 **Dependencies:**
 - TASK-046 is foundation
@@ -636,7 +635,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-113 | P0 | done | developer | 1d | Publish v0.1.0 to npm registry — Fixed: script path resolution, CLI package files, release dry-run verified |
 
 **Dependencies:**
 - TASK-111, TASK-112 are setup
