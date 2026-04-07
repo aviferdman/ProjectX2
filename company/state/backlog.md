@@ -321,7 +321,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-071 | P2 | todo | developer | 1d | Implement graceful degradation for non-critical failures |
+| TASK-071 | P2 | review | developer | 1d | Implement graceful degradation for non-critical failures |
 | TASK-072 | P2 | todo | developer | 1d | Add timeout protection for runaway tasks |
 | TASK-073 | P2 | todo | developer | 1d | Create dead letter queue for failed tasks |
 | TASK-074 | P2 | todo | developer | 1d | Write tests for error handling scenarios |
