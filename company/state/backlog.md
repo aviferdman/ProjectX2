@@ -291,7 +291,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-064 | P2 | done | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
 | TASK-065 | P2 | todo | developer | 1d | Add log export to file and stdout |
 | TASK-123 | P2 | todo | developer | 1d | Add performance metrics integration examples (attach to Agent, Crew, export/visualize) |
 | TASK-124 | P2 | todo | developer | 0.5d | Document PerformanceMetricsTracker in VitePress (API reference, usage guide) |

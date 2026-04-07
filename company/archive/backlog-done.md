@@ -99,3 +99,4 @@
 | TASK-051 | P2 | done | developer | 1d | Add configurable retention policies (time, count-based) |
 | TASK-058 | P2 | done | developer | 1d | Add progress indicators with Ora and color output with Chalk |
 | TASK-059 | P2 | done | developer | 1d | Add --verbose flag for debugging output |
+| TASK-064 | P2 | done | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
