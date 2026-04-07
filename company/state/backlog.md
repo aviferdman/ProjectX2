@@ -30,9 +30,9 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 **Product Vision Alignment:** ✅ Aligns with STORY-010 (Execution Logging & Observability). Debugging is a top-3 pain point.
 
-**STORY-010 Progress:** 50% complete (1/2 tasks)
+**STORY-010 Progress:** 100% complete (2/2 tasks)
 - ✅ TASK-064: Performance metrics tracking (done, validated)
-- 🟡 TASK-065: Log export to file and stdout (review)
+- ✅ TASK-065: Log export to file and stdout (done, validated)
 
 **Scope Gaps Identified:**
 1. **Missing integration examples** (P2) — Recommend TASK-123: Add performance metrics integration examples (1d)
@@ -291,7 +291,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-065 | P2 | review | developer | 1d | Add log export to file and stdout |
+| TASK-065 | P2 | done | developer | 1d | Add log export to file and stdout |
 | TASK-123 | P2 | todo | developer | 1d | Add performance metrics integration examples (attach to Agent, Crew, export/visualize) |
 | TASK-124 | P2 | todo | developer | 0.5d | Document PerformanceMetricsTracker in VitePress (API reference, usage guide) |
 
