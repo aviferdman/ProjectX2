@@ -58,7 +58,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 5. **Example gap** (P3) — Will be covered by existing TASK-123
 
 **New Task Recommended:**
-- **TASK-074.3** [P2] [todo] [developer] — Integrate DeadLetterQueue into task execution pipeline (auto-enqueue after retry exhaustion, add DLQ config to Crew/Agent, hook into retry policy system) — 1d effort
+- **TASK-074.3** [P2] [review] [developer] — Integrate DeadLetterQueue into task execution pipeline (auto-enqueue after retry exhaustion, add DLQ config to Crew/Agent, hook into retry policy system) — 1d effort
 
 **Phase Progress:** 4% complete
 
