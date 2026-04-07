@@ -459,8 +459,8 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-056 | P1 | review | developer | 1d | Implement `npx crewspace run <file>` execution command — build now passes, implementation verified |
-| TASK-057 | P1 | review | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — validator.ts fixed, all TS errors resolved, build+typecheck+tests pass |
+| TASK-056 | P1 | done | developer | 1d | Implement `npx crewspace run <file>` execution command — build now passes, implementation verified |
+| TASK-057 | P1 | done | developer | 1d | Implement `npx crewspace validate <file>` syntax checker — validator.ts fixed, all TS errors resolved, build+typecheck+tests pass |
 
 **Dependencies:**
 - TASK-054 is foundation
