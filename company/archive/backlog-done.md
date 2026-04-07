@@ -82,3 +82,4 @@
 | TASK-098 | P1 | done | developer | 1d | Create CONTRIBUTING.md and CODE_OF_CONDUCT.md |
 | TASK-099 | P1 | done | developer | 1d | Set up issue templates (bug, feature, question) |
 | TASK-100 | P1 | done | developer | 0.5d | Set up PR template with checklist |
+| TASK-101 | P1 | done | developer | 1d | Set up Discord server with channels |
