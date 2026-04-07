@@ -97,3 +97,4 @@
 | TASK-010 | P2 | done | developer | 1d | Configure semantic versioning + automated npm publish pipeline |
 | TASK-050 | P2 | done | developer | 1d | Implement memory namespaces (per-agent, per-crew, global) |
 | TASK-051 | P2 | done | developer | 1d | Add configurable retention policies (time, count-based) |
+| TASK-058 | P2 | done | developer | 1d | Add progress indicators with Ora and color output with Chalk |
