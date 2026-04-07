@@ -299,7 +299,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | TASK-091 | P1 | blocked | developer | 1d | Create example: Autonomous task completion — BLOCKED: top-level await error |
 | TASK-092 | P1 | blocked | developer | 1d | Create example: Custom tool integration — BLOCKED: top-level await error |
 | TASK-093 | P1 | blocked | developer | 1d | Create example: Memory and learning — BLOCKED: top-level await error |
-| TASK-094 | P1 | todo | developer | 2d | Write architecture deep-dive documentation |
+| TASK-094 | P1 | review | developer | 2d | Write architecture deep-dive documentation |
 | TASK-095 | P2 | todo | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
 | TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
 
