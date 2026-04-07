@@ -507,7 +507,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-053 | P1 | blocked | developer | 2d | Write tests for memory system (>80% coverage) — BLOCKED: merge conflicts |
+| TASK-053 | P1 | review | developer | 2d | Write tests for memory system (>80% coverage) — memory module at 97.82% stmt coverage, memory-errors at 100% |
 
 **Dependencies:**
 - TASK-046 is foundation
@@ -636,7 +636,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-113 | P0 | blocked | developer | 1d | Publish v0.1.0 to npm registry — BLOCKED: build fails, conflicts |
+| TASK-113 | P0 | review | developer | 1d | Publish v0.1.0 to npm registry — Fixed: script path resolution, CLI package files, release dry-run passes |
 
 **Dependencies:**
 - TASK-111, TASK-112 are setup
