@@ -419,7 +419,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-087 | P1 | blocked | developer | 1d | Create example: Data analysis pipeline — BLOCKED: merge conflicts |
-| TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
+| TASK-096 | P3 | review | developer | 1d | Create migration guide from LangChain (if feasible) |
 
 **Dependencies:**
 - TASK-081, TASK-082, TASK-083 are foundational
