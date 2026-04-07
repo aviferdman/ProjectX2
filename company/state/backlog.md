@@ -237,7 +237,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-051 | P2 | todo | developer | 1d | Add configurable retention policies (time, count-based) |
+| TASK-051 | P2 | review | developer | 1d | Add configurable retention policies (time, count-based) |
 | TASK-053 | P1 | blocked | developer | 2d | Write tests for memory system (>80% coverage) — BLOCKED: merge conflicts |
 
 **Dependencies:**
