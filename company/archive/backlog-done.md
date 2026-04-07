@@ -125,3 +125,4 @@
 | TASK-053 | P1 | done | developer | 2d | Write tests for memory system (>80% coverage) — memory module at 97.82% stmt coverage, memory-errors at 100%, 11 test files |
 | TASK-113 | P0 | done | developer | 1d | Publish v0.1.0 to npm registry — Fixed: script path resolution, CLI package files, release dry-run verified |
 | TASK-087 | P1 | done | developer | 1d | Create example: Data analysis pipeline — Fixed: rewrote test file with proper TASK-087 coverage (41 tests) |
+| TASK-123 | P2 | done | developer | 1d | Add performance metrics integration examples (attach to Agent, Crew, export/visualize) — All 25 unit tests + 28 doc tests passing |

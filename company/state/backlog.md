@@ -712,7 +712,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-123 | P2 | done | developer | 1d | Add performance metrics integration examples (attach to Agent, Crew, export/visualize) — All 25 unit tests + 28 doc tests passing |
 
 **Dependencies:**
 - TASK-061 is foundation
