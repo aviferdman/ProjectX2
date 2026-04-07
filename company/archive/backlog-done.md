@@ -100,3 +100,4 @@
 | TASK-058 | P2 | done | developer | 1d | Add progress indicators with Ora and color output with Chalk |
 | TASK-059 | P2 | done | developer | 1d | Add --verbose flag for debugging output |
 | TASK-064 | P2 | done | developer | 1d | Implement performance metrics tracking (duration, tokens, API calls) |
+| TASK-065 | P2 | done | developer | 1d | Add log export to file and stdout |
