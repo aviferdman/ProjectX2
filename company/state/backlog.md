@@ -317,7 +317,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-099 | P1 | todo | developer | 1d | Set up issue templates (bug, feature, question) |
+| TASK-099 | P1 | review | developer | 1d | Set up issue templates (bug, feature, question) |
 | TASK-100 | P1 | todo | developer | 0.5d | Set up PR template with checklist |
 | TASK-101 | P1 | todo | developer | 1d | Set up Discord server with channels |
 | TASK-102 | P1 | todo | developer | 0.5d | Create Twitter/X account for announcements |
