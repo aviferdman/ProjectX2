@@ -106,3 +106,4 @@
 | TASK-070 | P2 | done | developer | 1d | Add configurable retry policies per task |
 | TASK-071 | P2 | done | developer | 1d | Implement graceful degradation for non-critical failures |
 | TASK-072 | P2 | done | developer | 1d | Add timeout protection for runaway tasks |
+| TASK-073 | P2 | done | developer | 1d | Create dead letter queue for failed tasks |
