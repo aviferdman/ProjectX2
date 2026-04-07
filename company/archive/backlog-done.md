@@ -91,3 +91,4 @@
 | TASK-106 | P1 | done | developer | 2d | Implement same workflow in Crewspace, LangChain.js, CrewAI |
 | TASK-107 | P1 | done | developer | 1d | Measure execution time, memory, token efficiency, code complexity |
 | TASK-108 | P1 | done | developer | 1d | Set up automated benchmark CI with GitHub Actions |
+| TASK-109 | P1 | done | developer | 1d | Publish benchmark results in docs with methodology |

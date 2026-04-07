@@ -373,7 +373,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-109 | P1 | done | developer | 1d | Publish benchmark results in docs with methodology |
 | TASK-110 | P2 | todo | developer | 1d | Add bundle size comparison analysis |
 
 **Dependencies:**
