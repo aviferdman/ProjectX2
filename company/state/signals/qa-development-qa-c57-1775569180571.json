@@ -1,8 +1,0 @@
-{
-  "agentId": "qa",
-  "taskId": "development-qa-c57",
-  "timestamp": "2026-04-07T13:45:37.593Z",
-  "status": "success",
-  "summary": "Reviewed TASK-096 (LangChain migration guide). All 22 tests pass. Guide is comprehensive with concept mapping, before/after examples, migration checklist, and limitations properly documented. Marked as DONE. QA report: qa-report-development-qa-c57.md",
-  "branchName": "agent/qa/development-qa-c57"
-}

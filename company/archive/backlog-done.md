@@ -119,3 +119,4 @@
 | TASK-078 | P3 | done | developer | 1d | Implement mock LLM response system for tests |
 | TASK-079 | P3 | done | developer | 1d | Ensure ES modules + CommonJS support |
 | TASK-080 | P3 | done | developer | 1d | Test bundler compatibility (Vite, esbuild, webpack) |
+| TASK-096 | P3 | done | developer | 1d | Create migration guide from LangChain (if feasible) |
