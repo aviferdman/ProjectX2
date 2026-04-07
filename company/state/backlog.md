@@ -321,7 +321,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-068 | P2 | done | developer | 2d | Design error handling strategy and custom error classes |
 | TASK-069 | P2 | todo | developer | 2d | Implement checkpoint/resume system with SQLite |
 | TASK-070 | P2 | todo | developer | 1d | Add configurable retry policies per task |
 | TASK-071 | P2 | todo | developer | 1d | Implement graceful degradation for non-critical failures |
