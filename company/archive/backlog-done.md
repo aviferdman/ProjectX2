@@ -108,3 +108,5 @@
 | TASK-072 | P2 | done | developer | 1d | Add timeout protection for runaway tasks |
 | TASK-073 | P2 | done | developer | 1d | Create dead letter queue for failed tasks |
 | TASK-074 | P2 | done | developer | 1d | Write tests for error handling scenarios |
+| TASK-074 | P2 | done | developer | 1d | Write tests for error handling scenarios |
+| TASK-095 | P2 | done | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |

@@ -389,7 +389,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-074 | P2 | done | developer | 1d | Write tests for error handling scenarios |
 
 **Dependencies:**
 - TASK-068 is foundation
@@ -425,7 +424,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-087 | P1 | blocked | developer | 1d | Create example: Data analysis pipeline — BLOCKED: merge conflicts |
-| TASK-095 | P2 | done | developer | 2d | Write comparison guide vs CrewAI, LangChain, AutoGen |
 | TASK-096 | P3 | todo | developer | 1d | Create migration guide from LangChain (if feasible) |
 
 **Dependencies:**
