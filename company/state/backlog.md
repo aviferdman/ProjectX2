@@ -743,7 +743,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-076 | P3 | review | developer | 1d | Create Prettier config for consistent formatting (RESOLVED: Formatting issues fixed in shell tool files) |
+| TASK-076 | P3 | done | developer | 1d | Create Prettier config for consistent formatting (RESOLVED: Formatting issues fixed in shell tool files) |
 
 **Dependencies:**
 - All tasks can run in parallel after TASK-006
