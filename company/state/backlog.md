@@ -405,7 +405,6 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 |---------|----------|--------|----------|--------|-------|
 | TASK-075 | P3 | blocked | developer | 1d | Create ESLint config for Crewspace best practices (BLOCKED: Add **/*.mts to ignores - lint fails on docs/.vitepress/config.mts) |
 | TASK-076 | P3 | blocked | developer | 1d | Create Prettier config for consistent formatting (BLOCKED: Merge conflicts in 4 files must be resolved) |
-| TASK-078 | P3 | done | developer | 1d | Implement mock LLM response system for tests |
 | TASK-079 | P3 | todo | developer | 1d | Ensure ES modules + CommonJS support |
 | TASK-080 | P3 | todo | developer | 1d | Test bundler compatibility (Vite, esbuild, webpack) |
 

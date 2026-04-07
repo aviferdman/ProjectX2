@@ -116,3 +116,4 @@
 | TASK-116 | P2 | done | developer | 1d | Document deprecation policy for breaking changes |
 | TASK-124 | P2 | done | developer | 0.5d | Document PerformanceMetricsTracker in VitePress (API reference, usage guide) |
 | TASK-077 | P3 | done | developer | 1d | Create Vitest helpers for testing agent workflows |
+| TASK-078 | P3 | done | developer | 1d | Implement mock LLM response system for tests |
