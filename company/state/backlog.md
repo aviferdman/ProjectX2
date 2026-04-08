@@ -4213,7 +4213,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-150 | P1 | todo | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
 | TASK-151 | P0 | todo | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
-| TASK-154 | P1 | todo | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
+| TASK-154 | P1 | done | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
 
 **Dependencies:**
