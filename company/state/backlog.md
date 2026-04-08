@@ -3254,7 +3254,17 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 ### Phase 2 Execution Timeline
 
-**Week 0-2 (Cycle 158-168): Design Foundation + CLI Checkpoint**
+**OWNER DIRECTIVE (Cycle 167):** Start Phase 2 UI work IMMEDIATELY. CLI checkpoint (C168) is early warning system, NOT blocking gate.
+
+**Week 0-2 (Cycle 167-178): Design Foundation + CLI Checkpoint — ACTIVE C167**
+- **Designer (ACTIVE C167)**: Design system creation (colors, tokens, typography, component library)
+- **UX/UI (ACTIVE C167)**: User flow mapping, low-fidelity wireframes, information architecture
+- **Frontend-dev (ACTIVE C167)**: React app scaffold, design system implementation
+- **PM (ACTIVE C167)**: CLI validation (monitor npm downloads, GitHub stars, community feedback) + Epic 15 user validation
+- **Backend-dev (ACTIVE C167)**: Epic 14 completion (npm org, metadata validation)
+- **Checkpoint (Cycle 168)**: Early warning review — if fails badly, can pause; otherwise continue full speed
+
+**Week 2-4 (Cycle 178-195): Design Sprint + Frontend Foundation**
 - **Designer**: Design system creation (colors, tokens, typography, component library)
 - **UX/UI**: User flow mapping, low-fidelity wireframes, information architecture
 - **Designer**: Initial visual direction exploration (3 concepts)
@@ -3414,23 +3424,25 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 **Epic 16: Design System & Visual Foundation**  
 **Stories:** STORY-016 (visual canvas), STORY-017 (debugging timeline)  
-**Effort:** 2-3 weeks (Cycle 158-178)  
+**Effort:** 2-3 weeks (Cycle 167-185) — **STARTS C167 PER OWNER DIRECTIVE**  
 **Assigned:** designer, uxui, frontend-dev
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-125 | P0 | todo | designer | 3d | Create design system (colors, typography, spacing, tokens) |
-| TASK-126 | P0 | todo | designer | 2d | Design component library (buttons, inputs, cards, modals) |
-| TASK-127 | P1 | todo | designer | 2d | Create icon set and visual assets (custom or curated) |
-| TASK-128 | P0 | todo | uxui | 3d | Map user flows and information architecture (all Phase 2 features) |
-| TASK-129 | P1 | todo | uxui | 2d | Create low-fidelity wireframes (canvas, timeline, dashboard) |
-| TASK-130 | P0 | todo | frontend-dev | 3d | Implement design system (Tailwind config, CSS variables, base components) |
-| TASK-131 | P1 | todo | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) |
+| TASK-125 | P0 | in-progress | designer | 3d | Create design system (colors, typography, spacing, tokens) — **START C167** |
+| TASK-126 | P0 | in-progress | designer | 2d | Design component library (buttons, inputs, cards, modals) — **START C167** |
+| TASK-127 | P1 | in-progress | designer | 2d | Create icon set and visual assets (custom or curated) — **START C167** |
+| TASK-128 | P0 | in-progress | uxui | 3d | Map user flows and information architecture (all Phase 2 features) — **START C167** |
+| TASK-129 | P1 | in-progress | uxui | 2d | Create low-fidelity wireframes (canvas, timeline, dashboard) — **START C167** |
+| TASK-130 | P0 | in-progress | frontend-dev | 3d | Implement design system (Tailwind config, CSS variables, base components) — **START C167** |
+| TASK-131 | P1 | in-progress | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) — **START C167** |
 
 **Dependencies:**
 - TASK-130 depends on TASK-125, TASK-126
 - TASK-129 depends on TASK-128
 - TASK-131 can run parallel with design tasks
+
+**Owner Directive (C167):** All Epic 16 tasks start immediately. Do NOT wait for CLI checkpoint (C168). Build full product vision with checkpoint as early warning system, not blocking gate.
 
 ---
 
