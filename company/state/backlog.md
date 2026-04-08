@@ -4185,7 +4185,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-140 | P0 | todo | designer | 3d | Design debugging timeline UI (timeline chart, log viewer, filters) |
+| TASK-140 | P0 | done | designer | 3d | Design debugging timeline UI (timeline chart, log viewer, filters) |
 | TASK-141 | P1 | todo | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
 | TASK-142 | P1 | todo | uxui | 2d | Design timeline interactions (click, zoom, filter, search) |
 | TASK-143 | P0 | todo | frontend-dev | 5d | Implement timeline chart (D3.js or Recharts, time axis, agent lanes) |
