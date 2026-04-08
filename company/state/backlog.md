@@ -22,6 +22,46 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 ## PM Review Notes
 
+### Cycle 158 Review (2026-04-08) — CRITICAL: TASK-113 Incomplete — Package NOT Published to npm
+**Status:** 🚨 **TASK-113 MARKED DONE PREMATURELY — NPM PUBLISH NOT EXECUTED** 🚨
+
+**Cycle 158 Summary:**
+- ✅ **Package preparation:** Complete (publish scripts, validation, tests)
+- ✅ **Test suite:** 99.92% pass rate (5,902/5,907 tests per QA C158)
+- ✅ **Build artifacts:** GREEN
+- ✅ **Product quality:** Excellent, ready for release
+- ❌ **NPM PUBLISH:** NOT EXECUTED — Package NOT available on npm registry
+- ❌ **TASK-113 acceptance criteria:** NOT MET — npm view @crewspace/core returns 404
+- 🔄 **Status corrected:** TASK-113 changed from `done` to `in-progress`
+- 📊 **Sprint completion:** 0% (corrected from 8%)
+
+**Critical Finding:**
+TASK-113 was marked `done` after developer prepared publish infrastructure (scripts, tests, validation) but did NOT execute the actual `npm publish` command. QA validation verified build artifacts and test results but did not verify npm registry availability.
+
+**Impact:**
+- **CRITICAL PATH BLOCKED:** All 6 Epic 15 tasks (TASK-117-122) remain blocked
+- **Phase 1 exit:** 1 cycle slip (C162 → C163 projected)
+- **Definition of done gap:** Publish tasks require registry verification, not just build artifacts
+
+**Corrective Actions for C159:**
+1. Developer: Execute `npm publish` for @crewspace/core@0.1.0
+2. QA: Add registry verification to validation checklist (`npm view <package>`)
+3. ProjM: Update project-status.md to 0% completion (no tasks actually complete)
+
+**Process Improvement:**
+Definition of Done for publish tasks must include:
+- Build artifacts ready ✅
+- Tests passing ✅
+- **Package available on target registry** (npm, GitHub, etc.)
+- **Package installable in clean environment**
+
+**Quality Assessment:**
+Product is technically ready for release. Only action required: Execute publish command. Clear execution path for C159.
+
+**Full review:** See `pm-report-development-pm-c158.md`
+
+---
+
 ### Cycle 157 Review (2026-04-08) — ROOT CAUSE IDENTIFIED: Epic 14 Task Table Was Empty
 **Status:** 🎯 **CRITICAL DISCOVERY — 16-CYCLE EXECUTION GAP RESOLVED** 🎯
 
@@ -3028,7 +3068,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 |---------|----------|--------|----------|--------|-------|
 | TASK-111 | P1 | todo | backend-dev | 0.5d | Configure npm organization @crewspace and validate publishing credentials |
 | TASK-112 | P1 | todo | backend-dev | 0.5d | Validate package.json metadata for all packages (name, version, license, keywords) |
-| TASK-113 | P0 | done | developer | 1d | Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) |
+| TASK-113 | P0 | in-progress | developer | 1d | Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) |
 | TASK-114 | P2 | todo | developer | 1d | Publish @crewspace/tools-* packages (@crewspace/tools-file, tools-web, tools-shell) |
 | TASK-115 | P2 | todo | developer | 0.5d | Publish @crewspace/cli package to npm |
 | TASK-116 | P2 | todo | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
