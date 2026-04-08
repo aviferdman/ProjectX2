@@ -3069,7 +3069,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-111 | P1 | todo | backend-dev | 0.5d | Configure npm organization @crewspace and validate publishing credentials |
 | TASK-112 | P1 | todo | backend-dev | 0.5d | Validate package.json metadata for all packages (name, version, license, keywords) |
 | TASK-113 | P0 | in-progress | developer | 1d | Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) |
-| TASK-114 | P2 | todo | developer | 1d | Publish @crewspace/tools-* packages (@crewspace/tools-file, tools-web, tools-shell) |
+| TASK-114 | P2 | review | developer | 1d | Publish @crewspace/tools-* packages (@crewspace/tools-file, tools-web, tools-shell) |
 | TASK-115 | P2 | todo | developer | 0.5d | Publish @crewspace/cli package to npm |
 | TASK-116 | P2 | todo | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
 
@@ -3125,6 +3125,387 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 - Front-load P0 tasks (blocking/critical)
 - Decision gate at TASK-122 (<60% positive feedback → reassess)
 - Keep P3 tasks as stretch goals (can defer to Phase 2)
+
+---
+
+## Phase 2: "Super" UI Development Plan (Cycle 158-225)
+
+**Strategic Directive (DEC-006):** Owner approved full "Lovable for agents" quality UX (8-12 weeks) rather than lightweight prototype. Goal: Production-quality visual canvas, debugging timeline, beautiful UX, templates. Quality bar = Lovable/v0/Bolt-level differentiation.
+
+**Timeline:** 8-12 weeks (Cycle 158 → Cycle 225)  
+**Critical Checkpoint:** CLI 2-week validation (Cycle 168) — NON-NEGOTIABLE go/no-go gate
+
+---
+
+### Phase 2 Execution Timeline
+
+**Week 0-2 (Cycle 158-168): Design Foundation + CLI Checkpoint**
+- **Designer**: Design system creation (colors, tokens, typography, component library)
+- **UX/UI**: User flow mapping, low-fidelity wireframes, information architecture
+- **Designer**: Initial visual direction exploration (3 concepts)
+- **Frontend-dev**: CLI final polish, npm package optimization
+- **PM**: CLI validation (monitor npm downloads, GitHub stars, community feedback)
+- **Gate (Cycle 168)**: CLI checkpoint decision — <50 npm downloads/week or <100 GitHub stars after 4 weeks → PAUSE Phase 2, reassess visual strategy
+
+**Week 2-4 (Cycle 168-185): Design Sprint + Frontend Foundation**
+- **Designer**: High-fidelity designs for core screens (canvas, debugging timeline, dashboard)
+- **UX/UI**: Interaction design, micro-interactions, animation specs
+- **Designer**: Component design (buttons, forms, modals, navigation)
+- **Frontend-dev**: React app scaffold, routing, authentication UI
+- **Frontend-dev**: Design system implementation (Tailwind config, component stubs)
+- **Backend-dev**: API endpoints for canvas state, workflow storage
+- **Gate (Cycle 185)**: Visual canvas prototype review — assess design→dev handoff quality
+
+**Week 4-8 (Cycle 185-210): Feature Implementation + Design Iteration**
+- **Frontend-dev**: Visual canvas implementation (React Flow integration, drag-and-drop)
+- **Frontend-dev**: Debugging timeline MVP (timeline visualization, log display)
+- **Designer**: Template library UI design, marketplace UI design
+- **UX/UI**: Usability testing (5-10 users), feedback collection, iteration recommendations
+- **Designer**: Design QA — review implemented components vs specs, create redline docs
+- **Backend-dev**: Workflow execution API, logging infrastructure, storage optimization
+- **Gate (Cycle 210)**: Feature complete checkpoint — all core features implemented, design QA passed
+
+**Week 8-12 (Cycle 210-225): Polish + Launch Prep**
+- **Designer**: Visual polish pass (spacing, colors, micro-interactions)
+- **Frontend-dev**: Animations, responsive layouts, accessibility, performance optimization
+- **UX/UI**: Final usability pass, onboarding flow validation
+- **Designer**: Marketing assets (landing page design, demo screenshots, video storyboard)
+- **Frontend-dev**: Bug fixes, edge case handling, error states
+- **QA**: Full platform testing, cross-browser validation
+- **PM**: Launch planning, marketing materials, community prep
+- **Gate (Cycle 225)**: Launch readiness — polished product ready for freemium launch
+
+---
+
+### Design Team Workstream
+
+**Designer Responsibilities (8-10 weeks, full-time):**
+1. **Design System** (Week 0-2):
+   - Color palette (light/dark modes)
+   - Typography scale (headings, body, code)
+   - Spacing system (4px/8px grid)
+   - Component library (buttons, inputs, cards, modals)
+   - Design tokens (CSS variables or Tailwind config)
+   - Icon set (custom or Lucide/Heroicons)
+
+2. **Visual Design** (Week 2-6):
+   - Canvas UI (node styles, edges, toolbar, sidebar)
+   - Debugging timeline (timeline chart, log viewer, filters)
+   - Dashboard (workflow list, usage stats, settings)
+   - Template library (grid view, cards, preview)
+   - Marketplace UI (browse, search, install)
+   - Empty states, loading states, error states
+
+3. **Design QA & Handoff** (Week 6-10):
+   - Figma component specs with measurements
+   - Design tokens export (JSON or CSS)
+   - Redline documentation for deviations
+   - Responsive breakpoints (mobile, tablet, desktop)
+   - Accessibility review (color contrast, focus states)
+   - Final polish pass (spacing, alignment, consistency)
+
+**UX/UI Specialist Responsibilities (6-8 weeks, focused):**
+1. **User Research & Flows** (Week 0-2):
+   - User flow diagrams (onboarding, canvas creation, debugging)
+   - Information architecture (navigation, content hierarchy)
+   - Competitive analysis (Lovable, v0, Bolt UX patterns)
+   - User journey mapping (developer persona)
+
+2. **Interaction Design** (Week 2-4):
+   - Micro-interactions (hover states, click feedback, drag feedback)
+   - Animation specs (transitions, page loads, state changes)
+   - Keyboard shortcuts and accessibility
+   - Onboarding flow design (tooltips, walkthroughs)
+   - Error handling and recovery flows
+
+3. **Usability Testing & Iteration** (Week 4-8):
+   - Recruit 5-10 test users (TypeScript developers)
+   - Conduct usability tests (canvas editing, debugging workflows)
+   - Document friction points and recommendations
+   - Validate onboarding flow (sub-5-minute time-to-value)
+   - Final UX audit before launch
+
+---
+
+### Coordination & Handoff Points
+
+**Designer → Frontend-dev:**
+- **Week 2**: Design system handoff (Figma library + design tokens)
+- **Week 3**: Canvas UI specs (component measurements, interactions)
+- **Week 4**: Debugging timeline specs (chart design, log formatting)
+- **Week 5**: Dashboard + templates specs
+- **Week 6**: Marketplace UI specs
+- **Week 7-10**: Design QA sessions (review implementations, redline deviations)
+
+**UX/UI → PM:**
+- **Week 1**: User flow diagrams, IA recommendations
+- **Week 3**: Interaction design specs, animation requirements
+- **Week 5**: Usability test findings, iteration recommendations
+- **Week 8**: Final UX audit report
+
+**UX/UI → Designer:**
+- **Week 1**: User research findings, competitive UX analysis
+- **Week 4**: Usability feedback for design iteration
+
+**Monthly Design Reviews (GM/PM/Designer/UX/UI):**
+- **Cycle 168 (Week 2)**: Design system + initial visual direction
+- **Cycle 185 (Week 4)**: High-fidelity designs review, interaction patterns
+- **Cycle 210 (Week 8)**: Feature complete review, polish priorities
+- **Cycle 225 (Week 12)**: Launch readiness, final sign-off
+
+---
+
+### Resource Allocation (Phase 2)
+
+**Frontend-dev:** 8-12 weeks (PRIMARY)
+- Canvas implementation (React Flow, state management)
+- Debugging timeline (charts, log viewer)
+- Dashboard, templates, marketplace UI
+- Responsive layouts, animations
+- Performance optimization, accessibility
+
+**Designer:** 8-10 weeks (FULL-TIME)
+- Design system creation
+- Visual design (all screens)
+- Component design
+- Design QA and handoff
+
+**UX/UI Specialist:** 6-8 weeks (FOCUSED)
+- User flows, IA
+- Interaction design, animations
+- Usability testing (2 rounds)
+- Final UX audit
+
+**Backend-dev:** 2-4 weeks (SUPPORTING)
+- Canvas state API
+- Workflow storage/retrieval
+- Logging infrastructure
+- Authentication/authorization APIs
+
+**QA:** 2-3 weeks (VALIDATION)
+- Design QA support
+- Cross-browser testing
+- Accessibility testing
+- Performance validation
+
+**PM:** 2-3 weeks (COORDINATION)
+- CLI validation (Cycle 168)
+- Design review facilitation
+- Launch planning
+
+---
+
+### Phase 2 Epics & Tasks
+
+**Epic 16: Design System & Visual Foundation**  
+**Stories:** STORY-016 (visual canvas), STORY-017 (debugging timeline)  
+**Effort:** 2-3 weeks (Cycle 158-178)  
+**Assigned:** designer, uxui, frontend-dev
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-125 | P0 | todo | designer | 3d | Create design system (colors, typography, spacing, tokens) |
+| TASK-126 | P0 | todo | designer | 2d | Design component library (buttons, inputs, cards, modals) |
+| TASK-127 | P1 | todo | designer | 2d | Create icon set and visual assets (custom or curated) |
+| TASK-128 | P0 | todo | uxui | 3d | Map user flows and information architecture (all Phase 2 features) |
+| TASK-129 | P1 | todo | uxui | 2d | Create low-fidelity wireframes (canvas, timeline, dashboard) |
+| TASK-130 | P0 | todo | frontend-dev | 3d | Implement design system (Tailwind config, CSS variables, base components) |
+| TASK-131 | P1 | todo | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) |
+
+**Dependencies:**
+- TASK-130 depends on TASK-125, TASK-126
+- TASK-129 depends on TASK-128
+- TASK-131 can run parallel with design tasks
+
+---
+
+**Epic 17: Visual Canvas UI Design & Implementation**  
+**Stories:** STORY-016  
+**Effort:** 3-4 weeks (Cycle 168-195)  
+**Assigned:** designer, frontend-dev
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-132 | P0 | todo | designer | 3d | Design visual canvas UI (nodes, edges, toolbar, sidebar, properties panel) |
+| TASK-133 | P1 | todo | designer | 2d | Design agent/task node styles (icons, colors, states) |
+| TASK-134 | P1 | todo | uxui | 2d | Design drag-and-drop interactions and feedback states |
+| TASK-135 | P0 | todo | frontend-dev | 5d | Implement React Flow canvas (drag-and-drop, pan, zoom) |
+| TASK-136 | P0 | todo | frontend-dev | 3d | Implement node rendering (agents, tasks, custom styles) |
+| TASK-137 | P1 | todo | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
+| TASK-138 | P1 | todo | frontend-dev | 2d | Implement canvas state management (save, load, undo/redo) |
+| TASK-139 | P2 | todo | designer | 1d | Design QA: canvas implementation vs specs |
+
+**Dependencies:**
+- TASK-135, TASK-136 depend on TASK-132
+- TASK-137 depends on TASK-133
+- TASK-139 depends on TASK-135, TASK-136, TASK-137
+
+---
+
+**Epic 18: Debugging Timeline UI Design & Implementation**  
+**Stories:** STORY-017  
+**Effort:** 3-4 weeks (Cycle 178-205)  
+**Assigned:** designer, uxui, frontend-dev
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-140 | P0 | todo | designer | 3d | Design debugging timeline UI (timeline chart, log viewer, filters) |
+| TASK-141 | P1 | todo | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
+| TASK-142 | P1 | todo | uxui | 2d | Design timeline interactions (click, zoom, filter, search) |
+| TASK-143 | P0 | todo | frontend-dev | 5d | Implement timeline chart (D3.js or Recharts, time axis, agent lanes) |
+| TASK-144 | P0 | todo | frontend-dev | 3d | Implement log viewer (display, format, syntax highlighting) |
+| TASK-145 | P1 | todo | frontend-dev | 2d | Implement filters and search (agent, task, log level) |
+| TASK-146 | P1 | todo | frontend-dev | 2d | Implement timeline playback and step-through |
+| TASK-147 | P2 | todo | designer | 1d | Design QA: timeline implementation vs specs |
+
+**Dependencies:**
+- TASK-143, TASK-144 depend on TASK-140
+- TASK-145, TASK-146 depend on TASK-143
+- TASK-147 depends on TASK-143, TASK-144, TASK-145
+
+---
+
+**Epic 19: Dashboard & Workflow Management UI**  
+**Stories:** STORY-018 (cloud backend), STORY-019 (freemium)  
+**Effort:** 2-3 weeks (Cycle 185-205)  
+**Assigned:** designer, frontend-dev, backend-dev
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-148 | P0 | todo | designer | 2d | Design dashboard UI (workflow list, create, usage stats) |
+| TASK-149 | P1 | todo | designer | 2d | Design workflow card/list views (thumbnails, metadata, actions) |
+| TASK-150 | P1 | todo | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
+| TASK-151 | P0 | todo | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
+| TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
+| TASK-153 | P0 | todo | backend-dev | 3d | Build workflow storage API (create, read, update, delete) |
+| TASK-154 | P1 | todo | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
+| TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
+
+**Dependencies:**
+- TASK-151 depends on TASK-148, TASK-153
+- TASK-152 depends on TASK-149, TASK-154
+- TASK-155 depends on TASK-151, TASK-152
+
+---
+
+**Epic 20: Template Library UI Design & Implementation**  
+**Stories:** STORY-022  
+**Effort:** 2-3 weeks (Cycle 195-215)  
+**Assigned:** designer, frontend-dev
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-156 | P0 | todo | designer | 2d | Design template library UI (grid, cards, preview, filters) |
+| TASK-157 | P1 | todo | designer | 2d | Design template cards (thumbnail, title, description, tags) |
+| TASK-158 | P1 | todo | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
+| TASK-159 | P0 | todo | frontend-dev | 3d | Implement template browser (grid view, search, filters) |
+| TASK-160 | P1 | todo | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
+| TASK-161 | P1 | todo | frontend-dev | 2d | Implement template instantiation (copy to user account) |
+| TASK-162 | P2 | todo | designer | 1d | Design QA: template library implementation vs specs |
+
+**Dependencies:**
+- TASK-159 depends on TASK-156
+- TASK-160 depends on TASK-158
+- TASK-162 depends on TASK-159, TASK-160
+
+---
+
+**Epic 21: Marketplace UI Design & Implementation**  
+**Stories:** STORY-030 (integration marketplace)  
+**Effort:** 2-3 weeks (Cycle 205-220)  
+**Assigned:** designer, frontend-dev
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-163 | P1 | todo | designer | 2d | Design marketplace UI (integration browser, install flow) |
+| TASK-164 | P1 | todo | designer | 2d | Design integration cards (logo, description, OAuth status) |
+| TASK-165 | P2 | todo | designer | 1d | Design OAuth connection flow screens |
+| TASK-166 | P1 | todo | frontend-dev | 3d | Implement marketplace browser (list integrations, search) |
+| TASK-167 | P1 | todo | frontend-dev | 2d | Implement OAuth flows (connect, disconnect, status display) |
+| TASK-168 | P2 | todo | designer | 1d | Design QA: marketplace implementation vs specs |
+
+**Dependencies:**
+- TASK-166 depends on TASK-163
+- TASK-167 depends on TASK-165
+- TASK-168 depends on TASK-166, TASK-167
+
+---
+
+**Epic 22: Responsive Layouts & Animations**  
+**Stories:** All Phase 2 stories  
+**Effort:** 2-3 weeks (Cycle 210-225 — parallel with other epics)  
+**Assigned:** designer, uxui, frontend-dev
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-169 | P0 | todo | designer | 2d | Design responsive breakpoints (mobile, tablet, desktop) |
+| TASK-170 | P1 | todo | uxui | 2d | Specify animations and micro-interactions (transitions, hover, click) |
+| TASK-171 | P1 | todo | uxui | 2d | Define accessibility requirements (keyboard nav, focus states, ARIA) |
+| TASK-172 | P0 | todo | frontend-dev | 3d | Implement responsive layouts (all screens mobile-friendly) |
+| TASK-173 | P1 | todo | frontend-dev | 2d | Implement animations (page transitions, state changes, loading) |
+| TASK-174 | P1 | todo | frontend-dev | 2d | Implement accessibility (keyboard shortcuts, focus management, ARIA) |
+| TASK-175 | P2 | todo | qa | 2d | Cross-browser testing (Chrome, Firefox, Safari, Edge) |
+| TASK-176 | P2 | todo | qa | 1d | Accessibility audit (WCAG 2.1 AA compliance) |
+
+**Dependencies:**
+- TASK-172 depends on TASK-169
+- TASK-173 depends on TASK-170
+- TASK-174 depends on TASK-171
+- TASK-175, TASK-176 depend on TASK-172, TASK-173, TASK-174
+
+---
+
+**Epic 23: Polish, Performance & Launch Prep**  
+**Stories:** All Phase 2 stories  
+**Effort:** 2-3 weeks (Cycle 210-225)  
+**Assigned:** designer, uxui, frontend-dev, pm
+
+| Task ID | Priority | Status | Assigned | Effort | Title |
+|---------|----------|--------|----------|--------|-------|
+| TASK-177 | P1 | todo | designer | 2d | Visual polish pass (spacing, alignment, colors, consistency) |
+| TASK-178 | P1 | todo | uxui | 2d | Final usability testing (5-10 users, onboarding validation) |
+| TASK-179 | P1 | todo | uxui | 1d | Document usability findings and final recommendations |
+| TASK-180 | P0 | todo | frontend-dev | 3d | Performance optimization (bundle size, lazy loading, caching) |
+| TASK-181 | P1 | todo | frontend-dev | 2d | Error handling and edge cases (all screens) |
+| TASK-182 | P1 | todo | frontend-dev | 2d | Empty states, loading states, success/error feedback |
+| TASK-183 | P1 | todo | designer | 2d | Create marketing assets (landing page design, screenshots, demo video) |
+| TASK-184 | P1 | todo | pm | 2d | Launch planning (Product Hunt, HN, social media, email) |
+| TASK-185 | P0 | todo | qa | 3d | Full platform QA (all features, all browsers, all flows) |
+
+**Dependencies:**
+- TASK-178 depends on all prior implementation tasks
+- TASK-179 depends on TASK-178
+- TASK-183 depends on TASK-177, all UI complete
+- TASK-185 depends on all implementation tasks
+- TASK-184 depends on TASK-185 (launch-ready product)
+
+---
+
+## Summary: Phase 2 Task Breakdown
+
+**Total Phase 2 Tasks:** 61 tasks (TASK-125 to TASK-185)  
+**Total Effort:** 8-12 weeks (Cycle 158-225)  
+**Critical Path:** Design System → Canvas → Timeline → Dashboard → Templates → Marketplace → Polish → Launch
+
+**Parallel Work Opportunities:**
+- **Week 0-2 (Foundation):** Design system (TASK-125-127) || User flows (TASK-128-129) || Frontend scaffold (TASK-130-131)
+- **Week 2-6 (Core Features):** Canvas (TASK-132-139) || Timeline (TASK-140-147) || Backend APIs (TASK-153-154)
+- **Week 6-10 (Extended Features):** Dashboard (TASK-148-155) || Templates (TASK-156-162) || Marketplace (TASK-163-168)
+- **Week 8-12 (Polish):** Responsive (TASK-169-176) || Animations (TASK-173) || Performance (TASK-180-182) || Launch prep (TASK-183-185)
+
+**Resource Utilization:**
+- **Designer:** 26 tasks (TASK-125,126,127,132,133,139,140,141,147,148,149,155,156,157,158,162,163,164,165,168,169,177,183)
+- **UX/UI:** 10 tasks (TASK-128,129,134,142,150,170,171,178,179)
+- **Frontend-dev:** 21 tasks (TASK-130,131,135,136,137,138,143,144,145,146,151,152,159,160,161,166,167,172,173,174,180,181,182)
+- **Backend-dev:** 2 tasks (TASK-153,154)
+- **QA:** 3 tasks (TASK-175,176,185)
+- **PM:** 1 task (TASK-184)
+
+**Quality Gates:**
+- **Cycle 168 (Week 2):** CLI checkpoint — <50 npm downloads/week → PAUSE Phase 2
+- **Cycle 185 (Week 4):** Visual canvas prototype review
+- **Cycle 210 (Week 8):** Feature complete checkpoint
+- **Cycle 225 (Week 12):** Launch readiness review
 
 ---
 

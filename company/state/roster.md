@@ -38,38 +38,41 @@ None
 
 ---
 
-## Team Composition Analysis (2026-04-05)
+## Team Composition Analysis (2026-04-08)
 
-### Current Phase: Planning (Crewspace — TypeScript Agent Orchestration Framework)
+### Current Phase: Development (Phase 1 Complete → User Validation → Phase 2 Planning Active)
 
-**Phase 1 Requirements (M1-2):**
-- TypeScript/Node.js CLI framework development
-- Core API implementation (Agent, Crew, Task classes)
-- LLM provider abstraction layer
-- Built-in tool system (file, web, shell)
-- Task orchestration and dependency resolution
-- Memory system (SQLite persistence)
-- Logging, error handling, observability
-- Documentation and examples
+**Phase 2 Requirements (M3-4) — DEC-006: "Super" UI Strategy (8-12 weeks, Cycle 210-225):**
+- React Flow visual workflow canvas with production-quality UX
+- Integrated debugging timeline (killer feature — timeline visualization with playback)
+- Beautiful UX (Lovable/v0/Bolt-level quality bar)
+- Design system (colors, typography, spacing, components, design tokens)
+- Workflow templates library (5-10 templates at launch)
+- Cloud dashboard (authentication, workflow management, usage metrics)
+- Landing page & marketing site
+- User onboarding flows (sub-5-minute time-to-value goal)
 
 **Workload Assessment:**
-- **Backend-heavy**: 90% of Phase 1 tasks are Node.js/TypeScript infrastructure
-- **No frontend until Phase 3-4**: Visual canvas deferred to M3-4
-- **Testing critical**: QA needed for framework validation
-- **Documentation critical**: Marketing/growth for OSS community building
+- **Frontend-heavy**: 70% of Phase 2 is visual UI/UX work
+- **Design-critical**: "Lovable for agents" positioning requires world-class design (per DEC-003)
+- **Design must lead development**: Design system and UX flows required BEFORE frontend implementation
+- **User research in parallel**: Validate canvas UX patterns, onboarding flows, template discovery
 
 **Team Coverage:**
-- ✅ **backend-dev**: CLI, core framework, LLM providers, tool system — PRIMARY DEVELOPER
-- ✅ **developer**: General feature implementation, fallback capacity
-- ⏸️ **frontend-dev**: Dormant until Phase 3-4 (visual canvas)
-- ✅ **qa**: Testing framework, integration tests, CI/CD validation
-- ⏸️ **designer/uxui**: Dormant until visual canvas (M3-4)
-- ✅ **marketing-growth**: OSS community strategy, GitHub optimization, developer content
-- ⏸️ **security-eng**: Minimal need in Phase 1 (framework foundation)
+- 🎨 **designer** (ACTIVATED FOR PHASE 2): Design system, brand identity, visual design, canvas UI, timeline visualization, component specifications, design tokens
+- 🧭 **uxui** (ACTIVATED FOR PHASE 2): User flows, information architecture, interaction patterns, wireframes, usability, accessibility, user research
+- ✅ **frontend-dev**: Implement visual canvas, dashboard, React components from design specs
+- ✅ **backend-dev**: Cloud backend APIs (auth, storage, execution runtime)
+- ✅ **developer**: General implementation, templates, integrations
+- ✅ **qa**: UI/UX testing, accessibility validation, cross-browser testing
+- ✅ **pm**: User validation, template curation, product direction
+- ✅ **marketing-growth**: Landing page content, launch strategy, community
 
-**Decision:** No new hires needed. Current team covers all Phase 1 requirements.
+**Additional Hires Assessment:**
+- ❌ **Design Systems Engineer**: NOT needed (frontend-dev can implement from designer specs, premature for Phase 2)
+- ❌ **Motion/Animation Designer**: NOT needed (designer can specify basic animations, not required for launch)
+- ❌ **User Researcher**: NOT needed (uxui agent + PM handle user validation in STORY-015 and Phase 2 testing)
 
-**Future Hiring Triggers:**
-- **Month 3-4**: May need specialized frontend developer for canvas (React/Svelte/Vue decision)
-- **Month 6-8**: Designer needed when revenue supports it (per DEC-003)
-- **Month 9-12**: DevOps/infrastructure if cloud platform complexity grows
+**Decision:** Designer and uxui agents ACTIVATED for Phase 2. No new hires needed. Current team (14 agents) covers all Phase 2 requirements with appropriate specialization.
+
+**Phase 2 Timeline:** Cycle 158 → Cycle 210-225 (design starts immediately to run in parallel with CLI 2-week checkpoint at Cycle 168)

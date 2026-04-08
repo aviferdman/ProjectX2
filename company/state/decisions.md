@@ -68,6 +68,56 @@ Decisions are immutable once logged. New decisions can supersede old ones by ref
 
 **Rationale**: Both research documents exceed the minimum quality bar (10+ sources, data-driven, multiple domains, evidence-backed). The one partial gap (technical architecture patterns) is appropriate to address in the planning phase after product direction is decided. Delaying further would waste time without material benefit — the market intelligence is actionable.
 
+### [DEC-006] 2026-04-08 gm — Approve "Super" UI Strategy for Phase 2
+
+**Date:** 2026-04-08  
+**Phase:** Development → Planning Phase 2  
+**Context:** Owner provided strategic feedback rejecting risk-mitigation compromise of "lightweight prototype UI" (4-6 weeks) in favor of full commitment to "Lovable for agents" vision with production-quality UX (8-12 weeks). Owner directive: "I don't want a lightweight UI, I want it to be super."
+
+**Decision:** APPROVED — Commit to "super" UI quality for Phase 2 with binding safeguards.
+
+**Phase 2 Scope (8-12 weeks → Cycle 210-225):**
+
+**Include (full implementation):**
+- React Flow visual canvas with polish and animations
+- Advanced debugging timeline (killer feature from DEC-003)
+- Beautiful UX (professional design system, responsive, delightful interactions)
+- Workflow templates library (10-15 templates minimum)
+- Integrated agent/tool marketplace UI
+- Chat-to-workflow interface (if fits vision)
+- Sub-5-minute onboarding experience
+
+**Defer to Phase 3:**
+- Real-time collaboration
+- Enterprise features (SSO, RBAC, audit logs)
+- Advanced analytics and usage dashboards
+
+**Binding Safeguards:**
+1. **2-Week CLI Checkpoint (Cycle 168) is NON-NEGOTIABLE** — If CLI shows zero traction (< 50 npm downloads/week, < 100 GitHub stars after 4 weeks), PAUSE Phase 2 work and reassess entire visual strategy.
+2. **No feature creep beyond "super" scope** — "Super" means production-quality core features only. NOT enterprise features, NOT real-time collab.
+3. **Monthly progress gates** — Week 4 (Cycle 185): visual canvas prototype; Week 8 (Cycle 210): feature complete; Week 12 (Cycle 225): polished. Any gate failure escalates to GM.
+
+**Rationale:**
+- **Owner is correct on strategic thesis:** DEC-003 positioned this as "Lovable for agents" — beautiful UX is the differentiation, not a nice-to-have.
+- **Competitive positioning requires it:** Flowise/Langflow already offer "visual agent tools." Lightweight prototype validates "visual tool" not "Lovable tool."
+- **Risk is acceptable:** $0 budget = infinite ROI on any revenue. 8-12 weeks vs 4-6 weeks is marginal within 4-month horizon. CLI checkpoint provides early demand validation.
+- **Owner conviction signals informed bet:** Owner reviewed DEC-003 (unanimous consensus), understands investment delta, making strategic call.
+
+**Risk Assessment:**
+- Higher investment before validation (8-12 weeks vs 4-6 weeks)
+- Higher sunk cost if hypothesis wrong
+- **Mitigated by:** CLI checkpoint gate, monthly progress reviews, bounded "super" scope
+
+**Timeline Impact:** Phase 2 completion moves from Cycle 185-195 → Cycle 210-225 (10-12 weeks from Cycle 158).
+
+**Next Steps:**
+1. PM: Update Phase 2 plan with "super" UI scope (this week)
+2. ProjM: Decompose into tasks with 8-12 week timeline (this week)
+3. All agents: Execute CLI 2-week checkpoint (Cycle 168)
+4. GM: Review checkpoint results and make go/pause decision
+
+**Supersedes:** Refines DEC-003's Phase 2 execution strategy. Maintains "Lovable for agents" positioning but commits to full-quality implementation rather than iterative prototype approach.
+
 ### [DEC-003] 2026-04-05 gm — Final Product Decision: Crewspace (Ideation → Planning)
 
 **Context**: Multi-agent deliberation completed with 9 proposals (3 per agent), 3 challenge rounds, and 3 final verdicts. All three agents (Researcher, PM, GM) voted **Satisfied: YES** on the same product — an unprecedented unanimous convergence after rigorous self-challenge.
