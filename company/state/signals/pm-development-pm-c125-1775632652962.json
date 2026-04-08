@@ -1,8 +1,0 @@
-{
-  "agentId": "pm",
-  "taskId": "development-pm-c125",
-  "timestamp": "2026-04-08T07:17:34.577Z",
-  "status": "success",
-  "summary": "Cycle 125 PM review complete: Phase 1 100% complete (unchanged from C91), 99.98% test pass rate, zero blockers, product launch-ready. Strategic deadlock persists for 45th consecutive cycle - all 6 remaining tasks (TASK-117-122) dependency-blocked by TASK-113 (npm release) awaiting GM approval. No development work completed this cycle (no actionable work available). No scope gaps identified. Critical recommendation: Execute TASK-113 immediately to unblock user validation and decision gate. Full review in pm-report-development-pm-c125.md",
-  "branchName": "agent/pm/development-pm-c125"
-}
