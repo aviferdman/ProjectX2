@@ -3071,7 +3071,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-113 | P0 | in-progress | developer | 1d | Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) |
 | TASK-114 | P2 | in-progress | developer | 1d | Publish @crewspace/tools-* packages (@crewspace/tools-file, tools-web, tools-shell) |
 | TASK-115 | P2 | in-progress | developer | 0.5d | Publish @crewspace/cli package to npm |
-| TASK-116 | P2 | review | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
+| TASK-116 | P2 | blocked | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog (NOTE: Only workflow/scripts added, tag not created. Blocked by test failures and formatting issues) |
 
 **Dependencies:**
 - TASK-111, TASK-112 are setup
