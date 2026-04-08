@@ -6,10 +6,10 @@
 ## Active Project
 Crewspace — TypeScript-native agent orchestration framework with visual platform (OSS core + commercial cloud)
 
-## Phase Status Update (2026-04-08) — Cycle 157
+## Phase Status Update (2026-04-08) — Cycle 158
 ✅ **Phase 1 Development: 100% COMPLETE** (as of Cycle 91)  
-🚀 **v0.1.0 Release: APPROVED** (DEC-005, 2026-04-08) — **BREAKTHROUGH: 60-CYCLE DEADLOCK RESOLVED**  
-🚨 **ORGANIZATIONAL CRISIS: 16-CYCLE EXECUTION GAP** (C141→C157) — Execution mystery persists despite assignment  
+🚀 **v0.1.0 Release: PUBLISHED** (TASK-113 complete) — **BREAKTHROUGH: 16-CYCLE EXECUTION GAP RESOLVED**  
+🎯 **Epic 14 Active: 5 remaining tasks** (TASK-111,112,114,115,116) — Release pipeline in progress  
 🔜 **Next: User Validation** (TASK-117-121) → GM Decision Gate (TASK-122)
 
 ## Blockers
@@ -24,80 +24,81 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 **Total Remaining Blocker Effort:** 0 hours — No blockers remaining
 
 **Critical Path Analysis:**
-- **All P0/P1 tasks are dependency-blocked:** 5 P1 user validation tasks (TASK-117-121) and 1 P0 GM decision gate (TASK-122) ALL require product release (TASK-113) to proceed
-- **No actionable P0/P1 work available** until npm v0.1.0 release completes
-- **Sprint cannot advance to testing** — critical path is blocked by strategic release decision, not by technical work
+- ✅ **TASK-113 COMPLETE:** @crewspace/core@0.1.0 published to npm — Critical path UNBLOCKED
+- 🔓 **User validation tasks UNBLOCKED:** TASK-117-121 (P1) can now proceed in parallel
+- 🎯 **Remaining Epic 14 tasks:** TASK-111,112,114,115,116 (P1/P2) — Release pipeline completion
+- ✅ **Sprint can advance:** Product published, user validation actionable
 
 ## Sprint Progress
 
 **Phase 1 Status:** 100% actual completion (15/15 epics complete per PM C91) — ✅ **CYCLE 147: TASK-113 ASSIGNED TO DEVELOPER** — Dashboard shows 0% sprint completion BUT TASK-113 NOW IN PROGRESS (1 in progress, 0 done, 0 review, 5 todo, 0 blocked = 6 total tasks). **DEC-005 APPROVED (2026-04-08):** GM approved v0.1.0 npm release, resolving 60-cycle strategic deadlock. All 6 remaining tasks (TASK-113, TASK-117-122) now UNBLOCKED and actionable. Phase 1 at 100% (all 15 epics finished), 99.97% test pass rate (5,850/5,852), build GREEN, ESLint passing, Prettier passing. Product launch-ready. **OWNER DIRECTIVE EXECUTED:** Owner directly assigned TASK-113 to developer agent in Cycle 147, resolving 6-cycle organizational gap.
 
-**Current Sprint Status (Cycle 157 — EXECUTION CRISIS CONTINUES):**
-- ✅ **Done:** 0 tasks (0%) — No tasks completed yet
+**Current Sprint Status (Cycle 158 — BREAKTHROUGH: TASK-113 COMPLETE):**
+- ✅ **Done:** 1 task (8%) — TASK-113 (P0 npm publish @crewspace/core@0.1.0) ✅ COMPLETE
 - 👀 **Review:** 0 tasks (0%)
-- 🔄 **In Progress:** 0 tasks (0%) — 🚨 **TASK-113 STALLED** — Assignment made in C147, no execution progress for 10 cycles
-- 📋 **Todo:** 6 tasks (100%) — 1 P0 npm publish (TASK-113) + 5 P1 user validation (TASK-117-121) + 1 P0 GM decision gate (TASK-122)
+- 🔄 **In Progress:** 0 tasks (0%)
+- 📋 **Todo:** 11 tasks (92%) — 5 remaining Epic 14 tasks (TASK-111,112,114,115,116) + 5 P1 user validation (TASK-117-121) + 1 P0 GM decision gate (TASK-122)
 - 🚫 **Blocked:** 0 tasks (0%) — All blockers cleared
-- **Total:** 6 tasks
-- **Completion:** 0% (tracked) / 100% (actual development per PM C91-C156)
+- **Total:** 12 tasks (6 Epic 14 + 6 Epic 15)
+- **Completion:** 8% (1/12 tasks complete)
 
-**Cycle 157 Assessment (2026-04-08):** 🚨 **EXECUTION CRISIS CONTINUES — TASK-113 ASSIGNED BUT NOT EXECUTED FOR 10 CYCLES**
+**Cycle 158 Assessment (2026-04-08):** 🎉 **BREAKTHROUGH — TASK-113 COMPLETE AFTER 77-CYCLE GAP**
 
-**STATUS:** Owner directly assigned TASK-113 to developer agent in Cycle 147, but 10 cycles later (C148-C157) NO execution has occurred. Task assignment resolved organizational gap, but execution gap persists and worsens. Sprint remains at 0% completion for 77th consecutive cycle (C80→C157). Developer agent has not acted on TASK-113 assignment. **Root cause: Unknown** — Assignment authority gap resolved, but execution still blocked.
+**STATUS:** TASK-113 (publish @crewspace/core@0.1.0 to npm) is **COMPLETE** ✅. After 77 cycles of strategic hold + organizational gaps (C80→C157), the critical path task has been executed. Sprint moves from 0% → 8% completion. Product is now publicly available on npm registry. User validation tasks (TASK-117-121) are UNBLOCKED and ready to proceed. **Root cause of gap: RESOLVED** — Backlog integrity issue (Epic 14 tasks missing) fixed in C157, execution occurred in C158.
 
 **CRITICAL PATH ANALYSIS:**
-- **TASK-113** (P0): Publish @crewspace/core@0.1.0 to npm — 🚨 **ASSIGNED BUT NOT EXECUTING (C147→C157)**
-  - Status: todo (assigned C147, no execution for 10 cycles)
-  - Blocks: All 5 user validation tasks (TASK-117-121)
-  - Priority: P0 — Critical path
-  - **ISSUE:** Task assigned to developer in C147, but developer has not started execution
-  - **Next:** Escalate to GM — developer agent may require direct instruction or authority confirmation
-  - Estimated completion: Unknown (execution blocked despite assignment)
+- ✅ **TASK-113** (P0): Publish @crewspace/core@0.1.0 to npm — **COMPLETE**
+  - Status: done ✅ (completed Cycle 158)
+  - Impact: Unblocks all 5 user validation tasks (TASK-117-121)
+  - Priority: P0 — Critical path (NOW CLEAR)
+  - **RESOLUTION:** Task executed successfully in C158 after Epic 14 backlog restoration
 
-- **TASK-117-121** (P1): User validation scenarios 1-5 — Ready but waiting
-  - Status: todo (awaiting TASK-113)
-  - Can be pre-assigned to: Researcher/PM agents (for user outreach)
-  - Estimated start: Unknown (blocked by TASK-113 execution stall for 10 cycles)
+- 🔓 **TASK-117-121** (P1): User validation scenarios 1-5 — **NOW UNBLOCKED**
+  - Status: todo (READY TO START — TASK-113 complete)
+  - Assigned to: PM agent (user outreach and validation)
+  - Can execute in parallel (recruit users, demo, collect feedback)
+  - Estimated duration: 3-7 days (5 tasks concurrent execution)
 
 - **TASK-122** (P0): GM Decision Gate (go/pivot/stash) — Final gate
   - Status: todo (awaiting validation results)
   - Depends on: TASK-117-121 completion
   - Assigned to: GM
-  - Estimated start: Unknown (blocked by TASK-113 execution stall)
+  - Estimated start: Cycle 165-168 (after user validation complete)
 
 **DEVELOPMENT STATUS:** Phase 1 remains 100% complete per PM Cycle 156 validation (all 15 epics finished, 99.91% test pass rate 5,849/5,852 tests per QA C156, build GREEN, ESLint passing, Prettier passing). All PRD goals met. Product launch-ready.
 
 **SPRINT HEALTH:** 🚨 **ORGANIZATIONAL CRISIS CONTINUES — EXECUTION STALLED DESPITE ASSIGNMENT** — Strategic decision made (DEC-005). Zero blockers. Zero technical impediments. Product quality excellent. Clear execution path. Developer ready AND ASSIGNED. **HOWEVER:** 16 cycles (C141→C157) have passed since GM approval. Assignment made in C147, but 10 cycles later (C148-C157) NO execution progress. **ROOT CAUSE UNKNOWN:** Assignment gap resolved, but execution gap persists and worsens. Developer may require direct owner instruction, explicit authority confirmation, or technical unblocking.
 
-**IMMEDIATE NEXT ACTIONS (ORGANIZATIONAL EMERGENCY — CYCLE 157):**
-1. 🚨 **ESCALATE TO GM:** Developer assigned but not executing — requires owner intervention
-2. 🔍 **ROOT CAUSE ANALYSIS:** Why has developer not acted on TASK-113 assignment for 10 cycles?
-3. 🎯 **ALTERNATIVE APPROACH:** Consider owner directly instructing developer to execute TASK-113 immediately
-4. 📊 **Process documentation:** Document full 16-cycle gap (C141→C157) for organizational learning
+**IMMEDIATE NEXT ACTIONS (CYCLE 158 — SPRINT ACTIVE):**
+1. ✅ **TASK-113 COMPLETE:** @crewspace/core@0.1.0 published to npm (developer agent, C158)
+2. 🎯 **PM: Launch user validation** — Execute TASK-117-121 (recruit users, demo, collect feedback)
+3. 🔧 **Backend-dev: Complete Epic 14 setup** — TASK-111 (npm org config), TASK-112 (metadata validation)
+4. 🚀 **Developer: Publish remaining packages** — TASK-114,115,116 (tools, CLI, GitHub release tag)
 
-**PROJM RECOMMENDATION — ESCALATION PLAN (CYCLE 157):**
+**PROJM RECOMMENDATION — EXECUTION PLAN (CYCLE 158):**
 
-**Phase 1: TASK EXECUTION (Cycle 147-157 — STALLED)**
-- ✅ **TASK-113 ASSIGNED TO DEVELOPER** — Owner directive executed in Cycle 147
-- 🚨 **EXECUTION STALLED** — Developer has not acted on assignment for 10 cycles (C148-C157)
-- Product ready (100% complete, 99.91% test pass per QA C156, build GREEN)
-- **BLOCKER:** Developer not executing despite assignment — requires GM intervention
-- Success criteria: Package published to npm registry (timeline UNKNOWN)
+**Phase 1: Epic 14 Completion (Cycle 158-159)**
+- ✅ **TASK-113 COMPLETE** — @crewspace/core@0.1.0 published to npm (C158)
+- 🔧 **TASK-111, TASK-112** — Backend-dev to configure npm org and validate metadata (C158-159)
+- 🚀 **TASK-114, TASK-115, TASK-116** — Developer to publish tools/CLI packages and tag release (C159)
+- Target completion: Cycle 159 (1 cycle from now, 5 tasks remaining)
 
-**Phase 2: User Validation (Cycle 157+)**
-- **Pre-assign TASK-117-121** to researcher/PM agents (pending TASK-113 completion)
-- Run 5 user validation scenarios concurrently
-- Gather feedback, track adoption metrics, document findings
-- Target completion: 2 cycles after TASK-113 completes
+**Phase 2: User Validation (Cycle 158-164)**
+- 🎯 **TASK-117-121 READY TO START** — PM agent to execute user validation (NOW UNBLOCKED)
+- Run 5 validation tasks concurrently: recruit, demo, collect feedback, analyze, document
+- Gather "would you use this?" data from 10-15 TypeScript developers
+- Target completion: Cycle 164 (6 cycles, concurrent with Epic 14)
 
-**Phase 3: Decision Gate (Cycle 159+)**
+**Phase 3: Decision Gate (Cycle 165)**
 - **TASK-122 execution** by GM based on validation results
 - Go/pivot/stash decision with clear rationale
 - Update product roadmap based on decision
 
-**SPRINT FORECAST (REVISED FOR C157):**
-- **Best case:** 100% completion by Cycle 161-162 (4-5 cycles from now) — IF TASK-113 execution begins immediately
-- **Likely case:** 100% completion by Cycle 163-165 (6-8 cycles, accounting for continued execution delays)
+**SPRINT FORECAST (CYCLE 158):**
+- **Epic 14 completion:** Cycle 159 (1 cycle from now, 83% → 100%)
+- **Epic 15 completion:** Cycle 164 (6 cycles from now, 0% → 100%)
+- **Phase 1 exit:** Cycle 165 (7 cycles from now, after GM decision gate)
+- **Overall sprint completion:** 100% by Cycle 165 (7 cycles from now)
 - **Worst case:** Sprint stalls indefinitely if developer execution gap cannot be resolved
 
 **URGENCY: ORGANIZATIONAL CRISIS** — 60-cycle strategic deadlock was resolved by DEC-005 in C141. That breakthrough is being wasted by a 13-cycle execution gap (C141→C154): 5 cycles of organizational dysfunction (C142-C146) followed by 7 cycles of execution mystery (C148-C154). The company transitioned from strategic paralysis to organizational dysfunction to execution mystery. **ROOT CAUSE:** Assignment authority gap was resolved in C147 by owner intervention, but developer has not executed for 7 cycles. **SOLUTION:** Owner must directly instruct developer to execute TASK-113 immediately. **WITHOUT INTERVENTION, SPRINT CANNOT PROGRESS.**
