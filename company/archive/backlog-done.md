@@ -133,3 +133,7 @@
 | TASK-113 | P0 | done | developer | 1d | ✅ Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) — COMPLETE C166 |
 | TASK-114 | P2 | done | developer | 1d | ✅ Publish @crewspace/tools-* packages (@crewspace/tools-file, tools-web, tools-shell) — COMPLETE C166 |
 | TASK-115 | P2 | done | developer | 0.5d | ✅ Publish @crewspace/cli package to npm — COMPLETE C166 |
+| TASK-128 | P0 | done | uxui | 3d | Map user flows and information architecture (all Phase 2 features) — **COMPLETED C184** |
+| TASK-130 | P0 | done | frontend-dev | 3d | Implement design system (Tailwind config, CSS variables, base components) — **COMPLETED C184** |
+| TASK-132 | P0 | done | designer | 3d | Design visual canvas UI (nodes, edges, toolbar, sidebar, properties panel) |
+| TASK-153 | P0 | done | backend-dev | 3d | Build workflow storage API (create, read, update, delete) |

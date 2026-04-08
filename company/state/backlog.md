@@ -4144,9 +4144,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-125 | P0 | in-progress | designer | 3d | Create design system (colors, typography, spacing, tokens) — **START C167** |
 | TASK-126 | P0 | in-progress | designer | 2d | Design component library (buttons, inputs, cards, modals) — **START C167** |
 | TASK-127 | P1 | in-progress | designer | 2d | Create icon set and visual assets (custom or curated) — **START C167** |
-| TASK-128 | P0 | done | uxui | 3d | Map user flows and information architecture (all Phase 2 features) — **COMPLETED C184** |
 | TASK-129 | P1 | in-progress | uxui | 2d | Create low-fidelity wireframes (canvas, timeline, dashboard) — **START C167** |
-| TASK-130 | P0 | done | frontend-dev | 3d | Implement design system (Tailwind config, CSS variables, base components) — **COMPLETED C184** |
 | TASK-131 | P1 | in-progress | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) — **START C167** |
 
 **Dependencies:**
@@ -4165,7 +4163,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-132 | P0 | done | designer | 3d | Design visual canvas UI (nodes, edges, toolbar, sidebar, properties panel) |
 | TASK-133 | P1 | todo | designer | 2d | Design agent/task node styles (icons, colors, states) |
 | TASK-134 | P1 | todo | uxui | 2d | Design drag-and-drop interactions and feedback states |
 | TASK-135 | P0 | todo | frontend-dev | 5d | Implement React Flow canvas (drag-and-drop, pan, zoom) |
@@ -4216,7 +4213,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-150 | P1 | todo | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
 | TASK-151 | P0 | todo | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
-| TASK-153 | P0 | done | backend-dev | 3d | Build workflow storage API (create, read, update, delete) |
 | TASK-154 | P1 | todo | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
 
