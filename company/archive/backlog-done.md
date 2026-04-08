@@ -130,3 +130,6 @@
 | TASK-076 | P3 | done | developer | 1d | Create Prettier config for consistent formatting (RESOLVED: Formatting issues fixed in shell tool files) |
 | TASK-087 | P1 | done | developer | 1d | Create example: Data analysis pipeline |
 | TASK-123 | P2 | done | developer | 1d | Add observability integration examples (metrics + logs) |
+| TASK-113 | P0 | done | developer | 1d | ✅ Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) — COMPLETE C166 |
+| TASK-114 | P2 | done | developer | 1d | ✅ Publish @crewspace/tools-* packages (@crewspace/tools-file, tools-web, tools-shell) — COMPLETE C166 |
+| TASK-115 | P2 | done | developer | 0.5d | ✅ Publish @crewspace/cli package to npm — COMPLETE C166 |
