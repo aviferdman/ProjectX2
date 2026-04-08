@@ -774,7 +774,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-087 | P1 | review | developer | 1d | Create example: Data analysis pipeline |
+| TASK-087 | P1 | done | developer | 1d | Create example: Data analysis pipeline |
 
 **Dependencies:**
 - TASK-081, TASK-082, TASK-083 are foundational
@@ -808,7 +808,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-123 | P2 | review | developer | 1d | Add observability integration examples (metrics + logs) |
+| TASK-123 | P2 | done | developer | 1d | Add observability integration examples (metrics + logs) |
 
 **Dependencies:**
 - TASK-105 is foundation
