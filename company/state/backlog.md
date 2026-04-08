@@ -45,8 +45,8 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 - Git status: ✅ Clean working tree
 
 **Critical Path Status:**
-All 6 remaining tasks UNBLOCKED per DEC-005, but TASK-113 UNASSIGNED FOR 5 CYCLES:
-- **TASK-113** (P0): Publish @crewspace/core@0.1.0 to npm — ❌ **UNASSIGNED 5 CYCLES** (CRITICAL)
+All 6 remaining tasks UNBLOCKED per DEC-005, TASK-113 NOW ASSIGNED:
+- **TASK-113** (P0): Publish @crewspace/core@0.1.0 to npm — ✅ **ASSIGNED TO DEVELOPER** (C147)
 - **TASK-117-121** (P1): User validation scenarios 1-5 — Dependency-blocked by TASK-113
 - **TASK-122** (P0): GM Decision Gate (go/pivot/stash) — Dependency-blocked by validation
 
