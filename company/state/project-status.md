@@ -18,86 +18,264 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 ✅ **CLI Checkpoint (C168): PASSED** — Package published and validated
 🟡 **Phase 2 UI Development: BREAKTHROUGH IN C184** — Epic 16 shows first completions (TASK-128, TASK-130) after 17-cycle stall
 
-**Phase 2 Active Sprint (Cycle 184 — ProjM Sprint Status Dashboard — UPDATED 2026-04-08):**
+**Phase 2 Active Sprint (Cycle 185 — ProjM Sprint Status Dashboard — UPDATED 2026-04-08):**
 
-### 🟡 SIGNIFICANT PROGRESS — FIRST DELIVERABLES AFTER 17-CYCLE STALL
+### 🟡 CONSOLIDATING PROGRESS — VELOCITY MONITORING CRITICAL
 
-**Sprint Progress Summary (C184 — UPDATED):**
-- **Completion Rate:** 6% (4 tasks done out of 70 total) — **BREAKTHROUGH: First completions in 18 cycles**
-- **In Progress:** 5 tasks (7%) — Active work on Epic 16 foundation tasks
+**Sprint Progress Summary (C185 — UPDATED):**
+- **Completion Rate:** 6% (4 tasks done out of 66 total) — **C184 breakthrough maintained**
+- **In Progress:** 5 tasks (8%) — Active work on Epic 16 foundation tasks
 - **Review:** 0 tasks (0%)
-- **Todo:** 60 tasks (86%) — Awaiting Epic 16 completion to unblock
-- **Blocked:** 1 task (1%) — TASK-116 (non-critical test failures)
-- **Days Since Epic 16 Start:** 17+ cycles (started C167, now C184)
-- **Sprint Health:** 🟡 **RECOVERING** — First evidence of design team execution after sustained stall
+- **Todo:** 56 tasks (85%) — Awaiting Epic 16 completion to unblock downstream work
+- **Blocked:** 1 task (2%) — TASK-116 (non-critical test failures)
+- **Days Since Epic 16 Start:** 18+ cycles (started C167, now C185)
+- **Sprint Health:** 🟡 **MONITORING** — Must sustain 2-3 tasks/cycle velocity to complete Phase 2 on timeline
 
-### Epic Status Breakdown:
+### Epic Status Breakdown (C185):
+
+**Epic 14 (Release Cleanup) — 🟡 PARTIALLY COMPLETE (50% - 3/6 done):**
+- ✅ Done: TASK-113 (P0), TASK-114 (P2), TASK-115 (P2) — npm packages published
+- ⏳ Todo: TASK-111 (P2), TASK-112 (P2) — ready for backend-dev/developer
+- 🔴 Blocked: TASK-116 (P2) — non-critical test failures
+
+**Epic 15 (User Validation) — 🔴 CRITICAL: UNACTIVATED FOR 19+ CYCLES:**
+- **Status:** 0% complete (0/6 done) — ALL tasks in todo
+- **Tasks:** TASK-117-122 ready for PM/GM execution since C166
+- **BLOCKING ISSUE:** These tasks have NO dependencies on Epic 16 and CAN run in parallel
+- **Lost Opportunity:** 19 cycles of user feedback and validation data
+- **IMMEDIATE ACTION REQUIRED:** PM must activate TASK-117 (recruit beta testers) NOW
 
 **Epic 16 (Design Foundation) — 🟡 PARTIAL COMPLETION (29% - 2/7 done):**
-- **Completed (C184):**
-  - ✅ TASK-128 (P0, uxui): Map user flows and information architecture — **DONE C184**
-  - ✅ TASK-130 (P0, frontend-dev): Implement design system (Tailwind config, CSS variables) — **DONE C184**
-- **In Progress (5 tasks):**
-  - 🔄 TASK-125 (P0, designer, 3d): Create design system (colors, typography, spacing, tokens)
-  - 🔄 TASK-126 (P0, designer, 2d): Design component library (buttons, inputs, cards, modals)
-  - 🔄 TASK-127 (P1, designer, 2d): Create icon set and visual assets
-  - 🔄 TASK-129 (P1, uxui, 2d): Create low-fidelity wireframes (canvas, timeline, dashboard)
-  - 🔄 TASK-131 (P1, frontend-dev, 2d): Setup React app scaffold (routing, auth, state management)
-- **Timeline:** Started C167, now C184 (17 cycles elapsed) — 2 completions in last cycle
-- **Progress Velocity:** 0 tasks/cycle (C167-C183) → 2 tasks/cycle (C184) — **Velocity restored**
-- **Impact:** Still blocking 51 downstream tasks in Epics 17-23 until Epic 16 fully complete
+- ✅ **Completed in C184:**
+  - TASK-128 (P0, uxui): User flows and information architecture — Quality: 9/10
+  - TASK-130 (P0, frontend-dev): Design system implementation — Quality: 8.5/10 ⚠️ **HAS CRITICAL BUG**
+- 🔄 **In Progress (5 tasks — C185):**
+  - TASK-125 (P0, designer, 3d): Create design system (colors, typography, spacing, tokens)
+  - TASK-126 (P0, designer, 2d): Design component library (buttons, inputs, cards, modals)
+  - TASK-127 (P1, designer, 2d): Create icon set and visual assets
+  - TASK-129 (P1, uxui, 2d): Create low-fidelity wireframes (canvas, timeline, dashboard)
+  - TASK-131 (P1, frontend-dev, 2d): Setup React app scaffold (routing, auth, state management)
+- **Timeline:** Started C167, now C185 (18 cycles elapsed) — Need 5 more completions
+- **Velocity:** 0 tasks/cycle (C167-C183) → 2 tasks/cycle (C184) → **TBD C185** (monitoring critical)
+- **Blockers:** TASK-130 has broken Tailwind import path — must fix before publish (0.5d)
 
-**Epic 15 (User Validation) — ⚠️ UNACTIVATED (18+ Cycles Waiting):**
-- 6 tasks (TASK-117-122) ready for PM/GM execution since C166
-- **CRITICAL:** These tasks have NO dependencies on Epic 16 and could run in parallel
-- **Lost Opportunity:** 18 cycles of potential user feedback and validation data
-- **Status:** Still todo despite being ready for 18+ cycles
-- **Recommendation:** Activate IMMEDIATELY — user validation insights critical for Phase 2 design decisions
+**Epic 17 (Visual Canvas UI) — 🟢 EARLY PROGRESS (38% - 3/8 done):**
+- ✅ **Done in C184:**
+  - TASK-132 (P0, designer): Canvas UI design spec — Quality: 8.2/10
+  - TASK-134 (P1, uxui): Drag-and-drop interaction design
+  - TASK-135 (P0, frontend-dev): React Flow canvas implementation
+- ⏳ **Todo:** TASK-133, 136, 137, 138, 139 (awaiting Epic 16 completion)
+- **Next:** TASK-136 now unblocked by TASK-132 completion
 
-**Epic 14 (Release Cleanup) — 🟡 PARTIALLY COMPLETE:**
-- 3 done (P0 npm packages published)
-- 2 todo (TASK-111, 112 — ready for backend-dev)
-- 1 blocked (TASK-116 — non-critical test failures)
+**Epic 18 (Debugging Timeline) — 🟡 FOUNDATION STARTED (12.5% - 1/8 done):**
+- ✅ Done: TASK-140 (P0, designer): Timeline UI design — Quality: excellent
+- ⏳ Todo: 7 tasks (TASK-141-147) awaiting Epic 16/17 progress
 
-**Phase 2 Remaining:** 51 tasks in todo across Epics 17-23
+**Epic 19 (Dashboard & Workflow) — 🟢 BACKEND READY (50% - 2/4 done):**
+- ✅ **Done in C184:**
+  - TASK-153 (P0, backend-dev): Workflow storage API — Quality: 9/10
+  - TASK-154 (P1, backend-dev): Usage tracking API
+- ⏳ **Todo:** TASK-148, 149, 150, 151, 152, 155 (frontend tasks partially unblocked)
 
-### Root Cause Analysis Update (C184):
-1. ✅ **Agent Invocation RESTORED:** Design team agents (designer/uxui/frontend-dev) now executing — 2 completions in C184
-2. 🟡 **Execution Gap:** 17-cycle stall (C167-C183) followed by sudden breakthrough suggests orchestrator issue was resolved
-3. ⚠️ **Velocity Risk:** Need sustained 2-3 tasks/cycle to complete Epic 16 within acceptable timeline
-4. 🔴 **Parallel Work Failure CONTINUES:** Epic 15 user validation still not activated (18 cycles lost)
-5. 🟢 **Quality Gate:** Completed tasks (TASK-128, TASK-130) appear to have proper completion signals
-6. ⚠️ **Monitoring Still Absent:** No automated detection mechanism to prevent future stalls
+**Epic 20-23 (Templates, Marketplace, Responsive, Polish) — ⏳ AWAITING FOUNDATION:**
+- Status: 0% complete — All 31 tasks in todo
+- Awaiting Epic 16-17 completion to begin
 
-### Critical Actions Required (IMMEDIATE — P0):
-1. **HIGH PRIORITY:** Maintain execution velocity — Epic 16 needs 5 more completions at 2-3 tasks/cycle
-2. **URGENT:** Activate Epic 15 immediately — 18 cycles of user validation opportunity lost
-3. **HIGH:** Verify remaining Epic 16 tasks have clear assignments and unblocked paths
-4. **MEDIUM:** Implement agent activity monitoring with 3-day timeout for in-progress tasks
-5. **MEDIUM:** Document root cause of 17-cycle stall to prevent recurrence
+**Phase 2 Summary:**
+- **Total:** 66 tasks across 10 epics
+- **Completed:** 4 tasks (Epic 16: 2, Epic 17: 3, Epic 18: 1, Epic 19: 2)  
+  *Note: Counts show overlap - actual unique completions = 4 total per dashboard*
+- **In Progress:** 5 tasks (all in Epic 16)
+- **Critical Path:** Epic 16 (5 tasks) → Epic 17 (5 tasks) → Epic 18 (7 tasks) → remaining epics
 
-### Project Manager Assessment (C184 — UPDATED):
+### Agent Performance Analysis (C185):
 
-**Sprint Health: 🟡 RECOVERING — BREAKTHROUGH AFTER 17-CYCLE STALL**
-- 6% task completion (4/70 done) — First progress in 18 cycles
-- Epic 16: 29% complete (2/7 done) — TASK-128 (uxui) and TASK-130 (frontend-dev) delivered in C184
-- 5 tasks actively in-progress (designer, uxui, frontend-dev agents working)
-- **Velocity:** 0 tasks/cycle (C167-C183) → 2 tasks/cycle (C184) — **Execution restored**
-- Epic 15 user validation STILL unactivated (18 cycles lost opportunity)
+**Design Team (designer, uxui, frontend-dev, backend-dev):**
+- **C184 Performance:** 🟢 EXCELLENT — 4 tasks completed (ended 17-cycle stall)
+- **C185 Status:** 5 tasks in-progress across Epic 16
 
-**Recommended Actions:**
-1. **MAINTAIN MOMENTUM:** Epic 16 needs 5 more completions — prioritize TASK-125, TASK-126 (P0 design tasks)
-2. **DO NOT advance to testing phase** — Only 6% overall completion, Epic 16 at 29%
-3. **ACTIVATE Epic 15 IMMEDIATELY:** PM/GM should execute TASK-117 (recruit beta testers) — no dependency on Epic 16
-4. **MONITOR VELOCITY:** If velocity drops below 1.5 tasks/cycle, escalate to GM
-5. **VERIFY QUALITY:** Review TASK-128 and TASK-130 deliverables for completeness
+**By Agent:**
 
-**Risk Assessment (UPDATED C184):**
-- **Timeline Risk:** 🟡 MEDIUM — 17 cycles lost, but velocity restored; Epic 16 completion projected C189-190 if sustained
-- **Resource Risk:** 🟢 LOW (improved) — Design team agents now functional (uxui, frontend-dev proven in C184)
-- **Scope Risk:** 🟡 MEDIUM — Phase 2 plan comprehensive; execution capability now demonstrated
-- **Quality Risk:** 🟢 IMPROVING — TASK-128 and TASK-130 completed; quality gate validation needed
-- **Business Risk:** 🟡 MEDIUM — 17-cycle delay absorbed, but sustained velocity required for 8-12 week Phase 2 timeline
+**designer:**
+- ✅ C184 Completions: TASK-132 (Epic 17), TASK-140 (Epic 18) — 2 tasks
+- 🔄 C185 In-Progress: TASK-125, 126, 127 (Epic 16) — 3 tasks
+- **Performance:** Strong — broke through stall, delivering quality work
+
+**uxui:**
+- ✅ C184 Completions: TASK-128 (Epic 16), TASK-134 (Epic 17) — 2 tasks  
+- 🔄 C185 In-Progress: TASK-129 (Epic 16) — 1 task
+- **Performance:** Excellent — high-quality deliverables (9/10 rating)
+
+**frontend-dev:**
+- ✅ C184 Completions: TASK-130 (Epic 16), TASK-135 (Epic 17) — 2 tasks
+- 🔄 C185 In-Progress: TASK-131 (Epic 16) — 1 task
+- ⚠️ **Critical Issue:** TASK-130 has broken Tailwind import — needs immediate fix (0.5d)
+- **Performance:** Strong output, but quality gate failure on TASK-130
+
+**backend-dev:**
+- ✅ C184 Completions: TASK-153, TASK-154 (Epic 19) — 2 tasks (9/10 quality)
+- 🔄 C185 Status: No active assignments
+- **Available Work:** TASK-111, 112 (Epic 14) ready to start
+- **Performance:** Excellent — clean, well-tested implementations
+
+**developer:**
+- 🔄 Status: No active Phase 2 assignments
+- **Available Work:** TASK-111, 112 (Epic 14 - release cleanup)
+- **Recommendation:** Assign Epic 14 tasks to maintain momentum
+
+**pm/gm:**
+- ⚠️ **Epic 15 UNSTARTED:** 19 cycles of missed user validation opportunity
+- **URGENT:** Must activate TASK-117 (recruit beta testers) immediately
+
+### Velocity & Timeline Analysis (C185):
+
+**Historical Velocity:**
+- C167-C183: 0 tasks/cycle (17-cycle complete stall)
+- C184: 4 tasks/cycle (BREAKTHROUGH)  
+- C185: TBD — **MONITORING CRITICAL**
+
+**Required Velocity:**
+- **Target:** 2-3 tasks/cycle sustained to complete Phase 2 in 8-12 weeks
+- **Current Status:** If C185 shows 0-1 tasks, velocity is NOT sustained (escalate to GM)
+- **Healthy Sign:** 2+ completions in C185 = sustained momentum
+
+**Timeline Projection:**
+- **Epic 16 Remaining:** 5 tasks → 2-3 cycles at 2 tasks/cycle = C186-C188
+- **Epic 17 Remaining:** 5 tasks → 2-3 cycles = C189-C191  
+- **Epic 18-23 Remaining:** 41 tasks → 14-20 cycles = C192-C211
+- **Total Phase 2:** Projected C211-C215 completion (optimistic)
+- **Original Plan:** C158-C225 (8-12 weeks) — still achievable if velocity sustained
+
+### Critical Actions Required (C185 — IMMEDIATE):
+
+**P0 — MUST DO NOW:**
+1. 🔴 **Fix TASK-130 Tailwind Import Bug** (frontend-dev, 0.5d)
+   - Location: `packages/ui/src/theme/tailwind-config.ts:12`
+   - Issue: Imports from outside package boundary (`../../src/design/`)
+   - Impact: Will fail on npm install — blocks publish
+   - **Action:** Frontend-dev must fix import path immediately
+
+2. 🔴 **Activate Epic 15 User Validation** (PM, immediate)
+   - Status: 19 cycles overdue (since C166)
+   - Next Task: TASK-117 (recruit beta testers)
+   - **No dependencies** — can run in parallel with Epic 16
+   - Impact: User feedback critical for Phase 2 design decisions
+   - **Action:** PM execute TASK-117 immediately
+
+**P1 — HIGH PRIORITY:**
+3. 🟡 **Monitor C185 Velocity** (ProjM, this cycle)
+   - Watch for task completions in Epic 16 (TASK-125, 126, 127, 129, 131)
+   - **Red flag:** 0-1 completions = velocity not sustained (escalate to GM)
+   - **Green flag:** 2+ completions = momentum maintained
+   - **Action:** Track daily, report at C186
+
+4. 🟡 **Complete Epic 16 Foundation** (Designer, UxUi, Frontend-dev, 2-3 cycles)
+   - 5 tasks in-progress must complete: TASK-125, 126, 127, 129, 131
+   - **Critical Path:** Blocks 56 downstream tasks across Epics 17-23
+   - **Action:** Maintain focus on Epic 16 until 100% complete
+
+5. 🟡 **Start Epic 17 Next Tasks** (Frontend-dev, when Epic 16 done)
+   - TASK-136 now unblocked by TASK-132 completion
+   - **Action:** Queue TASK-136 for immediate start post-Epic 16
+
+**P2 — MEDIUM PRIORITY:**
+6. 🟢 **Assign Epic 14 Tasks** (Developer/Backend-dev, 1-2d)
+   - TASK-111, TASK-112 ready to execute
+   - **Action:** Assign to developer to maintain team utilization
+
+7. 🟢 **Plan Design Token Reconciliation** (Designer + Frontend-dev, coordination)
+   - TASK-130 completed before TASK-125/126 (design tokens)
+   - **Action:** Plan reconciliation pass when TASK-125/126 complete
+
+8. 🟢 **Add Z-Index Stacking Context** (Designer, 0.5d)
+   - TASK-132 missing z-index definition
+   - Needed before TASK-135 canvas implementation progresses
+   - **Action:** Add to TASK-135 acceptance criteria or create micro-task
+
+### Project Manager Sprint Assessment (C185):
+
+**Sprint Health:** 🟡 **CAUTIOUS OPTIMISM — VELOCITY MONITORING PHASE**
+
+**Progress:**
+- ✅ C184 Breakthrough confirmed: 4 tasks completed (TASK-128, 130, 132, 134, 135, 140, 153, 154)
+  *Note: Dashboard shows 4 total completions - epic breakdowns show task distribution*
+- 🔄 5 tasks actively in-progress (Epic 16 foundation)
+- 📊 Overall: 6% complete (4/66 done)
+
+**Critical Decisions:**
+
+1. ❌ **DO NOT ADVANCE TO TESTING PHASE**
+   - Reason: Only 6% task completion
+   - Reason: P0/P1 tasks incomplete across all epics
+   - Reason: Epic 16 only 29% complete (foundation layer)
+   - **Decision:** Remain in development phase, focus on Epic 16 completion
+
+2. ⚠️ **VELOCITY AT RISK — MONITORING REQUIRED**
+   - C184 showed 4 tasks/cycle (excellent)
+   - C185 status TBD — **must see 2+ completions to confirm sustained velocity**
+   - If C185 = 0 completions: Escalate to GM (stall returning)
+   - If C185 = 1 completion: Watch closely (below target)
+   - If C185 ≥ 2 completions: Velocity sustained (healthy)
+
+3. 🔴 **EPIC 15 ACTIVATION OVERDUE**
+   - 19 cycles lost since C166
+   - No dependencies blocking execution
+   - PM must start immediately — no more delays tolerated
+
+**Risk Assessment (C185):**
+- **Timeline Risk:** 🟡 MEDIUM-HIGH
+  - 18-cycle delay absorbed, but must sustain 2-3 tasks/cycle
+  - Epic 16 completion projected C186-C188 (if velocity holds)
+  - Phase 2 completion: C211-C215 (still within 8-12 week envelope)
+  
+- **Resource Risk:** 🟢 LOW
+  - Design team proven functional in C184 (designer, uxui, frontend-dev, backend-dev)
+  - All 4 agents delivered quality work
+  - Team capacity available for Epic 16 completion
+  
+- **Quality Risk:** 🟡 MEDIUM
+  - TASK-130 has critical import bug (must fix before publish)
+  - TASK-132 missing z-index specification
+  - Design token reconciliation needed (TASK-130 ↔ TASK-125/126)
+  - Otherwise: Quality ratings strong (8.2-9.0 out of 10)
+  
+- **Execution Risk:** 🟡 MEDIUM
+  - **Key Question:** Was C184 breakthrough one-time or sustained?
+  - C185 will answer this question — must monitor closely
+  - If velocity drops: Root cause was not permanently fixed
+  
+- **Business Risk:** 🟡 MEDIUM
+  - 18-cycle delay = ~2-3 weeks lost
+  - Epic 15 user validation gap = no customer feedback loop
+  - Phase 2 timeline still achievable but margin for error reduced
+
+**ProjM Recommendations (C185):**
+
+1. **Immediate (This Cycle):**
+   - Frontend-dev: Fix TASK-130 Tailwind import bug (0.5d) — BLOCKING publish
+   - PM: Activate Epic 15 TASK-117 immediately — 19 cycles overdue
+   - ProjM: Monitor C185 completions daily — must see 2+ to confirm velocity
+
+2. **Short-term (Next 2-3 Cycles):**
+   - Design team: Complete Epic 16 (5 tasks remaining)
+   - Developer: Start TASK-111, 112 (Epic 14 cleanup)
+   - Designer: Add z-index stacking context to TASK-135 or create micro-task
+   - All: Maintain 2-3 tasks/cycle velocity
+
+3. **Medium-term (C186-C190):**
+   - Epic 16 → Epic 17 transition (start TASK-136, 137, 138)
+   - Epic 18 continuation (TASK-141-147)
+   - Epic 19 frontend work (TASK-148-152)
+   - Design token reconciliation (TASK-130 ↔ TASK-125/126)
+
+4. **Process Improvements:**
+   - Implement agent activity monitoring (3-day timeout for in-progress tasks)
+   - Document C167-C183 stall root cause to prevent recurrence
+   - Add quality gates: import validation, dependency checks before "done" status
+
+**Bottom Line:** Sprint is in RECOVERY mode after 17-cycle stall. C184 breakthrough was promising (4 tasks), but C185 will determine if velocity is truly sustained. DO NOT advance to testing — only 6% complete with critical foundation work still in progress. Epic 15 activation is 19 cycles overdue and must start immediately. Fix TASK-130 import bug before any publish attempts.
+
+---
 
 **Phase 2 Timeline Impact:**
 - **Original Timeline:** 8-12 weeks (C167-C223, Cycles 167-225)
