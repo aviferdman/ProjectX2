@@ -128,3 +128,5 @@
 | TASK-123 | P2 | done | developer | 1d | Add performance metrics integration examples (attach to Agent, Crew, export/visualize) — All 25 unit tests + 28 doc tests passing |
 | TASK-075 | P3 | done | developer | 1d | Create ESLint config for Crewspace best practices (QA PASSED: 0 errors, 428 warnings, all tests pass) |
 | TASK-076 | P3 | done | developer | 1d | Create Prettier config for consistent formatting (RESOLVED: Formatting issues fixed in shell tool files) |
+| TASK-087 | P1 | done | developer | 1d | Create example: Data analysis pipeline |
+| TASK-123 | P2 | done | developer | 1d | Add observability integration examples (metrics + logs) |
