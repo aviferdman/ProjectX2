@@ -4207,8 +4207,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-133 | P1 | todo | designer | 2d | Design agent/task node styles (icons, colors, states) |
-| TASK-134 | P1 | done | uxui | 2d | Design drag-and-drop interactions and feedback states |
-| TASK-135 | P0 | done | frontend-dev | 5d | Implement React Flow canvas (drag-and-drop, pan, zoom) |
 | TASK-136 | P0 | todo | frontend-dev | 3d | Implement node rendering (agents, tasks, custom styles) |
 | TASK-137 | P1 | todo | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
 | TASK-138 | P1 | todo | frontend-dev | 2d | Implement canvas state management (save, load, undo/redo) |
@@ -4228,7 +4226,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-140 | P0 | done | designer | 3d | Design debugging timeline UI (timeline chart, log viewer, filters) |
 | TASK-141 | P1 | todo | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
 | TASK-142 | P1 | todo | uxui | 2d | Design timeline interactions (click, zoom, filter, search) |
 | TASK-143 | P0 | todo | frontend-dev | 5d | Implement timeline chart (D3.js or Recharts, time axis, agent lanes) |
@@ -4256,7 +4253,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-150 | P1 | todo | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
 | TASK-151 | P0 | todo | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
-| TASK-154 | P1 | done | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
 
 **Dependencies:**

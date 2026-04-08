@@ -137,3 +137,7 @@
 | TASK-130 | P0 | done | frontend-dev | 3d | Implement design system (Tailwind config, CSS variables, base components) — **COMPLETED C184** |
 | TASK-132 | P0 | done | designer | 3d | Design visual canvas UI (nodes, edges, toolbar, sidebar, properties panel) |
 | TASK-153 | P0 | done | backend-dev | 3d | Build workflow storage API (create, read, update, delete) |
+| TASK-134 | P1 | done | uxui | 2d | Design drag-and-drop interactions and feedback states |
+| TASK-135 | P0 | done | frontend-dev | 5d | Implement React Flow canvas (drag-and-drop, pan, zoom) |
+| TASK-140 | P0 | done | designer | 3d | Design debugging timeline UI (timeline chart, log viewer, filters) |
+| TASK-154 | P1 | done | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
