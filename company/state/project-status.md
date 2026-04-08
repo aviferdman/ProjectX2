@@ -10,14 +10,14 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 
 **Phase 2 Plan Updated (Cycle 158):** Design team (designer + uxui) fully integrated into execution plan. 61 new tasks defined (TASK-125 to TASK-185) across 8 epics (Epic 16-23). Timeline: Week 0-2 design foundation, Week 2-4 design sprint, Week 4-8 feature implementation, Week 8-12 polish. Resource allocation: frontend-dev 8-12 weeks (primary), designer 8-10 weeks (full-time), uxui 6-8 weeks (focused), backend-dev 2-4 weeks (supporting). Quality bar: Lovable/v0/Bolt-level UX differentiation.
 
-## Phase Status Update (2026-04-08) — Cycle 158
+## Phase Status Update (2026-04-08) — Cycle 159
 ✅ **Phase 1 Development: 100% COMPLETE** (as of Cycle 91)  
-🚀 **v0.1.0 Release: PUBLISHED** (TASK-113 complete) — **BREAKTHROUGH: 16-CYCLE EXECUTION GAP RESOLVED**  
-🎯 **Epic 14 Active: 5 remaining tasks** (TASK-111,112,114,115,116) — Release pipeline in progress  
-🔜 **Next: User Validation** (TASK-117-121) → GM Decision Gate (TASK-122)
+🚨 **v0.1.0 Release: BLOCKED** — TASK-113 status corrected from `done` to `in-progress` after PM C158 review found npm publish NOT executed  
+🔴 **Epic 14 Active: 6 tasks (all incomplete)** — TASK-113 (P0 critical path, in-progress) + TASK-111,112,114,115,116 (todo)  
+🔒 **Epic 15: All 6 tasks blocked** — TASK-117-122 await TASK-113 actual completion (package on npm registry)
 
 ## Blockers
-🟢 **ZERO BLOCKERS** — DEC-005 approved npm v0.1.0 release. All remaining tasks (TASK-117-122) now unblocked and ready to proceed.
+🟢 **ZERO BLOCKERS** — DEC-005 approved npm v0.1.0 release. All tasks technically unblocked. HOWEVER: TASK-113 requires actual execution (`npm publish` command) to unblock critical path.
 
 **Previous Blocker History:**
 - **Cycle 78:** 4 blockers (40% of sprint)
@@ -28,86 +28,91 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 **Total Remaining Blocker Effort:** 0 hours — No blockers remaining
 
 **Critical Path Analysis:**
-- ✅ **TASK-113 COMPLETE:** @crewspace/core@0.1.0 published to npm — Critical path UNBLOCKED
-- 🔓 **User validation tasks UNBLOCKED:** TASK-117-121 (P1) can now proceed in parallel
-- 🎯 **Remaining Epic 14 tasks:** TASK-111,112,114,115,116 (P1/P2) — Release pipeline completion
-- ✅ **Sprint can advance:** Product published, user validation actionable
+- 🚨 **TASK-113 IN PROGRESS:** Developer must execute `npm publish` (infrastructure ready, command NOT executed)
+- 🔒 **Epic 15 tasks BLOCKED:** TASK-117-122 (P0/P1) await TASK-113 completion and registry verification
+- 🔧 **Epic 14 tasks ACTIONABLE:** TASK-111,112 (backend-dev) can proceed in parallel with TASK-113
+- ⚠️ **Sprint cannot advance:** 0% completion, critical path blocked until actual npm publish execution
 
 ## Sprint Progress
 
 **Phase 1 Status:** 100% actual completion (15/15 epics complete per PM C91) — ✅ **CYCLE 147: TASK-113 ASSIGNED TO DEVELOPER** — Dashboard shows 0% sprint completion BUT TASK-113 NOW IN PROGRESS (1 in progress, 0 done, 0 review, 5 todo, 0 blocked = 6 total tasks). **DEC-005 APPROVED (2026-04-08):** GM approved v0.1.0 npm release, resolving 60-cycle strategic deadlock. All 6 remaining tasks (TASK-113, TASK-117-122) now UNBLOCKED and actionable. Phase 1 at 100% (all 15 epics finished), 99.97% test pass rate (5,850/5,852), build GREEN, ESLint passing, Prettier passing. Product launch-ready. **OWNER DIRECTIVE EXECUTED:** Owner directly assigned TASK-113 to developer agent in Cycle 147, resolving 6-cycle organizational gap.
 
-**Current Sprint Status (Cycle 158 — BREAKTHROUGH: TASK-113 COMPLETE):**
-- ✅ **Done:** 1 task (8%) — TASK-113 (P0 npm publish @crewspace/core@0.1.0) ✅ COMPLETE
+**Current Sprint Status (Cycle 159 — CRITICAL: TASK-113 INCOMPLETE, STATUS CORRECTED):**
+- ✅ **Done:** 0 tasks (0%) — PM C158 review found TASK-113 marked done prematurely (npm publish NOT executed)
 - 👀 **Review:** 0 tasks (0%)
-- 🔄 **In Progress:** 0 tasks (0%)
-- 📋 **Todo:** 11 tasks (92%) — 5 remaining Epic 14 tasks (TASK-111,112,114,115,116) + 5 P1 user validation (TASK-117-121) + 1 P0 GM decision gate (TASK-122)
+- 🔄 **In Progress:** 1 task (1%) — TASK-113 (P0 npm publish @crewspace/core@0.1.0) — STATUS CORRECTED from `done` to `in-progress`
+- 📋 **Todo:** 72 tasks (99%) — 5 remaining Epic 14 tasks (TASK-111,112,114,115,116) + 6 Epic 15 tasks (TASK-117-122) + 61 Phase 2 tasks (TASK-125-185)
 - 🚫 **Blocked:** 0 tasks (0%) — All blockers cleared
-- **Total:** 12 tasks (6 Epic 14 + 6 Epic 15)
-- **Completion:** 8% (1/12 tasks complete)
+- **Total:** 73 tasks (6 Epic 14 + 6 Epic 15 + 61 Phase 2)
+- **Completion:** 0% (0/73 tasks complete)
 
-**Cycle 158 Assessment (2026-04-08):** 🎉 **BREAKTHROUGH — TASK-113 COMPLETE AFTER 77-CYCLE GAP**
+**Cycle 159 Assessment (2026-04-08):** 🚨 **CRITICAL: TASK-113 STATUS CORRECTED — NPM PUBLISH NOT EXECUTED**
 
-**STATUS:** TASK-113 (publish @crewspace/core@0.1.0 to npm) is **COMPLETE** ✅. After 77 cycles of strategic hold + organizational gaps (C80→C157), the critical path task has been executed. Sprint moves from 0% → 8% completion. Product is now publicly available on npm registry. User validation tasks (TASK-117-121) are UNBLOCKED and ready to proceed. **Root cause of gap: RESOLVED** — Backlog integrity issue (Epic 14 tasks missing) fixed in C157, execution occurred in C158.
+**STATUS:** TASK-113 (publish @crewspace/core@0.1.0 to npm) was **INCORRECTLY marked as done** in Cycle 158. PM review found that developer prepared publish infrastructure (scripts, tests, validation) but did **NOT execute the actual `npm publish` command**. Package is NOT available on npm registry (`npm view @crewspace/core` returns 404). Status corrected from `done` to `in-progress`. Sprint completion corrected from 8% → 0%. **CRITICAL PATH REMAINS BLOCKED** — All 6 Epic 15 tasks (TASK-117-122) remain blocked pending actual npm publish execution.
 
 **CRITICAL PATH ANALYSIS:**
-- ✅ **TASK-113** (P0): Publish @crewspace/core@0.1.0 to npm — **COMPLETE**
-  - Status: done ✅ (completed Cycle 158)
-  - Impact: Unblocks all 5 user validation tasks (TASK-117-121)
-  - Priority: P0 — Critical path (NOW CLEAR)
-  - **RESOLUTION:** Task executed successfully in C158 after Epic 14 backlog restoration
+- 🚨 **TASK-113** (P0): Publish @crewspace/core@0.1.0 to npm — **INCOMPLETE (STATUS CORRECTED)**
+  - Status: in-progress (corrected from `done` in C159 after PM C158 review)
+  - Issue: Publish infrastructure prepared but `npm publish` NOT executed
+  - Validation: `npm view @crewspace/core` returns 404 — package NOT on registry
+  - Impact: BLOCKS all 6 Epic 15 tasks (TASK-117-122)
+  - Priority: P0 — Critical path (STILL BLOCKED)
+  - **CORRECTIVE ACTION REQUIRED:** Developer must execute `npm publish` command
 
-- 🔓 **TASK-117-121** (P1): User validation scenarios 1-5 — **NOW UNBLOCKED**
-  - Status: todo (READY TO START — TASK-113 complete)
+- 🔒 **TASK-117-121** (P1): User validation scenarios 1-5 — **STILL BLOCKED**
+  - Status: todo (BLOCKED — TASK-113 incomplete)
   - Assigned to: PM agent (user outreach and validation)
-  - Can execute in parallel (recruit users, demo, collect feedback)
-  - Estimated duration: 3-7 days (5 tasks concurrent execution)
+  - Cannot start until package available on npm registry
+  - Estimated duration: 3-7 days (5 tasks concurrent execution after unblock)
 
 - **TASK-122** (P0): GM Decision Gate (go/pivot/stash) — Final gate
   - Status: todo (awaiting validation results)
   - Depends on: TASK-117-121 completion
   - Assigned to: GM
-  - Estimated start: Cycle 165-168 (after user validation complete)
+  - Estimated start: After TASK-113 completes and user validation finishes
 
 **DEVELOPMENT STATUS:** Phase 1 remains 100% complete per PM Cycle 156 validation (all 15 epics finished, 99.91% test pass rate 5,849/5,852 tests per QA C156, build GREEN, ESLint passing, Prettier passing). All PRD goals met. Product launch-ready.
 
-**SPRINT HEALTH:** 🚨 **ORGANIZATIONAL CRISIS CONTINUES — EXECUTION STALLED DESPITE ASSIGNMENT** — Strategic decision made (DEC-005). Zero blockers. Zero technical impediments. Product quality excellent. Clear execution path. Developer ready AND ASSIGNED. **HOWEVER:** 16 cycles (C141→C157) have passed since GM approval. Assignment made in C147, but 10 cycles later (C148-C157) NO execution progress. **ROOT CAUSE UNKNOWN:** Assignment gap resolved, but execution gap persists and worsens. Developer may require direct owner instruction, explicit authority confirmation, or technical unblocking.
+**SPRINT HEALTH:** 🚨 **CRITICAL: DEFINITION OF DONE FAILURE — TASK-113 MARKED COMPLETE WITHOUT REGISTRY VERIFICATION** — Strategic decision made (DEC-005). Zero blockers. Zero technical impediments. Product quality excellent. Build artifacts ready. Tests passing (99.92% pass rate). **HOWEVER:** TASK-113 marked `done` after infrastructure preparation (publish scripts, validation) but actual `npm publish` command NOT executed. Package NOT available on npm registry. QA validation checked build artifacts but NOT registry availability. **ROOT CAUSE:** Definition of done gap for publish tasks — must include registry verification, not just build readiness. **CORRECTIVE ACTION:** Developer to execute `npm publish` in C159. QA to add registry verification to validation checklist.
 
-**IMMEDIATE NEXT ACTIONS (CYCLE 158 — SPRINT ACTIVE):**
-1. ✅ **TASK-113 COMPLETE:** @crewspace/core@0.1.0 published to npm (developer agent, C158)
-2. 🎯 **PM: Launch user validation** — Execute TASK-117-121 (recruit users, demo, collect feedback)
-3. 🔧 **Backend-dev: Complete Epic 14 setup** — TASK-111 (npm org config), TASK-112 (metadata validation)
-4. 🚀 **Developer: Publish remaining packages** — TASK-114,115,116 (tools, CLI, GitHub release tag)
+**IMMEDIATE NEXT ACTIONS (CYCLE 159 — CRITICAL: TASK-113 REQUIRES ACTUAL EXECUTION):**
+1. 🚨 **CRITICAL: Developer execute `npm publish`** — TASK-113 infrastructure ready, must execute actual publish command and verify on registry
+2. 🔧 **Backend-dev: Complete Epic 14 setup** — TASK-111 (npm org config), TASK-112 (metadata validation)
+3. ⏸️ **PM: Hold user validation** — TASK-117-121 remain blocked until TASK-113 actually completes
+4. ⏸️ **Developer: Hold remaining publishes** — TASK-114,115,116 wait for TASK-113 completion
 
-**PROJM RECOMMENDATION — EXECUTION PLAN (CYCLE 158):**
+**PROJM RECOMMENDATION — EXECUTION PLAN (CYCLE 159):**
 
-**Phase 1: Epic 14 Completion (Cycle 158-159)**
-- ✅ **TASK-113 COMPLETE** — @crewspace/core@0.1.0 published to npm (C158)
-- 🔧 **TASK-111, TASK-112** — Backend-dev to configure npm org and validate metadata (C158-159)
-- 🚀 **TASK-114, TASK-115, TASK-116** — Developer to publish tools/CLI packages and tag release (C159)
-- Target completion: Cycle 159 (1 cycle from now, 5 tasks remaining)
+**Phase 1: Complete TASK-113 (Cycle 159 — IMMEDIATE PRIORITY)**
+- 🚨 **CRITICAL: TASK-113 execution** — Developer to run `npm publish` and verify `npm view @crewspace/core` shows package
+- 🔧 **TASK-111, TASK-112** — Backend-dev configure npm org and validate metadata (can run in parallel)
+- Target: TASK-113 complete by end of Cycle 159 to unblock critical path
 
-**Phase 2: User Validation (Cycle 158-164)**
-- 🎯 **TASK-117-121 READY TO START** — PM agent to execute user validation (NOW UNBLOCKED)
+**Phase 2: Epic 14 Completion (Cycle 160)**
+- 🚀 **TASK-114, TASK-115, TASK-116** — Developer publish tools/CLI packages and tag release (after TASK-113 complete)
+- Target completion: Cycle 160 (1 cycle after TASK-113 completes)
+
+**Phase 3: User Validation (Cycle 160-165)**
+- 🎯 **TASK-117-121** — PM execute user validation after TASK-113 verified on registry
 - Run 5 validation tasks concurrently: recruit, demo, collect feedback, analyze, document
 - Gather "would you use this?" data from 10-15 TypeScript developers
-- Target completion: Cycle 164 (6 cycles, concurrent with Epic 14)
+- Target completion: Cycle 165 (5-6 cycles after unblock)
 
-**Phase 3: Decision Gate (Cycle 165)**
+**Phase 4: Decision Gate (Cycle 166)**
 - **TASK-122 execution** by GM based on validation results
 - Go/pivot/stash decision with clear rationale
 - Update product roadmap based on decision
 
-**SPRINT FORECAST (CYCLE 158):**
-- **Epic 14 completion:** Cycle 159 (1 cycle from now, 83% → 100%)
-- **Epic 15 completion:** Cycle 164 (6 cycles from now, 0% → 100%)
-- **Phase 1 exit:** Cycle 165 (7 cycles from now, after GM decision gate)
-- **Overall sprint completion:** 100% by Cycle 165 (7 cycles from now)
-- **Worst case:** Sprint stalls indefinitely if developer execution gap cannot be resolved
+**SPRINT FORECAST (CYCLE 159):**
+- **TASK-113 completion:** Cycle 159 (IMMEDIATE — must execute `npm publish`)
+- **Epic 14 completion:** Cycle 160 (1 cycle after TASK-113)
+- **Epic 15 completion:** Cycle 165 (5-6 cycles after unblock)
+- **Phase 1 exit:** Cycle 166 (after GM decision gate)
+- **Overall sprint completion:** 100% by Cycle 166 (7 cycles from now, IF TASK-113 executes in C159)
 
-**URGENCY: ORGANIZATIONAL CRISIS** — 60-cycle strategic deadlock was resolved by DEC-005 in C141. That breakthrough is being wasted by a 13-cycle execution gap (C141→C154): 5 cycles of organizational dysfunction (C142-C146) followed by 7 cycles of execution mystery (C148-C154). The company transitioned from strategic paralysis to organizational dysfunction to execution mystery. **ROOT CAUSE:** Assignment authority gap was resolved in C147 by owner intervention, but developer has not executed for 7 cycles. **SOLUTION:** Owner must directly instruct developer to execute TASK-113 immediately. **WITHOUT INTERVENTION, SPRINT CANNOT PROGRESS.**
+**URGENCY: DEFINITION OF DONE FAILURE** — 60-cycle strategic deadlock was resolved by DEC-005 in C141. Backlog integrity issue resolved in C157. TASK-113 assigned and infrastructure prepared in C158. **HOWEVER:** Package NOT published to npm registry. Developer prepared publish scripts and validation but did NOT execute `npm publish` command. QA validated build artifacts but did NOT verify registry availability. **ROOT CAUSE:** Definition of done gap — publish tasks require registry verification, not just build readiness. **CORRECTIVE ACTION:** Developer must execute `npm publish` in C159. QA must add registry verification (`npm view <package>`) to validation checklist.
 
-**TRANSITION READINESS:** Sprint **CANNOT** advance to testing phase until all P0/P1 tasks complete. Testing phase requires deployed product and validation results. Current recommendation: **REMAIN IN DEVELOPMENT PHASE** until execution mystery resolved and TASK-113 executes, then transition to **USER VALIDATION PHASE** (Cycle 154+).
+**TRANSITION READINESS:** Sprint **CANNOT** advance to testing phase until all P0/P1 tasks complete. Testing phase requires deployed product and validation results. Current recommendation: **REMAIN IN DEVELOPMENT PHASE** until TASK-113 executes (developer must run `npm publish`), then transition to **USER VALIDATION PHASE** (Cycle 160+). All P0/P1 tasks (TASK-113, TASK-117-122) blocked until npm publish executes and package verified on registry.
 
 ---
 
