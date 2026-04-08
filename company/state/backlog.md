@@ -22,6 +22,49 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 ## PM Review Notes
 
+### Cycle 185 Review (2026-04-08) — SUSTAINED MOMENTUM: 4 More Tasks Validated, Velocity Confirmed
+**Status:** 🟢 **SUSTAINED — Velocity Holding at 4 tasks/cycle (2nd consecutive cycle)**
+
+**Cycle 185 Summary:**
+- 📊 **Sprint completion:** 6% → 11% (8 done, 5 in-progress, 56 todo, 1 blocked out of 70 tasks)
+- ✅ **Phase 1:** 100% complete — stable
+- 🟢 **Phase 2 velocity CONFIRMED:** 4 tasks/cycle for 2nd consecutive cycle
+- 🟢 **Cross-functional delivery:** UX design (TASK-134), frontend (TASK-135), visual design (TASK-140), backend (TASK-154)
+- 🔴 **Epic 15 user validation:** STILL UNACTIVATED — 20 cycles lost
+
+**Recently Completed (C185):**
+- ✅ TASK-134 (P1, uxui): Drag-and-drop interaction design — **8.5/10** — Comprehensive 5-type interaction spec
+- ✅ TASK-135 (P0, frontend-dev): React Flow canvas — **8.0/10** — Core canvas working, TASK-134 UX polish deferred
+- ✅ TASK-140 (P0, designer): Timeline UI design — **9.5/10** — Outstanding spec, best deliverable of cycle
+- ✅ TASK-154 (P1, backend-dev): Usage tracking API — **7.5/10** — Solid core logic, freemium tier mismatch found
+
+**Critical Issues Found:**
+1. 🔴 **Freemium tier mismatch** — Code defines Free as 50 runs/mo, company-config says 500 runs/mo. Must reconcile.
+2. 🔴 **TASK-130 Tailwind import STILL UNFIXED** — 2 cycles overdue. Blocks @crewspace/ui npm publish.
+3. 🟡 **TASK-134 UX features not implemented in TASK-135** — Ghost nodes, alignment guides need follow-up task.
+4. 🟡 **No React error boundary in canvas** — Exception handling gap.
+
+**Scope Gaps Identified:**
+- New micro-task needed: Reconcile freemium limits with company-config (P0, 0.5d)
+- New micro-task needed: Implement TASK-134 UX feedback in canvas (P1, 2d)
+- TASK-130 Tailwind fix still overdue (P0, 0.5d) — escalate to ProjM
+
+**Epic Progress Update:**
+- Epic 17 (Canvas UI): 38% (3/8 done) — Ahead of schedule
+- Epic 18 (Timeline): 12.5% (1/8 done) — Design foundation complete
+- Epic 19 (Dashboard): 25% → 50% backend (2/4 backend done)
+
+**Recommendations:**
+1. **IMMEDIATE:** Fix freemium tier limits (backend-dev, 0.5d)
+2. **IMMEDIATE:** Fix TASK-130 Tailwind import (frontend-dev, 0.5d) — ESCALATE
+3. **IMMEDIATE:** Activate Epic 15 user validation (PM, 20 cycles overdue)
+4. **HIGH:** Create follow-up task for TASK-134 UX features in canvas
+5. **HIGH:** Start TASK-136 (node rendering) and TASK-143/144 (timeline implementation)
+
+**Full review:** See `pm-report-development-pm-c185.md`
+
+---
+
 ### Cycle 184 Review (2026-04-08) — BREAKTHROUGH: First Phase 2 Deliverables After 17-Cycle Stall
 **Status:** 🟢 **RECOVERING — Velocity Restored, 4 Tasks Completed**
 

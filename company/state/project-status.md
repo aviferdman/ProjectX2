@@ -10,26 +10,28 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 
 **Phase 2 Plan Updated (Cycle 158):** Design team (designer + uxui) fully integrated into execution plan. 61 new tasks defined (TASK-125 to TASK-185) across 8 epics (Epic 16-23). Timeline: Week 0-2 design foundation, Week 2-4 design sprint, Week 4-8 feature implementation, Week 8-12 polish. Resource allocation: frontend-dev 8-12 weeks (primary), designer 8-10 weeks (full-time), uxui 6-8 weeks (focused), backend-dev 2-4 weeks (supporting). Quality bar: Lovable/v0/Bolt-level UX differentiation.
 
-## Phase Status Update (2026-04-08) — Cycle 184
+## Phase Status Update (2026-04-08) — Cycle 185 (PM Review)
 ✅ **Phase 1 Development: 100% COMPLETE AND RELEASED** (as of Cycle 166)  
 🎉 **v0.1.0 Release: LIVE ON NPM** — All 7 packages successfully published to npm registry  
 🎉 **Epic 14: 50% COMPLETE (3/6 tasks done)** — TASK-113 (P0) ✅, TASK-114 (P2) ✅, TASK-115 (P2) ✅ COMPLETE + TASK-111,112 (todo, ready to execute) + TASK-116 (blocked by test failures)  
 ✅ **Epic 15: READY FOR EXECUTION** — All 6 Epic 15 tasks (TASK-117-122) unblocked and ready for PM/GM execution
 ✅ **CLI Checkpoint (C168): PASSED** — Package published and validated
-🟡 **Phase 2 UI Development: BREAKTHROUGH IN C184** — Epic 16 shows first completions (TASK-128, TASK-130) after 17-cycle stall
+🟢 **Phase 2 UI Development: VELOCITY SUSTAINED** — 8 tasks done (4 new in C185), 4 tasks/cycle for 2nd consecutive cycle
+🔴 **Critical: Freemium tier mismatch** — Code (50 runs/mo) ≠ product spec (500 runs/mo). Must reconcile.
+🔴 **Critical: TASK-130 Tailwind import bug** — 2 cycles unfixed, blocks npm publish
 
 **Phase 2 Active Sprint (Cycle 185 — ProjM Sprint Status Dashboard — UPDATED 2026-04-08):**
 
-### 🟡 CONSOLIDATING PROGRESS — VELOCITY MONITORING CRITICAL
+### 🟢 VELOCITY SUSTAINED — RECOVERY CONFIRMED (2 consecutive cycles at 4 tasks/cycle)
 
-**Sprint Progress Summary (C185 — UPDATED):**
-- **Completion Rate:** 6% (4 tasks done out of 66 total) — **C184 breakthrough maintained**
-- **In Progress:** 5 tasks (8%) — Active work on Epic 16 foundation tasks
+**Sprint Progress Summary (C185 — PM Review UPDATED):**
+- **Completion Rate:** 11% (8 tasks done out of 70 total) — **+4 from C184, velocity sustained**
+- **In Progress:** 5 tasks (7%) — Active work on Epic 16 foundation tasks
 - **Review:** 0 tasks (0%)
-- **Todo:** 56 tasks (85%) — Awaiting Epic 16 completion to unblock downstream work
-- **Blocked:** 1 task (2%) — TASK-116 (non-critical test failures)
+- **Todo:** 56 tasks (80%) — Downstream work unblocking as foundation completes
+- **Blocked:** 1 task (1%) — TASK-116 (non-critical test failures)
 - **Days Since Epic 16 Start:** 18+ cycles (started C167, now C185)
-- **Sprint Health:** 🟡 **MONITORING** — Must sustain 2-3 tasks/cycle velocity to complete Phase 2 on timeline
+- **Sprint Health:** 🟢 **RECOVERING** — Sustained 4 tasks/cycle, on track if velocity holds
 
 ### Epic Status Breakdown (C185):
 
@@ -59,22 +61,25 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 - **Velocity:** 0 tasks/cycle (C167-C183) → 2 tasks/cycle (C184) → **TBD C185** (monitoring critical)
 - **Blockers:** TASK-130 has broken Tailwind import path — must fix before publish (0.5d)
 
-**Epic 17 (Visual Canvas UI) — 🟢 EARLY PROGRESS (38% - 3/8 done):**
-- ✅ **Done in C184:**
+**Epic 17 (Visual Canvas UI) — 🟢 AHEAD OF SCHEDULE (38% - 3/8 done):**
+- ✅ **Done:**
   - TASK-132 (P0, designer): Canvas UI design spec — Quality: 8.2/10
-  - TASK-134 (P1, uxui): Drag-and-drop interaction design
-  - TASK-135 (P0, frontend-dev): React Flow canvas implementation
-- ⏳ **Todo:** TASK-133, 136, 137, 138, 139 (awaiting Epic 16 completion)
-- **Next:** TASK-136 now unblocked by TASK-132 completion
+  - TASK-134 (P1, uxui): Drag-and-drop interaction design — Quality: 8.5/10
+  - TASK-135 (P0, frontend-dev): React Flow canvas implementation — Quality: 8.0/10
+- ⚠️ **Gap:** TASK-134 UX polish (ghost nodes, alignment guides) not in TASK-135 code — needs follow-up task
+- ⏳ **Todo:** TASK-133, 136, 137, 138, 139
+- **Next:** TASK-136 (node rendering) now unblocked and critical path
 
-**Epic 18 (Debugging Timeline) — 🟡 FOUNDATION STARTED (12.5% - 1/8 done):**
-- ✅ Done: TASK-140 (P0, designer): Timeline UI design — Quality: excellent
-- ⏳ Todo: 7 tasks (TASK-141-147) awaiting Epic 16/17 progress
+**Epic 18 (Debugging Timeline) — 🟡 DESIGN COMPLETE (12.5% - 1/8 done):**
+- ✅ Done: TASK-140 (P0, designer): Timeline UI design — Quality: **9.5/10 (best deliverable of cycle)**
+- ⏳ Todo: 7 tasks (TASK-141-147) — TASK-143/144 now unblocked by TASK-140
+- **Next:** TASK-143 (timeline chart) and TASK-144 (log viewer) ready to start
 
-**Epic 19 (Dashboard & Workflow) — 🟢 BACKEND READY (50% - 2/4 done):**
-- ✅ **Done in C184:**
+**Epic 19 (Dashboard & Workflow) — 🟢 BACKEND COMPLETE (25% overall, 100% backend done):**
+- ✅ **Done:**
   - TASK-153 (P0, backend-dev): Workflow storage API — Quality: 9/10
-  - TASK-154 (P1, backend-dev): Usage tracking API
+  - TASK-154 (P1, backend-dev): Usage tracking API — Quality: 7.5/10 ⚠️ **freemium tier mismatch**
+- 🔴 **Issue:** Free tier limits (50 runs/mo in code) don't match product spec (500 runs/mo)
 - ⏳ **Todo:** TASK-148, 149, 150, 151, 152, 155 (frontend tasks partially unblocked)
 
 **Epic 20-23 (Templates, Marketplace, Responsive, Polish) — ⏳ AWAITING FOUNDATION:**
