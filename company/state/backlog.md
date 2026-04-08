@@ -3028,7 +3028,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 |---------|----------|--------|----------|--------|-------|
 | TASK-111 | P1 | todo | backend-dev | 0.5d | Configure npm organization @crewspace and validate publishing credentials |
 | TASK-112 | P1 | todo | backend-dev | 0.5d | Validate package.json metadata for all packages (name, version, license, keywords) |
-| TASK-113 | P0 | review | developer | 1d | Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) |
+| TASK-113 | P0 | done | developer | 1d | Publish @crewspace/core@0.1.0 to npm registry (CRITICAL PATH) |
 | TASK-114 | P2 | todo | developer | 1d | Publish @crewspace/tools-* packages (@crewspace/tools-file, tools-web, tools-shell) |
 | TASK-115 | P2 | todo | developer | 0.5d | Publish @crewspace/cli package to npm |
 | TASK-116 | P2 | todo | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
