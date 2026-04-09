@@ -4409,7 +4409,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-137 | P1 | review | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
+| TASK-137 | P1 | blocked | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) — BLOCKED: test environment (jsdom) not configured |
 | TASK-138 | P1 | todo | frontend-dev | 2d | Implement canvas state management (save, load, undo/redo) |
 | TASK-139 | P2 | todo | designer | 1d | Design QA: canvas implementation vs specs |
 
@@ -4481,7 +4481,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-164 | P1 | review | designer | 2d | Design integration cards (logo, description, OAuth status) |
+| TASK-164 | P1 | done | designer | 2d | Design integration cards (logo, description, OAuth status) |
 | TASK-165 | P2 | todo | designer | 1d | Design OAuth connection flow screens |
 | TASK-166 | P1 | todo | frontend-dev | 3d | Implement marketplace browser (list integrations, search) |
 | TASK-167 | P1 | todo | frontend-dev | 2d | Implement OAuth flows (connect, disconnect, status display) |
