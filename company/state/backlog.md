@@ -4395,6 +4395,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-149 | P1 | done | designer | 2d | Design workflow card/list views (thumbnails, metadata, actions) |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
+| TASK-186 | P1 | done | backend-dev | 2d | Workflow Execution API (execute stored workflows with usage tracking, events, timeout) |
 
 **Dependencies:**
 - TASK-151 depends on TASK-148, TASK-153
@@ -4507,7 +4508,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 - **Designer:** 26 tasks (TASK-125,126,127,132,133,139,140,141,147,148,149,155,156,157,158,162,163,164,165,168,169,177,183)
 - **UX/UI:** 10 tasks (TASK-128,129,134,142,150,170,171,178,179)
 - **Frontend-dev:** 21 tasks (TASK-130,131,135,136,137,138,143,144,145,146,151,152,159,160,161,166,167,172,173,174,180,181,182)
-- **Backend-dev:** 2 tasks (TASK-153,154)
+- **Backend-dev:** 3 tasks (TASK-153,154,186)
 - **QA:** 3 tasks (TASK-175,176,185)
 - **PM:** 1 task (TASK-184)
 
