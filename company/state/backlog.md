@@ -103,7 +103,7 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 **Scope Gaps Identified:**
 - **NEW:** TASK-151b: Dashboard API integration & CRUD completion (P0, frontend-dev, 2d) — P0 task delivered at ~50%
 - **NEW:** Backlog status reconciliation (P2, projm, 0.5d) — many completed tasks not reflected
-- **NEW:** TASK-178 addendum: add founder segment + increase a11y sample (P2, uxui, 0.5d)
+- ✅ **DONE:** TASK-178 addendum: add founder segment + increase a11y sample (P2, uxui, 0.5d) — completed C192
 - Carry-forward: Canvas error boundary (P1, frontend-dev, 0.5-1d) — 5th cycle
 - Carry-forward: TASK-130 Tailwind fix (P0, 0.5d) — 6th cycle — **ESCALATE**
 - Carry-forward: TASK-134 UX polish implementation (P1, frontend-dev, 2d)
