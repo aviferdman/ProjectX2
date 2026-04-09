@@ -157,3 +157,7 @@
 | TASK-141 | P1 | done | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
 | TASK-151 | P0 | done | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
 | TASK-178 | P1 | done | uxui | 2d | Final usability testing (5-10 users, onboarding validation) |
+| TASK-149 | P1 | done | designer | 2d | Design workflow card/list views (thumbnails, metadata, actions) |
+| TASK-186 | P1 | done | backend-dev | 2d | Workflow Execution API (execute stored workflows with usage tracking, events, timeout) |
+| TASK-159 | P0 | done | frontend-dev | 3d | Implement template browser (grid view, search, filters) |
+| TASK-179 | P1 | done | uxui | 1d | Document usability findings and final recommendations |

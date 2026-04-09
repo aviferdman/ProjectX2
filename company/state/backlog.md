@@ -4392,10 +4392,8 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-149 | P1 | done | designer | 2d | Design workflow card/list views (thumbnails, metadata, actions) |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
-| TASK-186 | P1 | done | backend-dev | 2d | Workflow Execution API (execute stored workflows with usage tracking, events, timeout) |
 
 **Dependencies:**
 - TASK-151 depends on TASK-148, TASK-153
@@ -4413,7 +4411,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 |---------|----------|--------|----------|--------|-------|
 | TASK-157 | P1 | todo | designer | 2d | Design template cards (thumbnail, title, description, tags) |
 | TASK-158 | P1 | todo | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
-| TASK-159 | P0 | done | frontend-dev | 3d | Implement template browser (grid view, search, filters) |
 | TASK-160 | P1 | todo | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
 | TASK-161 | P1 | todo | frontend-dev | 2d | Implement template instantiation (copy to user account) |
 | TASK-162 | P2 | todo | designer | 1d | Design QA: template library implementation vs specs |
@@ -4475,7 +4472,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-177 | P1 | todo | designer | 2d | Visual polish pass (spacing, alignment, colors, consistency) |
-| TASK-179 | P1 | done | uxui | 1d | Document usability findings and final recommendations |
 | TASK-180 | P0 | todo | frontend-dev | 3d | Performance optimization (bundle size, lazy loading, caching) |
 | TASK-181 | P1 | todo | frontend-dev | 2d | Error handling and edge cases (all screens) |
 | TASK-182 | P1 | todo | frontend-dev | 2d | Empty states, loading states, success/error feedback |
