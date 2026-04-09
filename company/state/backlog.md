@@ -4039,7 +4039,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-112 | P1 | done | backend-dev | 0.5d | Validate package.json metadata for all packages (name, version, license, keywords) |
 | TASK-116 | P2 | blocked | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog (NOTE: Only workflow/scripts added, tag not created. Blocked by test failures and formatting issues) |
 
 **Dependencies:**
@@ -4325,7 +4324,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-141 | P1 | todo | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
-| TASK-143 | P0 | done | frontend-dev | 5d | Implement timeline chart (D3.js or Recharts, time axis, agent lanes) |
 | TASK-144 | P0 | todo | frontend-dev | 3d | Implement log viewer (display, format, syntax highlighting) |
 | TASK-145 | P1 | todo | frontend-dev | 2d | Implement filters and search (agent, task, log level) |
 | TASK-146 | P1 | todo | frontend-dev | 2d | Implement timeline playback and step-through |
@@ -4406,8 +4404,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-169 | P0 | done | designer | 2d | Design responsive breakpoints (mobile, tablet, desktop) |
-| TASK-170 | P1 | done | uxui | 2d | Specify animations and micro-interactions (transitions, hover, click) |
 | TASK-171 | P1 | todo | uxui | 2d | Define accessibility requirements (keyboard nav, focus states, ARIA) |
 | TASK-172 | P0 | todo | frontend-dev | 3d | Implement responsive layouts (all screens mobile-friendly) |
 | TASK-173 | P1 | todo | frontend-dev | 2d | Implement animations (page transitions, state changes, loading) |

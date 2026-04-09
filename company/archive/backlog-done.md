@@ -147,3 +147,7 @@
 | TASK-136 | P0 | done | frontend-dev | 3d | Implement node rendering (agents, tasks, custom styles) |
 | TASK-150 | P1 | done | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
 | TASK-156 | P0 | done | designer | 2d | Design template library UI (grid, cards, preview, filters) |
+| TASK-112 | P1 | done | backend-dev | 0.5d | Validate package.json metadata for all packages (name, version, license, keywords) |
+| TASK-143 | P0 | done | frontend-dev | 5d | Implement timeline chart (D3.js or Recharts, time axis, agent lanes) |
+| TASK-169 | P0 | done | designer | 2d | Design responsive breakpoints (mobile, tablet, desktop) |
+| TASK-170 | P1 | done | uxui | 2d | Specify animations and micro-interactions (transitions, hover, click) |
