@@ -4227,7 +4227,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-141 | P1 | todo | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
-| TASK-142 | P1 | done | uxui | 2d | Design timeline interactions (click, zoom, filter, search) |
 | TASK-143 | P0 | todo | frontend-dev | 5d | Implement timeline chart (D3.js or Recharts, time axis, agent lanes) |
 | TASK-144 | P0 | todo | frontend-dev | 3d | Implement log viewer (display, format, syntax highlighting) |
 | TASK-145 | P1 | todo | frontend-dev | 2d | Implement filters and search (agent, task, log level) |
@@ -4248,7 +4247,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-148 | P0 | done | designer | 2d | Design dashboard UI (workflow list, create, usage stats) |
 | TASK-149 | P1 | todo | designer | 2d | Design workflow card/list views (thumbnails, metadata, actions) |
 | TASK-150 | P1 | todo | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
 | TASK-151 | P0 | todo | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |

@@ -141,3 +141,5 @@
 | TASK-135 | P0 | done | frontend-dev | 5d | Implement React Flow canvas (drag-and-drop, pan, zoom) |
 | TASK-140 | P0 | done | designer | 3d | Design debugging timeline UI (timeline chart, log viewer, filters) |
 | TASK-154 | P1 | done | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
+| TASK-142 | P1 | done | uxui | 2d | Design timeline interactions (click, zoom, filter, search) |
+| TASK-148 | P0 | done | designer | 2d | Design dashboard UI (workflow list, create, usage stats) |
