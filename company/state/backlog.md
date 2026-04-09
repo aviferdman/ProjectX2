@@ -4404,7 +4404,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-171 | P1 | todo | uxui | 2d | Define accessibility requirements (keyboard nav, focus states, ARIA) |
+| TASK-171 | P1 | done | uxui | 2d | Define accessibility requirements (keyboard nav, focus states, ARIA) |
 | TASK-172 | P0 | todo | frontend-dev | 3d | Implement responsive layouts (all screens mobile-friendly) |
 | TASK-173 | P1 | todo | frontend-dev | 2d | Implement animations (page transitions, state changes, loading) |
 | TASK-174 | P1 | todo | frontend-dev | 2d | Implement accessibility (keyboard shortcuts, focus management, ARIA) |
