@@ -4267,7 +4267,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-156 | P0 | todo | designer | 2d | Design template library UI (grid, cards, preview, filters) |
+| TASK-156 | P0 | done | designer | 2d | Design template library UI (grid, cards, preview, filters) |
 | TASK-157 | P1 | todo | designer | 2d | Design template cards (thumbnail, title, description, tags) |
 | TASK-158 | P1 | todo | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
 | TASK-159 | P0 | todo | frontend-dev | 3d | Implement template browser (grid view, search, filters) |
