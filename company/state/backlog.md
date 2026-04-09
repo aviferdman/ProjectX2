@@ -4322,7 +4322,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-141 | P1 | todo | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
+| TASK-141 | P1 | done | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
 | TASK-145 | P1 | todo | frontend-dev | 2d | Implement filters and search (agent, task, log level) |
 | TASK-146 | P1 | todo | frontend-dev | 2d | Implement timeline playback and step-through |
 | TASK-147 | P2 | todo | designer | 1d | Design QA: timeline implementation vs specs |
