@@ -247,9 +247,13 @@ export class StateManager {
     };
 
     switch (agentId) {
-      case 'developer': {
+      case 'developer':
+      case 'backend-dev':
+      case 'frontend-dev':
+      case 'designer':
+      case 'uxui': {
         const todoTasks = tasks
-          .filter(t => t.status === 'todo' && t.assigned === 'developer')
+          .filter(t => t.status === 'todo' && t.assigned === agentId)
           .sort((a, b) => {
             const priDiff = a.priority.localeCompare(b.priority);
             if (priDiff !== 0) return priDiff;
@@ -257,7 +261,7 @@ export class StateManager {
           });
 
         if (todoTasks.length === 0) {
-          return '## Pre-computed Context\nNo `todo` tasks assigned to developer. Nothing to implement this cycle.';
+          return `## Pre-computed Context\nNo \`todo\` tasks assigned to ${agentId}. Nothing to implement this cycle.`;
         }
 
         const next = todoTasks[0];

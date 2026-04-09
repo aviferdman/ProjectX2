@@ -9,8 +9,14 @@ const AGENT_MODELS: Record<string, string> = {
   projm: 'claude-sonnet-4.5',
   researcher: 'claude-sonnet-4.5',
   developer: 'claude-opus-4.6',
+  'backend-dev': 'claude-opus-4.6',
+  'frontend-dev': 'claude-opus-4.6',
+  designer: 'claude-opus-4.6',
+  uxui: 'claude-opus-4.6',
   qa: 'claude-sonnet-4.5',
   hr: 'claude-sonnet-4.5',
+  'security-eng': 'claude-sonnet-4.5',
+  'marketing-growth': 'claude-sonnet-4.5',
   liaison: 'claude-sonnet-4.5',
 };
 
@@ -63,8 +69,9 @@ export class AgentRunner {
     const systemContent = this.buildSystemContent(task, !!briefing);
 
     try {
-      // Developer works in product repo; all other agents work in company repo
-      const workingDir = task.agentId === 'developer'
+      // Coding agents work in product repo; all other agents work in company repo
+      const codingAgents = ['developer', 'backend-dev', 'frontend-dev', 'designer', 'uxui'];
+      const workingDir = codingAgents.includes(task.agentId)
         ? this.config.productRepoPath
         : this.config.companyRoot;
 
@@ -79,12 +86,15 @@ export class AgentRunner {
         onPermissionRequest: approveAll,
       });
 
-      // Developer needs more time (20min) since it reads backlog + writes code in product repo
+      // Coding agents need more time (20min) since they read backlog + write code in product repo
       // QA needs 15min to read backlog, run 2000+ tests, and write reports
-      // Large tasks get 20min, others get 10min
       const timeouts: Record<string, number> = {
-        developer: 1_200_000,  // 20 min
-        qa: 900_000,           // 15 min
+        developer: 1_200_000,      // 20 min
+        'backend-dev': 1_200_000,  // 20 min
+        'frontend-dev': 1_200_000, // 20 min
+        designer: 900_000,         // 15 min
+        uxui: 900_000,             // 15 min
+        qa: 900_000,               // 15 min
       };
       const timeout = timeouts[task.agentId] ?? (task.effort === 'L' || task.effort === 'XL' ? 1_200_000 : 600_000);
       const response = await session.sendAndWait({ prompt }, timeout);
@@ -130,10 +140,11 @@ export class AgentRunner {
       `Write a completion signal JSON to company/state/signals/ when done.`,
     ];
 
-    // Developer-specific guidance to reduce wasted time
-    if (task.agentId === 'developer') {
+    // Coding agent guidance to reduce wasted time
+    const codingAgents = ['developer', 'backend-dev', 'frontend-dev', 'designer', 'uxui'];
+    if (codingAgents.includes(task.agentId)) {
       lines.push('');
-      lines.push('## Developer-Specific Instructions');
+      lines.push(`## ${task.agentId} Instructions`);
       lines.push(`Your working directory is the PRODUCT REPO: ${this.config.productRepoPath}`);
       lines.push(`The company state files (backlog, project-status, decisions) are in: ${this.config.companyRoot}/company/state/`);
       lines.push('IMPORTANT: Do NOT create or manage git branches. The orchestrator handles branching, committing, and merging for you. You are already on the correct branch.');

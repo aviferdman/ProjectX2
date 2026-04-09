@@ -155,7 +155,8 @@ export class Orchestrator {
         if (!this.running) break;
 
         node.status = 'running';
-        const isDeveloper = node.task.agentId === 'developer';
+        const codingAgents = ['developer', 'backend-dev', 'frontend-dev', 'designer', 'uxui'];
+        const isCodeAgent = codingAgents.includes(node.task.agentId);
         const productRepo = this.config.productRepoPath;
         this.logger.info(`Dispatching: ${node.task.agentId} (${node.task.id})`);
 
@@ -177,8 +178,8 @@ export class Orchestrator {
             }
           }
 
-          // For developer tasks, also create branch in product repo
-          if (isDeveloper && productRepo) {
+          // For coding agents, also create branch in product repo
+          if (isCodeAgent && productRepo) {
             try {
               this.gitManager.createBranch(node.task.branchName, productRepo);
             } catch {
@@ -225,8 +226,8 @@ export class Orchestrator {
             this.gitManager.deleteBranch(node.task.branchName);
           }
 
-          // For developer tasks, also commit and merge product repo changes
-          if (isDeveloper && productRepo) {
+          // For coding agents, also commit and merge product repo changes
+          if (isCodeAgent && productRepo) {
             try {
               this.gitManager.commitAll(`[${node.task.id}] ${node.task.agentId} work`, productRepo);
             } catch {
@@ -235,7 +236,7 @@ export class Orchestrator {
             try {
               this.gitManager.mergeLocallyToMain(node.task.branchName, productRepo);
               this.gitManager.deleteBranch(node.task.branchName, productRepo);
-              this.logger.info(`Merged developer work into product repo main`);
+              this.logger.info(`Merged ${node.task.agentId} work into product repo main`);
             } catch {
               this.logger.warn(`Product repo merge failed for ${node.task.branchName}`);
               try { this.gitManager.checkoutMain(productRepo); } catch { /* best effort */ }
@@ -256,7 +257,7 @@ export class Orchestrator {
           node.status = 'failed';
           // Try to get back to main even on failure
           try { this.gitManager.checkoutMain(); } catch { /* best effort */ }
-          if (isDeveloper && productRepo) {
+          if (isCodeAgent && productRepo) {
             try { this.gitManager.checkoutMain(productRepo); } catch { /* best effort */ }
           }
         }
@@ -280,9 +281,10 @@ export class Orchestrator {
       this.logger.warn(`Failed to push main to remote: ${msg}`);
     }
 
-    // Also push product repo main if developer work was completed
-    const hasDeveloperWork = graph.some(n => n.task.agentId === 'developer' && n.status === 'completed');
-    if (hasDeveloperWork && this.config.productRepoPath) {
+    // Also push product repo main if any coding agent work was completed
+    const codingAgentIds = ['developer', 'backend-dev', 'frontend-dev', 'designer', 'uxui'];
+    const hasCodeWork = graph.some(n => codingAgentIds.includes(n.task.agentId) && n.status === 'completed');
+    if (hasCodeWork && this.config.productRepoPath) {
       try {
         this.gitManager.checkoutMain(this.config.productRepoPath);
         this.gitManager.pushBranch('main', this.config.productRepoPath);

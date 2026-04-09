@@ -106,6 +106,7 @@ function getPhaseAgentTasks(phase: Phase, cycle: number, deliberationState?: Del
 
     case 'development':
       return [
+        // Parallel development agents — each picks tasks assigned to them
         {
           id: taskId('developer'),
           agentId: 'developer',
@@ -114,10 +115,39 @@ function getPhaseAgentTasks(phase: Phase, cycle: number, deliberationState?: Del
           branchName: branchName('developer'),
         },
         {
+          id: taskId('backend-dev'),
+          agentId: 'backend-dev',
+          description: 'Implement the backend task assigned to you in the pre-computed briefing below. Write code and tests in the product repository following coding conventions. Mark the task as `review` in backlog.md when done.',
+          dependencies: [],
+          branchName: branchName('backend-dev'),
+        },
+        {
+          id: taskId('frontend-dev'),
+          agentId: 'frontend-dev',
+          description: 'Implement the frontend task assigned to you in the pre-computed briefing below. Write code and tests in the product repository following coding conventions. Mark the task as `review` in backlog.md when done.',
+          dependencies: [],
+          branchName: branchName('frontend-dev'),
+        },
+        {
+          id: taskId('designer'),
+          agentId: 'designer',
+          description: 'Complete the design task assigned to you in the pre-computed briefing below. Produce design tokens, component specs, CSS variables, and Tailwind theme files in the product repository. Mark the task as `review` in backlog.md when done.',
+          dependencies: [],
+          branchName: branchName('designer'),
+        },
+        {
+          id: taskId('uxui'),
+          agentId: 'uxui',
+          description: 'Complete the UX/UI task assigned to you in the pre-computed briefing below. Produce wireframes, user flows, accessibility specs, or usability plans in the product repository. Mark the task as `review` in backlog.md when done.',
+          dependencies: [],
+          branchName: branchName('uxui'),
+        },
+        // QA depends on all development agents completing
+        {
           id: taskId('qa'),
           agentId: 'qa',
           description: 'Review and test the tasks listed in your briefing (those in `review` status). Run the test suite in the product repo. Mark tasks as `done` if they pass quality gates. Write a brief QA report.',
-          dependencies: [taskId('developer')],
+          dependencies: [taskId('developer'), taskId('backend-dev'), taskId('frontend-dev'), taskId('designer'), taskId('uxui')],
           branchName: branchName('qa'),
         },
         {
