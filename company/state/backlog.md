@@ -4523,7 +4523,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-177 | P1 | review | designer | 2d | Visual polish pass (spacing, alignment, colors, consistency) |
 | TASK-181 | P1 | todo | frontend-dev | 2d | Error handling and edge cases (all screens) |
 | TASK-182 | P1 | todo | frontend-dev | 2d | Empty states, loading states, success/error feedback |
-| TASK-183 | P1 | todo | designer | 2d | Create marketing assets (landing page design, screenshots, demo video) |
+| TASK-183 | P1 | review | designer | 2d | Create marketing assets (landing page design, screenshots, demo video) |
 | TASK-184 | P1 | todo | pm | 2d | Launch planning (Product Hunt, HN, social media, email) |
 | TASK-185 | P0 | todo | qa | 3d | Full platform QA (all features, all browsers, all flows) |
 
