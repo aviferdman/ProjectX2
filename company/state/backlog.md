@@ -4410,7 +4410,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-137 | P1 | blocked | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) — BLOCKED: test environment (jsdom) not configured |
-| TASK-139 | P2 | review | designer | 1d | Design QA: canvas implementation vs specs |
+| TASK-139 | P2 | blocked | designer | 1d | Design QA: canvas implementation vs specs — BLOCKED: 23/29 canvas tests failing |
 
 **Dependencies:**
 - TASK-135, TASK-136 depend on TASK-132
@@ -4426,7 +4426,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-146 | P1 | review | frontend-dev | 2d | Implement timeline playback and step-through |
+| TASK-146 | P1 | blocked | frontend-dev | 2d | Implement timeline playback and step-through — BLOCKED: tests not executing |
 | TASK-147 | P2 | todo | designer | 1d | Design QA: timeline implementation vs specs |
 
 **Dependencies:**
