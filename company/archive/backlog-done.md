@@ -170,3 +170,7 @@
 | TASK-163 | P1 | done | designer | 2d | Design marketplace UI (integration browser, install flow) |
 | TASK-180 | P0 | done | frontend-dev | 3d | Performance optimization (bundle size, lazy loading, caching) |
 | TASK-164 | P1 | done | designer | 2d | Design integration cards (logo, description, OAuth status) |
+| TASK-138 | P1 | done | frontend-dev | 2d | Implement canvas state management (save, load, undo/redo) |
+| TASK-145 | P1 | done | frontend-dev | 2d | Implement filters and search (agent, task, log level) |
+| TASK-177 | P1 | done | designer | 2d | Visual polish pass (spacing, alignment, colors, consistency) |
+| TASK-183 | P1 | done | designer | 2d | Create marketing assets (landing page design, screenshots, demo video) |
