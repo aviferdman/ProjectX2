@@ -4409,7 +4409,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-157 | P1 | todo | designer | 2d | Design template cards (thumbnail, title, description, tags) |
+| TASK-157 | P1 | done | designer | 2d | Design template cards (thumbnail, title, description, tags) |
 | TASK-158 | P1 | todo | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
 | TASK-160 | P1 | todo | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
 | TASK-161 | P1 | todo | frontend-dev | 2d | Implement template instantiation (copy to user account) |
