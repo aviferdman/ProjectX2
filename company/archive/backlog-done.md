@@ -154,3 +154,6 @@
 | TASK-133 | P1 | done | designer | 2d | Design agent/task node styles (icons, colors, states) |
 | TASK-144 | P0 | done | frontend-dev | 3d | Implement log viewer (display, format, syntax highlighting) |
 | TASK-171 | P1 | done | uxui | 2d | Define accessibility requirements (keyboard nav, focus states, ARIA) |
+| TASK-141 | P1 | done | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
+| TASK-151 | P0 | done | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
+| TASK-178 | P1 | done | uxui | 2d | Final usability testing (5-10 users, onboarding validation) |

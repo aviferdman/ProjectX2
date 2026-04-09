@@ -4374,7 +4374,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-141 | P1 | done | designer | 2d | Design action/event cards (LLM calls, tool use, task completion) |
 | TASK-145 | P1 | todo | frontend-dev | 2d | Implement filters and search (agent, task, log level) |
 | TASK-146 | P1 | todo | frontend-dev | 2d | Implement timeline playback and step-through |
 | TASK-147 | P2 | todo | designer | 1d | Design QA: timeline implementation vs specs |
@@ -4394,7 +4393,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-149 | P1 | todo | designer | 2d | Design workflow card/list views (thumbnails, metadata, actions) |
-| TASK-151 | P0 | done | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
 
@@ -4476,7 +4474,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-177 | P1 | todo | designer | 2d | Visual polish pass (spacing, alignment, colors, consistency) |
-| TASK-178 | P1 | done | uxui | 2d | Final usability testing (5-10 users, onboarding validation) |
 | TASK-179 | P1 | todo | uxui | 1d | Document usability findings and final recommendations |
 | TASK-180 | P0 | todo | frontend-dev | 3d | Performance optimization (bundle size, lazy loading, caching) |
 | TASK-181 | P1 | todo | frontend-dev | 2d | Error handling and edge cases (all screens) |
