@@ -161,3 +161,7 @@
 | TASK-186 | P1 | done | backend-dev | 2d | Workflow Execution API (execute stored workflows with usage tracking, events, timeout) |
 | TASK-159 | P0 | done | frontend-dev | 3d | Implement template browser (grid view, search, filters) |
 | TASK-179 | P1 | done | uxui | 1d | Document usability findings and final recommendations |
+| TASK-129 | P1 | done | uxui | 2d | Create low-fidelity wireframes (canvas, timeline, dashboard) — **COMPLETED C191** |
+| TASK-186 | P1 | done | backend-dev | 1d | Canvas state API with CRUD storage and undo/redo service |
+| TASK-157 | P1 | done | designer | 2d | Design template cards (thumbnail, title, description, tags) |
+| TASK-172 | P0 | done | frontend-dev | 3d | Implement responsive layouts (all screens mobile-friendly) |

@@ -4391,7 +4391,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | TASK-125 | P0 | in-progress | designer | 3d | Create design system (colors, typography, spacing, tokens) — **START C167** |
 | TASK-126 | P0 | in-progress | designer | 2d | Design component library (buttons, inputs, cards, modals) — **START C167** |
 | TASK-127 | P1 | in-progress | designer | 2d | Create icon set and visual assets (custom or curated) — **START C167** |
-| TASK-129 | P1 | done | uxui | 2d | Create low-fidelity wireframes (canvas, timeline, dashboard) — **COMPLETED C191** |
 | TASK-131 | P1 | in-progress | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) — **START C167** |
 
 **Dependencies:**
@@ -4446,7 +4445,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-186 | P1 | done | backend-dev | 1d | Canvas state API with CRUD storage and undo/redo service |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
 
@@ -4465,7 +4463,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-157 | P1 | done | designer | 2d | Design template cards (thumbnail, title, description, tags) |
 | TASK-158 | P1 | todo | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
 | TASK-160 | P1 | todo | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
 | TASK-161 | P1 | todo | frontend-dev | 2d | Implement template instantiation (copy to user account) |
@@ -4506,7 +4503,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-172 | P0 | done | frontend-dev | 3d | Implement responsive layouts (all screens mobile-friendly) |
 | TASK-173 | P1 | todo | frontend-dev | 2d | Implement animations (page transitions, state changes, loading) |
 | TASK-174 | P1 | todo | frontend-dev | 2d | Implement accessibility (keyboard shortcuts, focus management, ARIA) |
 | TASK-175 | P2 | todo | qa | 2d | Cross-browser testing (Chrome, Firefox, Safari, Edge) |
