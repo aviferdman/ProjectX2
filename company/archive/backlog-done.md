@@ -143,3 +143,7 @@
 | TASK-154 | P1 | done | backend-dev | 2d | Build usage tracking API (count runs, enforce limits) |
 | TASK-142 | P1 | done | uxui | 2d | Design timeline interactions (click, zoom, filter, search) |
 | TASK-148 | P0 | done | designer | 2d | Design dashboard UI (workflow list, create, usage stats) |
+| TASK-111 | P1 | done | backend-dev | 0.5d | Configure npm organization @crewspace and validate publishing credentials |
+| TASK-136 | P0 | done | frontend-dev | 3d | Implement node rendering (agents, tasks, custom styles) |
+| TASK-150 | P1 | done | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
+| TASK-156 | P0 | done | designer | 2d | Design template library UI (grid, cards, preview, filters) |

@@ -3989,7 +3989,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-111 | P1 | done | backend-dev | 0.5d | Configure npm organization @crewspace and validate publishing credentials |
 | TASK-112 | P1 | todo | backend-dev | 0.5d | Validate package.json metadata for all packages (name, version, license, keywords) |
 | TASK-116 | P2 | blocked | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog (NOTE: Only workflow/scripts added, tag not created. Blocked by test failures and formatting issues) |
 
@@ -4257,7 +4256,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-133 | P1 | todo | designer | 2d | Design agent/task node styles (icons, colors, states) |
-| TASK-136 | P0 | done | frontend-dev | 3d | Implement node rendering (agents, tasks, custom styles) |
 | TASK-137 | P1 | todo | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
 | TASK-138 | P1 | todo | frontend-dev | 2d | Implement canvas state management (save, load, undo/redo) |
 | TASK-139 | P2 | todo | designer | 1d | Design QA: canvas implementation vs specs |
@@ -4298,7 +4296,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-149 | P1 | todo | designer | 2d | Design workflow card/list views (thumbnails, metadata, actions) |
-| TASK-150 | P1 | done | uxui | 1d | Design onboarding flow (first-time user experience, tooltips) |
 | TASK-151 | P0 | todo | frontend-dev | 3d | Implement dashboard (workflow CRUD, list/grid views) |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
@@ -4317,7 +4314,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-156 | P0 | done | designer | 2d | Design template library UI (grid, cards, preview, filters) |
 | TASK-157 | P1 | todo | designer | 2d | Design template cards (thumbnail, title, description, tags) |
 | TASK-158 | P1 | todo | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
 | TASK-159 | P0 | todo | frontend-dev | 3d | Implement template browser (grid view, search, filters) |
