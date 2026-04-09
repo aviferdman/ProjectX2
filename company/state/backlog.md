@@ -4463,8 +4463,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-158 | P1 | done | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
-| TASK-187 | P1 | done | backend-dev | 1d | Template library service API (browse, instantiate, popularity, featured, duplicate) |
 | TASK-160 | P1 | todo | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
 | TASK-161 | P1 | todo | frontend-dev | 2d | Implement template instantiation (copy to user account) |
 | TASK-162 | P2 | todo | designer | 1d | Design QA: template library implementation vs specs |

@@ -165,3 +165,5 @@
 | TASK-186 | P1 | done | backend-dev | 1d | Canvas state API with CRUD storage and undo/redo service |
 | TASK-157 | P1 | done | designer | 2d | Design template cards (thumbnail, title, description, tags) |
 | TASK-172 | P0 | done | frontend-dev | 3d | Implement responsive layouts (all screens mobile-friendly) |
+| TASK-158 | P1 | done | designer | 1d | Design template preview modal (workflow diagram, details, use button) |
+| TASK-187 | P1 | done | backend-dev | 1d | Template library service API (browse, instantiate, popularity, featured, duplicate) |
