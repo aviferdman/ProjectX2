@@ -3939,7 +3939,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-111 | P1 | todo | backend-dev | 0.5d | Configure npm organization @crewspace and validate publishing credentials |
+| TASK-111 | P1 | done | backend-dev | 0.5d | Configure npm organization @crewspace and validate publishing credentials |
 | TASK-112 | P1 | todo | backend-dev | 0.5d | Validate package.json metadata for all packages (name, version, license, keywords) |
 | TASK-116 | P2 | blocked | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog (NOTE: Only workflow/scripts added, tag not created. Blocked by test failures and formatting issues) |
 
