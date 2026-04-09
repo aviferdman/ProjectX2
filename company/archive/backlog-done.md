@@ -151,3 +151,6 @@
 | TASK-143 | P0 | done | frontend-dev | 5d | Implement timeline chart (D3.js or Recharts, time axis, agent lanes) |
 | TASK-169 | P0 | done | designer | 2d | Design responsive breakpoints (mobile, tablet, desktop) |
 | TASK-170 | P1 | done | uxui | 2d | Specify animations and micro-interactions (transitions, hover, click) |
+| TASK-133 | P1 | done | designer | 2d | Design agent/task node styles (icons, colors, states) |
+| TASK-144 | P0 | done | frontend-dev | 3d | Implement log viewer (display, format, syntax highlighting) |
+| TASK-171 | P1 | done | uxui | 2d | Define accessibility requirements (keyboard nav, focus states, ARIA) |
