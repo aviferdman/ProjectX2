@@ -169,3 +169,4 @@
 | TASK-187 | P1 | done | backend-dev | 1d | Template library service API (browse, instantiate, popularity, featured, duplicate) |
 | TASK-163 | P1 | done | designer | 2d | Design marketplace UI (integration browser, install flow) |
 | TASK-180 | P0 | done | frontend-dev | 3d | Performance optimization (bundle size, lazy loading, caching) |
+| TASK-164 | P1 | done | designer | 2d | Design integration cards (logo, description, OAuth status) |
