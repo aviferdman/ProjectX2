@@ -4207,7 +4207,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-133 | P1 | todo | designer | 2d | Design agent/task node styles (icons, colors, states) |
-| TASK-136 | P0 | todo | frontend-dev | 3d | Implement node rendering (agents, tasks, custom styles) |
+| TASK-136 | P0 | done | frontend-dev | 3d | Implement node rendering (agents, tasks, custom styles) |
 | TASK-137 | P1 | todo | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
 | TASK-138 | P1 | todo | frontend-dev | 2d | Implement canvas state management (save, load, undo/redo) |
 | TASK-139 | P2 | todo | designer | 1d | Design QA: canvas implementation vs specs |
