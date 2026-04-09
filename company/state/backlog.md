@@ -4392,6 +4392,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
+| TASK-186 | P1 | done | backend-dev | 1d | Canvas state API with CRUD storage and undo/redo service |
 | TASK-152 | P1 | todo | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
 
@@ -4399,6 +4400,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 - TASK-151 depends on TASK-148, TASK-153
 - TASK-152 depends on TASK-149, TASK-154
 - TASK-155 depends on TASK-151, TASK-152
+- TASK-138 depends on TASK-186
 
 ---
 
