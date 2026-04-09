@@ -22,6 +22,56 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 ## PM Review Notes
 
+### Cycle 186 Review (2026-04-09) — VELOCITY CONFIRMED: 3rd Consecutive Cycle at 4 Tasks, Phase 2 at 18%
+**Status:** 🟢 **CONFIRMED — Velocity Baseline Established at 4 tasks/cycle (3rd consecutive)**
+
+**Cycle 186 Summary:**
+- 📊 **Sprint completion:** 18% (11 Phase 2 done, 5 in-progress, 45 todo, 1 blocked out of 61 Phase 2 tasks)
+- ✅ **Phase 1:** 100% complete — stable
+- 🟢 **Phase 2 velocity CONFIRMED:** 4 tasks/cycle for 3rd consecutive cycle — sustainable baseline
+- 🟢 **Cross-functional delivery:** Frontend (TASK-136), UX design (TASK-150), Visual design (TASK-156), Backend (TASK-111)
+- 🟢 **Epic 17 (Canvas) hits 50%** — Core visual canvas taking shape
+- 🔴 **Epic 15 user validation:** STILL UNACTIVATED — 21 cycles lost
+- 🔴 **Freemium tier mismatch:** 2+ cycles unfixed (code: 50 runs/mo vs spec: 500 runs/mo)
+- 🔴 **TASK-130 Tailwind import:** 4+ cycles unfixed — blocks npm publish
+
+**Recently Completed (C186):**
+- ✅ TASK-111 (P1, backend-dev): npm org @crewspace config — **9.0/10** — Full publishing infrastructure
+- ✅ TASK-136 (P0, frontend-dev): Node rendering — **9.5/10** — Outstanding: 4 node types, 51 tests, full a11y
+- ✅ TASK-150 (P1, uxui): Onboarding flow design — **9.0/10** — 3-layer architecture, <3min to first workflow
+- ✅ TASK-156 (P0, designer): Template library UI design — **9.5/10** — 119 tokens, 5 artifacts, implementation-ready
+
+**Persistent Issues (Unresolved):**
+1. 🔴 **Freemium tier mismatch** — Code: `free: 50 runs/mo, maxWorkflows: 3`. Spec: `500 runs/mo, 5 agents`. Must reconcile.
+2. 🔴 **TASK-130 Tailwind import** — 4th cycle unfixed. Import from `../../src/design/` crosses package boundary.
+3. 🟡 **TASK-134 UX gap** — Ghost nodes, alignment guides, proximity indicators still unimplemented.
+4. 🟡 **React error boundary** — Canvas has no error boundary. Production risk.
+
+**Scope Gaps Identified:**
+- New task needed: Reconcile freemium limits with company-config (P0, 0.5d)
+- New task needed: Implement TASK-134 UX features in canvas (P1, 2d)
+- New task needed: Canvas error boundary (P1, 1d)
+- New task needed: Onboarding component implementation from TASK-150 design (P1, 3-4d)
+- TASK-130 Tailwind fix: 4th cycle overdue (P0, 0.5d) — ESCALATE
+
+**Epic Progress Update:**
+- Epic 14 (Release): 67% (4/6 done) — +TASK-111
+- Epic 17 (Canvas UI): **50% (4/8 done)** — +TASK-136, milestone reached
+- Epic 19 (Dashboard): 27% (3/11 done) — +TASK-150
+- Epic 20 (Templates): 14% (1/7 done) — +TASK-156
+
+**Recommendations:**
+1. **IMMEDIATE:** Fix freemium tier mismatch (backend-dev, 0.5d) — 2+ cycles overdue
+2. **IMMEDIATE:** Fix TASK-130 Tailwind import (frontend-dev, 0.5d) — ESCALATE to ProjM
+3. **IMMEDIATE:** Activate Epic 15 user validation (PM, 21 cycles overdue)
+4. **HIGH:** Start TASK-137 (toolbar/sidebar) — unblocked by TASK-136
+5. **HIGH:** Start TASK-143/144 (timeline) — unblocked by TASK-140
+6. **MEDIUM:** Create follow-up tasks for identified scope gaps
+
+**Full review:** See `pm-report-development-pm-c186.md`
+
+---
+
 ### Cycle 185 Review (2026-04-08) — SUSTAINED MOMENTUM: 4 More Tasks Validated, Velocity Confirmed
 **Status:** 🟢 **SUSTAINED — Velocity Holding at 4 tasks/cycle (2nd consecutive cycle)**
 
