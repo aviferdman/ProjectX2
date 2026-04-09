@@ -42,12 +42,12 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 - ✅ TASK-170 (P1, uxui): Animations & micro-interactions spec — **9.0/10** — 100+ animations, performance budget, Framer Motion presets
 
 **Persistent Issues (Unresolved — ESCALATION REQUIRED):**
-1. 🔴 **Freemium tier mismatch** — Code: `free: 50 runs/mo, maxWorkflows: 3`. Spec: `500 runs/mo, 5 agents`. **5+ cycles unfixed.**
+1. ✅ **Freemium tier mismatch** — FIXED (C188): Updated `DEFAULT_PLAN_LIMITS` to match spec. Free: 500 runs/mo, 5 agents, 10 workflows. Renamed `starter` → `team`. Added `maxAgents` field.
 2. 🔴 **TASK-130 Tailwind import** — 5th cycle unfixed. Cross-package boundary import blocks npm publish.
 3. 🔴 **Canvas error boundary** — No ErrorBoundary anywhere in packages/ui/src/components/. Production crash risk.
 
 **Scope Gaps Identified:**
-- New task needed: Freemium tier reconciliation (P0, backend-dev, 0.5d) — **ESCALATE**
+- ~~New task needed: Freemium tier reconciliation (P0, backend-dev, 0.5d)~~ — **DONE (C188)**
 - New task needed: Canvas error boundary (P1, frontend-dev, 0.5-1d)
 - New task needed: Animation token consolidation (P2, designer, 0.5d)
 - Carry-forward: TASK-134 UX polish implementation (P1, frontend-dev, 2d)
