@@ -199,3 +199,7 @@
 | TASK-146 | P1 | done | frontend-dev | 2d | Implement timeline playback and step-through |
 | TASK-160 | P1 | done | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
 | TASK-161 | P1 | done | frontend-dev | 2d | Implement template instantiation (copy to user account) |
+| TASK-118 | P1 | done | pm | 2d | Demo MVP to Show HN, /r/typescript, /r/LangChain |
+| TASK-119 | P1 | done | pm | 1d | Collect and analyze "would you use this?" feedback |
+| TASK-120 | P1 | done | pm | 1d | Document top 3 feature requests from early users |
+| TASK-121 | P1 | done | pm | 1d | Write findings to company/state/research/user-validation.md |

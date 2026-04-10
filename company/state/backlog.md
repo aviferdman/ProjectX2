@@ -4878,10 +4878,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-117 | P1 | in_progress | pm | 3d | Recruit and interview 10-15 TypeScript developers |
-| TASK-118 | P1 | done | pm | 2d | Demo MVP to Show HN, /r/typescript, /r/LangChain |
-| TASK-119 | P1 | done | pm | 1d | Collect and analyze "would you use this?" feedback |
-| TASK-120 | P1 | done | pm | 1d | Document top 3 feature requests from early users |
-| TASK-121 | P1 | done | pm | 1d | Write findings to company/state/research/user-validation.md |
 | TASK-122 | P0 | todo | gm | 1d | Review validation data and make go/pivot/stash decision |
 
 **Dependencies:**
