@@ -4938,8 +4938,8 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-127 | P1 | review | designer | 2d | Create icon set and visual assets (custom or curated) — **START C167** |
-| TASK-131 | P1 | review | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) — **START C167** |
+| TASK-127 | P1 | done | designer | 2d | Create icon set and visual assets (custom or curated) — **DONE C352** |
+| TASK-131 | P1 | done | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) — **DONE C352** |
 
 **Dependencies:**
 - TASK-130 depends on TASK-125, TASK-126
