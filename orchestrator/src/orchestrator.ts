@@ -158,6 +158,17 @@ export class Orchestrator {
         const codingAgents = ['developer', 'backend-dev', 'frontend-dev', 'designer', 'uxui'];
         const isCodeAgent = codingAgents.includes(node.task.agentId);
         const productRepo = this.config.productRepoPath;
+
+        // Pre-compute briefing BEFORE creating branches so we can skip idle agents
+        const briefing = this.stateManager.buildAgentBriefing(node.task.agentId);
+        const noWork = briefing?.includes('Nothing to implement') ||
+                       briefing?.includes('Nothing to QA');
+        if (noWork) {
+          this.logger.info(`Skipping ${node.task.agentId} (${node.task.id}) — no tasks assigned`);
+          node.status = 'completed';
+          continue;
+        }
+
         this.logger.info(`Dispatching: ${node.task.agentId} (${node.task.id})`);
 
         try {
@@ -197,9 +208,6 @@ export class Orchestrator {
             }
           }
 
-          // Pre-compute a compact briefing so the agent doesn't have to read
-          // the entire 1,300-line backlog and other state files from scratch.
-          const briefing = this.stateManager.buildAgentBriefing(node.task.agentId);
           if (briefing) {
             this.logger.info(`  Injecting ${briefing.length}-char briefing for ${node.task.agentId}`);
           }
