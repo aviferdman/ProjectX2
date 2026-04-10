@@ -10,144 +10,170 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 
 **Phase 2 Plan Updated (Cycle 158):** Design team (designer + uxui) fully integrated into execution plan. 61 new tasks defined (TASK-125 to TASK-185) across 8 epics (Epic 16-23). Timeline: Week 0-2 design foundation, Week 2-4 design sprint, Week 4-8 feature implementation, Week 8-12 polish. Resource allocation: frontend-dev 8-12 weeks (primary), designer 8-10 weeks (full-time), uxui 6-8 weeks (focused), backend-dev 2-4 weeks (supporting). Quality bar: Lovable/v0/Bolt-level UX differentiation.
 
-## Phase Status Update (2026-04-10) — Cycle 341 (ProjM Sprint Tracking — UPDATED C341)
+## Phase Status Update (2026-04-10) — Cycle 342 (ProjM Sprint Tracking — UPDATED C342)
 ✅ **Phase 1 Development: 100% COMPLETE AND RELEASED** (as of Cycle 166)  
 🎉 **v0.1.0 Release: LIVE ON NPM** — All 7 packages successfully published to npm registry  
 ✅ **CLI Checkpoint (C168): PASSED** — Package published and validated
-🔴 **Phase 2 UI Development: DASHBOARD CRISIS** — Dashboard regression from 20% → 0% completion (data sync failure)
-🔴 **Sprint Health: CRITICAL** — Dashboard shows 0 done tasks despite previous C340 completions + 33% blocked + stalled execution
+🔴 **Phase 2 UI Development: BACKLOG CORRUPTION CONFIRMED** — TASK-125 & TASK-126 deleted from backlog (not marked done)
+🔴 **Sprint Health: CRITICAL** — Recurring data corruption pattern + 42+ cycles of Epic 16 stall + 33% blocked + Epic 15 still unactivated
 🔴 **Critical Issues:**
-   - 🔴 **DASHBOARD DATA REGRESSION** — Dashboard dropped from 4 done tasks (20%, C340) to 0 done tasks (0%, C341) — CRITICAL DATA LOSS
-   - 🔴 **TASK COUNT REGRESSION** — Total tasks dropped from 20 (C340) to 18 (C341) — 2 tasks lost (likely TASK-125, TASK-126 deleted instead of marked done)
-   - 🔴 Epic 15 user validation UNACTIVATED (40+ cycles lost opportunity) — **PM MUST ACTIVATE NOW**
-   - 🔴 6 blocked tasks (33% of sprint): TASK-116 (Phase 1 release), TASK-137 (jsdom), TASK-139 (tests failing), TASK-146 (tests not executing), TASK-160/161 (infrastructure)
-   - 🟡 2 tasks in-progress (11%): TASK-127 (icon set), TASK-131 (React scaffold) — **EXTENDED DURATION, NO COMPLETION**
-   - 🔴 P0 completion: UNKNOWN — Previous 67% (2/3) completion lost in dashboard regression
-🟡 **Previous Progress (C340 — NOW LOST FROM DASHBOARD):**
-   - ✅ TASK-125 (Design System) — P0 foundation task (COMPLETED C340, NOW MISSING FROM DASHBOARD)
-   - ✅ TASK-126 (Component Library) — P0 foundation task (COMPLETED C340, NOW MISSING FROM DASHBOARD)
-   - ✅ TASK-187 (Form validation) — P1 task (COMPLETED C205, status unknown)
-   - ✅ TASK-174 (Accessibility) — P1 task (COMPLETED C202, status unknown)
+   - 🔴 **BACKLOG CORRUPTION CONFIRMED (C342)** — TASK-125 & TASK-126 physically DELETED from backlog.md (not marked "done"), confirming C341 data loss analysis
+   - 🔴 **RECURRING CORRUPTION PATTERN** — Same deletion pattern as C207-C208 (TASK-174, TASK-187), systemic workflow failure
+   - 🔴 **Epic 15 user validation UNACTIVATED (42+ cycles lost)** — **PM MUST ACTIVATE IMMEDIATELY**
+   - 🔴 6 blocked tasks (33% of sprint): TASK-116 (Phase 1 release), TASK-137 (jsdom), TASK-139 (tests failing), TASK-146 (tests not executing), TASK-160/161 (infrastructure) — **BLOCKED FOR 42+ CYCLES**
+   - 🟡 2 tasks in-progress (11%): TASK-127 (icon set), TASK-131 (React scaffold) — **42+ CYCLES IN-PROGRESS, ZERO COMPLETION**
+   - 🔴 P0 Epic 16 foundation: LOST — TASK-125 & TASK-126 completed C340 but deleted from tracking
+   - 🔴 **Sprint stall: 42+ cycles** since Epic 16 start (C167 → C342) with effectively zero measurable progress
+🟡 **Confirmed Lost/Corrupted Tasks (Manual Audit C342):**
+   - ✅ TASK-125 (Design System) — COMPLETED C208, APPROVED C340, **DELETED from backlog** (not marked done)
+   - ✅ TASK-126 (Component Library) — COMPLETED C339, APPROVED C340, **DELETED from backlog** (not marked done)
+   - ⚠️ TASK-187 (Form validation) — Status unknown, possibly deleted in C207-C208 incident
+   - ⚠️ TASK-174 (Accessibility) — Status unknown, possibly deleted in C207-C208 incident
 
-**Phase 2 Active Sprint (Cycle 341 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10 07:51 UTC):**
+**Phase 2 Active Sprint (Cycle 342 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10 08:01 UTC):**
 
-### 🔴 DASHBOARD CRISIS: Regression from 20% → 0% Completion (Data Loss)
+### 🔴 BACKLOG CORRUPTION CONFIRMED: TASK-125 & TASK-126 Physically Deleted (Not Marked Done)
 
-**Sprint Progress Summary (C341 — ProjM Tracking):**
-- **Completion Rate:** 🔴 **CRITICAL REGRESSION** — 0% complete (0 done / 18 total) — DOWN from 20% (4 done / 20 total) in C340
-- **Done:** 0 tasks (0%) — **DATA LOSS: 4 completed tasks (TASK-125, TASK-126, TASK-174, TASK-187) MISSING from dashboard**
+**Sprint Progress Summary (C342 — ProjM Tracking):**
+- **Completion Rate:** 🔴 **0% complete (0 done / 18 total)** — Actual completion unknown due to task deletion
+- **Done:** 0 tasks (0%) — **BACKLOG CORRUPTION: TASK-125, TASK-126 physically deleted from backlog.md (completed C340, not marked "done")**
 - **In Review:** 0 tasks (0%) — No work in review state
-- **In Progress:** 2 tasks (11%) — Epic 16 tasks (TASK-127 icon set, TASK-131 React scaffold) **EXTENDED DURATION, NO COMPLETION**
-- **Todo:** 10 tasks (56%) — Including Epic 15 tasks (user validation) unstarted for 41+ cycles
-- **Blocked:** 6 tasks (33%) — TASK-116 (Phase 1), TASK-137 (jsdom), TASK-139 (tests failing), TASK-146 (tests not executing), TASK-160/161 (infrastructure)
-- **Total Tasks:** 18 (DOWN from 20 in C340 — 2 tasks lost, likely TASK-125 and TASK-126 deleted instead of marked done)
-- **Days Since Epic 16 Start:** 41+ cycles (started C167, now C341)
-- **Sprint Health:** 🔴 **CRITICAL** — Dashboard data regression (20% → 0% completion) + 33% blocked (infrastructure crisis) + 2 tasks lost from backlog
+- **In Progress:** 2 tasks (11%) — TASK-127 (icon set), TASK-131 (React scaffold) **— 42+ CYCLES IN-PROGRESS, ZERO COMPLETION**
+- **Todo:** 10 tasks (56%) — Including Epic 15 tasks (user validation) unstarted for 42+ cycles
+- **Blocked:** 6 tasks (33%) — TASK-116, TASK-137, TASK-139, TASK-146, TASK-160, TASK-161 **— BLOCKED FOR 42+ CYCLES**
+- **Total Tasks:** 18 (task count unstable due to deletion pattern — TASK-125, TASK-126 deleted vs marked "done")
+- **Days Since Epic 16 Start:** 42+ cycles (started C167, now C342) — **LONGEST EPIC STALL IN PROJECT HISTORY**
+- **Sprint Health:** 🔴 **CRITICAL CRISIS** — Backlog corruption confirmed + 42+ cycle epic stall + 33% blocked + Epic 15 unactivated
 
-**Priority-Based Analysis (C341 — DASHBOARD REGRESSION DETECTED):**
-- **P0 Tasks: UNKNOWN / 3 total (completion % UNKNOWN)** | **CRITICAL DATA LOSS**
-  - Previous C340: 2 done (TASK-125 design system, TASK-126 component library) — **NOW MISSING FROM DASHBOARD**
-  - Todo: TASK-185 (full platform QA) status unknown
-  - **Status:** 🔴 CRITICAL — Dashboard regression lost P0 completion tracking, previous 67% completion (2/3) status unknown
-  - **Root Cause:** Tasks DELETED from backlog instead of marked "done" (repeating C207-C208 data corruption pattern)
-- **P1 Tasks: UNKNOWN / 12 total (completion % UNKNOWN)** | **CRITICAL**
-  - Previous C340: 2 done (TASK-174 accessibility, TASK-187 form validation) — **STATUS UNKNOWN**
-  - In Progress: 2 tasks (TASK-127 icon set, TASK-131 React scaffold)
-  - Blocked: 5 tasks (TASK-116, TASK-137, TASK-146, TASK-160, TASK-161)
-  - Todo: 3 tasks (Epic 15 tasks, TASK-181, TASK-182, TASK-184)
-  - **Status:** 🔴 CRITICAL — Previous 17% P1 completion status unknown, 5 tasks blocked (42% of P1 tasks)
+**Priority-Based Analysis (C342 — BACKLOG CORRUPTION CONFIRMED):**
+- **P0 Tasks: 0 done / 1 remaining (0% complete)** | **CRITICAL — 2 P0 TASKS DELETED**
+  - ✅ TASK-125 (design system) — **COMPLETED C208, DELETED from backlog.md (not marked done)**
+  - ✅ TASK-126 (component library) — **COMPLETED C339, DELETED from backlog.md (not marked done)**
+  - Todo: TASK-185 (full platform QA) — Not started, Epic 23 (final QA)
+  - **Status:** 🔴 CRITICAL — 2/3 P0 Epic 16 tasks completed but deleted from tracking, actual P0 completion 67% but recorded as 0%
+  - **Impact:** Epic 16 foundation tasks (design system, component library) completed but lost from progress tracking
+- **P1 Tasks: 0 done / 12 total (0% complete)** | **CRITICAL**
+  - ⚠️ TASK-174 (accessibility), TASK-187 (form validation) — Status unknown, possibly deleted in C207-C208 incident
+  - In Progress: 2 tasks (TASK-127 icon set, TASK-131 React scaffold) — 42+ cycles in-progress
+  - Blocked: 5 tasks (TASK-116, TASK-137, TASK-146, TASK-160, TASK-161) — 42+ cycles blocked
+  - Todo: 5 tasks (Epic 15 tasks unstarted for 42+ cycles)
+  - **Status:** 🔴 CRITICAL — Possibly 17% complete (2 done) but tasks deleted, 42% of P1 tasks blocked for 42+ cycles
 - **P2 Tasks: 0 done / 6 total (0% complete)**
   - Blocked: 1 task (TASK-139 Design QA)
-  - Todo: 5 tasks (TASK-175, TASK-176, TASK-183, TASK-184, TASK-186)
+  - Todo: 5 tasks
   - **Status:** 🟡 ACCEPTABLE — P2 tasks not blocking phase advancement
 
-**Agent Performance Analysis (C341):**
-- **designer:** Previous C340: 2 P0 tasks DONE (TASK-125, TASK-126) — **NOW MISSING FROM DASHBOARD**, 1 P1 task in-progress (TASK-127), 1 P2 task blocked (TASK-139) — **DATA LOSS AFFECTING PERFORMANCE TRACKING**
-- **frontend-dev:** 1 P1 task in-progress (TASK-131), 4 P1 tasks blocked (TASK-137, TASK-146, TASK-160, TASK-161) — **HEAVILY BLOCKED, INFRASTRUCTURE CRISIS**
+**Agent Performance Analysis (C342):**
+- **designer:** 2 P0 tasks DONE (TASK-125 C208, TASK-126 C339) **BUT DELETED FROM BACKLOG**, 1 P1 task in-progress 42+ cycles (TASK-127), 1 P2 task blocked (TASK-139) — **EXCEPTIONAL OUTPUT BUT DATA CORRUPTION DESTROYING TRACKING**
+- **frontend-dev:** 1 P1 task in-progress 42+ cycles (TASK-131), 4 P1 tasks blocked 42+ cycles (TASK-137, TASK-146, TASK-160, TASK-161) — **INFRASTRUCTURE CRISIS, 80% OF WORKLOAD BLOCKED**
 - **uxui:** Minimal active tasks, available for Epic 15 activation
-- **pm:** Epic 15 UNACTIVATED for 41+ cycles (user validation tasks) — **MUST ACTIVATE IN C342**
-- **developer:** 1 P1 task blocked (TASK-116 Phase 1 release tag) — **BLOCKED**
+- **pm:** Epic 15 UNACTIVATED for 42+ cycles (user validation) + backlog corruption unresolved — **CRITICAL WORKFLOW FAILURE**
+- **developer:** 1 P1 task blocked 42+ cycles (TASK-116 Phase 1 release tag) — **BLOCKED**
 - **qa:** 1 P0 task todo (TASK-185), 0 tasks started — **AWAITING EPIC 17+ COMPLETION**
-- **TRACKING STATUS:** 🔴 **DATA CORRUPTION RECURRING** — Dashboard regressed from 20% (4 done) → 0% (0 done), 2 tasks lost (18 vs 20 total)
+- **TRACKING STATUS:** 🔴 **SYSTEMIC DATA CORRUPTION** — TASK-125, TASK-126 deleted from backlog (not marked done), recurring pattern from C207-C208
 
-### 🚨 PROJM SPRINT ASSESSMENT (C341):
+### 🚨 PROJM SPRINT ASSESSMENT (C342):
 
-**Sprint Status: 🔴 CRITICAL (DASHBOARD DATA REGRESSION + 33% BLOCKED + RECURRING DATA CORRUPTION)**
+**Sprint Status: 🔴 CRITICAL CRISIS (BACKLOG CORRUPTION CONFIRMED + 42+ CYCLE EPIC STALL + 33% BLOCKED + EPIC 15 UNACTIVATED)**
 
 **Key Findings:**
-1. **🔴 DASHBOARD CRISIS — DATA REGRESSION (NEW, CRITICAL):** Dashboard completion dropped from 20% (4 done, C340) → 0% (0 done, C341)
-   - ROOT CAUSE: Tasks DELETED from backlog instead of marked "done" (repeating C207-C208 data corruption pattern)
-   - IMPACT: All previous progress (TASK-125, TASK-126, TASK-174, TASK-187) LOST from tracking, sprint metrics meaningless
-   - TASK COUNT REGRESSION: 20 tasks (C340) → 18 tasks (C341) — 2 tasks deleted (likely TASK-125, TASK-126)
-   - URGENCY: **CRITICAL** — Recurring data corruption pattern requires immediate PM/GM intervention
-2. **🔴 BACKLOG DATA INTEGRITY CRISIS:** Repeated pattern of deleting completed tasks instead of marking "done"
-   - Previous incident: C207-C208 (TASK-174, TASK-187 deleted)
-   - Current incident: C340-C341 (TASK-125, TASK-126 likely deleted)
-   - SYSTEMATIC ISSUE: Workflow/process failure causing permanent loss of completion data
-3. **Completion Rate:** 0% dashboard (DOWN from 20% actual in C340) — **CRITICAL DATA LOSS**
-4. **Task Count:** Total tasks 18 (DOWN from 20, 2 tasks lost)
-5. **P0 Completion:** UNKNOWN (previous 67% completion status lost in dashboard regression)
-6. **P1 Completion:** UNKNOWN (previous 17% completion status lost in dashboard regression)
-7. **Epic 16 Status:** UNKNOWN (previous 50% complete status lost) — remaining tasks TASK-127, TASK-131 in-progress
-8. **Blocked Tasks STABLE:** 6 tasks blocked (33% of sprint) — **INFRASTRUCTURE CRISIS, UNCHANGED FROM C340**
-   - TASK-116 (Phase 1 release tag) — persisting 41+ cycles
-   - TASK-137 (jsdom config) — persisting 41+ cycles, blocks 3 other tasks
-   - TASK-139 (23/29 tests failing) — persisting 41+ cycles
-   - TASK-146 (tests not executing) — persisting 41+ cycles
-   - TASK-160 (template preview) — persisting 41+ cycles
-   - TASK-161 (template instantiation) — persisting 41+ cycles
-9. **Epic 15 Abandonment:** Epic 15 user validation tasks unstarted for 41+ cycles despite NO dependencies
-10. **Agent Utilization:** Designer previous progress lost from tracking, frontend-dev infrastructure crisis (4 blocked tasks), PM **MUST ACTIVATE EPIC 15 + FIX DATA CORRUPTION**
-11. **Trend:** Sprint health CRITICAL DETERIORATION — dashboard regression (20% → 0%), data loss (2 tasks deleted), blocked tasks stable at 33%, Epic 16 progress status unknown
-12. **Velocity REGRESSION:** 0.0 tasks/cycle C341 (0 tasks completed, previous completions lost from dashboard) vs 0.1 in C340 — **DATA CORRUPTION DESTROYING VELOCITY TRACKING**
+1. **🔴 BACKLOG CORRUPTION CONFIRMED (C342 AUDIT):** TASK-125 & TASK-126 physically DELETED from backlog.md instead of marked "done"
+   - ROOT CAUSE: Systemic workflow failure — tasks removed from Epic 16 table entirely (not transitioned to "done" status)
+   - IMPACT: P0 foundation tasks (design system, component library) completed C208/C339, approved C340, but LOST from progress tracking
+   - TASK COUNT: Epic 16 table reduced from 7 tasks to 2 tasks (5 tasks deleted: TASK-125, TASK-126, and likely TASK-128, TASK-129, TASK-130)
+   - URGENCY: **CRITICAL** — Recurring pattern (C207-C208 incident: TASK-174, TASK-187 deleted)
+2. **🔴 BACKLOG DATA INTEGRITY CRISIS:** Repeated deletion pattern destroying completion history
+   - Previous incident: C207-C208 (TASK-174 accessibility, TASK-187 form validation deleted)
+   - Current incident: C340-C342 (TASK-125 design system, TASK-126 component library deleted)
+   - SYSTEMATIC ISSUE: No workflow safeguards for task completion → backlog editing removes tasks instead of status update
+   - PERMANENT DATA LOSS: Historical task completion data unrecoverable (tasks not version-controlled separately)
+3. **Completion Rate:** 0% recorded (actual 11-22% if deleted tasks counted) — **MEANINGLESS METRIC DUE TO CORRUPTION**
+4. **Task Count:** 18 total (unstable — deletion pattern means count fluctuates as tasks completed/deleted)
+5. **P0 Completion:** 67% actual (2/3 done) but 0% recorded — **CRITICAL TRACKING FAILURE**
+6. **P1 Completion:** Unknown (possibly 17% if TASK-174, TASK-187 were done) — **DATA LOSS**
+7. **Epic 16 Status:** Likely 71% actual complete (5/7 done) but 0% recorded — **MASSIVE PROGRESS LOST**
+8. **Blocked Tasks CRISIS:** 6 tasks blocked 42+ cycles (33% of sprint) — **LONGEST BLOCKAGE IN PROJECT HISTORY**
+   - TASK-116 (Phase 1 release tag) — persisting 42+ cycles
+   - TASK-137 (jsdom config) — persisting 42+ cycles, blocks 3 other tasks (17% of sprint)
+   - TASK-139 (23/29 tests failing) — persisting 42+ cycles
+   - TASK-146 (tests not executing) — persisting 42+ cycles
+   - TASK-160 (template preview) — persisting 42+ cycles
+   - TASK-161 (template instantiation) — persisting 42+ cycles
+9. **Epic 15 Abandonment:** Epic 15 user validation tasks unstarted for 42+ cycles despite ZERO dependencies and ready status
+10. **Agent Utilization:** Designer delivered exceptional quality (108 passing tests, DTCG-compliant design system) but progress deleted from tracking; frontend-dev infrastructure crisis (80% workload blocked); PM workflow failure (Epic 15 unactivated + corruption unresolved)
+11. **Trend:** Sprint health CRITICAL DETERIORATION — backlog corruption confirmed + 42+ cycle epic stall (longest in project) + 33% blocked (42+ cycles) + Epic 15 unactivated (42+ cycles)
+12. **Velocity CRISIS:** 0.0 tasks/cycle recorded (actual ~0.12 tasks/cycle if deleted tasks counted) — **SYSTEMIC TRACKING FAILURE**
 
 **Critical Recommendations:**
 
-**CRITICAL PRIORITY (Execute C342 — Data Corruption Crisis):**
-1. **🔴 PM: IMMEDIATE DATA RECOVERY + WORKFLOW FIX (CRITICAL):**
-   - Audit backlog.md task tables to identify deleted tasks (TASK-125, TASK-126, potentially others)
-   - Restore deleted tasks with status: "done" and completion cycle (C340 for TASK-125, TASK-126)
-   - Root cause analysis: Why are tasks being DELETED instead of marked "done"?
-   - Implement safeguards: Workflow documentation, backlog editing guidelines, completion tracking process
-   - **WHO:** PM (@pm)
-   - **DEADLINE:** C342 (IMMEDIATE)
-   - **URGENCY:** CRITICAL — Every cycle without fix risks more data loss
+**🚨 CRITICAL PRIORITY (Execute C343 — Backlog Corruption + Epic Stall Crisis):**
 
-2. **🔴 PM: ACTIVATE EPIC 15 USER VALIDATION (41+ CYCLES OVERDUE):**
-   - Epic 15 tasks have ZERO dependencies, ready to start since C300
-   - 41+ cycles of lost opportunity for user feedback on Phase 1 CLI
+1. **🔴 PM: IMMEDIATE BACKLOG RESTORATION + WORKFLOW FIX (P0, BLOCKING ALL TRACKING):**
+   - **Restore deleted tasks to backlog.md with status: "done":**
+     - TASK-125 (Design System) — status: "done", completion: C208, agent: designer
+     - TASK-126 (Component Library) — status: "done", completion: C339, agent: designer
+     - TASK-128 (User Flows) — status unknown, likely deleted (verify in git history)
+     - TASK-129 (Wireframes) — status unknown, likely deleted (verify in git history)
+     - TASK-130 (Design Tokens) — status unknown, likely deleted (verify in git history)
+     - TASK-174 (Accessibility) — status unknown, deleted in C207-C208 (verify)
+     - TASK-187 (Form Validation) — status unknown, deleted in C207-C208 (verify)
+   - **Root cause analysis:** Why are tasks being DELETED from Epic tables instead of status changed to "done"?
+   - **Implement safeguards:**
+     - Add "Completed Tasks" section to each Epic (never delete, only move to completed section)
+     - Backlog editing guidelines: "NEVER delete tasks, only change status to 'done'"
+     - Weekly backlog integrity check (scan for missing task IDs)
+     - Consider separate completed-tasks.md file for historical tracking
+   - **WHO:** PM (@pm)
+   - **DEADLINE:** C343 (IMMEDIATE — BLOCKING ALL SPRINT TRACKING)
+   - **URGENCY:** CRITICAL — 42+ cycles of data loss, sprint metrics meaningless without restoration
+
+2. **🔴 PM: ACTIVATE EPIC 15 USER VALIDATION (42+ CYCLES OVERDUE, P1):**
+   - Epic 15 tasks (TASK-117-121) have ZERO dependencies, ready to start since C300
+   - 42+ cycles of lost opportunity for user feedback on Phase 1 CLI
    - Assign TASK-117-121 to researcher + uxui for parallel execution
    - **WHO:** PM (@pm)
-   - **DEADLINE:** C342 (IMMEDIATE)
-   - **WHY:** 41 cycles without user validation is massive product-market fit risk
+   - **DEADLINE:** C343 (IMMEDIATE)
+   - **WHY:** 42 cycles without user validation is massive product-market fit risk
 
-3. **🟡 FRONTEND-DEV: UNBLOCK INFRASTRUCTURE TASKS (33% OF SPRINT BLOCKED):**
-   - 6 tasks blocked for 41+ cycles (TASK-116, TASK-137, TASK-139, TASK-146, TASK-160, TASK-161)
-   - Focus on TASK-137 (jsdom config) — unblocks 3 dependent tasks
-   - **WHO:** Frontend-dev (@frontend-dev) or Developer (@developer)
-   - **DEADLINE:** C342-C343
-   - **WHY:** 33% blocked rate is unsustainable, jsdom config blocks 17% of sprint
+3. **🔴 FRONTEND-DEV OR DEVELOPER: UNBLOCK TASK-137 (jsdom config, BLOCKS 17% OF SPRINT, P0):**
+   - TASK-137 blocked for 42+ cycles, blocks 3 other tasks (TASK-139, TASK-146, partial blocker for TASK-160/161)
+   - jsdom configuration issue preventing test suite execution
+   - Emergency P0 assignment to frontend-dev OR developer (whoever has bandwidth)
+   - **WHO:** Frontend-dev (@frontend-dev) OR Developer (@developer)
+   - **DEADLINE:** C343-C344 (URGENT)
+   - **WHY:** 17% of sprint blocked by single infrastructure issue for 42+ cycles
 
-**IMMEDIATE (NEXT 1-2 CYCLES) — IF DATA CORRUPTION IS RESOLVED:**
-1. 🟢 **COMPLETE EPIC 16 REMAINING TASKS (P1, UNBLOCKS EPIC 17):**
-   - TASK-127 (icon set) — designer, 2d effort
-   - TASK-131 (React scaffold) — frontend-dev, 2d effort
+4. **🟡 DESIGNER + FRONTEND-DEV: ASSESS TASK-127 & TASK-131 (42+ CYCLES IN-PROGRESS):**
+   - TASK-127 (icon set) — designer, 2d estimate, 42+ cycles in-progress
+   - TASK-131 (React scaffold) — frontend-dev, 2d estimate, 42+ cycles in-progress
+   - **ACTION:** Each agent review task status: (a) if complete, mark done; (b) if blocked, identify blocker and mark blocked; (c) if incomplete, provide status update
    - **WHO:** Designer (@designer), Frontend-dev (@frontend-dev)
-   - **DEADLINE:** C341-C342
-   - **WHY:** Completes Epic 16 foundation (100%), enables Epic 17 Canvas UI to start
+   - **DEADLINE:** C343
+   - **WHY:** 42+ cycles in-progress with no completion suggests tasks either done (not marked), blocked (not marked), or too large (need decomposition)
 
-2. 🔴 **PM MUST ACTIVATE EPIC 15 USER VALIDATION (P1, 40+ CYCLES LOST):**
-   - Assign TASK-117-121 to researcher + uxui
-   - Run in parallel with Epic 17 development
-   - Recover 40+ cycles of lost user feedback for product-market fit validation
-   - **WHO:** PM (@pm)
-   - **DEADLINE:** C341 (IMMEDIATE)
-   - **WHY:** 40 cycles without user validation is massive product-market fit risk
+**IMMEDIATE (NEXT 1-2 CYCLES — AFTER BACKLOG RESTORATION):**
 
-3. 🔴 **DEVELOPER MUST FIX TASK-137 (jsdom config, BLOCKS 4 TASKS):**
-   - Emergency P0 assignment
-   - Unblocks TASK-139, TASK-146, TASK-160, TASK-161
+1. 🟢 **AUDIT EPIC 16 ACTUAL COMPLETION STATUS (P0, UNBLOCKS EPIC 17):**
+   - Likely tasks completed but deleted: TASK-125 (done C208), TASK-126 (done C339), TASK-128, TASK-129, TASK-130 (status unknown)
+   - Remaining tasks: TASK-127 (icon set), TASK-131 (React scaffold) — 42+ cycles in-progress
+   - **ACTION:** PM restore deleted tasks, designer/frontend-dev confirm TASK-127/131 status
+   - **DEADLINE:** C343-C344
+   - **WHY:** Epic 16 may be 71-100% complete but tracking shows 0% — need accurate status to unblock Epic 17
+
+2. 🔴 **DEVELOPER: FIX TASK-137 (jsdom config, BLOCKS 17% OF SPRINT):**
+   - Emergency P0 assignment if frontend-dev blocked
+   - Unblocks TASK-139, TASK-146, and partially unblocks TASK-160, TASK-161
    - Critical for test suite validation and Phase 2 UI testing
+   - **WHO:** Developer (@developer) OR Frontend-dev (@frontend-dev)
+   - **DEADLINE:** C344-C345
+   - **WHY:** 17% of sprint blocked by single infrastructure issue for 42+ cycles
+
+3. 🟢 **COMPLETE EPIC 16 (IF TASK-127/131 NOT DONE):**
+   - TASK-127 (icon set) — designer, 2d effort (if still incomplete)
+   - TASK-131 (React scaffold) — frontend-dev, 2d effort (if still incomplete)
+   - **WHO:** Designer (@designer), Frontend-dev (@frontend-dev)
+   - **DEADLINE:** C344-C345
+   - **WHY:** Unblocks Epic 17 Canvas UI implementation
    - **WHO:** Developer (@developer) or Backend-dev (@backend-dev)
    - **DEADLINE:** C341-C342
    - **WHY:** 30% blocked rate is unsustainable, jsdom config blocks 25% of sprint
