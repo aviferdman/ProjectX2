@@ -187,3 +187,5 @@
 | TASK-181 | P1 | done | frontend-dev | 2d | Error handling and edge cases (all screens) |
 | TASK-182 | P1 | done | frontend-dev | 2d | Empty states, loading states, success/error feedback |
 | TASK-187 | P1 | done | frontend-dev | 2d | Form field validation feedback (inline errors, validation states) |
+| TASK-125 | P0 | done | designer | 3d | Create design system (colors, typography, spacing, tokens) — **START C167, DONE C340** |
+| TASK-126 | P0 | done | designer | 2d | Design component library (buttons, inputs, cards, modals) — **START C167, DONE C340** |
