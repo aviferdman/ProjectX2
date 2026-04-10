@@ -5098,7 +5098,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-161 | P1 | done | frontend-dev | 2d | Implement template instantiation (copy to user account) |
 
 **Dependencies:**
 - TASK-159 depends on TASK-156

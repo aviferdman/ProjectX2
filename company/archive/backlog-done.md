@@ -198,3 +198,4 @@
 | TASK-139 | P2 | done | designer | 1d | Design QA: canvas implementation vs specs |
 | TASK-146 | P1 | done | frontend-dev | 2d | Implement timeline playback and step-through |
 | TASK-160 | P1 | done | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
+| TASK-161 | P1 | done | frontend-dev | 2d | Implement template instantiation (copy to user account) |
