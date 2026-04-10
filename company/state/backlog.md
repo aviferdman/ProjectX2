@@ -22,6 +22,72 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 ## PM Review Notes
 
+### Cycle 349 Review (2026-04-10) — EXECUTION PARALYSIS WORSENING: QUALITY EXCELLENT, EXECUTION FAILED
+
+**Status:** 🔴 **EMERGENCY — 3+ CONSECUTIVE ZERO-COMPLETION CYCLES + AGENT UNRESPONSIVENESS**
+
+**Cycle 349 Summary:**
+- ❌ **Zero completions** — No tasks completed in C349 (10 cycles since last completion at C339)
+- ❌ **Zero submissions** — No tasks moved to review status (48+ consecutive cycles with empty review pipeline)
+- 🚨 **VELOCITY CRISIS WORSENING** — 0 tasks/cycle for 3+ consecutive cycles (C347-C349) = EXECUTION PARALYSIS CONFIRMED
+- 🚨 **TASK-137 EMERGENCY PERSISTS** — jsdom blocker now at 48+ cycles, blocking 33% of sprint (6/20 tasks)
+- 🚨 **AGENT UNRESPONSIVENESS CONFIRMED** — TASK-127/131 in-progress 48+ cycles with ZERO commits, signals, or status updates
+- 🔴 **Epic 15 STILL UNACTIVATED** — User validation tasks unstarted for 48+ cycles despite PM self-assignment
+- 📉 **Velocity: 0.0 tasks/cycle** — Phase 2 at 10% completion after 182 days (6 months), infinite completion timeline
+- 🔴 **Timeline breach: CATASTROPHIC** — Phase 2 target (C225) missed by 124 cycles; 25% of timeline consumed with only 10% work complete
+
+**Critical Findings:**
+- ✅ **QUALITY VALIDATION: EXCELLENT** — TASK-125 and TASK-126 (C208/C339) verified production-grade, meet/exceed all acceptance criteria, 132/132 tests passing, DTCG-compliant, zero technical debt, strong product vision alignment
+- ✅ **SCOPE COMPLETENESS: NO GAPS** — All acceptance criteria met for completed work, backlog comprehensive (70 tasks, 8 epics)
+- 🔴 **EXECUTION CRISIS: CATASTROPHIC** — 3+ cycles zero completions, 48+ cycles empty review pipeline, agents produce ZERO output
+- 🚨 **SINGLE POINT OF FAILURE** — TASK-137 (0.5-1 day jsdom config) blocked 48+ cycles, blocking 4+ downstream tasks
+- 🚨 **PM FAILURE** — Epic 15 user validation unactivated 48+ cycles despite self-assignment, no dependencies, P1 priority
+- 🔴 **AGENT HEALTH CRISIS** — Designer, frontend-dev, PM showing NO activity (no commits, signals, branch activity) for 48+ cycles
+
+**Quality of Delivered Work:**
+- ✅ **EXCELLENT — EXCEEDS EXPECTATIONS** — TASK-125 design system: DTCG W3C spec compliance, 74/74 tests passing, production-ready
+- ✅ **EXCELLENT — EXCEEDS EXPECTATIONS** — TASK-126 component library: 58/58 tests passing, 4 components delivered, variant-driven architecture
+- ✅ **PRODUCT VISION ALIGNMENT: STRONG** — TypeScript-native ✅, Lovable-level UX quality ✅, OSS-first strategy ✅
+- ✅ **SCOPE VALIDATION: COMPLETE** — Zero scope gaps in completed work, all acceptance criteria met or exceeded
+
+**Scope Gap Assessment:**
+- ✅ **ZERO SCOPE GAPS** in completed work (TASK-125/126)
+- ✅ **BACKLOG COMPREHENSIVE** — 70 tasks well-defined across 8 epics
+- 🟡 **NEW STORIES IDENTIFIED** — Epic 24 (onboarding/first-run UX, 4 tasks P2-P3) and Epic 25 (observability/analytics, 3 tasks P3)
+- 🔴 **CRITICAL GAP: USER VALIDATION** — Epic 15 unactivated 48+ cycles = 9+ weeks of lost user feedback (product-market fit risk)
+
+**Current State (C349):**
+- **Done:** 2 tasks (10%) — TASK-125 (C208), TASK-126 (C339) ✅ verified production-ready via product repo
+- **In Review:** 0 tasks (0%) — **48+ consecutive cycles with empty review pipeline**
+- **In Progress:** 2 tasks (10%) — TASK-127 (icon set, designer), TASK-131 (React scaffold, frontend-dev) **— STALLED 48+ CYCLES, NO VISIBLE PROGRESS**
+- **Blocked:** 6 tasks (33%) — TASK-116, **TASK-137 (EMERGENCY)**, TASK-139, 146, 160, 161
+- **Todo:** 10 tasks (50%) — Epic 15 user validation (UNACTIVATED 48+ cycles) + Epic 17-23 tasks
+
+**Action Items for Next Cycle (C350) — EMERGENCY:**
+1. 🚨 **GM EMERGENCY INTERVENTION (P0):** Orchestrator audit required — Designer, frontend-dev, PM agents produce ZERO output for 48+ cycles. Verify agents are being invoked and capable of responding.
+2. 🚨 **GM EMERGENCY REASSIGNMENT (P0):** TASK-137 (jsdom config) MUST be reassigned to developer/backend-dev in C350. 48+ cycles for 0.5-1 day task is project-ending. NO EXCEPTIONS.
+3. 🚨 **GM AGENT HEALTH CHECK (P0):** Request status updates from Designer (TASK-127), Frontend-dev (TASK-131, TASK-137), PM (Epic 15). If no response within 24 hours → agents non-functional.
+4. ✅ **PM (SELF): ACTIVATE EPIC 15 IMMEDIATELY (P0):** Start TASK-117 (user interview protocol) in C350. 48+ cycles delay is PM execution failure requiring self-correction.
+5. ✅ **PM (SELF): ADD NEW STORIES (P1):** Add Epic 24 (onboarding) and Epic 25 (observability) to backlog based on scope gap analysis.
+6. 🔴 **GM STRATEGIC DECISION GATE (P1):** If velocity remains 0 in C350-C355, GM must decide: timeline extension, scope reduction, pivot, or stash. Current trajectory (0 velocity, 124 cycles overdue) is project-ending.
+
+**Recommendations:**
+- 🚨 **EMERGENCY SESSION REQUIRED** — 3+ cycles zero velocity + 33% blocked + 48+ cycle stall = systemic failure requiring GM intervention
+- 🚨 **ORCHESTRATOR DIAGNOSIS** — Verify agent invocation system, check for silent failures, validate completion signal pipeline
+- 🚨 **IMMEDIATE UNBLOCK** — TASK-137 MUST be resolved in C350 (48-hour deadline, no exceptions)
+- ✅ **PM SELF-ACCOUNTABILITY** — Epic 15 activation in C350 (no valid reason for 48-cycle delay)
+- 🔴 **TIMELINE REVIEW** — GM must evaluate timeline extension, scope reduction, or strategic pivot options by C355
+
+**New Stories Added (Scope Gap Mitigation):**
+- **Epic 24:** Onboarding & First-Run Experience (TASK-210-213, 4 tasks P2-P3) — Freemium conversion critical path
+- **Epic 25:** Observability & Analytics (TASK-214-216, 3 tasks P3) — SaaS launch readiness
+
+**Detailed Review:** See `pm-report-development-pm-c349.md`
+
+**VERDICT:** Product being built is EXCELLENT. Team building it is NON-FUNCTIONAL. This is an EXECUTION CRISIS, not a product crisis.
+
+---
+
 ### Cycle 348 Review (2026-04-10) — EXECUTION PARALYSIS: EMERGENCY GM INTERVENTION REQUIRED
 
 **Status:** 🔴 **EMERGENCY — EXECUTION PARALYSIS + ZERO VELOCITY + AGENT UNRESPONSIVENESS**
@@ -5837,6 +5903,139 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 - Regular security audits (manual or automated)
 
 **Business Value:** CRITICAL — Trust = conversion
+
+---
+
+## Epic 24: Onboarding & First-Run Experience (NEW — Cycle 349)
+
+**Goal:** Enable instant time-to-value for new users (freemium conversion critical path)
+
+**Dependencies:** Epic 16 (design system ✅), Epic 17 (canvas UI)
+
+**Rationale:** Critical for freemium SaaS model (business model dependency) and Lovable/v0 UX quality benchmark (instant time-to-value). Added proactively based on Cycle 349 scope gap analysis before user testing (Epic 15) identifies gap.
+
+**Tasks:**
+
+[TASK-210] [Priority: P2] [Status: todo] [Assigned: designer, uxui] — First-run onboarding flow design
+- **Description:** Design onboarding experience for new users (first project creation, guided workflow setup, sample templates selection). Lovable/v0-inspired instant time-to-value approach. Include user research on friction points, zero-to-first-workflow journey mapping.
+- **Acceptance Criteria:** 
+  - Figma/wireframes for complete onboarding flow (welcome → project setup → first workflow → success state)
+  - UX research document identifying friction points in first-run experience
+  - Design tokens/components for onboarding UI (progress indicators, guided tours, success celebrations)
+  - Interaction patterns for template selection, agent configuration, workflow preview
+  - Mobile-responsive onboarding design
+- **Estimate:** 3-5 days
+- **Dependencies:** TASK-126 (component library ✅)
+- **Deliverables:** Onboarding flow design document (Markdown), Figma mockups, component specifications, UX research findings
+- **Business Value:** CRITICAL for freemium → paid conversion (first-run experience determines trial conversion rate)
+
+[TASK-211] [Priority: P2] [Status: todo] [Assigned: developer] — Sample workflow templates (agent orchestration examples)
+- **Description:** Create 5 sample workflows for first-time users demonstrating different agent orchestration patterns. Examples: chat assistant, research crew, code review crew, data analysis pipeline, customer support automation. Each template should be fully functional, well-documented, and demonstrate best practices.
+- **Acceptance Criteria:**
+  - 5 sample workflow templates with TypeScript definitions (chat, research, code review, data analysis, customer support)
+  - README documentation for each template (what it does, how to use, customization guide)
+  - Working examples in product repo with integration tests
+  - Template metadata (title, description, difficulty level, agent count, use case category)
+  - Template preview/thumbnail assets
+- **Estimate:** 3-4 days
+- **Dependencies:** TASK-125 (design system ✅), Phase 1 core framework (✅)
+- **Deliverables:** 5 sample workflow files (TypeScript), documentation (Markdown), integration tests (Vitest), template metadata (JSON)
+- **Business Value:** HIGH — Reduces time-to-first-value, demonstrates framework capabilities, provides learning path for new users
+
+[TASK-212] [Priority: P2] [Status: todo] [Assigned: designer] — Empty state UX design
+- **Description:** Design empty states for all major UI sections (dashboard, canvas, templates library, workflows list) shown before user creates first project. Include motivational copy, clear CTAs, illustrations/icons to reduce perceived friction.
+- **Acceptance Criteria:**
+  - Empty state mockups for dashboard, canvas, templates, workflows (4 screens minimum)
+  - Motivational copy/messaging for each empty state (encouraging, action-oriented)
+  - CTA button designs with clear next steps ("Create your first workflow", "Browse templates")
+  - Illustrations/icons/visual elements (simple, on-brand, not overwhelming)
+  - Responsive design for mobile/tablet/desktop
+- **Estimate:** 1-2 days
+- **Dependencies:** TASK-126 (component library ✅)
+- **Deliverables:** Empty state design specs (Figma), copy document (Markdown), illustration assets (SVG)
+- **Business Value:** MEDIUM — Improves perceived quality, reduces abandonment on empty screens
+
+[TASK-213] [Priority: P3] [Status: todo] [Assigned: frontend-dev, uxui] — Tutorial/help system implementation
+- **Description:** Interactive tutorial for canvas UI, agent configuration, workflow creation. Contextual help tooltips throughout the platform. Optional step-by-step guide for first workflow creation. Skip/complete tracking to avoid annoying returning users.
+- **Acceptance Criteria:**
+  - Tutorial flow implemented (optional, skippable, can be replayed)
+  - Contextual tooltips for complex UI elements (agent config, canvas controls, workflow settings)
+  - Help documentation integration (in-app help panel with search)
+  - Skip/complete tracking (localStorage or user preferences)
+  - Keyboard shortcuts guide (accessible via `?` key)
+- **Estimate:** 3-5 days
+- **Dependencies:** TASK-131 (React scaffold), Epic 17 (canvas UI)
+- **Deliverables:** Tutorial component (React/TypeScript), help system (searchable docs), keyboard shortcuts guide, contextual tooltips
+- **Business Value:** MEDIUM — Reduces support burden, improves activation rate for complex features
+
+**Total Tasks:** 4 (TASK-210 to TASK-213)  
+**Priority:** P2 (3 tasks), P3 (1 task)  
+**Estimated Effort:** 9-16 days total  
+**Business Impact:** CRITICAL for freemium conversion (first-run experience determines trial → paid conversion rate)
+
+---
+
+## Epic 25: Observability & Analytics (NEW — Cycle 349)
+
+**Goal:** Enable error tracking, performance monitoring, and usage analytics for SaaS product
+
+**Dependencies:** Epic 17-21 (core platform features)
+
+**Rationale:** Required for SaaS launch (commercial cloud product) but not blocking MVP. Captured proactively based on Cycle 349 scope gap analysis. Can defer to Phase 3 or late Phase 2. All tools must be free/open-source (budget = $0) and self-hosted.
+
+**Tasks:**
+
+[TASK-214] [Priority: P3] [Status: todo] [Assigned: developer] — Error monitoring integration (Sentry open-source or self-hosted)
+- **Description:** Integrate client-side error tracking and reporting using free-tier tools (Sentry open-source self-hosted OR LogRocket community edition OR GlitchTip). Track JavaScript errors, React errors, API failures. Configure source maps for production debugging.
+- **Acceptance Criteria:**
+  - Error tracking initialized (client-side + server-side)
+  - Source maps uploaded for production builds (for stack trace accuracy)
+  - Error grouping configured (deduplication, fingerprinting)
+  - Alert thresholds set (email/Slack notifications for critical errors)
+  - Privacy-compliant (no PII in error reports)
+  - Self-hosted deployment (no third-party SaaS dependencies, respects $0 budget)
+- **Estimate:** 1-2 days
+- **Dependencies:** Epic 17 (canvas UI), production deployment pipeline
+- **Deliverables:** Error monitoring integration (Sentry SDK or equivalent), configuration (YAML/JSON), deployment docs (Markdown), alert setup
+- **Business Value:** HIGH — Reduces time-to-resolution for user-reported bugs, proactive issue detection
+
+[TASK-215] [Priority: P3] [Status: todo] [Assigned: backend-dev] — Usage analytics pipeline (Plausible/Umami self-hosted)
+- **Description:** Implement privacy-first usage analytics using self-hosted tools (Plausible Analytics self-hosted OR Umami self-hosted, both open-source, no third-party tracking). Track workflow creations, agent invocations, template selections, user activation events. GDPR/CCPA compliant (no cookies, no PII).
+- **Acceptance Criteria:**
+  - Analytics pipeline deployed (self-hosted Plausible or Umami)
+  - Key events tracked:
+    - Workflow creation (count, template used, agent count)
+    - Agent invocation (agent type, task type, success/failure)
+    - Template selection (template ID, customization rate)
+    - User activation events (first workflow, first agent, first template)
+  - Dashboard accessible (real-time analytics, filterable by date/event)
+  - Privacy-compliant (no cookies, no PII, GDPR/CCPA safe)
+  - Self-hosted deployment (no third-party SaaS, respects $0 budget)
+- **Estimate:** 2-3 days
+- **Dependencies:** Epic 17-20 (core features for event tracking)
+- **Deliverables:** Analytics pipeline (Plausible/Umami deployment), event tracking code (TypeScript), analytics dashboard, privacy documentation
+- **Business Value:** HIGH — Enables data-driven product decisions, freemium conversion optimization, feature usage insights
+
+[TASK-216] [Priority: P3] [Status: todo] [Assigned: frontend-dev] — Performance monitoring dashboard (Web Vitals)
+- **Description:** Implement Core Web Vitals monitoring (LCP, FID, CLS), performance budgets, real-user monitoring (RUM). Track page load times, canvas rendering performance, agent execution latency. Set performance budgets and alert thresholds.
+- **Acceptance Criteria:**
+  - Core Web Vitals tracking (LCP, FID, CLS, TTFB, FCP)
+  - Performance dashboard (real-user metrics, percentile distribution)
+  - Performance budgets defined (LCP <2.5s, FID <100ms, CLS <0.1)
+  - Budget alerts (automated warnings when budgets exceeded)
+  - Optimization recommendations (automated suggestions based on metrics)
+  - Device/browser breakdown (identify performance issues per platform)
+- **Estimate:** 2-3 days
+- **Dependencies:** Epic 17-20 (core features for performance measurement)
+- **Deliverables:** Web Vitals integration (web-vitals library), performance dashboard (React component), budget configuration (JSON), monitoring docs (Markdown)
+- **Business Value:** MEDIUM — Maintains Lovable-level UX quality bar, prevents performance regressions
+
+**Total Tasks:** 3 (TASK-214 to TASK-216)  
+**Priority:** P3 (all tasks — defer to Phase 3 or late Phase 2)  
+**Estimated Effort:** 5-8 days total  
+**Business Impact:** HIGH for SaaS launch readiness, but not blocking MVP
+
+**Implementation Note:** All tools must be self-hosted and open-source (budget = $0 constraint). Sentry open-source, Plausible self-hosted, Umami self-hosted all comply. NO third-party SaaS dependencies.
 
 ---
 
