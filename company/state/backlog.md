@@ -4427,7 +4427,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-146 | P1 | blocked | frontend-dev | 2d | Implement timeline playback and step-through — BLOCKED: tests not executing |
-| TASK-147 | P2 | review | designer | 1d | Design QA: timeline implementation vs specs |
+| TASK-147 | P2 | done | designer | 1d | Design QA: timeline implementation vs specs |
 
 **Dependencies:**
 - TASK-143, TASK-144 depend on TASK-140
@@ -4443,7 +4443,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-152 | P1 | review | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
+| TASK-152 | P1 | done | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
 
 **Dependencies:**
