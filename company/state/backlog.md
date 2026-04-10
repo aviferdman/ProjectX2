@@ -4442,7 +4442,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-155 | P2 | todo | designer | 1d | Design QA: dashboard implementation vs specs |
+| TASK-155 | P2 | review | designer | 1d | Design QA: dashboard implementation vs specs |
 
 **Dependencies:**
 - TASK-151 depends on TASK-148, TASK-153
