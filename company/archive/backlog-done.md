@@ -196,3 +196,4 @@
 | TASK-116 | P2 | done | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
 | TASK-137 | P1 | done | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
 | TASK-139 | P2 | done | designer | 1d | Design QA: canvas implementation vs specs |
+| TASK-146 | P1 | done | frontend-dev | 2d | Implement timeline playback and step-through |
