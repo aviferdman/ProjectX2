@@ -4502,8 +4502,8 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-167 | P1 | review | frontend-dev | 2d | Implement OAuth flows (connect, disconnect, status display) |
-| TASK-168 | P2 | review | designer | 1d | Design QA: marketplace implementation vs specs |
+| TASK-167 | P1 | done | frontend-dev | 2d | Implement OAuth flows (connect, disconnect, status display) |
+| TASK-168 | P2 | done | designer | 1d | Design QA: marketplace implementation vs specs |
 
 **Dependencies:**
 - TASK-166 depends on TASK-163
