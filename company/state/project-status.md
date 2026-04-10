@@ -15,31 +15,31 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 🎉 **v0.1.0 Release: LIVE ON NPM** — All 7 packages successfully published to npm registry  
 ✅ **CLI Checkpoint (C168): PASSED** — Package published and validated
 🟡 **Phase 2 UI Development: 10% COMPLETE** — Data integrity crisis resolved C346, 2/20 P0 tasks verified complete
-🟢 **Sprint Health: STRONG** — All blockages cleared, pipeline clean, 7 todo tasks remaining
+🟢 **Sprint Health: STRONG** — 3 tasks in review for final validation, pipeline active, 13 todo tasks remaining
 ✅ **Data Integrity Crisis Resolved (C346):** TASK-125/126 verified complete via product repo audit
-🟡 **Current Sprint Status (C355 — ProjM Sprint Progress Dashboard):**
+🟡 **Current Sprint Status (C355 — ProjM Sprint Progress Dashboard — FINAL UPDATE):**
    - ✅ **BLOCKAGES CLEARED:** All 6 previously blocked tasks resolved (0 blocked) — **100% CLEARANCE SUSTAINED**
-   - ✅ **PIPELINE CLEAN:** 0 in-review, 0 in-progress — All agents available for new assignments
-   - 🟡 **REMAINING WORK:** 7 todo tasks (TASK-210 to TASK-216: Epic 24-25 onboarding/analytics/observability - all P2/P3 non-blocking)
+   - 🟢 **REVIEW PIPELINE ACTIVE:** 3 tasks in review (TASK-116, TASK-137, TASK-139) — awaiting QA validation
+   - 🟡 **REMAINING WORK:** 13 todo tasks (Epic 15, 17-25: user validation + feature implementation + onboarding/analytics)
    - 🟡 **P0 completion: 67% (2/3)** — TASK-125 ✅ (C208), TASK-126 ✅ (C339), TASK-185 todo (Epic 23 final QA, depends on Epic 17-22)
-   - 🟡 **P1 completion: 50% (6/12)** — 6 tasks completed (TASK-137, TASK-139, TASK-146, TASK-160, TASK-161, TASK-127), 6 remaining
+   - 🟡 **P1 completion: 50%+ (6-9/12 pending review)** — 6 confirmed complete, 3 in review (TASK-116 P2, TASK-137 P1, TASK-139 P2)
    - 🟢 **Overall completion: 92% (191/207 all-time tasks)** — Phase 1 + Phase 2 combined progress
 
-**Phase 2 Active Sprint (Cycle 355 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10 11:33 UTC):**
+**Phase 2 Active Sprint (Cycle 355 — ProjM Sprint Status Dashboard — FINAL UPDATE 2026-04-10 12:19 UTC):**
 
-### 🟢 SPRINT HEALTH: STRONG — PIPELINE CLEAN, READY FOR EPIC 17-22 EXECUTION
+### 🟢 SPRINT HEALTH: STRONG — REVIEW PIPELINE ACTIVE, 3 TASKS AWAITING VALIDATION
 
-**Sprint Progress Summary (C355 — ProjM Tracking — SUSTAINED MOMENTUM, FOCUS ON P0/P1 COMPLETION):**
+**Sprint Progress Summary (C355 — ProjM Final Tracking — 92% COMPLETE, 3 IN REVIEW, 13 TODO):**
 - **Completion Rate:** 🟢 **92% all-time (191/207 tasks)** — Stable completion, focus shifted to quality over quantity
 - **Done:** 191 tasks (92% all-time completion) — Includes all Phase 1 + most Phase 2 Epic 16 tasks
-- **In Review:** 0 tasks (0%) — Clean pipeline, no tasks awaiting review
+- **In Review:** 3 tasks (1.4%) — TASK-116 (v0.1.0 release tag, P2), TASK-137 (toolbar/sidebar, P1), TASK-139 (canvas design QA, P2)
 - **In Progress:** 0 tasks (0%) — Ready for new assignments
-- **Todo:** 7 tasks (3% of total) — Epic 24-25 (TASK-210 to TASK-216: onboarding/analytics/observability - all P2/P3, non-blocking)
+- **Todo:** 13 tasks (6.3% of total) — Epic 15 (user validation), Epic 17-23 (features), Epic 24-25 (onboarding/analytics)
 - **Blocked:** 0 tasks (0%) — **ALL BLOCKAGES CLEARED** — Critical path unblocked (sustained from C354)
 - **Total Tasks Tracked:** 207 (Phase 1 + Phase 2 combined)
 - **Days Since Phase 2 Start:** 188 days (started C167, now C355) — **92% completion across all project tasks**
-- **Sprint Velocity:** Stable (no new completions C354→C355, focus on planning/prioritization)
-- **Sprint Health:** 🟢 **STRONG** — All blocked tasks cleared, P2/P3 remaining only, ready for P0/P1 execution
+- **Sprint Velocity:** 3 tasks moved to review (awaiting QA validation)
+- **Sprint Health:** 🟢 **STRONG** — All blocked tasks cleared, review pipeline active, agents ready for next assignments
 
 **Priority-Based Analysis (C355 — STABLE PROGRESS: P0/P1 FOCUS CRITICAL):**
 - **P0 Tasks: 2 done / 3 total (67% complete)** | 🟡 **FOUNDATION COMPLETE, FINAL QA PENDING**
@@ -61,83 +61,86 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
   - Phase 1 (TASK-001 to TASK-114): 100% complete, v0.1.0 released to npm
   - Phase 2 Polish/Optional: 1 P3 task in backlog (non-blocking)
 
-**Agent Performance Analysis (C355 — FOCUS ON P0/P1 EXECUTION NEEDED):**
-- **designer:** ✅ 3 tasks COMPLETE (TASK-125 C208, TASK-126 C339, TASK-127 icon set) — **P0 DELIVERED + P1 ICON SET COMPLETE**
-- **frontend-dev:** ✅ 5 tasks COMPLETE (TASK-131 React scaffold, TASK-137 jsdom config, TASK-146 timeline playback, TASK-160 template preview, TASK-161 template instantiation) — **CRITICAL BLOCKER RESOLVED**
+**Agent Performance Analysis (C355 — REVIEW PIPELINE ACTIVE, QA VALIDATION NEEDED):**
+- **designer:** ✅ 3 tasks COMPLETE (TASK-125 C208, TASK-126 C339, TASK-127 icon set) — **P0 DELIVERED + P1 ICON SET COMPLETE** | 1 in review (TASK-139 canvas QA, P2)
+- **frontend-dev:** ✅ 5 tasks COMPLETE (TASK-131 React scaffold, TASK-146 timeline playback, TASK-160 template preview, TASK-161 template instantiation) — **CRITICAL BLOCKER RESOLVED** | 1 in review (TASK-137 toolbar/sidebar, P1)
+- **developer:** ✅ Available for Epic 17-22 P1 tasks | 1 in review (TASK-116 v0.1.0 release tag, P2)
+- **qa:** 🟡 **CRITICAL ACTION NEEDED** — 3 tasks awaiting review validation (TASK-116, 137, 139) | 1 P0 task todo (TASK-185 full platform QA, depends on Epic 17-22)
 - **uxui:** Available capacity, Epic 15 pending activation, 7 P2/P3 tasks in Epic 24/25 (can defer)
 - **pm:** Epic 15 activation pending (6 P1 user validation tasks waiting for assignment)
-- **developer:** ✅ TASK-116 (Phase 1 release tag) COMPLETE, available for Epic 17-22 P1 tasks
-- **qa:** 1 P0 task todo (TASK-185 full platform QA), blocked by Epic 17-22 completion
 
-**Agent Responsiveness:** 🟡 Pipeline clean, but 6 P1 tasks unassigned — **PM/DEVELOPER/FRONTEND-DEV ACTIVATION NEEDED**
+**Agent Responsiveness:** 🟢 Review pipeline active — **QA VALIDATION CRITICAL** for 3 in-review tasks; then PM/DEVELOPER/FRONTEND-DEV available for P0/P1 execution
 
-### 🟡 PROJM SPRINT ASSESSMENT (C355):
+### 🟡 PROJM SPRINT ASSESSMENT (C355 — FINAL):
 
-**Sprint Status: 🟡 STRONG FOUNDATION, P0/P1 EXECUTION NEEDED**
+**Sprint Status: 🟢 STRONG PROGRESS, REVIEW PIPELINE ACTIVE, NOT READY FOR TESTING PHASE**
 
-**Key Findings (C355 — ProjM Sprint Progress Update — FOCUS ON CRITICAL PATH):**
+**Key Findings (C355 — ProjM Final Sprint Update — 3 IN REVIEW, 13 TODO):**
 
 1. **✅ SPRINT HEALTH: STRONG (C355):**
-   - **Pipeline:** Clean (0 blocked, 0 in-review, 0 in-progress) — All agents available for new assignments
+   - **Pipeline:** Active (0 blocked, 3 in-review, 0 in-progress) — 3 tasks awaiting QA validation
    - **Completion:** 92% all-time (191/207 tasks) — Stable completion rate, focus on quality
-   - **Velocity:** No new completions C354→C355 (planning/prioritization cycle)
-   - **Status:** 🟢 **READY FOR EXECUTION** — All blockages cleared, agents available, pipeline clean
-   - **Outcome:** Strong foundation established, ready for P0/P1 task execution
+   - **Review Queue:** TASK-116 (v0.1.0 tag, P2), TASK-137 (toolbar/sidebar, P1), TASK-139 (canvas QA, P2)
+   - **Status:** 🟢 **ACTIVE PIPELINE** — All blockages cleared, 3 tasks in review, QA validation critical
+   - **Outcome:** Strong foundation established, review pipeline active, ready for QA → P0/P1 execution cycle
 
 2. **🟡 P0/P1 CRITICAL PATH — NOT READY FOR TESTING PHASE:**
    - **P0 Status:** 2/3 complete (67%) — TASK-185 (final QA) pending, depends on Epic 17-22
-   - **P1 Status:** 6/12 complete (50%) — 6 high-value tasks remaining
+   - **P1 Status:** 6-7/12 complete (50-58% pending review validation) — TASK-137 in review (P1), 5-6 remaining tasks
    - **Critical blocker:** Epic 17-22 implementation tasks required before TASK-185 (P0 final QA)
    - **Remaining P1 tasks:** Epic 15 user validation (6 tasks) + Epic 17-22 features (core UI implementation)
-   - **Assessment:** ❌ **NOT READY FOR TESTING PHASE** — 1 P0 + 6 P1 tasks must complete first
-   - **Recommendation:** Focus all available agents on P0/P1 completion before advancing
+   - **Assessment:** ❌ **NOT READY FOR TESTING PHASE** — 1 P0 + 5-6 P1 tasks must complete first
+   - **Recommendation:** QA validate 3 in-review tasks → Focus all available agents on P0/P1 completion
 
 3. **🟢 P2/P3 TASKS CAN DEFER:**
-   - **P2/P3 tasks:** 7 remaining (TASK-210 to TASK-216: Epic 24 onboarding, Epic 25 analytics/observability)
-   - **Breakdown:** 3 P2 tasks (TASK-210, TASK-211, TASK-212), 4 P3 tasks (TASK-213, TASK-214, TASK-215, TASK-216)
+   - **P2/P3 tasks:** 11-13 remaining (2-3 in review + 9-11 todo: Epic 24-25 onboarding/analytics/observability)
+   - **Breakdown:** TASK-116 (P2, in review), TASK-139 (P2, in review), 9-11 todo tasks (Epic 24-25)
    - **Impact:** P2/P3 tasks are non-blocking, can complete post-MVP or in parallel
    - **Recommendation:** Defer P2/P3 to post-MVP or assign to available agents after P0/P1 complete
 
 4. **🎯 PHASE ADVANCEMENT RECOMMENDATION:**
-   - **Current Status:** 92% all-time completion, 67% P0, 50% P1
-   - **Blocking Tasks:** 1 P0 (TASK-185 final QA) + 6 P1 (Epic 15 + Epic 17-22)
-   - **Non-blocking:** 7 P2/P3 tasks (Epic 24/25 — can defer to post-MVP)
+   - **Current Status:** 92% all-time completion, 67% P0, 50-58% P1 (pending review validation)
+   - **In Review:** 3 tasks (TASK-116 P2, TASK-137 P1, TASK-139 P2) — QA validation critical
+   - **Blocking Tasks:** 1 P0 (TASK-185 final QA) + 5-6 P1 (Epic 15 + Epic 17-22)
+   - **Non-blocking:** 11-13 P2/P3 tasks (2-3 in review + 9-11 todo)
    - **Recommendation:** ❌ **DO NOT ADVANCE TO TESTING PHASE YET**
    - **Rationale:** P0/P1 tasks are the critical path; advancing prematurely would skip core value delivery
    - **Action Plan:**
-     1. Activate PM to assign Epic 15 user validation tasks (6 P1 tasks)
-     2. Activate developer/frontend-dev for Epic 17-22 implementation (P1 features)
-     3. Complete Epic 17-22 to unblock TASK-185 (P0 final QA)
-     4. Once TASK-185 complete, reassess phase advancement
-     5. Defer Epic 24/25 (P2/P3) to post-MVP or parallel execution
+     1. QA validate 3 in-review tasks (TASK-116, 137, 139) — 1-2 cycles
+     2. Activate PM to assign Epic 15 user validation tasks (6 P1 tasks)
+     3. Activate developer/frontend-dev for Epic 17-22 implementation (P1 features)
+     4. Complete Epic 17-22 to unblock TASK-185 (P0 final QA)
+     5. Once TASK-185 complete, reassess phase advancement
+     6. Defer Epic 24/25 (P2/P3) to post-MVP or parallel execution
 
-5. **📊 SPRINT METRICS SUMMARY (C355):**
+5. **📊 SPRINT METRICS SUMMARY (C355 — FINAL):**
    - **Completion rate:** 92% all-time (191/207)
+   - **In review:** 3 tasks (TASK-116 P2, TASK-137 P1, TASK-139 P2) — QA validation needed
    - **P0 completion:** 67% (2/3) — TASK-185 pending
-   - **P1 completion:** 50% (6/12) — 6 tasks remaining
-   - **P2/P3 completion:** 1/8 (13%) — 7 remaining (TASK-210 to TASK-216), non-blocking
+   - **P1 completion:** 50-58% (6-7/12 pending review) — TASK-137 in review + 5 todo
+   - **P2/P3 completion:** 1+2/8+2 (10-30%) — 2 in review (TASK-116, 139) + 9-11 todo
    - **Blocked tasks:** 0 (down from 6 at C352) — **100% CLEARANCE SUSTAINED**
    - **In-progress tasks:** 0 — Ready for new assignments
-   - **Sprint health:** 🟢 STRONG — Pipeline clean, agents available
+   - **Sprint health:** 🟢 STRONG — Review pipeline active, QA validation critical
    - **Phase readiness:** 🟡 NOT READY — P0/P1 must complete before testing phase
 
-**Velocity Analysis (C355 — PLANNING CYCLE, FOCUS ON EXECUTION):**
-- **Current velocity:** 0 tasks/cycle (C354→C355) — Planning/prioritization cycle
+**Velocity Analysis (C355 — REVIEW PIPELINE ACTIVE, QA CRITICAL):**
+- **Current velocity:** 3 tasks to review (C354→C355) — Active review pipeline
 - **Historical velocity:** 191 tasks / 355 cycles = 0.54 tasks/cycle average (all-time)
 - **Required velocity:** 0.4 tasks/cycle minimum to complete Phase 2 on schedule
-- **Tasks remaining:** 7 todo tasks (3% total) — 1 P0, 6 P1 critical, 7 P2/P3 non-blocking
-- **Time to completion:** At 0.4/cycle = 18 cycles (3-4 months) for P0/P1
-- **Timeline status:** 🟢 **ON TRACK** — Project velocity sustained, blockers cleared
-- **Achievement:** All blockages resolved, 92% all-time completion, pipeline healthy
+- **Tasks remaining:** 13 todo + 3 in-review = 16 total (7.7% of backlog) — 1 P0, 5-6 P1 critical, 9-11 P2/P3 non-blocking
+- **Time to completion:** At 0.4/cycle = 13-16 cycles (2.5-3 months) for P0/P1
+- **Timeline status:** 🟢 **ON TRACK** — Project velocity sustained, review pipeline active
+- **Achievement:** All blockages resolved, 92% all-time completion, 3 tasks in review awaiting QA
 
-**Critical Recommendations (C355 — FOCUS ON P0/P1 COMPLETION):**
+**Critical Recommendations (C355 — QA VALIDATION THEN P0/P1 FOCUS):**
 
-1. **✅ BLOCKAGES CLEARED — MAINTAIN MOMENTUM:**
-   - **Achievement:** All 6 blocked tasks resolved, all 2 in-progress tasks completed, pipeline healthy
-   - **Impact:** 92% all-time completion (191/207 tasks), velocity restored to 8 tasks/cycle
-   - **ACTION:** Continue current velocity with remaining 7 todo tasks
-   - **Focus:** Epic 15 activation (PM) + remaining Epic 17-22 implementation + final QA (TASK-185)
-   - **Timeline:** At current velocity (0.5-1.0 tasks/cycle sustained), remaining P0/P1 tasks complete in 7-14 cycles
+1. **✅ REVIEW PIPELINE ACTIVE — QA VALIDATION CRITICAL:**
+   - **Achievement:** 3 tasks in review (TASK-116 P2, TASK-137 P1, TASK-139 P2)
+   - **Impact:** TASK-137 validation increases P1 completion from 50% to 58%, unblocks downstream work
+   - **ACTION:** QA agent validate 3 tasks immediately (1-2 cycles estimated)
+   - **Focus:** Move TASK-116, 137, 139 from review → done upon approval
+   - **Timeline:** QA validation C355-C356, then activate Epic 15 + Epic 17-22 P1 tasks
 
 2. **🟡 RECOMMENDED — Activate Epic 15 User Validation (PM):**
    - Epic 15 (TASK-117-122) ready to start, unstarted for 188+ cycles despite ZERO blockers
