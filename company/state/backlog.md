@@ -5019,7 +5019,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-146 | P1 | todo | frontend-dev | 2d | Implement timeline playback and step-through |
+| TASK-146 | P1 | review | frontend-dev | 2d | Implement timeline playback and step-through |
 
 **Dependencies:**
 - TASK-143, TASK-144 depend on TASK-140
