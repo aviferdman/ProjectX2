@@ -1,0 +1,49 @@
+{
+  "agentId": "pm",
+  "taskId": "development-pm-c344",
+  "timestamp": "2026-04-10T08:25:09.201Z",
+  "status": "success",
+  "summary": "Critical PM review completed. CATASTROPHIC DATA INTEGRITY FAILURE IDENTIFIED: All Phase 2 task entries (TASK-125 to TASK-187) deleted from backlog. PM reviews exist as historical commentary but actual task tracking list is missing. Dashboard shows 0% completion because no task entries exist to count. PM C340 claimed 2 tasks done (11%) but backlog has ZERO task entries to validate. Root cause: backlog has review sections and epic tables but missing standard task list format. URGENT ACTION REQUIRED: Restore 60+ task entries from PM reports and epic planning docs. Report: pm-report-development-pm-c344.md",
+  "branchName": "agent/pm/development-pm-c344",
+  "findings": {
+    "criticalIssues": [
+      "Backlog corruption: All Phase 2 task entries deleted (0 of 63 tasks tracked)",
+      "PM reviews are write-only history logs, not updating task status",
+      "Dashboard shows 0% completion (should be 11% per PM C340 approvals)",
+      "Epic tables incomplete (6 tasks listed, 63 expected)",
+      "No agents can find task assignments (no searchable task entries)",
+      "Cannot validate PM C340 approval claims (TASK-125, TASK-126) without task entries"
+    ],
+    "scopeGaps": [
+      "NEW STORY-031: Backlog Data Integrity & Tracking System (P0, 1-2h effort)",
+      "Missing: 63 Phase 2 task entries in format [TASK-XXX] [Priority] [Status] [Assigned] — Title",
+      "Missing: Epic 15 task entries (TASK-117 to TASK-121) - referenced but never tracked",
+      "Missing: Epic 16 complete task list (only 2 of 5+ tasks in table)",
+      "Missing: Epic 17-23 task entries (40+ tasks referenced, 6 tracked)"
+    ],
+    "recentlyCompleted": "Cannot validate - no task entries exist",
+    "currentlyInReview": "Cannot validate - no task entries exist",
+    "acceptanceCriteriaStatus": "Cannot assess - task definitions deleted from backlog",
+    "productVisionAlignment": "CRITICAL MISALIGNMENT - Company cannot track its own development",
+    "recommendations": [
+      "IMMEDIATE (C344): Restore all Phase 2 task entries from PM reports and epic tables",
+      "IMMEDIATE (C344): Sync TASK-125, TASK-126 status to 'done' per PM C340 approvals",
+      "IMMEDIATE (C344): Audit epic tables vs planning docs to find all missing tasks",
+      "SHORT-TERM (C345): Activate Epic 15 user validation (43+ cycles delayed)",
+      "SHORT-TERM (C345-346): Fix TASK-137 jsdom config (blocks 4 tasks)",
+      "SHORT-TERM (C345): Status check on TASK-127, TASK-131 (43+ cycles in-progress)",
+      "LONG-TERM: Establish PM process to update task status on every review",
+      "LONG-TERM: Add automated backlog integrity checks to orchestrator"
+    ]
+  },
+  "metrics": {
+    "phase2Completion": "0% measured (11% claimed by PM C340, actual unverifiable)",
+    "taskEntriesExpected": 63,
+    "taskEntriesFound": 0,
+    "dataLossPercentage": "100%",
+    "epicTableCount": 6,
+    "pmReviewCount": "340+ cycles of history",
+    "blockedTasks": "6 (per dashboard, unverifiable)",
+    "velocity": "0 tasks/cycle measured (PM C340 claimed 2/cycle)"
+  }
+}
