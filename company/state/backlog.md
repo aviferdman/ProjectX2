@@ -4745,7 +4745,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-116 | P2 | todo | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
+| TASK-116 | P2 | review | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
 
 **Dependencies:**
 - TASK-111, TASK-112 are setup
