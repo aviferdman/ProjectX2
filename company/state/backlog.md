@@ -5006,7 +5006,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
 | TASK-137 | P1 | review | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
-| TASK-139 | P2 | todo | designer | 1d | Design QA: canvas implementation vs specs |
+| TASK-139 | P2 | review | designer | 1d | Design QA: canvas implementation vs specs |
 
 **Dependencies:**
 - TASK-135, TASK-136 depend on TASK-132
