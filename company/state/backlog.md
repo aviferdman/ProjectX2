@@ -4487,7 +4487,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 |---------|----------|--------|----------|--------|-------|
 | TASK-160 | P1 | blocked | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
 | TASK-161 | P1 | blocked | frontend-dev | 2d | Implement template instantiation (copy to user account) |
-| TASK-162 | P2 | done | designer | 1d | Design QA: template library implementation vs specs |
 
 **Dependencies:**
 - TASK-159 depends on TASK-156
