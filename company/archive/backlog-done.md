@@ -183,3 +183,4 @@
 | TASK-167 | P1 | done | frontend-dev | 2d | Implement OAuth flows (connect, disconnect, status display) |
 | TASK-168 | P2 | done | designer | 1d | Design QA: marketplace implementation vs specs |
 | TASK-173 | P1 | done | frontend-dev | 2d | Implement animations (page transitions, state changes, loading) |
+| TASK-174 | P1 | done | frontend-dev | 2d | Implement accessibility (keyboard shortcuts, focus management, ARIA) |
