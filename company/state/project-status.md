@@ -10,139 +10,139 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 
 **Phase 2 Plan Updated (Cycle 158):** Design team (designer + uxui) fully integrated into execution plan. 61 new tasks defined (TASK-125 to TASK-185) across 8 epics (Epic 16-23). Timeline: Week 0-2 design foundation, Week 2-4 design sprint, Week 4-8 feature implementation, Week 8-12 polish. Resource allocation: frontend-dev 8-12 weeks (primary), designer 8-10 weeks (full-time), uxui 6-8 weeks (focused), backend-dev 2-4 weeks (supporting). Quality bar: Lovable/v0/Bolt-level UX differentiation.
 
-## Phase Status Update (2026-04-10) — Cycle 198 (ProjM Sprint Tracking)
+## Phase Status Update (2026-04-10) — Cycle 199 (ProjM Sprint Tracking)
 ✅ **Phase 1 Development: 100% COMPLETE AND RELEASED** (as of Cycle 166)  
 🎉 **v0.1.0 Release: LIVE ON NPM** — All 7 packages successfully published to npm registry  
 ✅ **CLI Checkpoint (C168): PASSED** — Package published and validated
-🔴 **Phase 2 UI Development: CRITICAL STALL** — 3% completion (1 done, 0 review, 4 in-progress, 18 todo, 6 blocked out of 29 tasks)
-🔴 **Sprint Health: CRITICAL** — 3% total completion (1/29), P0 completion 0% (0/4), P1 completion 6% (1/18)
+🟡 **Phase 2 UI Development: SLOW PROGRESS** — 7% completion (2 done, 0 review, 4 in-progress, 16 todo, 6 blocked out of 28 tasks)
+🔴 **Sprint Health: CRITICAL** — 7% total completion (2/28), P0 completion 0% (0/4), P1 completion ~11% (2/18)
 🔴 **Critical Issues:**
    - ✅ Freemium tier mismatch — **FIXED in C188** (Updated DEFAULT_PLAN_LIMITS to spec: 500 runs/mo)
-   - 🔴 TASK-130 Tailwind import bug (13+ cycles unfixed, blocks npm publish) — **ESCALATED TO GM**
-   - 🔴 Epic 15 user validation UNACTIVATED (29+ cycles lost opportunity) — **PM MUST ACTIVATE NOW**
-   - 🔴 Epic 16 design foundation STALLED (4 P0/P1 tasks in-progress 29+ cycles, ZERO completions) — **ESCALATE TO GM**
+   - 🔴 TASK-130 Tailwind import bug (14+ cycles unfixed, blocks npm publish) — **ESCALATED TO GM**
+   - 🔴 Epic 15 user validation UNACTIVATED (30+ cycles lost opportunity) — **PM MUST ACTIVATE NOW**
+   - 🔴 Epic 16 design foundation STALLED (4 P0/P1 tasks in-progress 30+ cycles, ZERO completions) — **ESCALATE TO GM**
    - 🔴 6 blocked tasks (21% of sprint): TASK-137 (jsdom), TASK-139 (tests failing), TASK-146 (tests not executing), TASK-160/161 (infrastructure), TASK-162 (marked done but shows blocked)
    - 🔴 No canvas error boundary — production crash risk
    - 🔴 P0 completion: 0% (0/4) — foundation incomplete, NOT READY for testing phase
 
-**Phase 2 Active Sprint (Cycle 198 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10):**
+**Phase 2 Active Sprint (Cycle 199 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10):**
 
-### 🔴 COMPLETION RATE: 3% (1 done / 29 total Phase 2 tasks) — MINIMAL PROGRESS, P0 INCOMPLETE, BLOCKAGE WORSENING
+### 🟡 COMPLETION RATE: 7% (2 done / 28 total Phase 2 tasks) — SLOW PROGRESS, P0 INCOMPLETE, BLOCKAGE PERSISTS
 
-**Sprint Progress Summary (C198 — ProjM Tracking):**
-- **Completion Rate:** 3% (1 task done out of 29 total Phase 2 tasks) — MINIMAL progress
-- **In Progress:** 4 tasks (14%) — Epic 16 design foundation tasks stalled 29+ cycles
-- **Review:** 0 tasks (0%) — Down from 1 task in C197 (TASK-160 moved to blocked)
-- **Done:** 1 task (3%) — TASK-155 design QA dashboard (completed earlier, unchanged)
-- **Todo:** 18 tasks (62%) — Majority of sprint work remains
-- **Blocked:** 6 tasks (21%) — UP from 4 tasks in C197 — TASK-137, TASK-139, TASK-146, TASK-160, TASK-161, TASK-162
-- **Days Since Epic 16 Start:** 29+ cycles (started C167, now C198)
-- **Sprint Health:** 🔴 **CRITICAL WORSENING** — 3% completion rate, Epic 16 completely stalled, blocked tasks INCREASING (4→6), P0 tasks incomplete
+**Sprint Progress Summary (C199 — ProjM Tracking):**
+- **Completion Rate:** 7% (2 tasks done out of 28 total Phase 2 tasks) — SLOW progress, up from 3% (1/29) in C198
+- **In Progress:** 4 tasks (14%) — Epic 16 design foundation tasks stalled 30+ cycles
+- **Review:** 0 tasks (0%) — Unchanged from C198
+- **Done:** 2 tasks (7%) — UP from 1 task in C198 (1 new completion)
+- **Todo:** 16 tasks (57%) — Down from 18 in C198
+- **Blocked:** 6 tasks (21%) — UNCHANGED from C198 — TASK-137, TASK-139, TASK-146, TASK-160, TASK-161, TASK-162
+- **Days Since Epic 16 Start:** 30+ cycles (started C167, now C199)
+- **Sprint Health:** 🔴 **CRITICAL PERSISTING** — 7% completion rate, Epic 16 stalled 30+ cycles, blocked tasks unchanged (6), P0 tasks incomplete
 
-**Priority-Based Analysis (C198 — BACKLOG AUDIT COMPLETE):**
+**Priority-Based Analysis (C199 — BACKLOG AUDIT COMPLETE):**
 - **P0 Tasks: 0 done / 4 total (0% complete)** | **CRITICAL**
   - In Progress: 2 tasks (TASK-125 design system, TASK-126 component library)
   - Todo: 2 tasks
-  - **Status:** 🔴 CRITICAL — Zero P0 tasks completed, foundation work stalled 29+ cycles
-  - **Blocker:** Epic 16 design foundation completely stalled, no output in 29+ cycles
-- **P1 Tasks: 1 done / 18 total (6% complete)** | **CRITICAL**
-  - Done: 1 task (TASK-155)
-  - Review: 0 tasks (TASK-160 moved to blocked status)
+  - **Status:** 🔴 CRITICAL — Zero P0 tasks completed, foundation work stalled 30+ cycles
+  - **Blocker:** Epic 16 design foundation completely stalled, no output in 30+ cycles
+- **P1 Tasks: 2 done / 18 total (11% complete)** | **CRITICAL**
+  - Done: 2 tasks (TASK-155, TASK-165/166 - marketplace tasks moved to done)
+  - Review: 0 tasks
   - In Progress: 2 tasks (TASK-127 icon set, TASK-131 React scaffold)
-  - Blocked: 4 tasks (TASK-137, TASK-146, TASK-160, TASK-161) — UP from 2 in C197
-  - Todo: 11 tasks (down from 13 due to blocking)
-  - **Status:** 🔴 CRITICAL — 6% P1 completion, insufficient progress, INCREASING blockage
-- **P2 Tasks: 0 done / 7 total (0% complete)**
+  - Blocked: 4 tasks (TASK-137, TASK-146, TASK-160, TASK-161)
+  - Todo: 10 tasks (down from 11 in C198)
+  - **Status:** 🔴 CRITICAL — 11% P1 completion, insufficient progress, blockage persisting
+- **P2 Tasks: 0 done / 6 total (0% complete)**
   - Blocked: 2 tasks (TASK-139, TASK-162)
-  - Todo: 5 tasks
+  - Todo: 4 tasks
   - **Status:** 🟡 ACCEPTABLE — P2 tasks not blocking phase advancement but blockage spreading
 
-**Agent Performance Analysis (C198):**
-- **designer:** 2 P0 tasks in-progress (TASK-125, TASK-126), 1 P2 task done (TASK-155), stalled 29+ cycles — **COMPLETE STALL**
-- **frontend-dev:** 1 P1 task in-progress (TASK-131), 4 P1 tasks blocked (TASK-137, TASK-146, TASK-160, TASK-161) — **DETERIORATING, blockage spreading**
+**Agent Performance Analysis (C199):**
+- **designer:** 2 P0 tasks in-progress (TASK-125, TASK-126), 1 P2 task done (TASK-155), stalled 30+ cycles — **COMPLETE STALL**
+- **frontend-dev:** 1 P1 task in-progress (TASK-131), 4 P1 tasks blocked (TASK-137, TASK-146, TASK-160, TASK-161) — **DETERIORATING, blockage persisting**
 - **uxui:** Minimal active tasks, likely idle
-- **pm:** Epic 15 UNACTIVATED for 29+ cycles — **NOT STARTED**
+- **pm:** Epic 15 UNACTIVATED for 30+ cycles — **NOT STARTED**
 - **backend-dev:** Minimal active work in Phase 2
 - **qa:** No Phase 2 QA tasks started, 1 P2 task blocked (TASK-162) — **NOT STARTED**
 - **gm:** Epic 15 decision task unstarted — **NOT STARTED**
-- **TRACKING STATUS:** Epic 16 (design foundation) completely stalled, blocked tasks INCREASED from 4 to 6 (50% increase)
+- **TRACKING STATUS:** Epic 16 (design foundation) completely stalled, blocked tasks UNCHANGED (6 tasks, 21% of sprint)
 
-### 🚨 PROJM SPRINT ASSESSMENT (C198):
+### 🚨 PROJM SPRINT ASSESSMENT (C199):
 
-**Sprint Status: 🔴 RED (CRITICAL DETERIORATING — 3% COMPLETION, P0 TASKS INCOMPLETE, EPIC 16 STALLED 29+ CYCLES, BLOCKAGE SPREADING)**
+**Sprint Status: 🔴 RED (CRITICAL PERSISTING — 7% COMPLETION, P0 TASKS INCOMPLETE, EPIC 16 STALLED 30+ CYCLES, BLOCKAGE UNCHANGED)**
 
 **Key Findings:**
-1. **Completion Rate:** 3% (1/29 tasks) — Only 1 task completed (TASK-155 design QA), NO CHANGE from C197
+1. **Completion Rate:** 7% (2/28 tasks) — UP from 3% (1/29) in C198, +1 task completed
 2. **P0 Completion:** 0% (0/4 P0 tasks done) — **CRITICAL** — Zero foundation tasks completed
-3. **P1 Completion:** 6% (1/18 P1 tasks done) — Insufficient for phase advancement
-4. **Epic 16 Blockage:** 4 P0/P1 tasks in-progress for 29+ cycles with minimal output — **LONGEST STALL IN PROJECT HISTORY**
-5. **Blocked Tasks SPREADING:** 6 tasks blocked (21% of sprint) — UP 50% from 4 in C197
+3. **P1 Completion:** 11% (2/18 P1 tasks done) — UP from 6% in C198, insufficient for phase advancement
+4. **Epic 16 Blockage:** 4 P0/P1 tasks in-progress for 30+ cycles with minimal output — **LONGEST STALL IN PROJECT HISTORY**
+5. **Blocked Tasks PERSISTING:** 6 tasks blocked (21% of sprint) — UNCHANGED from C198
    - TASK-137 (jsdom config) — persisting
    - TASK-139 (23/29 tests failing) — persisting
    - TASK-146 (tests not executing) — persisting
-   - TASK-160 (template preview) — NEW, moved from review to blocked
-   - TASK-161 (template instantiation) — NEW blocked
-   - TASK-162 (template QA) — NEW blocked (marked done but infrastructure issues)
-6. **Epic 15 Abandonment:** PM/GM tasks unstarted for 29+ cycles despite NO dependencies
-7. **Agent Utilization:** Designer completely stalled (29+ cycles), frontend-dev deteriorating (blockage spreading), PM/QA/GM idle
-8. **Trend:** Sprint health DETERIORATING — blocked tasks increasing, no new completions, stuck in same state
+   - TASK-160 (template preview) — persisting
+   - TASK-161 (template instantiation) — persisting
+   - TASK-162 (template QA) — persisting (marked done but infrastructure issues)
+6. **Epic 15 Abandonment:** PM/GM tasks unstarted for 30+ cycles despite NO dependencies
+7. **Agent Utilization:** Designer completely stalled (30+ cycles), frontend-dev deteriorating (blockage persisting), PM/QA/GM idle
+8. **Trend:** Sprint health CRITICAL PERSISTING — 1 new completion, blocked tasks unchanged, P0 still 0%
 
 **Critical Recommendations:**
 
 **IMMEDIATE (CRITICAL — Next 1-2 Cycles):**
 1. 🔴 **GM MUST INTERVENE ON EPIC 16 STALL:**
-   - Designer has delivered ZERO output on TASK-125/126 (P0) for 29+ cycles
+   - Designer has delivered ZERO output on TASK-125/126 (P0) for 30+ cycles
    - This is the single biggest blocker to Phase 2 progress
    - ROOT CAUSE ANALYSIS MANDATORY
    - Options: (a) Emergency reassignment, (b) Unblock by shipping partial work, (c) ABANDON Epic 16 entirely
    - Set 2-cycle hard deadline for resolution or ABANDON
-2. 🔴 **FRONTEND-DEV MUST UNBLOCK 6 BLOCKED TASKS (URGENT — BLOCKAGE SPREADING):**
+2. 🔴 **FRONTEND-DEV MUST UNBLOCK 6 BLOCKED TASKS (URGENT — BLOCKAGE PERSISTING):**
    - TASK-137: Configure jsdom test environment (blocking toolbar/sidebar implementation)
    - TASK-139: Fix 23/29 failing canvas tests (blocking canvas QA)
    - TASK-146: Fix test execution for timeline playback (blocking timeline features)
    - TASK-160: Fix template preview modal (TypeScript + test infrastructure issues)
    - TASK-161: Unblock template instantiation (dependency on TASK-160)
    - TASK-162: Resolve template library QA blockers
-   - **Action:** Dedicate 1-2 full cycles to infrastructure fixes — blocked tasks increased 50% cycle-over-cycle
+   - **Action:** Dedicate 1-2 full cycles to infrastructure fixes — 6 tasks blocked (21% of sprint)
 3. 🔴 **PM MUST ACTIVATE EPIC 15 NOW:**
-   - Epic 15 user validation has been dormant for 29+ cycles
+   - Epic 15 user validation has been dormant for 30+ cycles
    - No dependencies blocking start
    - Start TASK-117 (recruit beta users) immediately
    - This is the ONLY parallel work path available while Epic 16 is stalled
 4. 🔴 **PROJM RECOMMENDATION: DO NOT ADVANCE TO TESTING PHASE**
-   - **Rationale:** P0 completion is 0% (0/4), P1 completion is 6% (1/18)
+   - **Rationale:** P0 completion is 0% (0/4), P1 completion is 11% (2/18)
    - **Requirement for testing:** At minimum P0 tasks must be 100% complete, P1 tasks ≥80% complete
-   - **Current state:** Foundation work (design system, component library) incomplete after 29+ cycles
-   - **Blocked tasks spreading:** 6 tasks blocked (21% of sprint), up 50% from previous cycle
+   - **Current state:** Foundation work (design system, component library) incomplete after 30+ cycles
+   - **Blocked tasks persisting:** 6 tasks blocked (21% of sprint), unchanged from previous cycle
    - **Recommendation:** FOCUS on unblocking infrastructure and completing P0 tasks before considering phase advancement
    - **VERDICT:** Sprint requires emergency intervention — DO NOT advance until P0 complete and blockage resolved
 
 **STRATEGIC (HIGH — Next 3-5 Cycles):**
 1. 🔴 **REASSESS PHASE 2 VIABILITY:**
-   - Current trajectory: 3% completion after 29+ cycles of Epic 16 execution
-   - Blocked tasks spreading (4→6, +50% in 1 cycle) — infrastructure crisis
+   - Current trajectory: 7% completion after 30+ cycles of Epic 16 execution
+   - Blocked tasks persisting (6 tasks, 21% of sprint) — infrastructure crisis
    - If no Epic 16 completion + blockage resolution within 2 cycles → RECOMMEND sprint reset or Phase 2 scope reduction
 2. 🔴 **EPIC 16 DECISION GATE:**
-   - If no Epic 16 progress within 2 cycles (by C200) → RECOMMEND ABANDONMENT
+   - If no Epic 16 progress within 2 cycles (by C201) → RECOMMEND ABANDONMENT
    - Alternative: Reassign Epic 16 tasks to functional agents (backend-dev/developer)
-   - Alternative: Pivot to simpler design approach that doesn't require 29+ cycles of foundation work
+   - Alternative: Pivot to simpler design approach that doesn't require 30+ cycles of foundation work
 
 **HIGH PRIORITY (Next 2-3 Cycles):**
 3. 🟡 **QA Agent Activation** — Once blocked tasks resolved, start parallel testing
-4. 🟡 **TASK-130 Tailwind fix** — 13+ cycles unfixed, blocks npm publish — ESCALATE TO GM
+4. 🟡 **TASK-130 Tailwind fix** — 14+ cycles unfixed, blocks npm publish — ESCALATE TO GM
 5. 🟡 **Canvas error boundary** — Production crash risk, add to frontend-dev priority list
 
 ### Epic Status Breakdown (C198 — Current Sprint Status):
 
-**Epic 16 (Design Foundation) — 🔴 CRITICAL EMERGENCY: 4 TASKS IN-PROGRESS FOR 29+ CYCLES, ZERO COMPLETIONS:**
+**Epic 16 (Design Foundation) — 🔴 CRITICAL EMERGENCY: 4 TASKS IN-PROGRESS FOR 30+ CYCLES, ZERO COMPLETIONS:**
 - 🔄 **In Progress (Designer/Frontend tasks — stalled since C167):** 
-  - TASK-125 (P0, designer): Design system — 29+ cycles stalled
-  - TASK-126 (P0, designer): Component library — 29+ cycles stalled
-  - TASK-127 (P1, designer): Icon set — 29+ cycles stalled
-  - TASK-131 (P1, frontend-dev): React scaffold — 29+ cycles stalled
+  - TASK-125 (P0, designer): Design system — 30+ cycles stalled
+  - TASK-126 (P0, designer): Component library — 30+ cycles stalled
+  - TASK-127 (P1, designer): Icon set — 30+ cycles stalled
+  - TASK-131 (P1, frontend-dev): React scaffold — 30+ cycles stalled
   - **ROOT CAUSE UNKNOWN** — Agents may be blocked, stuck, or deprioritizing Phase 2
 - 🚨 **CRITICAL STALL DETECTED:** 
-  - 4 tasks in-progress for 29+ cycles with ZERO output
+  - 4 tasks in-progress for 30+ cycles with ZERO output
   - **ROOT CAUSE UNKNOWN** — Emergency GM investigation required
   - **Epic 16 is blocking ALL downstream work (Epics 17-23)**
 - **EMERGENCY ACTION REQUIRED:**
