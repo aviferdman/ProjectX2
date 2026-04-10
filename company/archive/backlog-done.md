@@ -193,3 +193,6 @@
 | TASK-126 | P0 | done | designer | 7d | Design component library (buttons, inputs, cards, modals) — **DONE C339** |
 | TASK-127 | P1 | done | designer | 2d | Create icon set and visual assets (custom or curated) — **DONE C352** |
 | TASK-131 | P1 | done | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) — **DONE C352** |
+| TASK-116 | P2 | done | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
+| TASK-137 | P1 | done | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
+| TASK-139 | P2 | done | designer | 1d | Design QA: canvas implementation vs specs |
