@@ -180,3 +180,5 @@
 | TASK-162 | P2 | done | designer | 1d | Design QA: template library implementation vs specs |
 | TASK-165 | P2 | done | designer | 1d | Design OAuth connection flow screens |
 | TASK-166 | P1 | done | frontend-dev | 3d | Implement marketplace browser (list integrations, search) |
+| TASK-167 | P1 | done | frontend-dev | 2d | Implement OAuth flows (connect, disconnect, status display) |
+| TASK-168 | P2 | done | designer | 1d | Design QA: marketplace implementation vs specs |
