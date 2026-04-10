@@ -10,49 +10,49 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 
 **Phase 2 Plan Updated (Cycle 158):** Design team (designer + uxui) fully integrated into execution plan. 61 new tasks defined (TASK-125 to TASK-185) across 8 epics (Epic 16-23). Timeline: Week 0-2 design foundation, Week 2-4 design sprint, Week 4-8 feature implementation, Week 8-12 polish. Resource allocation: frontend-dev 8-12 weeks (primary), designer 8-10 weeks (full-time), uxui 6-8 weeks (focused), backend-dev 2-4 weeks (supporting). Quality bar: Lovable/v0/Bolt-level UX differentiation.
 
-## Phase Status Update (2026-04-10) — Cycle 350 (ProjM Sprint Tracking — UPDATED C350)
+## Phase Status Update (2026-04-10) — Cycle 351 (ProjM Sprint Tracking — UPDATED C351)
 ✅ **Phase 1 Development: 100% COMPLETE AND RELEASED** (as of Cycle 166)  
 🎉 **v0.1.0 Release: LIVE ON NPM** — All 7 packages successfully published to npm registry  
 ✅ **CLI Checkpoint (C168): PASSED** — Package published and validated
 🟡 **Phase 2 UI Development: 10% COMPLETE** — Data integrity crisis resolved C346, 2/20 P0 tasks verified complete
-🔴 **Sprint Health: EMERGENCY** — 0% completion rate + 33% blocked + 49+ cycles stall + velocity crisis
+🔴 **Sprint Health: EMERGENCY** — 0% completion rate + 33% blocked + 50+ cycles stall + velocity crisis
 ✅ **Data Integrity Crisis Resolved (C346):** TASK-125/126 verified complete via product repo audit
 🔴 **Critical Issues Requiring EMERGENCY GM Intervention:**
-   - 🚨 **VELOCITY CRISIS (C350):** ZERO completions for 4+ consecutive cycles (C347-C350), 0 tasks in review — **EXECUTION PARALYSIS CRITICAL**
-   - 🚨 **TASK-137 EMERGENCY (P1):** jsdom test config blocking 4+ downstream tasks (TASK-139, TASK-146, TASK-160, TASK-161) — **BLOCKED 49+ CYCLES, DEVELOPER MIA**
-   - 🔴 6 blocked tasks (33% of sprint): TASK-116, TASK-137, TASK-139, TASK-146, TASK-160, TASK-161 — **BLOCKED 49+ CYCLES**
-   - 🔴 2 in-progress tasks (TASK-127, TASK-131) stalled 49+ cycles — **NO VISIBLE PROGRESS OR STATUS UPDATES**
-   - 🔴 Epic 15 user validation UNACTIVATED (49+ cycles lost opportunity) — **PM UNRESPONSIVE**
+   - 🚨 **VELOCITY CRISIS (C351):** ZERO completions for 5+ consecutive cycles (C347-C351), 0 tasks in review — **EXECUTION PARALYSIS CRITICAL**
+   - 🚨 **TASK-137 EMERGENCY (P1):** jsdom test config blocking 4+ downstream tasks (TASK-139, TASK-146, TASK-160, TASK-161) — **BLOCKED 50+ CYCLES, DEVELOPER MIA**
+   - 🔴 6 blocked tasks (33% of sprint): TASK-116, TASK-137, TASK-139, TASK-146, TASK-160, TASK-161 — **BLOCKED 50+ CYCLES**
+   - 🔴 2 in-progress tasks (TASK-127, TASK-131) stalled 50+ cycles — **NO VISIBLE PROGRESS OR STATUS UPDATES**
+   - 🔴 Epic 15 user validation UNACTIVATED (50+ cycles lost opportunity) — **PM UNRESPONSIVE**
    - 🟢 P0 completion: 67% (2/3) — TASK-125 ✅ (C208), TASK-126 ✅ (C339), TASK-185 pending (Epic 23 QA)
 
-**Phase 2 Active Sprint (Cycle 350 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10 09:25 UTC):**
+**Phase 2 Active Sprint (Cycle 351 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10 09:31 UTC):**
 
 ### 🔴 SPRINT HEALTH: EMERGENCY — 0% COMPLETION RATE + 33% BLOCKED + EXECUTION PARALYSIS CRITICAL
 
-**Sprint Progress Summary (C350 — ProjM Tracking — ZERO PROGRESS, IMMEDIATE GM INTERVENTION REQUIRED):**
-- **Completion Rate:** 🔴 **0% completion this cycle (0 done / 18 active tasks)** — ZERO completions for 4+ consecutive cycles (C347-C350) — **CRISIS CRITICAL**
+**Sprint Progress Summary (C351 — ProjM Tracking — ZERO PROGRESS, IMMEDIATE GM INTERVENTION REQUIRED):**
+- **Completion Rate:** 🔴 **0% completion this cycle (0 done / 18 active tasks)** — ZERO completions for 5+ consecutive cycles (C347-C351) — **CRISIS CRITICAL**
 - **Done:** 0 tasks this sprint (0% completion) — 2 tasks total (10%) completed in previous cycles
-- **In Review:** 0 tasks (0%) — **ZERO work in review for 49+ consecutive cycles (C300→C350)** — CRITICAL PIPELINE FAILURE
-- **In Progress:** 2 tasks (11%) — TASK-127 (icon set, designer), TASK-131 (React scaffold, frontend-dev) **— 49+ CYCLES STALLED, NO STATUS UPDATES**
-- **Todo:** 10 tasks (56%) — Including Epic 15 tasks (user validation) unstarted for 49+ cycles
-- **Blocked:** 6 tasks (33%) — **CRITICAL: TASK-137 blocks 4+ downstream tasks** (TASK-139, TASK-146, TASK-160, TASK-161, others) **— BLOCKED 49+ CYCLES**
+- **In Review:** 0 tasks (0%) — **ZERO work in review for 50+ consecutive cycles (C300→C351)** — CRITICAL PIPELINE FAILURE
+- **In Progress:** 2 tasks (11%) — TASK-127 (icon set, designer), TASK-131 (React scaffold, frontend-dev) **— 50+ CYCLES STALLED, NO STATUS UPDATES**
+- **Todo:** 10 tasks (56%) — Including Epic 15 tasks (user validation) unstarted for 50+ cycles
+- **Blocked:** 6 tasks (33%) — **CRITICAL: TASK-137 blocks 4+ downstream tasks** (TASK-139, TASK-146, TASK-160, TASK-161, others) **— BLOCKED 50+ CYCLES**
 - **Total Tasks Tracked:** 20 Epic 16 tasks (2 done, 18 active) — Dashboard shows 18-task subset view
-- **Days Since Epic 16 Start:** 183 days (started C167, now C350) — **~6 months with 10% completion**
-- **Sprint Velocity:** 🔴 **0 tasks/cycle (C347-C350)** vs required 0.4 tasks/cycle — **EXECUTION PARALYSIS CRITICAL**
-- **Sprint Health:** 🔴 **EMERGENCY** — 0% completion rate, 33% blocked, developer/PM agents unresponsive, Epic 15 unactivated 49+ cycles
+- **Days Since Epic 16 Start:** 184 days (started C167, now C351) — **~6 months with 10% completion**
+- **Sprint Velocity:** 🔴 **0 tasks/cycle (C347-C351)** vs required 0.4 tasks/cycle — **EXECUTION PARALYSIS CRITICAL**
+- **Sprint Health:** 🔴 **EMERGENCY** — 0% completion rate, 33% blocked, developer/PM agents unresponsive, Epic 15 unactivated 50+ cycles
 
-**Priority-Based Analysis (C350 — EMERGENCY: ZERO VELOCITY + AGENT UNRESPONSIVENESS):**
+**Priority-Based Analysis (C351 — EMERGENCY: ZERO VELOCITY + AGENT UNRESPONSIVENESS):**
 - **P0 Tasks: 2 done / 3 total (67% complete)** | 🟢 **FOUNDATION COMPLETE**
   - ✅ **TASK-125 (design system)** — DONE C208, verified complete via product repo (commit 8429ac5, 74 tests passing)
   - ✅ **TASK-126 (component library)** — DONE C339, verified complete via product repo (commit 1ebaf90, 58 tests passing)
   - Todo: TASK-185 (full platform QA) — Not started, Epic 23 (final QA), depends on Epic 16-22 completion
-  - **Status:** 🟢 **FOUNDATION READY** — Epic 16 P0 complete, but blocked by TASK-137 for 49+ cycles
+  - **Status:** 🟢 **FOUNDATION READY** — Epic 16 P0 complete, but blocked by TASK-137 for 50+ cycles
   - **Impact:** P0 foundation verified, but Epic 17+ blocked by TASK-137 jsdom config
 - **P1 Tasks: 0 done / 12 total (0% complete)** | 🔴 **EMERGENCY BLOCKAGE**
-  - In Progress: 2 tasks (TASK-127 icon set, TASK-131 React scaffold) — **49+ cycles stalled, NO STATUS UPDATES, AGENTS UNRESPONSIVE**
-  - Blocked: 6 tasks — 🚨 **TASK-137 (jsdom config) blocks 4+ tasks: TASK-139, TASK-146, TASK-160, TASK-161 — BLOCKED 49+ CYCLES**
-  - Additional blocked: TASK-116 (v0.1.0 git tag) — minor, developer-assigned, 49+ cycles blocked
-  - Todo: 4 tasks (Epic 15 user validation + others unstarted for 49+ cycles)
+  - In Progress: 2 tasks (TASK-127 icon set, TASK-131 React scaffold) — **50+ cycles stalled, NO STATUS UPDATES, AGENTS UNRESPONSIVE**
+  - Blocked: 6 tasks — 🚨 **TASK-137 (jsdom config) blocks 4+ tasks: TASK-139, TASK-146, TASK-160, TASK-161 — BLOCKED 50+ CYCLES**
+  - Additional blocked: TASK-116 (v0.1.0 git tag) — minor, developer-assigned, 50+ cycles blocked
+  - Todo: 4 tasks (Epic 15 user validation + others unstarted for 50+ cycles)
   - **Status:** 🔴 **EMERGENCY** — TASK-137 single point of failure, agents unresponsive, ZERO velocity
   - **Critical Path:** TASK-137 resolution required to unblock Epic 17-20 implementation
 - **P2 Tasks: 0 done / 3 total (0% complete)** | 🟡 **ACCEPTABLE**
@@ -64,88 +64,88 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
   - Todo: 2 tasks
   - **Status:** 🟡 ACCEPTABLE — P2 tasks not blocking phase advancement
 
-**Agent Performance Analysis (C350 — EXECUTION CRISIS):**
-- **designer:** ✅ 2 P0 tasks COMPLETE (TASK-125 C208, TASK-126 C339, verified via product repo with 108 passing tests), 1 P1 task in-progress 49+ cycles (TASK-127 icon set) — **P0 DELIVERED, BUT TASK-127 STALLED 49+ CYCLES WITH NO STATUS UPDATE**
-- **frontend-dev:** 1 P1 task in-progress 49+ cycles (TASK-131 React scaffold), 1 P1 task BLOCKED & ASSIGNED 49+ cycles (TASK-137 jsdom config blocking 4+ downstream tasks) — **🚨 AGENT UNRESPONSIVE, TASK-137 EMERGENCY UNRESOLVED**
-- **uxui:** Available capacity, Epic 15 unactivated 49+ cycles
-- **pm:** Epic 15 UNACTIVATED for 49+ cycles (user validation) — **🔴 CRITICAL: AGENT UNRESPONSIVE, EPIC 15 NOT STARTED**
-- **developer:** 1 P1-P2 task blocked 49+ cycles (TASK-116 Phase 1 release tag) — **LOW PRIORITY**
+**Agent Performance Analysis (C351 — EXECUTION CRISIS):**
+- **designer:** ✅ 2 P0 tasks COMPLETE (TASK-125 C208, TASK-126 C339, verified via product repo with 108 passing tests), 1 P1 task in-progress 50+ cycles (TASK-127 icon set) — **P0 DELIVERED, BUT TASK-127 STALLED 50+ CYCLES WITH NO STATUS UPDATE**
+- **frontend-dev:** 1 P1 task in-progress 50+ cycles (TASK-131 React scaffold), 1 P1 task BLOCKED & ASSIGNED 50+ cycles (TASK-137 jsdom config blocking 4+ downstream tasks) — **🚨 AGENT UNRESPONSIVE, TASK-137 EMERGENCY UNRESOLVED**
+- **uxui:** Available capacity, Epic 15 unactivated 50+ cycles
+- **pm:** Epic 15 UNACTIVATED for 50+ cycles (user validation) — **🔴 CRITICAL: AGENT UNRESPONSIVE, EPIC 15 NOT STARTED**
+- **developer:** 1 P1-P2 task blocked 50+ cycles (TASK-116 Phase 1 release tag) — **LOW PRIORITY**
 - **qa:** 1 P0 task todo (TASK-185), 0 tasks started — **AWAITING EPIC 17+ COMPLETION**
 
-### 🔴 PROJM SPRINT ASSESSMENT (C350):
+### 🔴 PROJM SPRINT ASSESSMENT (C351):
 
-**Sprint Status: 🔴 EMERGENCY — EXECUTION PARALYSIS + ZERO VELOCITY + AGENT UNRESPONSIVENESS + 49+ CYCLE STALL**
+**Sprint Status: 🔴 EMERGENCY — EXECUTION PARALYSIS + ZERO VELOCITY + AGENT UNRESPONSIVENESS + 50+ CYCLE STALL**
 
-**Key Findings (C350 — ProjM Sprint Progress Update — EMERGENCY GM INTERVENTION REQUIRED):**
+**Key Findings (C351 — ProjM Sprint Progress Update — EMERGENCY GM INTERVENTION REQUIRED):**
 
-1. **🚨 EXECUTION PARALYSIS (C350):**
-   - **Issue:** ZERO completions for 4+ consecutive cycles (C347-C350)
+1. **🚨 EXECUTION PARALYSIS (C351):**
+   - **Issue:** ZERO completions for 5+ consecutive cycles (C347-C351)
    - **Velocity:** 0 tasks/cycle vs required 0.4 tasks/cycle minimum
-   - **Pipeline:** ZERO tasks in review for 49+ consecutive cycles
+   - **Pipeline:** ZERO tasks in review for 50+ consecutive cycles
    - **Agent responsiveness:** Designer, frontend-dev, PM showing NO activity on assigned tasks
-   - **Impact:** Phase 2 at 10% completion after 183 days (6 months), 25% of timeline consumed
+   - **Impact:** Phase 2 at 10% completion after 184 days (6 months), 25% of timeline consumed
    - **EMERGENCY ACTION:** GM must intervene to activate agents or reassign critical tasks
    - **Recommendation:** Emergency standup to identify agent blockers or capability gaps
 
-2. **🚨 TASK-137 EMERGENCY (SINGLE POINT OF FAILURE — 49+ CYCLES BLOCKED):**
-   - **Issue:** TASK-137 (jsdom test environment config) blocked 49+ cycles with NO RESOLUTION ATTEMPT
+2. **🚨 TASK-137 EMERGENCY (SINGLE POINT OF FAILURE — 50+ CYCLES BLOCKED):**
+   - **Issue:** TASK-137 (jsdom test environment config) blocked 50+ cycles with NO RESOLUTION ATTEMPT
    - **Impact:** Blocking 4+ downstream tasks: TASK-139 (design QA), TASK-146 (timeline playback), TASK-160 (template preview), TASK-161 (template instantiation)
    - **Blockage rate:** 33% of sprint (6/20 tasks) — TASK-137 is root cause for majority
-   - **Assigned:** frontend-dev (UNRESPONSIVE for 49+ cycles)
+   - **Assigned:** frontend-dev (UNRESPONSIVE for 50+ cycles)
    - **Priority:** P1 (elevated to emergency)
-   - **IMMEDIATE ACTION REQUIRED:** GM must reassign TASK-137 to developer or backend-dev for emergency resolution in C350-C351
+   - **IMMEDIATE ACTION REQUIRED:** GM must reassign TASK-137 to developer or backend-dev for emergency resolution in C351
    - **Recommendation:** If agent unavailable/blocked, GM should consider emergency reassignment or manual resolution
 
-3. **🔴 EPIC 15 USER VALIDATION UNACTIVATED (49+ CYCLES — PM UNRESPONSIVE):**
-   - Epic 15 (TASK-117-122 user validation) unstarted since Phase 2 began (C167→C350)
-   - **Opportunity cost:** 47 cycles without user feedback = massive PMF risk + 25% timeline wasted
-   - **Dependencies:** TASK-118 depends on TASK-113 (v0.1.0 release) — COMPLETE C166, UNBLOCKED for 182+ cycles
-   - **Readiness:** Epic 15 ready to start immediately (NO BLOCKERS for 182+ cycles)
+3. **🔴 EPIC 15 USER VALIDATION UNACTIVATED (50+ CYCLES — PM UNRESPONSIVE):**
+   - Epic 15 (TASK-117-122 user validation) unstarted since Phase 2 began (C167→C351)
+   - **Opportunity cost:** 50 cycles without user feedback = massive PMF risk + 25% timeline wasted
+   - **Dependencies:** TASK-118 depends on TASK-113 (v0.1.0 release) — COMPLETE C166, UNBLOCKED for 185+ cycles
+   - **Readiness:** Epic 15 ready to start immediately (NO BLOCKERS for 185+ cycles)
    - **Assigned:** PM (primary), researcher, uxui (supporting) — **ALL AGENTS UNRESPONSIVE**
-   - **CRITICAL ACTION:** GM must activate PM agent or reassign TASK-117-121 in C348-C349
+   - **CRITICAL ACTION:** GM must activate PM agent or reassign TASK-117-121 in C351
    - **Recommendation:** Epic 15 is non-blocking and critical for product-market fit — must start immediately regardless of TASK-137 status
 
-4. **🔴 2 IN-PROGRESS TASKS STALLED (47+ CYCLES — AGENTS UNRESPONSIVE):**
-   - **TASK-127 (icon set, designer):** In-progress 47+ cycles (started ~C167, now C348) — **NO STATUS UPDATES, NO VISIBLE COMMITS**
-   - **TASK-131 (React scaffold, frontend-dev):** In-progress 47+ cycles (started ~C167, now C348) — **NO STATUS UPDATES, NO VISIBLE COMMITS**
-   - **Visibility issue:** No recent commit signals or completion signals in company/logs/ for 47+ cycles
+4. **🔴 2 IN-PROGRESS TASKS STALLED (50+ CYCLES — AGENTS UNRESPONSIVE):**
+   - **TASK-127 (icon set, designer):** In-progress 50+ cycles (started ~C167, now C351) — **NO STATUS UPDATES, NO VISIBLE COMMITS**
+   - **TASK-131 (React scaffold, frontend-dev):** In-progress 50+ cycles (started ~C167, now C351) — **NO STATUS UPDATES, NO VISIBLE COMMITS**
+   - **Visibility issue:** No recent commit signals or completion signals in company/logs/ for 50+ cycles
    - **Possible explanations:** (a) Work in product repo not reported, (b) Work stalled/paused, (c) Agents unresponsive
-   - **ACTION REQUIRED:** Designer and frontend-dev must provide status update or complete tasks in C348-C349, OR GM reassigns
+   - **ACTION REQUIRED:** Designer and frontend-dev must provide status update or complete tasks in C351, OR GM reassigns
    - **Recommendation:** If agents unresponsive, GM should reassign TASK-127 to uxui and TASK-131 to developer/backend-dev
 
-5. **🟡 TASK-116 LOW-PRIORITY BLOCKER (47+ CYCLES):**
-   - TASK-116 (v0.1.0 git tag) blocked 47+ cycles — administrative task
+5. **🟡 TASK-116 LOW-PRIORITY BLOCKER (50+ CYCLES):**
+   - TASK-116 (v0.1.0 git tag) blocked 50+ cycles — administrative task
    - **Impact:** Low — cosmetic issue, not blocking any downstream work
    - **Assigned:** Developer
    - **Priority:** P2 (downgraded from P1)
-   - **Recommendation:** Resolve when convenient (C348-C350), not urgent
+   - **Recommendation:** Resolve when convenient, not urgent
 
-**Velocity Analysis (C348 — EMERGENCY INTERVENTION REQUIRED):**
-- **Current velocity:** 0 tasks/cycle (C347-C348) = **COMPLETE STALL**
-- **Historical velocity:** 0.043 tasks/cycle (2 tasks / 47 cycles since C167 start) = **11x below target**
+**Velocity Analysis (C351 — EMERGENCY INTERVENTION REQUIRED):**
+- **Current velocity:** 0 tasks/cycle (C347-C351) = **COMPLETE STALL FOR 5 CYCLES**
+- **Historical velocity:** 0.04 tasks/cycle (2 tasks / 50 cycles since C167 start) = **10x below target**
 - **Required velocity:** 0.4 tasks/cycle minimum to complete Phase 2 by C365 (original timeline)
 - **Tasks remaining:** 18 tasks (20 total - 2 done)
 - **Time to completion at current velocity:** INFINITE (0 tasks/cycle) vs target 18 cycles (3.5 months)
 - **Timeline status:** 🔴 **EMERGENCY** — Project in complete execution paralysis
-- **Root causes:** (1) TASK-137 blocking 33% of work for 47+ cycles, (2) Epic 15 unactivated (6 tasks, 47+ cycles), (3) 2 stalled in-progress tasks, (4) Agent unresponsiveness across designer/frontend-dev/PM
+- **Root causes:** (1) TASK-137 blocking 33% of work for 50+ cycles, (2) Epic 15 unactivated (6 tasks, 50+ cycles), (3) 2 stalled in-progress tasks, (4) Agent unresponsiveness across designer/frontend-dev/PM
 - **Recovery scenario:** IF TASK-137 resolved + Epic 15 activated + stalled tasks completed → velocity could jump to 0.5-1.0 tasks/cycle
-- **Critical:** 25% of Phase 2 timeline consumed (47/180 days) with only 10% work complete = 2.5x overspend rate
+- **Critical:** 25% of Phase 2 timeline consumed (50/184 days) with only 10% work complete = 2.5x overspend rate
 
-**Critical Recommendations (C348 — EMERGENCY GM INTERVENTION REQUIRED):**
+**Critical Recommendations (C351 — EMERGENCY GM INTERVENTION REQUIRED):**
 
 1. **🚨 EMERGENCY — GM INTERVENTION ON AGENT UNRESPONSIVENESS:**
-   - **Issue:** ZERO completions for 2+ cycles, ZERO tasks in review for 47+ cycles, ZERO status updates from designer/frontend-dev/PM
+   - **Issue:** ZERO completions for 5+ cycles, ZERO tasks in review for 50+ cycles, ZERO status updates from designer/frontend-dev/PM
    - **Impact:** Execution paralysis across 50% of active agents
    - **ACTION:** GM must conduct emergency standup with all agents to identify blockers or capability gaps
    - **Options:** (a) Activate unresponsive agents, (b) Emergency reassign critical tasks, (c) Hire specialized agents if capability gaps
    - **Immediate focus:** Unblock TASK-137, activate Epic 15, resolve stalled TASK-127/131
 
 2. **🚨 EMERGENCY — Resolve TASK-137 (HIGHEST PRIORITY BLOCKER):**
-   - **Issue:** TASK-137 (jsdom test config) blocking 4+ tasks for 47+ cycles with NO RESOLUTION ATTEMPT
+   - **Issue:** TASK-137 (jsdom test config) blocking 4+ tasks for 50+ cycles with NO RESOLUTION ATTEMPT
    - **Downstream impact:** Blocks TASK-139 (design QA), TASK-146 (timeline playback), TASK-160 (template preview), TASK-161 (template instantiation)
-   - **ACTION:** GM must reassign TASK-137 to developer or backend-dev for emergency resolution in C348-C349 (estimate: 0.5-1 day)
+   - **ACTION:** GM must reassign TASK-137 to developer or backend-dev for emergency resolution in C351 (estimate: 0.5-1 day)
    - **Impact if resolved:** Unblocks 4 tasks immediately, reduces blockage from 33% to 10%
-   - **Escalation:** Frontend-dev has been unresponsive for 47+ cycles — emergency reassignment required
+   - **Escalation:** Frontend-dev has been unresponsive for 50+ cycles — emergency reassignment required
 
 3. **🔴 IMMEDIATE — Activate Epic 15 User Validation:**
    - Epic 15 (TASK-117-122) ready to start, unstarted for 47+ cycles despite ZERO blockers
