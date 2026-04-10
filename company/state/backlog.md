@@ -4670,8 +4670,6 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-125 | P0 | done | designer | 7d | Create foundational design system (colors, typography, spacing, tokens) — **DONE C208** |
-| TASK-126 | P0 | done | designer | 7d | Design component library (buttons, inputs, cards, modals) — **DONE C339** |
 | TASK-127 | P1 | in-progress | designer | 2d | Create icon set and visual assets (custom or curated) — **START C167** |
 | TASK-131 | P1 | in-progress | frontend-dev | 2d | Setup React app scaffold (routing, auth, state management) — **START C167** |
 
