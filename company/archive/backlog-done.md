@@ -174,3 +174,5 @@
 | TASK-145 | P1 | done | frontend-dev | 2d | Implement filters and search (agent, task, log level) |
 | TASK-177 | P1 | done | designer | 2d | Visual polish pass (spacing, alignment, colors, consistency) |
 | TASK-183 | P1 | done | designer | 2d | Create marketing assets (landing page design, screenshots, demo video) |
+| TASK-147 | P2 | done | designer | 1d | Design QA: timeline implementation vs specs |
+| TASK-152 | P1 | done | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
