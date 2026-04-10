@@ -4568,7 +4568,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 |---------|----------|--------|----------|--------|-------|
 | TASK-184 | P1 | todo | pm | 2d | Launch planning (Product Hunt, HN, social media, email) |
 | TASK-185 | P0 | todo | qa | 3d | Full platform QA (all features, all browsers, all flows) |
-| TASK-187 | P1 | todo | frontend-dev | 2d | Form field validation feedback (inline errors, validation states) |
+| TASK-187 | P1 | review | frontend-dev | 2d | Form field validation feedback (inline errors, validation states) |
 
 **Dependencies:**
 - TASK-178 depends on all prior implementation tasks
