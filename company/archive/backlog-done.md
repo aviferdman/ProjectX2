@@ -176,3 +176,4 @@
 | TASK-183 | P1 | done | designer | 2d | Create marketing assets (landing page design, screenshots, demo video) |
 | TASK-147 | P2 | done | designer | 1d | Design QA: timeline implementation vs specs |
 | TASK-152 | P1 | done | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
+| TASK-155 | P2 | done | designer | 1d | Design QA: dashboard implementation vs specs |
