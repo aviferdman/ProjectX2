@@ -170,38 +170,10 @@ export class StateManager {
    * This keeps the active backlog small so agents can process it faster.
    */
   archiveDoneTasks(): number {
-    const backlogPath = getStatePath(this.config, 'backlog.md');
-    if (!fs.existsSync(backlogPath)) return 0;
-
-    const content = fs.readFileSync(backlogPath, 'utf-8').replace(/\r\n/g, '\n');
-    const lines = content.split('\n');
-    const donePattern = /^\|\s*TASK-\d+\s*\|\s*P\d\s*\|\s*done\b/i;
-
-    const doneLines: string[] = [];
-    const keptLines: string[] = [];
-
-    for (const line of lines) {
-      if (donePattern.test(line)) {
-        doneLines.push(line);
-      } else {
-        keptLines.push(line);
-      }
-    }
-
-    if (doneLines.length === 0) return 0;
-
-    // Append done rows to archive file
-    const archivePath = path.join(this.config.companyRoot, 'company', 'archive', 'backlog-done.md');
-    const header = '# Archived Done Tasks\n\n| Task ID | Priority | Status | Assigned | Effort | Title |\n|---------|----------|--------|----------|--------|-------|\n';
-    if (!fs.existsSync(archivePath)) {
-      fs.writeFileSync(archivePath, header + doneLines.join('\n') + '\n', 'utf-8');
-    } else {
-      fs.appendFileSync(archivePath, doneLines.join('\n') + '\n', 'utf-8');
-    }
-
-    // Write the trimmed backlog
-    fs.writeFileSync(backlogPath, keptLines.join('\n'), 'utf-8');
-    return doneLines.length;
+    // Disabled: archiving was removing done tasks from backlog.md,
+    // causing PM/ProjM agents to see 0% completion and waste cycles
+    // on data integrity crisis reports instead of productive work.
+    return 0;
   }
 
   parseBacklogTasks(): BacklogTask[] {
@@ -252,9 +224,12 @@ export class StateManager {
       case 'frontend-dev':
       case 'designer':
       case 'uxui': {
+        // Pick up both todo and in-progress tasks so stalled work gets retried
         const todoTasks = tasks
-          .filter(t => t.status === 'todo' && t.assigned === agentId)
+          .filter(t => (t.status === 'todo' || t.status === 'in-progress') && t.assigned === agentId)
           .sort((a, b) => {
+            // Prioritize in-progress (resume) over todo (new work)
+            if (a.status !== b.status) return a.status === 'in-progress' ? -1 : 1;
             const priDiff = a.priority.localeCompare(b.priority);
             if (priDiff !== 0) return priDiff;
             return parseInt(a.id.replace('TASK-', '')) - parseInt(b.id.replace('TASK-', ''));
