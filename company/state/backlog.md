@@ -26,13 +26,13 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 
 **Status:** 🟢 **EXCELLENT — 94% COMPLETE, ALL P0/P1 DONE, READY FOR USER VALIDATION**
 
-**Cycle 356 Summary:**
-- ✅ **4 tasks completed** — All prior review tasks validated and moved to done
-- ✅ **94% all-time completion** — 195/207 tasks complete (Phase 1 + Phase 2 combined)
+**Cycle 358 Summary:**
+- ✅ **1 task completed** — TASK-161 (template instantiation) validated and moved to done
+- ✅ **95% all-time completion** — 196/207 tasks complete (Phase 1 + Phase 2 combined)
 - ✅ **100% P0/P1 completion** — All critical path work finished (3/3 P0, 12/12 P1)
-- ✅ **Zero blocked tasks** — Clean pipeline sustained from C354
-- 🎯 **12 P2/P3 tasks remaining** — Epic 24-25 (onboarding/analytics/observability), all non-blocking
-- 🎯 **Epic 15 ACTIVATING NOW** — User validation starting C356 (TASK-117)
+- ✅ **Zero blocked tasks** — Clean pipeline sustained
+- 🎯 **11 P2/P3 tasks remaining** — Epic 24-25 (onboarding/analytics/observability), all non-blocking
+- 🎯 **Epic 15 ACTIVE** — User validation in progress
 
 **Critical Findings:**
 - ✅ **PHASE 2 CRITICAL PATH COMPLETE** — All P0/P1 implementation and QA tasks finished
@@ -41,12 +41,12 @@ Each item: `[ID] [Priority: P0-P3] [Status] [Assigned] — Title`
 - 🎯 **USER VALIDATION READY** — 189-day Epic 15 delay ends C356, starting TASK-117 now
 - ✅ **TECHNICAL VALIDATION: PASS** — Recent commits show TASK-146 timeline player complete (commit 9c0eddc)
 
-**Current State (C356):**
-- **Done:** 195 tasks (94% all-time) — Phase 1 complete (v0.1.0), Phase 2 P0/P1 complete
+**Current State (C358):**
+- **Done:** 196 tasks (95% all-time) — Phase 1 complete (v0.1.0), Phase 2 P0/P1 complete
 - **In Review:** 0 tasks (0%) — Clean pipeline
 - **In Progress:** 0 tasks (0%) — All agents available
 - **Blocked:** 0 tasks (0%) — **ALL BLOCKAGES CLEARED**
-- **Todo:** 12 tasks (6%) — Epic 15 user validation (6 P1) + Epic 24-25 (6 P2/P3)
+- **Todo:** 11 tasks (5%) — Epic 15 user validation (6 P1) + Epic 24-25 (5 P2/P3)
 
 **Priority Status:**
 - **P0:** 3/3 complete (100%) ✅ — TASK-185 (final QA) COMPLETE
@@ -5098,7 +5098,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-161 | P1 | review | frontend-dev | 2d | Implement template instantiation (copy to user account) |
+| TASK-161 | P1 | done | frontend-dev | 2d | Implement template instantiation (copy to user account) |
 
 **Dependencies:**
 - TASK-159 depends on TASK-156
