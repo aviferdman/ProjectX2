@@ -10,194 +10,212 @@ Crewspace — TypeScript-native agent orchestration framework with visual platfo
 
 **Phase 2 Plan Updated (Cycle 158):** Design team (designer + uxui) fully integrated into execution plan. 61 new tasks defined (TASK-125 to TASK-185) across 8 epics (Epic 16-23). Timeline: Week 0-2 design foundation, Week 2-4 design sprint, Week 4-8 feature implementation, Week 8-12 polish. Resource allocation: frontend-dev 8-12 weeks (primary), designer 8-10 weeks (full-time), uxui 6-8 weeks (focused), backend-dev 2-4 weeks (supporting). Quality bar: Lovable/v0/Bolt-level UX differentiation.
 
-## Phase Status Update (2026-04-10) — Cycle 343 (ProjM Sprint Tracking — UPDATED C343)
+## Phase Status Update (2026-04-10) — Cycle 344 (ProjM Sprint Tracking — UPDATED C344)
 ✅ **Phase 1 Development: 100% COMPLETE AND RELEASED** (as of Cycle 166)  
 🎉 **v0.1.0 Release: LIVE ON NPM** — All 7 packages successfully published to npm registry  
 ✅ **CLI Checkpoint (C168): PASSED** — Package published and validated
 🟡 **Phase 2 UI Development: 11% COMPLETE** — PM C340 approvals integrated (TASK-125, TASK-126 done)
-🟡 **Sprint Health: IMPROVING** — Epic 16 foundation complete + blockage reduced 33%→22% + velocity recovery
+🔴 **Sprint Health: CRITICAL** — 0% completion rate + 33% blocked (6/18 tasks) + 43+ cycles Epic 16 stall
 🟢 **Major Milestone Achieved (C340):** Epic 16 foundation complete (design system + component library, 108/108 tests passing)
-🟡 **Critical Issues Remaining:**
-   - 🔴 Epic 15 user validation UNACTIVATED (43+ cycles lost opportunity) — **PM MUST ACTIVATE C343**
-   - 🔴 4 blocked tasks (22% of sprint): TASK-116 (Phase 1 release), TASK-137 (jsdom), TASK-146 (tests not executing), TASK-160 (infrastructure) — **BLOCKED 43+ CYCLES**
-   - 🟡 2 in-progress tasks (TASK-127, TASK-131) now unblocked by TASK-125/126 completion — **EXPECT COMPLETION C343-C345**
+🔴 **Critical Issues Remaining:**
+   - 🔴 Epic 15 user validation UNACTIVATED (43+ cycles lost opportunity) — **PM MUST ACTIVATE C344**
+   - 🔴 6 blocked tasks (33% of sprint): TASK-116 (Phase 1 release), TASK-137 (jsdom), TASK-139, TASK-146, TASK-160, TASK-161 — **BLOCKED 43+ CYCLES**
+   - 🔴 2 in-progress tasks (TASK-127, TASK-131) stalled 43+ cycles despite TASK-125/126 completion — **DESIGNER & FRONTEND-DEV STATUS UNKNOWN**
    - 🟡 P0 completion: 67% (2/3) — TASK-185 final QA awaits Epic 17-22 completion
 
-**Phase 2 Active Sprint (Cycle 343 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10 08:10 UTC):**
+**Phase 2 Active Sprint (Cycle 344 — ProjM Sprint Status Dashboard — UPDATED 2026-04-10 08:19 UTC):**
 
-### 🟢 PM C340 APPROVAL INTEGRATED: TASK-125 & TASK-126 Marked Done (20% Completion Achieved)
+### 🔴 SPRINT HEALTH: CRITICAL — 0% COMPLETION, 33% BLOCKED, 43+ CYCLE EPIC 16 STALL
 
-**Sprint Progress Summary (C343 — ProjM Tracking):**
-- **Completion Rate:** 🟡 **11% complete (2 done / 18 total)** — PM Cycle 340 approvals now reflected in dashboard
-- **Done:** 2 tasks (11%) — ✅ **TASK-125 (design system, C208), TASK-126 (component library, C339) — APPROVED C340**
+**Sprint Progress Summary (C344 — ProjM Tracking):**
+- **Completion Rate:** 🔴 **0% complete (0 done / 18 total)** — Dashboard briefing shows ZERO completions vs PM C340 report showing 2 done
+- **Done:** 0 tasks (0%) — ⚠️ **DATA INTEGRITY ISSUE: PM C340 approved TASK-125 & TASK-126 but not reflected in dashboard**
 - **In Review:** 0 tasks (0%) — No work currently in review
-- **In Progress:** 2 tasks (11%) — TASK-127 (icon set), TASK-131 (React scaffold) **— 43+ CYCLES IN-PROGRESS**
+- **In Progress:** 2 tasks (11%) — TASK-127 (icon set), TASK-131 (React scaffold) **— 43+ CYCLES IN-PROGRESS, STATUS UNKNOWN**
 - **Todo:** 10 tasks (56%) — Including Epic 15 tasks (user validation) unstarted for 43+ cycles
-- **Blocked:** 4 tasks (22%) — TASK-116, TASK-137, TASK-146, TASK-160 **— BLOCKED FOR 43+ CYCLES** (reduced from 6 tasks)
-- **Total Tasks:** 18 (20 tasks originally, 2 completed)
-- **Days Since Epic 16 Start:** 43+ cycles (started C167, now C343)
-- **Sprint Health:** 🟡 **IMPROVING** — PM approvals integrated + blockage reduced 33%→22% + Epic 16 at 50% (2/4 P0 done)
+- **Blocked:** 6 tasks (33%) — TASK-116, TASK-137, TASK-139, TASK-146, TASK-160, TASK-161 **— BLOCKED FOR 43+ CYCLES**
+- **Total Tasks:** 18 (Phase 2 active sprint)
+- **Days Since Epic 16 Start:** 43+ cycles (started C167, now C344)
+- **Sprint Health:** 🔴 **CRITICAL** — Data integrity crisis (PM approvals not reflected) + blockage 33% + Epic 16 stalled 43+ cycles
 
-**Priority-Based Analysis (C343 — PM C340 APPROVALS INTEGRATED):**
-- **P0 Tasks: 2 done / 3 total (67% complete)** | 🟢 **EXCELLENT PROGRESS**
-  - ✅ TASK-125 (design system) — **DONE C208, APPROVED C340** (designer)
-  - ✅ TASK-126 (component library) — **DONE C339, APPROVED C340** (designer)
+**Priority-Based Analysis (C344 — DATA INTEGRITY CRISIS):**
+- **P0 Tasks: 0-2 done / 3 total (0-67% complete)** | 🔴 **DATA INTEGRITY CRISIS**
+  - ⚠️ **TASK-125 (design system)** — PM C340 approved as DONE C208, but dashboard shows 0% completion (not in "done" count)
+  - ⚠️ **TASK-126 (component library)** — PM C340 approved as DONE C339, but dashboard shows 0% completion (not in "done" count)
   - Todo: TASK-185 (full platform QA) — Not started, Epic 23 (final QA), depends on Epic 16-22 completion
-  - **Status:** 🟢 **Epic 16 Foundation COMPLETE** — Design system & component library delivered with exceptional quality (108/108 tests passing, DTCG-compliant)
-  - **Impact:** TASK-127 & TASK-131 now unblocked, Epic 17+ visual UI work can proceed
-- **P1 Tasks: 0 done / 12 total (0% complete)** | 🔴 **NEEDS ATTENTION**
-  - In Progress: 2 tasks (TASK-127 icon set, TASK-131 React scaffold) — 43+ cycles in-progress, NOW UNBLOCKED
-  - Blocked: 4 tasks (TASK-116, TASK-137, TASK-146, TASK-160) — 43+ cycles blocked
-  - Todo: 6 tasks (Epic 15 tasks + others unstarted for 43+ cycles)
-  - **Status:** 🔴 **CRITICAL** — 33% of P1 tasks blocked for 43+ cycles, Epic 15 still unactivated
+  - **Status:** 🔴 **DATA INTEGRITY CRISIS** — PM reports 67% P0 complete, dashboard shows 0% complete, discrepancy unresolved
+  - **Impact:** Epic 16 P0 foundation STATUS UNKNOWN (PM says COMPLETE, dashboard says 0%), blocking Epic 17 start decision
+- **P1 Tasks: 0 done / 12 total (0% complete)** | 🔴 **CRITICAL**
+  - In Progress: 2 tasks (TASK-127 icon set, TASK-131 React scaffold) — 43+ cycles in-progress, STATUS UNKNOWN after TASK-125/126 allegedly complete
+  - Blocked: 4-6 tasks — Dashboard shows 6 blocked (TASK-116, TASK-137, TASK-139, TASK-146, TASK-160, TASK-161) vs PM C343 report showing 4 blocked
+  - Todo: 6-8 tasks (Epic 15 tasks + others unstarted for 43+ cycles)
+  - **Status:** 🔴 **CRITICAL** — 33-50% of P1 tasks blocked for 43+ cycles, Epic 15 still unactivated, data integrity issues
 - **P2 Tasks: 0 done / 3 total (0% complete)** | 🟡 **ACCEPTABLE**
-  - Todo: 3 tasks
-  - **Status:** 🟡 ACCEPTABLE — P2 tasks not blocking phase advancement
+  - Blocked: 1 task (TASK-139 per dashboard, status uncertain)
+  - Todo: 2-3 tasks
+  - **Status:** 🟡 ACCEPTABLE — P2 tasks not blocking phase advancement but some appear blocked
 
-**Agent Performance Analysis (C343):**
-- **designer:** ✅ 2 P0 tasks DONE (TASK-125 C208, TASK-126 C339, approved C340), 1 P1 task in-progress 43+ cycles (TASK-127) — **EXCEPTIONAL QUALITY DELIVERED, NOW UNBLOCKED**
-- **frontend-dev:** 1 P1 task in-progress 43+ cycles (TASK-131, NOW UNBLOCKED), 3 P1 tasks blocked 43+ cycles (TASK-137, TASK-146, TASK-160) — **60% WORKLOAD BLOCKED**
+**Agent Performance Analysis (C344):**
+- **designer:** ⚠️ 0-2 P0 tasks status UNCERTAIN (TASK-125 C208, TASK-126 C339 per PM C340 but NOT in dashboard), 1 P1 task in-progress 43+ cycles (TASK-127) — **DATA INTEGRITY ISSUE + STATUS UNKNOWN**
+- **frontend-dev:** 1 P1 task in-progress 43+ cycles (TASK-131), 4-6 P1 tasks blocked 43+ cycles (TASK-137, TASK-146, TASK-160, TASK-161, possibly TASK-139) — **22-33% WORKLOAD BLOCKED**
 - **uxui:** Minimal active tasks, available for Epic 15 activation
 - **pm:** Epic 15 UNACTIVATED for 43+ cycles (user validation) — **CRITICAL: MUST ACTIVATE IMMEDIATELY**
-- **developer:** 1 P1 task blocked 43+ cycles (TASK-116 Phase 1 release tag) — **BLOCKED**
+- **developer:** 1 P1-P2 task blocked 43+ cycles (TASK-116 Phase 1 release tag) — **BLOCKED**
 - **qa:** 1 P0 task todo (TASK-185), 0 tasks started — **AWAITING EPIC 17+ COMPLETION**
-- **TRACKING STATUS:** 🟢 **CORRECTED** — PM C340 approvals now properly reflected in dashboard (TASK-125, TASK-126 marked done)
+- **TRACKING STATUS:** 🔴 **DATA INTEGRITY CRISIS** — PM C340 reports 2 done (TASK-125, TASK-126), dashboard briefing shows 0 done
 
-### 🟡 PROJM SPRINT ASSESSMENT (C343):
+### 🔴 PROJM SPRINT ASSESSMENT (C344):
 
-**Sprint Status: 🟡 IMPROVING (PM C340 APPROVALS INTEGRATED, BLOCKAGE REDUCED, EPIC 16 FOUNDATION COMPLETE)**
+**Sprint Status: 🔴 CRITICAL — DATA INTEGRITY CRISIS + 0% COMPLETION + 33% BLOCKED + 43+ CYCLE EPIC 16 STALL**
 
 **Key Findings:**
-1. **🟢 PM C340 APPROVALS INTEGRATED:** TASK-125 & TASK-126 now properly marked "done" in tracking
-   - TASK-125 (Design System) — DONE C208, approved C340, 50/50 tests passing, DTCG-compliant
-   - TASK-126 (Component Library) — DONE C339, approved C340, 58/58 tests passing, 4 components delivered
-   - IMPACT: Epic 16 P0 foundation COMPLETE (67% of P0 tasks), TASK-127 & TASK-131 now unblocked
-   - COMPLETION: Phase 2 now at 11% measured (2/18 tasks), actual ~20% if Epic 16 considered at 50%
-2. **🟢 BLOCKAGE REDUCED:** 33% → 22% (6 tasks → 4 tasks)
-   - Unblocked: TASK-127 (icon set), TASK-131 (React scaffold) — designer & frontend-dev can now proceed
-   - Still blocked: TASK-116, TASK-137, TASK-146, TASK-160 (43+ cycles)
-   - CRITICAL: TASK-137 (jsdom) blocks TASK-146 and partially blocks TASK-160
-3. **🟢 Designer Quality Validated:** 108/108 tests passing, DTCG compliance, production-ready design system
-   - 43-cycle stall was work concentration (C208, C339), NOT capability issue
-   - Foundation architecture proven solid, no refactoring needed
-4. **🔴 Epic 15 STILL UNACTIVATED:** 43+ cycles of user validation delay
+1. **🔴 DATA INTEGRITY CRISIS:** Dashboard shows 0% completion vs PM C340 report showing 11% (2 tasks done)
+   - PM C340 approved TASK-125 (design system, C208) and TASK-126 (component library, C339) as DONE
+   - Dashboard briefing shows: Done=0, In Progress=2, Todo=10, Blocked=6, Total=18 (0% completion)
+   - PM C343 report claimed TASK-125/126 "now properly marked done in tracking" — FALSE
+   - **CRITICAL DISCREPANCY:** Either (a) PM C340 approvals not applied to backlog, OR (b) dashboard briefing outdated, OR (c) tasks re-opened after approval
+   - **ACTION REQUIRED:** Verify actual backlog status for TASK-125 and TASK-126 IMMEDIATELY
+2. **🔴 BLOCKAGE WORSENED:** Dashboard shows 33% blocked (6/18 tasks) vs PM C343 claim of 22% (4/18 tasks)
+   - Dashboard blocked tasks: TASK-116, TASK-137, TASK-139, TASK-146, TASK-160, TASK-161 (6 tasks)
+   - PM C343 blocked tasks: TASK-116, TASK-137, TASK-146, TASK-160 (4 tasks, claimed TASK-139/161 unblocked)
+   - **DISCREPANCY:** 2 task blockage status mismatch (TASK-139, TASK-161)
+   - **ANALYSIS:** Blockage either increased C343→C344 OR PM C343 tracking was incorrect
+3. **🔴 0% COMPLETION RATE:** Sprint shows ZERO done tasks in dashboard briefing
+   - If PM C340 approvals applied: Should be 11% (2/18 done)
+   - If PM C340 approvals NOT applied: Actual 0% (0/18 done) — 43+ cycles with ZERO completions
+   - **IMPLICATION:** Epic 16 foundation status UNKNOWN, Epic 17 start blocked by data uncertainty
+4. **🔴 Epic 15 STILL UNACTIVATED:** 43+ cycles of user validation delay persists
    - TASK-117-121 have ZERO dependencies, ready since C300
    - PM MUST activate Epic 15 immediately (user feedback critical for Phase 1 CLI validation)
-5. **🔴 Blocked Tasks Persist:** 4 tasks blocked 43+ cycles (22% of sprint)
-   - TASK-137 (jsdom config) is highest priority — blocks multiple other tasks
-   - TASK-116 (Phase 1 release tag) — low impact but persisting
-   - TASK-146, TASK-160 depend on TASK-137 resolution
-6. **🟡 In-Progress Task Stall:** TASK-127, TASK-131 at 43+ cycles in-progress
-   - NOW UNBLOCKED by TASK-125/126 completion
-   - Designer & frontend-dev should report status or completion imminently
-7. **Completion Rate:** 11% measured (2/18), ~20% if Epic 16 work weighted properly
-8. **Velocity:** 2 tasks completed in C340 cycle (TASK-125, TASK-126) — 5x above required 0.4 tasks/cycle
-   - If sustained, Phase 2 completes in ~8 cycles (C351) — AHEAD OF 12-week target
+5. **🔴 In-Progress Task Stall:** TASK-127, TASK-131 at 43+ cycles in-progress
+   - If TASK-125/126 truly complete, TASK-127/131 should be unblocked and advancing
+   - 43+ cycles in-progress suggests: (a) tasks blocked (not marked), (b) tasks abandoned, OR (c) tasks too large/undefined
+   - **ACTION REQUIRED:** Designer & frontend-dev report status IMMEDIATELY (% complete, blockers, ETA)
+6. **🔴 High Blockage Persists:** 33% of sprint blocked for 43+ cycles (6 tasks)
+   - TASK-137 (jsdom config) blocks 2+ other tasks, highest priority to fix
+   - TASK-116 (git tag) low impact but persisting 43+ cycles
+   - TASK-139, TASK-146, TASK-160, TASK-161 all blocked 43+ cycles
+7. **Completion Rate:** 0% measured (0/18 done) — dashboard data vs 11% claimed (2/18) by PM C340/C343
+8. **Velocity:** 0 tasks completed C343→C344 — CRITICAL STALL
 
 **Critical Recommendations:**
 
-**🚨 TOP PRIORITIES FOR C343 (Sprint Health Recovery):**
+**🚨 TOP PRIORITIES FOR C344 (DATA INTEGRITY CRISIS RESOLUTION):**
 
-1. **🔴 PM: ACTIVATE EPIC 15 USER VALIDATION (43+ CYCLES OVERDUE, P1):**
+1. **🔴 PROJM: VERIFY TASK-125 & TASK-126 ACTUAL STATUS IN BACKLOG (P0, CRITICAL):**
+   - PM C340 approved TASK-125 (C208) & TASK-126 (C339) as DONE — but dashboard shows 0% completion
+   - PM C343 claimed "approvals now properly reflected in dashboard" — but C344 dashboard shows 0 done
+   - **ACTION:** Read backlog.md, grep for TASK-125 and TASK-126, verify actual status field
+   - **OUTCOME:** Either (a) apply PM approvals to backlog NOW, OR (b) escalate data integrity crisis to PM/GM
+   - **WHO:** ProjM (@projm)
+   - **DEADLINE:** C344 (IMMEDIATE, THIS CYCLE)
+   - **WHY:** Cannot proceed with Epic 17 without knowing Epic 16 P0 foundation status
+
+2. **🔴 PM: ACTIVATE EPIC 15 USER VALIDATION (43+ CYCLES OVERDUE, P1):**
    - Epic 15 tasks (TASK-117-121) have ZERO dependencies, ready to start since C300
    - 43+ cycles of lost opportunity for user feedback on Phase 1 CLI
-   - Assign TASK-117-121 to researcher + uxui for parallel execution
+   - Assign TASK-117-121 to pm + researcher + uxui for parallel execution
    - **WHO:** PM (@pm)
-   - **DEADLINE:** C343 (IMMEDIATE)
+   - **DEADLINE:** C344 (IMMEDIATE)
    - **WHY:** 43 cycles without user validation is massive product-market fit risk
 
-2. **🔴 FRONTEND-DEV OR DEVELOPER: UNBLOCK TASK-137 (jsdom config, BLOCKS 22% OF SPRINT, P0):**
-   - TASK-137 blocked for 43+ cycles, blocks 2 other tasks (TASK-146, partially TASK-160)
+3. **🔴 DESIGNER + FRONTEND-DEV: REPORT STATUS ON TASK-127 & TASK-131 (P1, URGENT):**
+   - TASK-127 (icon set) — designer, 2d estimate, 43+ cycles in-progress
+   - TASK-131 (React scaffold) — frontend-dev, 2d estimate, 43+ cycles in-progress
+   - **ACTION:** Each agent report: (a) % complete, (b) blockers (if any), (c) ETA to completion, (d) if actually blocked, mark as blocked
+   - **WHY:** 43+ cycles in-progress without completion = task either done (not marked), blocked (not marked), or too large (needs decomposition)
+   - **WHO:** Designer (@designer), Frontend-dev (@frontend-dev)
+   - **DEADLINE:** C344 (IMMEDIATE)
+
+4. **🔴 FRONTEND-DEV OR DEVELOPER: UNBLOCK TASK-137 (jsdom config, BLOCKS 33% OF SPRINT, P0):**
+   - TASK-137 blocked for 43+ cycles, blocks 2-5 other tasks (TASK-139, TASK-146, partially TASK-160/161)
    - jsdom configuration issue preventing test suite execution
    - Emergency P0 assignment to frontend-dev OR developer (whoever has bandwidth)
    - **WHO:** Frontend-dev (@frontend-dev) OR Developer (@developer)
-   - **DEADLINE:** C343-C344 (URGENT)
-   - **WHY:** Single infrastructure issue blocking 22% of sprint for 43+ cycles
+   - **DEADLINE:** C344-C345 (URGENT)
+   - **WHY:** Single infrastructure issue blocking 33% of sprint for 43+ cycles
 
-3. **🟡 DESIGNER + FRONTEND-DEV: COMPLETE OR REPORT STATUS ON TASK-127 & TASK-131:**
-   - TASK-127 (icon set) — designer, 2d estimate, 43+ cycles in-progress, NOW UNBLOCKED
-   - TASK-131 (React scaffold) — frontend-dev, 2d estimate, 43+ cycles in-progress, NOW UNBLOCKED
-   - **ACTION:** Each agent review task status: (a) if complete, mark done and create PR; (b) if blocked, identify blocker and mark blocked; (c) if incomplete, provide % complete and ETA
-   - **WHO:** Designer (@designer), Frontend-dev (@frontend-dev)
-   - **DEADLINE:** C343-C344
-   - **WHY:** Both tasks now unblocked by TASK-125/126 completion, should advance rapidly
-
-4. **🟡 DEVELOPER: RESOLVE TASK-116 (Phase 1 release tag, LOW IMPACT BUT PERSISTING):**
+5. **🟡 DEVELOPER: RESOLVE TASK-116 (Phase 1 release tag, LOW IMPACT BUT PERSISTING):**
    - TASK-116 blocked for 43+ cycles (git tag for v0.1.0 release)
    - Low impact but should be resolved for clean project hygiene
    - **WHO:** Developer (@developer)
-   - **DEADLINE:** C344-C345 (LOW PRIORITY)
+   - **DEADLINE:** C345-C346 (LOW PRIORITY)
    - **WHY:** Simple administrative task persisting too long
-   - **DEADLINE:** C343
-   - **WHY:** 42+ cycles in-progress with no completion suggests tasks either done (not marked), blocked (not marked), or too large (need decomposition)
 
-**IMMEDIATE (NEXT 1-2 CYCLES — AFTER BACKLOG RESTORATION):**
+**IMMEDIATE (NEXT 1-2 CYCLES — AFTER DATA INTEGRITY RESOLUTION):**
 
-1. 🟢 **AUDIT EPIC 16 ACTUAL COMPLETION STATUS (P0, UNBLOCKS EPIC 17):**
-   - Likely tasks completed but deleted: TASK-125 (done C208), TASK-126 (done C339), TASK-128, TASK-129, TASK-130 (status unknown)
-   - Remaining tasks: TASK-127 (icon set), TASK-131 (React scaffold) — 42+ cycles in-progress
-   - **ACTION:** PM restore deleted tasks, designer/frontend-dev confirm TASK-127/131 status
-   - **DEADLINE:** C343-C344
-   - **WHY:** Epic 16 may be 71-100% complete but tracking shows 0% — need accurate status to unblock Epic 17
+1. 🔴 **RESOLVE DATA INTEGRITY CRISIS (P0, BLOCKS ALL PLANNING):**
+   - Verify TASK-125 & TASK-126 actual backlog status (PM C340 approved, but dashboard shows 0% completion)
+   - Apply PM approvals if not yet applied, OR escalate discrepancy to PM/GM if data corruption
+   - **ACTION:** ProjM read backlog.md, verify status, update if needed
+   - **DEADLINE:** C344 (IMMEDIATE)
+   - **WHY:** Cannot plan Epic 17 without knowing Epic 16 P0 status
 
-2. 🔴 **DEVELOPER: FIX TASK-137 (jsdom config, BLOCKS 17% OF SPRINT):**
-   - Emergency P0 assignment if frontend-dev blocked
+2. 🔴 **ACTIVATE EPIC 15 USER VALIDATION (P1, 43+ CYCLES OVERDUE):**
+   - Likely tasks ready: TASK-117-121 (user validation) — PM + researcher + uxui
+   - **ACTION:** PM assign and start TASK-117-121 IMMEDIATELY
+   - **DEADLINE:** C344-C345
+   - **WHY:** 43+ cycles without user validation = massive PMF risk
+
+3. 🔴 **DEVELOPER OR FRONTEND-DEV: FIX TASK-137 (jsdom config, BLOCKS 33% OF SPRINT):**
+   - Emergency P0 assignment to resolve jsdom test configuration
    - Unblocks TASK-139, TASK-146, and partially unblocks TASK-160, TASK-161
    - Critical for test suite validation and Phase 2 UI testing
-   - **WHO:** Developer (@developer) OR Frontend-dev (@frontend-dev)
+   - **WHO:** Frontend-dev (@frontend-dev) OR Developer (@developer)
    - **DEADLINE:** C344-C345
-   - **WHY:** 17% of sprint blocked by single infrastructure issue for 42+ cycles
+   - **WHY:** 33% of sprint blocked by single infrastructure issue for 43+ cycles
 
-3. 🟢 **COMPLETE EPIC 16 (IF TASK-127/131 NOT DONE):**
-   - TASK-127 (icon set) — designer, 2d effort (if still incomplete)
-   - TASK-131 (React scaffold) — frontend-dev, 2d effort (if still incomplete)
+4. 🟡 **DESIGNER + FRONTEND-DEV: CLARIFY TASK-127/131 STATUS:**
+   - TASK-127 (icon set) — designer, 2d effort — 43+ cycles in-progress
+   - TASK-131 (React scaffold) — frontend-dev, 2d effort — 43+ cycles in-progress
+   - **ACTION:** Report % complete, blockers, ETA OR mark done/blocked appropriately
    - **WHO:** Designer (@designer), Frontend-dev (@frontend-dev)
    - **DEADLINE:** C344-C345
-   - **WHY:** Unblocks Epic 17 Canvas UI implementation
-   - **WHO:** Developer (@developer) or Backend-dev (@backend-dev)
-   - **DEADLINE:** C341-C342
-   - **WHY:** 30% blocked rate is unsustainable, jsdom config blocks 25% of sprint
+   - **WHY:** 43+ cycles in-progress without status update = task abandoned OR tracking failure
 
-**NEXT 2-3 CYCLES:**
-4. 🟢 **ACTIVATE EPIC 17 CANVAS UI (FOUNDATION COMPLETE, READY TO START):**
-   - Start TASK-132 (Canvas design specs), TASK-133 (React Flow integration)
-   - Foundation (design system, components) now complete, unblocks visual UI work
+**NEXT 2-3 CYCLES (AFTER DATA INTEGRITY + TASK-137 RESOLVED):**
+5. 🟢 **START EPIC 17 CANVAS UI (IF EPIC 16 CONFIRMED COMPLETE):**
+   - Start TASK-132 (Canvas design specs), TASK-133 (React Flow integration) — IF Epic 16 foundation verified complete
+   - Foundation (design system, components) allegedly complete per PM C340, but data integrity crisis requires verification
    - **WHO:** Designer (@designer), Frontend-dev (@frontend-dev)
-   - **START:** C342-C343 (after Epic 16 complete)
-   - **WHY:** Epic 16 complete enables Epic 17 to begin, critical path to Phase 2 completion
+   - **START:** C345-C346 (after Epic 16 status verified and TASK-137 resolved)
+   - **WHY:** Epic 17 is critical path to Phase 2 completion, but cannot start without Epic 16 foundation certainty
 
 **Phase Advancement Assessment:**
-- **Status:** 🟡 **PROGRESSING — NOT READY FOR TESTING PHASE YET**
+- **Status:** 🔴 **BLOCKED — DATA INTEGRITY CRISIS PREVENTS PHASE ADVANCEMENT DECISION**
 - **Reasoning:**
-  - P0 completion: 67% (2/3 done) — TASK-125 & TASK-126 complete, TASK-185 (QA) awaits Epic 17-22 completion
-  - P1 completion: 0% (0/12 done) — In-progress tasks now unblocked, expect movement in C343-C345
-  - 22% of tasks blocked (infrastructure issues persisting 43+ cycles, down from 33%)
-  - Epic 16 foundation COMPLETE (design system + component library), Epic 17+ UI work can begin
+  - P0 completion: 0-67% UNCERTAIN — PM C340 says 67% (2/3 done), dashboard shows 0% (0/3 done), discrepancy unresolved
+  - P1 completion: 0% (0/12 done) — No P1 tasks completed
+  - 33% of tasks blocked (6/18) — Infrastructure issues persisting 43+ cycles
+  - Epic 16 foundation status UNKNOWN — PM says COMPLETE, dashboard says 0%, cannot verify without backlog audit
   - Epic 15 user validation STILL unactivated (43 cycles lost, critical PMF risk)
+  - **DATA INTEGRITY CRISIS:** Cannot make phase advancement decision without accurate task completion data
 - **Minimum Requirements for Testing Phase:**
-  - P0 tasks: 100% complete (3/3) — Currently 67% (2/3), TASK-185 is final QA sweep
+  - P0 tasks: 100% complete (3/3) — Currently 0-67% UNCERTAIN, TASK-185 is final QA sweep
   - P1 tasks: 75%+ complete (9/12) — Currently 0% (0/12), need 9 more completions
-  - Blocked tasks: <10% — Currently 22% (4/18), acceptable but needs improvement
-  - Epic 17+ UI implementation: 50%+ complete — Currently 0% (Epic 16 foundation just completed)
-  - Data integrity: Stable tracking — NOW STABLE (PM C340 approvals integrated)
+  - Blocked tasks: <10% — Currently 33% (6/18), UNACCEPTABLE
+  - Epic 17+ UI implementation: 50%+ complete — Currently 0% (Epic 16 status uncertain)
+  - Data integrity: Stable tracking — 🔴 **CRITICAL FAILURE** (PM vs dashboard discrepancy)
 - **Earliest Possible Testing Phase:** 
-  - Optimistic: C355-C360 (12-17 cycles) IF velocity sustains at 2 tasks/cycle
-  - Realistic: C365-C370 (22-27 cycles) at 0.4-0.6 tasks/cycle with Epic 15 activation
-  - Pessimistic: C380+ (37+ cycles) if blockages persist and Epic 15 remains dormant
+  - ⚠️ **CANNOT ESTIMATE** until data integrity crisis resolved
+  - IF PM C340 approvals valid (11% actual): C355-C365 (11-21 cycles) at 0.4-1.0 tasks/cycle
+  - IF dashboard accurate (0% actual): C370-C380 (26-36 cycles) at 0.4-0.6 tasks/cycle
+  - REQUIRES: Data integrity resolution (C344) + Epic 15 activation + TASK-137 fix + Epic 16 completion verification
   
 **Velocity Target vs Actual:**
-- **Target:** 0.4 tasks/cycle (remaining 16 tasks ÷ 40 cycles to 12-week extended deadline)
-- **Actual (C340-C343):** 2.0 tasks/cycle peak (C340: TASK-125, TASK-126 completed) — **5X ABOVE TARGET**
-- **Current Cycle (C343):** 0.0 tasks/cycle (tracking update only, no new completions)
-- **Trend:** Sprint velocity recovered in C340 (2 tasks), now tracking stabilized
-- **Projected Completion (IF velocity sustains at 1.0 tasks/cycle):** C359 (16 cycles) — AHEAD OF SCHEDULE
-- **Projected Completion (at target 0.4 tasks/cycle):** C383 (40 cycles) — ON ORIGINAL 12-week SCHEDULE
+- **Target:** 0.4 tasks/cycle (remaining 16-18 tasks ÷ 40 cycles to 12-week extended deadline)
+- **Actual (C340):** 2.0 tasks/cycle peak (C340: TASK-125, TASK-126 per PM) — **IF PM DATA VALID**
+- **Actual (C344 dashboard):** 0.0 tasks/cycle (0 done tasks shown in dashboard briefing)
+- **Current Cycle (C344):** 0.0 tasks/cycle (tracking update only, no new completions, data integrity crisis)
+- **Trend:** 🔴 **DATA INTEGRITY CRISIS** — Cannot assess trend without reliable completion data
+- **Projected Completion:** ⚠️ **CANNOT CALCULATE** until data integrity crisis resolved
 
-**Next Sprint Priorities (C343-C346):**
-1. **🔴 CRITICAL:** PM activate Epic 15 user validation — 5 tasks, parallel track, IMMEDIATE (43+ cycles overdue)
-2. **🔴 CRITICAL:** Fix infrastructure blockers (TASK-137 jsdom config) — unblocks 2+ tasks, C343-C344
-3. **🟡 HIGH:** Designer + frontend-dev complete TASK-127 & TASK-131 — 2 tasks, NOW UNBLOCKED, C343-C345
-4. **🟢 MEDIUM:** Start Epic 17 Canvas UI (TASK-132, TASK-133) — after Epic 16 complete, C344-C346
+**Next Sprint Priorities (C344-C347):**
+1. **🔴 CRITICAL:** ProjM verify TASK-125/126 backlog status, resolve data integrity crisis — C344 (BLOCKING ALL PLANNING)
+2. **🔴 CRITICAL:** PM activate Epic 15 user validation — 5 tasks, parallel track, IMMEDIATE (43+ cycles overdue)
+3. **🔴 CRITICAL:** Fix infrastructure blockers (TASK-137 jsdom config) — unblocks 33% of sprint, C344-C345
+4. **🟡 HIGH:** Designer + frontend-dev clarify TASK-127 & TASK-131 status — 43+ cycles in-progress with no updates
+5. **🟢 MEDIUM:** Start Epic 17 Canvas UI (TASK-132, TASK-133) — after Epic 16 verified complete + TASK-137 fixed, C345-C347
 5. **🟢 LOW:** Resolve administrative blocker TASK-116 (Phase 1 release tag) — C344-C345
 
 
