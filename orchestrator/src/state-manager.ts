@@ -347,16 +347,23 @@ export class StateManager {
       case 'pm': {
         const done = tasks.filter(t => t.status === 'done');
         const review = tasks.filter(t => t.status === 'review');
+        const pmTodo = tasks.filter(t => t.status === 'todo' && t.assigned === 'pm');
         const completionPct = statusCounts.total > 0
-          ? Math.round((done.length / statusCounts.total) * 100)
+          ? Math.round((statusCounts.done / statusCounts.total) * 100)
           : 0;
+
+        if (pmTodo.length === 0 && review.length === 0) {
+          return '## Pre-computed Context\nNo `todo` tasks assigned to pm and nothing in review. Nothing to implement this cycle.';
+        }
+
         return [
           '## Product Progress Summary',
           `Phase: ${status.phase} | Cycle: ${status.currentCycle} | Completion: ${completionPct}%`,
+          `Done: ${statusCounts.done} | Review: ${statusCounts.review} | Todo: ${statusCounts.todo} | Total: ${statusCounts.total}`,
           '',
-          '## Recently Completed (last 5)',
-          ...(done.length > 0
-            ? done.slice(-5).map(t => `- ${t.id} [${t.priority}] — ${t.title}`)
+          '## Your Assigned Tasks',
+          ...(pmTodo.length > 0
+            ? pmTodo.map(t => `- **${t.id}** [${t.priority}] — ${t.title} (${t.effort})`)
             : ['- (none)']),
           '',
           '## Currently In Review',
@@ -364,7 +371,12 @@ export class StateManager {
             ? review.map(t => `- ${t.id} [${t.priority}] — ${t.title}`)
             : ['- (none)']),
           '',
-          'Validate that completed work meets acceptance criteria and product vision.',
+          '## What To Do',
+          '1. Execute your highest-priority assigned task above',
+          '2. Validate that completed work meets acceptance criteria and product vision',
+          `3. Update task status in: ${this.config.companyRoot}/company/state/backlog.md`,
+          '4. Write a completion signal when done',
+          '',
           `Full backlog at: ${this.config.companyRoot}/company/state/backlog.md`,
         ].join('\n');
       }

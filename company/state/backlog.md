@@ -4745,7 +4745,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-116 | P2 | blocked | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog (NOTE: Only workflow/scripts added, tag not created. Blocked by test failures and formatting issues) |
+| TASK-116 | P2 | todo | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
 
 **Dependencies:**
 - TASK-111, TASK-112 are setup
@@ -5005,8 +5005,8 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-137 | P1 | blocked | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) — BLOCKED: test environment (jsdom) not configured |
-| TASK-139 | P2 | blocked | designer | 1d | Design QA: canvas implementation vs specs — BLOCKED: 23/29 canvas tests failing |
+| TASK-137 | P1 | todo | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
+| TASK-139 | P2 | todo | designer | 1d | Design QA: canvas implementation vs specs |
 
 **Dependencies:**
 - TASK-135, TASK-136 depend on TASK-132
@@ -5022,7 +5022,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-146 | P1 | blocked | frontend-dev | 2d | Implement timeline playback and step-through — BLOCKED: tests not executing |
+| TASK-146 | P1 | todo | frontend-dev | 2d | Implement timeline playback and step-through |
 
 **Dependencies:**
 - TASK-143, TASK-144 depend on TASK-140
@@ -5054,8 +5054,8 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-160 | P1 | blocked | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
-| TASK-161 | P1 | blocked | frontend-dev | 2d | Implement template instantiation (copy to user account) |
+| TASK-160 | P1 | todo | frontend-dev | 2d | Implement template preview (modal, workflow diagram) |
+| TASK-161 | P1 | todo | frontend-dev | 2d | Implement template instantiation (copy to user account) |
 
 **Dependencies:**
 - TASK-159 depends on TASK-156
