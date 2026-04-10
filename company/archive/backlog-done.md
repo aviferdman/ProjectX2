@@ -178,3 +178,5 @@
 | TASK-152 | P1 | done | frontend-dev | 2d | Implement usage stats display (runs, limits, upgrade prompts) |
 | TASK-155 | P2 | done | designer | 1d | Design QA: dashboard implementation vs specs |
 | TASK-162 | P2 | done | designer | 1d | Design QA: template library implementation vs specs |
+| TASK-165 | P2 | done | designer | 1d | Design OAuth connection flow screens |
+| TASK-166 | P1 | done | frontend-dev | 3d | Implement marketplace browser (list integrations, search) |
