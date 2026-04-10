@@ -4745,7 +4745,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-116 | P2 | review | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
+| TASK-116 | P2 | done | developer | 1d | Tag v0.1.0 release in GitHub and create release notes with changelog |
 
 **Dependencies:**
 - TASK-111, TASK-112 are setup
@@ -5005,8 +5005,8 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-137 | P1 | review | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
-| TASK-139 | P2 | review | designer | 1d | Design QA: canvas implementation vs specs |
+| TASK-137 | P1 | done | frontend-dev | 3d | Implement toolbar and sidebar (add nodes, properties panel) |
+| TASK-139 | P2 | done | designer | 1d | Design QA: canvas implementation vs specs |
 
 **Dependencies:**
 - TASK-135, TASK-136 depend on TASK-132
