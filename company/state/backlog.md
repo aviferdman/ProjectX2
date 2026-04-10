@@ -4535,7 +4535,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 
 | Task ID | Priority | Status | Assigned | Effort | Title |
 |---------|----------|--------|----------|--------|-------|
-| TASK-181 | P1 | review | frontend-dev | 2d | Error handling and edge cases (all screens) |
+| TASK-181 | P1 | done | frontend-dev | 2d | Error handling and edge cases (all screens) |
 | TASK-182 | P1 | todo | frontend-dev | 2d | Empty states, loading states, success/error feedback |
 | TASK-184 | P1 | todo | pm | 2d | Launch planning (Product Hunt, HN, social media, email) |
 | TASK-185 | P0 | todo | qa | 3d | Full platform QA (all features, all browsers, all flows) |
