@@ -5217,6 +5217,7 @@ Product has been launch-ready since Cycle 77 (15 cycles ago), revalidated in C86
 |---------|----------|--------|----------|--------|-------|
 | TASK-184 | P1 | todo | pm | 2d | Launch planning (Product Hunt, HN, social media, email) |
 | TASK-185 | P0 | todo | qa | 3d | Full platform QA (all features, all browsers, all flows) |
+| TASK-217 | P0 | todo | frontend-dev | 1d | Add Vite dev server to @crewspace/app (vite.config.ts, index.html, dev script) so the UI can be run locally |
 
 **Dependencies:**
 - TASK-178 depends on all prior implementation tasks
